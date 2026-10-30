@@ -1,0 +1,8 @@
+<header class="top">
+  <a class="brand" href="{{ home or "#top" }}"><img src="../assets/icon.png" alt="" width="28" height="28"> SpaceRisk</a>
+  <nav>
+    <a href="{{ home }}#bowtie">{{ c.nav.bowtie }}</a><a href="{{ home }}#flow">{{ c.nav.flow }}</a><a href="{{ home }}#features">{{ c.nav.features }}</a>
+    <a href="{{ home }}#screens">{{ c.nav.screens }}</a><a href="{{ home }}#sectors">{{ c.nav.sectors }}</a><a href="pricing.html" {% if page == "pricing" %}aria-current="page"{% endif %}>{{ c.pricing.nav }}</a><a class="pill-link" href="{{ home }}#start">{{ c.nav.start }}</a>
+  </nav>
+  <div class="langs">{% for l in langs %}<a href="../{{ l.lang }}/{{ "pricing.html" if page == "pricing" else "" }}" {% if l.lang == c.lang %}aria-current="page"{% endif %}>{{ l.lang|upper if l.lang != 'pt-br' else 'PT-BR' }}</a>{% endfor %}</div>
+</header>

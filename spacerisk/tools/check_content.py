@@ -37,7 +37,7 @@ if __name__ == "__main__":
     en = json.loads((CONTENT / "en.json").read_text())
     bad = 0
     for p in sorted(CONTENT.glob("*.json")):
-        if p.stem == "en":
+        if p.stem in ("en", "pricing"):
             continue
         problems = []
         compare(en, json.loads(p.read_text()), "$", problems)

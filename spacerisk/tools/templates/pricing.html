@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ c.html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ c.pricing.title }} · SpaceRisk</title>
+<meta name="description" content="{{ c.meta.description }}">
+<meta property="og:title" content="{{ c.meta.title }}">
+<meta property="og:description" content="{{ c.meta.description }}">
+<meta property="og:image" content="../materials/{{ c.lang }}/social/linkedin-1200x627.png">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l.html_lang }}" href="../{{ l.lang }}/pricing.html">
+{% endfor %}<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+{% set home = "index.html" %}{% set page = "pricing" %}{% include "_header.html" %}
+<main>
+<section class="band pricing">
+  <h2>{{ c.pricing.title }}</h2>
+  <p class="lead narrow">{{ c.pricing.intro }}</p>
+  <div class="currency" role="radiogroup" aria-label="{{ c.pricing.currency }}">
+    {% for cur in prices.currencies %}<input type="radio" name="cur" id="cur-{{ cur }}" value="{{ cur }}" {% if cur == prices.default_currency[c.lang] %}checked{% endif %}><label for="cur-{{ cur }}">{{ cur }}</label>{% endfor %}
+    <div class="tiers">
+      {% for t in prices.tiers %}
+      <div class="tier {{ 'featured' if t.featured }}">
+        {% if t.featured %}<div class="badge">{{ c.pricing.popular }}</div>{% endif %}
+        <h3>{{ c.pricing.names[loop.index0] }}</h3>
+        <div class="teams">{{ c.pricing.teams[loop.index0] }}</div>
+        {% for cur in prices.currencies %}<div class="price price-{{ cur }}"><span class="amount">{{ t.prices[cur] }}</span> <span class="per">{{ c.pricing.per_year }}</span></div>{% endfor %}
+        <ul>{% for item in c.pricing.included %}<li>{{ item }}</li>{% endfor %}</ul>
+        <a class="btn {{ 'primary' if t.featured }}" href="mailto:{{ c.start.contact }}?subject=SpaceRisk%20{{ c.pricing.names[loop.index0] }}">{{ c.pricing.cta }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="narrow note">{{ c.pricing.note }} <a href="mailto:{{ c.start.contact }}">{{ c.start.contact }}</a></p>
+</section>
+</main>
+<footer class="foot">{{ c.footer.text }}</footer>
+</body>
+</html>

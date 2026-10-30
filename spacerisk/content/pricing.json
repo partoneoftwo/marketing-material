@@ -1,0 +1,9 @@
+{
+ "currencies": ["NOK", "EUR", "USD"],
+ "default_currency": {"en": "USD", "es": "EUR", "de": "EUR", "pt-br": "USD", "fr": "EUR", "it": "EUR"},
+ "tiers": [
+  {"key": "small", "teams": 5, "prices": {"NOK": "60 000 kr", "EUR": "€5 500", "USD": "$6 300"}},
+  {"key": "business", "teams": 10, "prices": {"NOK": "120 000 kr", "EUR": "€11 000", "USD": "$12 500"}, "featured": true},
+  {"key": "enterprise", "teams": null, "prices": {"NOK": "300 000 kr", "EUR": "€27 500", "USD": "$31 500"}}
+ ]
+}

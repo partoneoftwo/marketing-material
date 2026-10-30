@@ -114,7 +114,7 @@
    },
    {
     "icon": "showcase",
-    "title": "93 Branchen-Beispiele",
+    "title": "91 Branchen-Beispiele",
     "text": "Starten Sie mit einem realistischen Demo-Unternehmen aus Ihrer Branche — vom Krankenhaus bis zur Ölplattform."
    }
   ]
@@ -150,7 +150,7 @@
  },
  "sectors": {
   "title": "Gemacht für Ihre Branche",
-  "intro": "Wählen Sie eines von 93 Beispielunternehmen und erkunden Sie SpaceRisk mit Risiken und Barrieren aus Ihrer eigenen Welt. Alle Unternehmen sind fiktiv.",
+  "intro": "Wählen Sie eines von 91 Beispielunternehmen und erkunden Sie SpaceRisk mit Risiken und Barrieren aus Ihrer eigenen Welt. Alle Unternehmen sind fiktiv.",
   "groups": {
    "Allgemein": [
     "Allgemeines Beispiel (das Original)",
@@ -276,10 +276,6 @@
    ],
    "Bau": [
     "Bauunternehmen mit vielen Projekten"
-   ],
-   "Privat": [
-    "Vierköpfige Familie",
-    "Ein Tourist in einem sehr gefährlichen Land"
    ]
   }
  },
@@ -301,7 +297,7 @@
   ],
   "short": "SpaceRisk ist ein benutzerfreundliches Risikoregister nach ISO 31000: Teams halten ihre Risiken und Barrieren jeden Monat aktuell, und die Führung sieht das Gesamtbild in Bowties, Heatmaps und einer Finanzsicht.",
   "medium": "SpaceRisk hilft Organisationen, Risiken dort zu steuern, wo sie entstehen: in den Teams. Jeden Monat überprüfen Teammitglieder ihre Risiken und kontrollieren die Barrieren, die davor schützen; Teamleitungen und Projektleitungen reichen einen kurzen Bericht ein; und der CEO erhält eine Management-Zusammenfassung mit Heatmaps, Bowties und einer finanziellen Perspektive — Value at Risk (VaR), erwarteter Verlust und die Rendite der Maßnahmen. Alles lässt sich als PDF, PowerPoint und Excel exportieren.",
-  "long": "Die meisten Risikoregister verstauben in einer Tabelle. SpaceRisk hält Ihres lebendig, indem Risiko fester Bestandteil jedes Teammonats wird. Jedes Risiko wird als Bowtie dargestellt: die Bedrohungen, die es auslösen können, das Ereignis, das Sie vermeiden wollen, seine Folgen und die Barrieren dazwischen — eingefärbt danach, wie gut sie heute wirken. Teams überprüfen ihre Risiken und Barrieren in einem monatlichen Zyklus; Teamleitungen und Projektleitungen bestätigen das Ergebnis; und die Geschäftsleitung sieht alles in einem Dashboard, von der Heatmap bis zur Finanzsicht, die Risiken und den Maßnahmen, die sie senken, einen Wert gibt. Ein Barrieren-Panel zeigt, welche Maßnahmen das meiste Gewicht tragen und wo Lücken bestehen. Domänen-Bowties zeigen alle Risiken einer Kategorie auf einer Seite. Top-Ereignisse, Folgen, Projekte und Management-Zusammenfassungen lassen sich mit einem Klick als PDF, PowerPoint und Excel exportieren. SpaceRisk kann von uns gehostet oder selbst gehostet werden, folgt ISO 31000 und bringt 93 realistische Beispielunternehmen mit — von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds.",
+  "long": "Die meisten Risikoregister verstauben in einer Tabelle. SpaceRisk hält Ihres lebendig, indem Risiko fester Bestandteil jedes Teammonats wird. Jedes Risiko wird als Bowtie dargestellt: die Bedrohungen, die es auslösen können, das Ereignis, das Sie vermeiden wollen, seine Folgen und die Barrieren dazwischen — eingefärbt danach, wie gut sie heute wirken. Teams überprüfen ihre Risiken und Barrieren in einem monatlichen Zyklus; Teamleitungen und Projektleitungen bestätigen das Ergebnis; und die Geschäftsleitung sieht alles in einem Dashboard, von der Heatmap bis zur Finanzsicht, die Risiken und den Maßnahmen, die sie senken, einen Wert gibt. Ein Barrieren-Panel zeigt, welche Maßnahmen das meiste Gewicht tragen und wo Lücken bestehen. Domänen-Bowties zeigen alle Risiken einer Kategorie auf einer Seite. Top-Ereignisse, Folgen, Projekte und Management-Zusammenfassungen lassen sich mit einem Klick als PDF, PowerPoint und Excel exportieren. SpaceRisk kann von uns gehostet oder selbst gehostet werden, folgt ISO 31000 und bringt 91 realistische Beispielunternehmen mit — von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds.",
   "boilerplate": "Über SpaceRisk: SpaceRisk ist eine Anwendung für Risikomanagement auf Basis von ISO 31000, von uns gehostet oder selbst gehostet. Sie vereint Risikoregister, monatliche Team-Reviews, Bowtie-Analyse, Barrierenmanagement, Projektportfolio-Ansichten und eine finanzielle Perspektive für die Geschäftsleitung. Kunden besitzen ihre Daten und können sie in vielen Formaten exportieren."
  },
  "sheet": {
@@ -383,7 +379,7 @@
    {
     "title": "Gemacht für Ihre Branche",
     "bullets": [
-     "93 realistische Beispielunternehmen",
+     "91 realistische Beispielunternehmen",
      "Von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds",
      "Bei einer Neuinstallation mit einem Klick laden"
     ]
@@ -402,5 +398,31 @@
  "social": {
   "headline": "Jedes Risiko im Blick — vom Team bis in die Chefetage.",
   "sub": "Bowties · Barrieren · monatliche Reviews · Value at Risk"
+ },
+ "pricing": {
+  "nav": "Preise",
+  "title": "Einfache Preise pro Jahr",
+  "intro": "Ein Jahrespreis pro Organisation, abhängig davon, wie viele Teams SpaceRisk nutzen. Jeder Tarif enthält alle Funktionen.",
+  "currency": "Währung",
+  "per_year": "pro Jahr",
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Bis zu 5 Teams",
+   "Bis zu 10 Teams",
+   "Unbegrenzt viele Teams"
+  ],
+  "popular": "Am beliebtesten",
+  "included": [
+   "Alle Funktionen: Bowties, Barrieren, monatliche Reviews, Projekte, Finanzperspektive, Management-Zusammenfassung",
+   "Export nach PDF, PowerPoint und Excel",
+   "Von uns gehostet oder selbst betrieben",
+   "Ihre Daten gehören Ihnen – jederzeit exportierbar"
+  ],
+  "cta": "Kontakt aufnehmen",
+  "note": "Fragen zu Tarifen, Hosting oder größeren Einführungen? Sprechen Sie uns an."
  }
 }

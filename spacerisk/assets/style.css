@@ -114,3 +114,23 @@ header nav a:hover { color: var(--teal); }
 }
 @media (prefers-reduced-motion: reduce) { .bt .pt, .arrow .dot { display: none !important; } .bt .knot { animation: none !important; } }
 .contact-mail a { color: #fbbf24; font-weight: 700; font-size: 18px; }
+
+/* pricing */
+.pricing { background: linear-gradient(180deg, #fff6dc 0, #fff 60%); }
+.currency { max-width: 1100px; margin: 22px auto 0; text-align: center; }
+.currency > input { position: absolute; opacity: 0; pointer-events: none; }
+.currency > label { display: inline-block; padding: 8px 18px; margin: 0 3px 18px; border: 2px solid var(--navy); border-radius: 999px; font-weight: 700; cursor: pointer; color: var(--navy); background: #fff; }
+.currency > input:checked + label { background: var(--navy); color: #fff; }
+.currency > input:focus-visible + label { outline: 3px solid var(--teal); outline-offset: 2px; }
+.tiers { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; text-align: left; }
+.tier { position: relative; background: #fff; border-radius: 26px; padding: 26px 24px; box-shadow: 0 14px 40px rgba(31,42,68,.12); border: 2px solid #edf0f7; display: flex; flex-direction: column; }
+.tier.featured { border-color: var(--coral); box-shadow: 0 18px 50px rgba(249,115,98,.25); }
+.tier .badge { position: absolute; top: -14px; left: 24px; background: var(--coral); color: #fff; font-weight: 700; font-size: 13px; padding: 4px 12px; border-radius: 999px; }
+.tier h3 { font-size: 24px; margin: 4px 0 2px; }
+.tier .teams { color: var(--teal); font-weight: 700; margin-bottom: 10px; }
+.tier .price { display: none; margin: 4px 0 14px; } .tier .amount { font-size: 38px; font-weight: 800; color: var(--navy); letter-spacing: -0.01em; } .tier .per { color: var(--muted); }
+#cur-NOK:checked ~ .tiers .price-NOK, #cur-EUR:checked ~ .tiers .price-EUR, #cur-USD:checked ~ .tiers .price-USD { display: block; }
+.tier ul { list-style: none; padding: 0; margin: 0 0 18px; flex: 1; }
+.tier li { padding-left: 26px; position: relative; margin: 8px 0; font-size: 15px; color: var(--ink); }
+.tier li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 800; }
+.tier .btn { text-align: center; }

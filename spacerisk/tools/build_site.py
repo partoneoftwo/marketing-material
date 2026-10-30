@@ -62,13 +62,16 @@ def bowtie_svg(prefix):
 def main():
     env = Environment(loader=FileSystemLoader(ROOT / "tools" / "templates"), autoescape=True)
     tpl = env.get_template("site.html")
+    pricing_tpl = env.get_template("pricing.html")
+    prices = json.loads((ROOT / "content" / "pricing.json").read_text())
     contents = {l: json.loads((ROOT / "content" / f"{l}.json").read_text()) for l in LANGS if (ROOT / "content" / f"{l}.json").exists()}
     langs = [{"lang": c["lang"], "html_lang": c["html_lang"], "name": c["lang_name"]} for c in contents.values()]
     for lang, c in contents.items():
         out = ROOT / lang / "index.html"
         out.parent.mkdir(exist_ok=True)
         out.write_text(tpl.render(c=c, langs=langs, icons=ICONS, bowtie_svg=bowtie_svg, downloads=DOWNLOADS[lang]))
-        print("wrote", out.relative_to(ROOT.parent))
+        (ROOT / lang / "pricing.html").write_text(pricing_tpl.render(c=c, langs=langs, prices=prices))
+        print("wrote", out.relative_to(ROOT.parent), "+ pricing.html")
 
 
 if __name__ == "__main__":

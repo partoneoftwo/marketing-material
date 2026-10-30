@@ -6,6 +6,7 @@ Public marketing assets, one folder per product.
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
 for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact: thomas.frivold@frivolddigital.com
+- **Pricing:** per language at `spacerisk/<lang>/pricing.html` (prices in `spacerisk/content/pricing.json`, NOK, EUR and USD)
 
 - **Website:** https://partoneoftwo.github.io/marketing-material/spacerisk/ (English, Español, Deutsch, Português (Brasil), Français, Italiano)
 - **Materials** per language in [`spacerisk/materials/<lang>/`](spacerisk/materials):

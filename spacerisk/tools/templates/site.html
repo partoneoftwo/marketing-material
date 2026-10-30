@@ -13,14 +13,7 @@
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" width="28" height="28"> SpaceRisk</a>
-  <nav>
-    <a href="#bowtie">{{ c.nav.bowtie }}</a><a href="#flow">{{ c.nav.flow }}</a><a href="#features">{{ c.nav.features }}</a>
-    <a href="#screens">{{ c.nav.screens }}</a><a href="#sectors">{{ c.nav.sectors }}</a><a class="pill-link" href="#start">{{ c.nav.start }}</a>
-  </nav>
-  <div class="langs">{% for l in langs %}<a href="../{{ l.lang }}/" {% if l.lang == c.lang %}aria-current="page"{% endif %}>{{ l.lang|upper if l.lang != 'pt-br' else 'PT-BR' }}</a>{% endfor %}</div>
-</header>
+{% set home = "" %}{% set page = "home" %}{% include "_header.html" %}
 
 <main id="top">
 <section class="hero">
@@ -100,7 +93,7 @@
   <p class="lead narrow">{{ c.start.text }}</p>
   <p><a class="btn primary big" href="mailto:{{ c.start.contact }}?subject=SpaceRisk">{{ c.start.cta }}</a></p>
   <p class="contact-mail"><a href="mailto:{{ c.start.contact }}">{{ c.start.contact }}</a></p>
-  <p class="small">{{ c.start.note }}</p>
+  <p class="small">{{ c.start.note }} · <a href="pricing.html">{{ c.pricing.nav }}</a></p>
   <p class="downloads">
     <a href="../materials/{{ c.lang }}/spacerisk-product-sheet.pdf">⬇ {{ downloads[0] }}</a> ·
     <a href="../materials/{{ c.lang }}/spacerisk-sales-deck.pptx">⬇ {{ downloads[1] }}</a> ·
