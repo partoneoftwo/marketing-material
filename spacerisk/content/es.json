@@ -12,7 +12,7 @@
   "features": "Funciones",
   "screens": "Capturas",
   "sectors": "Sectores",
-  "start": "Empezar"
+  "start": "Contacto"
  },
  "hero": {
   "eyebrow": "Gestión de riesgos que la gente usa de verdad",
@@ -284,10 +284,11 @@
   }
  },
  "start": {
-  "title": "Empezar",
-  "text": "SpaceRisk funciona en su propio servidor. Instálelo en Cloudron con unos pocos clics, cargue un caso de ejemplo e invite a sus equipos.",
-  "cta": "Instalar en Cloudron",
-  "note": "Autoalojado · sus datos se quedan con usted · sin rastreo"
+  "title": "Contáctenos",
+  "text": "Nosotros alojamos SpaceRisk por usted, o usted lo ejecuta en sus propios servidores: usted elige. En ambos casos, sus datos son suyos: expórtelos cuando quiera en PDF, PowerPoint, Excel o como copia de seguridad completa de la base de datos.",
+  "cta": "Contáctenos",
+  "contact": "thomas.frivold@frivolddigital.com",
+  "note": "Alojado por nosotros o autoalojado · exportación en muchos formatos · sus datos son suyos · sin rastreo"
  },
  "footer": {
   "text": "SpaceRisk — gestión de riesgos sencilla para equipos, proyectos y consejos de administración."
@@ -300,15 +301,15 @@
   ],
   "short": "SpaceRisk es un registro de riesgos ISO 31000 fácil de usar, donde los equipos mantienen al día sus riesgos y barreras cada mes, y la dirección ve el panorama completo en bowties, mapas de calor y una vista financiera.",
   "medium": "SpaceRisk ayuda a las organizaciones a gestionar el riesgo allí donde surge: en los equipos. Cada mes, los miembros de los equipos revisan sus riesgos y comprueban las barreras que los protegen; los responsables de equipo y los directores de proyecto envían un breve informe; y el CEO recibe un resumen ejecutivo con mapas de calor, bowties y una perspectiva financiera: Valor en Riesgo (VaR), pérdida esperada y retorno de los controles. Todo se exporta a PDF, PowerPoint y Excel.",
-  "long": "La mayoría de los registros de riesgos mueren en una hoja de cálculo. SpaceRisk mantiene vivo el suyo integrando el riesgo en el día a día mensual de cada equipo. Cada riesgo se dibuja como un bowtie: las amenazas que podrían provocarlo, el evento que se quiere evitar, sus consecuencias y las barreras entre ellos, coloreadas según lo bien que funcionan hoy. Los equipos revisan sus riesgos y comprueban sus barreras en un ciclo mensual; los responsables de equipo y los directores de proyecto certifican el resultado; y la dirección lo ve todo en un único panel, desde un mapa de calor hasta una vista financiera que pone valor al riesgo y a los controles que lo reducen. Un panel de barreras muestra qué controles soportan más peso y dónde están las brechas. Los bowties por dominio reúnen todos los riesgos de una categoría en una sola página. Los eventos principales, las consecuencias, los proyectos y los resúmenes ejecutivos se exportan a PDF, PowerPoint y Excel con un solo clic. SpaceRisk es autoalojado, sigue la norma ISO 31000 e incluye 93 empresas de ejemplo realistas, desde hospitales y aerolíneas hasta plataformas petrolíferas y hedge funds.",
-  "boilerplate": "Acerca de SpaceRisk: SpaceRisk es una aplicación autoalojada de gestión de riesgos basada en ISO 31000. Combina un registro de riesgos, revisiones mensuales por equipo, análisis bowtie, gestión de barreras, vistas de cartera de proyectos y una perspectiva financiera para la dirección."
+  "long": "La mayoría de los registros de riesgos mueren en una hoja de cálculo. SpaceRisk mantiene vivo el suyo integrando el riesgo en el día a día mensual de cada equipo. Cada riesgo se dibuja como un bowtie: las amenazas que podrían provocarlo, el evento que se quiere evitar, sus consecuencias y las barreras entre ellos, coloreadas según lo bien que funcionan hoy. Los equipos revisan sus riesgos y comprueban sus barreras en un ciclo mensual; los responsables de equipo y los directores de proyecto certifican el resultado; y la dirección lo ve todo en un único panel, desde un mapa de calor hasta una vista financiera que pone valor al riesgo y a los controles que lo reducen. Un panel de barreras muestra qué controles soportan más peso y dónde están las brechas. Los bowties por dominio reúnen todos los riesgos de una categoría en una sola página. Los eventos principales, las consecuencias, los proyectos y los resúmenes ejecutivos se exportan a PDF, PowerPoint y Excel con un solo clic. SpaceRisk puede alojarse con nosotros o autoalojarse, sigue la norma ISO 31000 e incluye 93 empresas de ejemplo realistas, desde hospitales y aerolíneas hasta plataformas petrolíferas y hedge funds.",
+  "boilerplate": "Acerca de SpaceRisk: SpaceRisk es una aplicación de gestión de riesgos basada en ISO 31000, alojada por nosotros o autoalojada. Combina un registro de riesgos, revisiones mensuales por equipo, análisis bowtie, gestión de barreras, vistas de cartera de proyectos y una perspectiva financiera para la dirección. Los clientes son dueños de sus datos y pueden exportarlos en muchos formatos."
  },
  "sheet": {
   "headline": "Todos los riesgos a la vista, del equipo al consejo de administración.",
   "sub": "Gestión de riesgos ISO 31000 sencilla, con bowties, barreras y un ritmo mensual.",
   "flow_title": "Cómo fluye el riesgo",
   "features_title": "Lo que obtiene",
-  "cta": "Instalar en Cloudron · autoalojado · sus datos se quedan con usted"
+  "cta": "Contáctenos: thomas.frivold@frivolddigital.com · alojado por nosotros o autoalojado · sus datos son suyos"
  },
  "deck": {
   "slides": [
@@ -388,11 +389,12 @@
     ]
    },
    {
-    "title": "Empezar",
+    "title": "Contáctenos",
     "bullets": [
-     "Autoalojado en Cloudron",
-     "Sus datos se quedan con usted",
-     "Cargue un caso de ejemplo e invite a sus equipos hoy mismo"
+     "Alojamos SpaceRisk por usted, o lo autoaloja usted mismo",
+     "Exporte sus datos en muchos formatos: PDF, PowerPoint, Excel y copias de seguridad completas de la base de datos",
+     "Sus datos son suyos",
+     "thomas.frivold@frivolddigital.com"
     ]
    }
   ]

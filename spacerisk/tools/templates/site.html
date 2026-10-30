@@ -98,7 +98,8 @@
 <section id="start" class="band band-navy">
   <h2>{{ c.start.title }}</h2>
   <p class="lead narrow">{{ c.start.text }}</p>
-  <p><a class="btn primary big" href="https://raw.githubusercontent.com/partoneoftwo/cloudron-apps/main/spacerisk/CloudronVersions.json">{{ c.start.cta }}</a></p>
+  <p><a class="btn primary big" href="mailto:{{ c.start.contact }}?subject=SpaceRisk">{{ c.start.cta }}</a></p>
+  <p class="contact-mail"><a href="mailto:{{ c.start.contact }}">{{ c.start.contact }}</a></p>
   <p class="small">{{ c.start.note }}</p>
   <p class="downloads">
     <a href="../materials/{{ c.lang }}/spacerisk-product-sheet.pdf">⬇ {{ downloads[0] }}</a> ·

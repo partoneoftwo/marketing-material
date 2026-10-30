@@ -6,12 +6,14 @@ from jinja2 import Environment, FileSystemLoader
 from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent.parent
-LANGS = ["en", "es", "de", "pt-br"]
+LANGS = ["en", "es", "de", "pt-br", "fr", "it"]
 DOWNLOADS = {  # short UI strings not in the content files
     "en": ("Product sheet (PDF)", "Sales deck (PPTX)", "Texts"),
     "es": ("Ficha de producto (PDF)", "Presentación comercial (PPTX)", "Textos"),
     "de": ("Produktblatt (PDF)", "Vertriebspräsentation (PPTX)", "Texte"),
     "pt-br": ("Folha do produto (PDF)", "Apresentação comercial (PPTX)", "Textos"),
+    "fr": ("Fiche produit (PDF)", "Présentation commerciale (PPTX)", "Textes"),
+    "it": ("Scheda prodotto (PDF)", "Presentazione commerciale (PPTX)", "Testi"),
 }
 GREEN, AMBER, RED = "#22c55e", "#fbbf24", "#f43f5e"
 

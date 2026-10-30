@@ -113,3 +113,4 @@ header nav a:hover { color: var(--teal); }
   .bowtie-demo .labels { font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) { .bt .pt, .arrow .dot { display: none !important; } .bt .knot { animation: none !important; } }
+.contact-mail a { color: #fbbf24; font-weight: 700; font-size: 18px; }

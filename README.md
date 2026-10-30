@@ -5,9 +5,9 @@ Public marketing assets, one folder per product.
 ## SpaceRisk
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
-for the CEO.
+for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact: thomas.frivold@frivolddigital.com
 
-- **Website:** https://partoneoftwo.github.io/marketing-material/spacerisk/ (English, Español, Deutsch, Português (Brasil))
+- **Website:** https://partoneoftwo.github.io/marketing-material/spacerisk/ (English, Español, Deutsch, Português (Brasil), Français, Italiano)
 - **Materials** per language in [`spacerisk/materials/<lang>/`](spacerisk/materials):
   - `spacerisk-product-sheet.pdf`: one-page A4 product sheet;
   - `spacerisk-sales-deck.pptx`: 11-slide sales deck, 16:9;
@@ -21,8 +21,10 @@ for the CEO.
 | Español | [es](https://partoneoftwo.github.io/marketing-material/spacerisk/es/) | [PDF](spacerisk/materials/es/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/es/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/es/texts.md) |
 | Deutsch | [de](https://partoneoftwo.github.io/marketing-material/spacerisk/de/) | [PDF](spacerisk/materials/de/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/de/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/de/texts.md) |
 | Português (Brasil) | [pt-br](https://partoneoftwo.github.io/marketing-material/spacerisk/pt-br/) | [PDF](spacerisk/materials/pt-br/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/pt-br/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/pt-br/texts.md) |
+| Français | [fr](https://partoneoftwo.github.io/marketing-material/spacerisk/fr/) | [PDF](spacerisk/materials/fr/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/fr/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/fr/texts.md) |
+| Italiano | [it](https://partoneoftwo.github.io/marketing-material/spacerisk/it/) | [PDF](spacerisk/materials/it/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/it/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/it/texts.md) |
 
-> **Translations** (es, de, pt-br) were machine-written from the English source. Have a native speaker review them before
+> **Translations** (es, de, pt-br, fr, it) were machine-written from the English source. Have a native speaker review them before
 > campaigns.
 
 ### Editing and rebuilding

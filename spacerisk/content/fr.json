@@ -1,0 +1,406 @@
+{
+ "lang": "fr",
+ "lang_name": "Français",
+ "html_lang": "fr",
+ "meta": {
+  "title": "SpaceRisk — tous vos risques, du terrain jusqu'au conseil d'administration",
+  "description": "SpaceRisk est un registre des risques ISO 31000 simple et convivial : bowties, barrières, revues mensuelles par équipe, vue d'ensemble des projets et vision financière pour le CEO."
+ },
+ "nav": {
+  "bowtie": "Bowties",
+  "flow": "Circuit du risque",
+  "features": "Fonctionnalités",
+  "screens": "Captures d'écran",
+  "sectors": "Secteurs",
+  "start": "Nous contacter"
+ },
+ "hero": {
+  "eyebrow": "La gestion des risques que vos équipes utilisent vraiment",
+  "title": "Tous vos risques, du terrain jusqu'au conseil d'administration.",
+  "subtitle": "SpaceRisk transforme les risques de vos équipes en bowties vivants : ce qui peut mal tourner, les barrières qui l'en empêchent et ce que cela coûterait. Chaque mois, les risques remontent de ceux qui les connaissent le mieux jusqu'au CEO — et ce, pour chaque projet.",
+  "cta_primary": "Découvrir le bowtie",
+  "cta_secondary": "Voir le circuit du risque"
+ },
+ "bowtie": {
+  "title": "Qu'est-ce qu'un bowtie ?",
+  "intro": "Le bowtie (nœud papillon) présente un risque sur une seule page. À gauche, les menaces qui peuvent le déclencher. Au centre, l'événement que vous voulez à tout prix éviter. À droite, ce qui se passe s'il survient. Entre les deux, vos barrières — les mesures de maîtrise qui maintiennent le nœud bien serré.",
+  "threat": "Menaces",
+  "barrier_p": "Barrières préventives",
+  "event": "Événement redouté",
+  "barrier_m": "Barrières de protection",
+  "consequence": "Conséquences",
+  "toggle_p": "Barrières préventives",
+  "toggle_m": "Barrières de protection",
+  "caption_on": "Les barrières sont en place : les menaces sont stoppées avant l'événement redouté et les dommages sont contenus.",
+  "caption_off": "Une barrière manque : le risque passe. SpaceRisk signale cette faille par une ligne rouge en pointillés.",
+  "explain": [
+   "Des barres vertes, orange et rouges indiquent l'efficacité actuelle de chaque barrière.",
+   "Une même barrière peut protéger de nombreux risques — et son état apparaît partout où elle est utilisée.",
+   "Les bowties par domaine réunissent tous les risques d'une catégorie sur une seule image : cyber, sécurité, finance, etc."
+  ]
+ },
+ "flow": {
+  "title": "Comment le risque circule dans votre organisation",
+  "intro": "Les risques appartiennent à ceux qui les connaissent le mieux. SpaceRisk veille à ce qu'ils soient revus chaque mois et parviennent jusqu'aux décideurs.",
+  "lane_team": "Équipes opérationnelles",
+  "lane_project": "Projets",
+  "steps_team": [
+   {
+    "who": "Membre de l'équipe",
+    "what": "Saisit les nouveaux risques et revoit les risques existants."
+   },
+   {
+    "who": "Responsable d'équipe",
+    "what": "Contrôle les barrières de l'équipe et valide le rapport mensuel."
+   },
+   {
+    "who": "CEO / CISO",
+    "what": "Reçoit la synthèse de direction, la carte des risques et la vision financière — en PDF ou PowerPoint."
+   }
+  ],
+  "steps_project": [
+   {
+    "who": "Équipe projet",
+    "what": "Suit les risques liés aux délais, aux coûts, à la sécurité et aux fournisseurs."
+   },
+   {
+    "who": "Chef de projet",
+    "what": "Revoit et soumet le rapport mensuel du projet."
+   },
+   {
+    "who": "Vue portefeuille",
+    "what": "Tous les projets côte à côte, exportables pour le comité de pilotage."
+   }
+  ],
+  "barrier_note": "Chaque mois, les propriétaires de barrières confirment que leurs mesures fonctionnent toujours — ou les signalent avant qu'elles ne cèdent."
+ },
+ "features": {
+  "title": "Tout ce dont un propriétaire de risque a besoin. Rien de superflu.",
+  "items": [
+   {
+    "icon": "register",
+    "title": "Registre des risques ISO 31000",
+    "text": "Vraisemblance × conséquence, cotations brute, résiduelle et cible, appétence au risque et plans de traitement."
+   },
+   {
+    "icon": "cycle",
+    "title": "Cycle de revue mensuel",
+    "text": "Chaque équipe revoit tous ses risques et contrôle toutes ses barrières, puis le responsable soumet le rapport mensuel."
+   },
+   {
+    "icon": "bowtie",
+    "title": "Bowties et tableau des barrières",
+    "text": "Des bowties par risque et par domaine, un tableau des barrières et une matrice risques × barrières qui révèle les failles."
+   },
+   {
+    "icon": "events",
+    "title": "Événements redoutés et conséquences",
+    "text": "Voyez ce contre quoi vous vous protégez réellement, regroupé par domaine, pour toutes les équipes."
+   },
+   {
+    "icon": "money",
+    "title": "Vision financière",
+    "text": "Value at Risk (VaR), perte annuelle attendue avant et après barrières, et le rendement de chaque couronne investie dans vos mesures de maîtrise."
+   },
+   {
+    "icon": "summary",
+    "title": "Synthèse de direction",
+    "text": "Des messages clés rédigés à partir des données, complétés par votre commentaire — prêts pour le conseil d'administration."
+   },
+   {
+    "icon": "export",
+    "title": "Exports en un clic",
+    "text": "PDF, PowerPoint et Excel pour chaque page, chaque équipe et chaque projet."
+   },
+   {
+    "icon": "showcase",
+    "title": "93 démonstrations sectorielles",
+    "text": "Démarrez avec une entreprise de démonstration réaliste de votre secteur, de l'hôpital à la plateforme pétrolière."
+   }
+  ]
+ },
+ "screens": {
+  "title": "Un aperçu de l'intérieur",
+  "items": [
+   {
+    "file": "domain-bowtie.png",
+    "caption": "Un bowtie par domaine : tous les risques cyber, leurs barrières et leurs failles sur une seule image."
+   },
+   {
+    "file": "executive-dashboard.png",
+    "caption": "Le tableau de bord de direction : carte des risques, rapports mensuels et risques hors appétence."
+   },
+   {
+    "file": "financial-perspective.png",
+    "caption": "La vision financière : Value at Risk (VaR), perte attendue et rendement des barrières."
+   },
+   {
+    "file": "barrier-panel.png",
+    "caption": "Le tableau des barrières : chaque mesure de maîtrise, son efficacité et son contrôle mensuel."
+   },
+   {
+    "file": "projects.png",
+    "caption": "Tous les projets en un coup d'œil, prêts pour le comité de pilotage."
+   },
+   {
+    "file": "executive-summary.png",
+    "caption": "La synthèse de direction, également en PDF et PowerPoint."
+   }
+  ]
+ },
+ "sectors": {
+  "title": "Conçu pour votre secteur",
+  "intro": "Choisissez l'une des 93 entreprises de démonstration et découvrez SpaceRisk avec des risques et des barrières issus de votre propre univers. Toutes les entreprises sont fictives.",
+  "groups": {
+   "Généraliste": [
+    "Exemple générique (la démonstration d'origine)",
+    "Entreprise générique avec de nombreux projets",
+    "Exemple générique, plus petit (environ 1/3 des risques)"
+   ],
+   "Secteur public": [
+    "Centrale logistique de l'État",
+    "Administration publique"
+   ],
+   "Services professionnels": [
+    "Cabinet d'avocats",
+    "Cabinet de conseil (grand)",
+    "Cabinet international d'expertise comptable et d'audit",
+    "Cabinet de conseil (petit)"
+   ],
+   "Technologie": [
+    "Studio de développement de logiciels d'IA",
+    "Exploitant de centres de données",
+    "Type NVIDIA",
+    "Laboratoire d'IA",
+    "Néocloud",
+    "Entreprise de type GAFAM",
+    "Hyperscaler",
+    "Opérateur d'infrastructure informatique",
+    "Intégrateur de systèmes",
+    "Type Valve"
+   ],
+   "Télécoms": [
+    "Opérateur de réseau mobile virtuel (MVNO)",
+    "Opérateur télécom"
+   ],
+   "Finance": [
+    "Courtier en assurances",
+    "Compagnie d'assurance",
+    "Banque / finance"
+   ],
+   "Marchés de capitaux et investissement": [
+    "Business angel",
+    "Bourse de matières premières",
+    "Plateforme d'échange de cryptomonnaies",
+    "Fonds indiciel",
+    "Banque d'investissement",
+    "Hedge fund",
+    "Courtier en bourse",
+    "Capital-investissement",
+    "Fonds de fonds",
+    "Bourse des valeurs",
+    "Capital-risque"
+   ],
+   "Énergie et ressources": [
+    "Société de services pétroliers aval avec de nombreux projets",
+    "Énergie (électricité)",
+    "Exploitant de plateformes pétrolières (navires de forage)",
+    "Compagnie pétrolière opérant 10 actifs (plateformes pétrolières)"
+   ],
+   "Industrie et produits de la mer": [
+    "Producteur de produits de la mer (salmoniculture)",
+    "Intégrateur pour usine automobile",
+    "Usine de construction automobile",
+    "Type Kongsberg",
+    "Un conglomérat industriel du Fortune 500",
+    "Site de production d'appareils électroniques",
+    "Industrie / logistique",
+    "Équipementier automobile"
+   ],
+   "Agroalimentaire et agriculture": [
+    "Exploitation de petits fruits",
+    "Un agriculteur",
+    "Exploitation fruitière",
+    "Exploitation agricole industrielle (pommes de terre)",
+    "Exploitation maraîchère",
+    "Un vignoble (production de cuvées de vin)"
+   ],
+   "Transport": [
+    "Transports en commun : bus, tramways, trains",
+    "Porte-conteneurs",
+    "Transporteur routier de semi-remorques",
+    "Logistique mondiale, transport maritime",
+    "Compagnie aérienne internationale",
+    "Opérateur logistique par hélicoptère",
+    "Compagnie aérienne low-cost",
+    "Opérateur ferroviaire national",
+    "Compagnie de croisières",
+    "Aéroport",
+    "Armateur roulier (ro-ro)",
+    "Centrale logistique"
+   ],
+   "Santé, sciences et enseignement": [
+    "Laboratoire de biologie",
+    "École supérieure privée",
+    "Université",
+    "Hôpital",
+    "Un groupe pharmaceutique comme Novo Nordisk ou Bayer"
+   ],
+   "Commerce de détail": [
+    "Boutique de prêt-à-porter",
+    "Chaîne de supermarchés",
+    "Une poissonnerie",
+    "Chaîne de pharmacies",
+    "Gestionnaire de centre commercial"
+   ],
+   "Hôtellerie et loisirs": [
+    "Une chaîne d'hôtels 4 étoiles",
+    "Chaîne de restaurants",
+    "Organisateur de visites guidées",
+    "Chaîne de salles de sport",
+    "Un hôtel 3 étoiles",
+    "Restaurant",
+    "Une chaîne d'hôtels 5 étoiles",
+    "Un complexe hôtelier de luxe",
+    "Un surf resort"
+   ],
+   "Événements et lieux": [
+    "Stade de football",
+    "Match de football (événement)",
+    "Salle de concert",
+    "Concert (événement)"
+   ],
+   "Grand public": [
+    "Coach en longévité",
+    "Concession automobile"
+   ],
+   "Construction": [
+    "Entreprise de construction avec de nombreux projets"
+   ],
+   "Particuliers": [
+    "Une famille de quatre personnes",
+    "Un touriste dans un pays très dangereux"
+   ]
+  }
+ },
+ "start": {
+  "title": "Nous contacter",
+  "text": "Nous hébergeons SpaceRisk pour vous, ou vous l'installez sur vos propres serveurs — à vous de choisir. Dans tous les cas, vos données vous appartiennent : exportez-les à tout moment en PDF, PowerPoint, Excel ou sous forme de sauvegarde complète de la base de données.",
+  "cta": "Nous contacter",
+  "contact": "thomas.frivold@frivolddigital.com",
+  "note": "Hébergé par nos soins ou chez vous · export dans de nombreux formats · vos données vous appartiennent · aucun pistage"
+ },
+ "footer": {
+  "text": "SpaceRisk — une gestion des risques conviviale pour les équipes, les projets et les directions."
+ },
+ "texts": {
+  "taglines": [
+   "Tous vos risques, du terrain jusqu'au conseil d'administration.",
+   "Des bowties que vos équipes tiendront vraiment à jour.",
+   "Connaissez vos risques. Prouvez vos barrières. Montrez la valeur."
+  ],
+  "short": "SpaceRisk est un registre des risques ISO 31000 convivial : les équipes mettent à jour leurs risques et leurs barrières chaque mois, et la direction dispose d'une vue d'ensemble grâce aux bowties, aux cartes des risques et à une vision financière.",
+  "medium": "SpaceRisk aide les organisations à gérer le risque là où il se trouve : dans les équipes. Chaque mois, les membres des équipes revoient leurs risques et contrôlent les barrières qui les en protègent ; les responsables d'équipe et les chefs de projet soumettent un court rapport mensuel ; et le CEO reçoit une synthèse de direction avec cartes des risques, bowties et vision financière — Value at Risk (VaR), perte attendue et rendement des mesures de maîtrise. Tout s'exporte en PDF, PowerPoint et Excel.",
+  "long": "La plupart des registres des risques finissent oubliés dans un tableur. SpaceRisk garde le vôtre bien vivant en intégrant le risque au quotidien de chaque équipe, mois après mois. Chaque risque est représenté sous forme de bowtie : les menaces qui peuvent le déclencher, l'événement que vous voulez éviter, ses conséquences et, entre les deux, les barrières — colorées selon leur efficacité actuelle. Les équipes revoient leurs risques et contrôlent leurs barrières dans un cycle mensuel ; les responsables d'équipe et les chefs de projet valident le résultat ; et la direction voit tout sur un seul tableau de bord, de la carte des risques à une vision financière qui chiffre le risque et les mesures qui le réduisent. Le tableau des barrières montre quelles mesures pèsent le plus et où se trouvent les failles. Les bowties par domaine réunissent tous les risques d'une catégorie sur une seule page. Événements redoutés, conséquences, projets et synthèses de direction s'exportent en un clic en PDF, PowerPoint et Excel. SpaceRisk peut être hébergé par nos soins ou chez vous, suit la norme ISO 31000 et propose 93 entreprises de démonstration réalistes, des hôpitaux et compagnies aériennes aux plateformes pétrolières et hedge funds.",
+  "boilerplate": "À propos de SpaceRisk : SpaceRisk est une application de gestion des risques fondée sur la norme ISO 31000, hébergée par nos soins ou chez vous. Elle réunit un registre des risques, des revues mensuelles par équipe, l'analyse bowtie, la gestion des barrières, des vues de portefeuille de projets et une vision financière pour la direction. Les clients restent propriétaires de leurs données et peuvent les exporter dans de nombreux formats."
+ },
+ "sheet": {
+  "headline": "Tous vos risques, du terrain jusqu'au conseil d'administration.",
+  "sub": "Une gestion des risques ISO 31000 conviviale, avec bowties, barrières et un rythme mensuel.",
+  "flow_title": "Le circuit du risque",
+  "features_title": "Ce que vous obtenez",
+  "cta": "Contactez-nous : thomas.frivold@frivolddigital.com · hébergé par nos soins ou chez vous · vos données vous appartiennent"
+ },
+ "deck": {
+  "slides": [
+   {
+    "title": "Les registres des risques meurent dans des tableurs",
+    "bullets": [
+     "Mis à jour une fois par an, lus par personne",
+     "Les mesures de maîtrise sont listées, jamais testées",
+     "La direction voit des chiffres, pas des barrières",
+     "Projets et équipes tiennent chacun leur propre liste"
+    ]
+   },
+   {
+    "title": "SpaceRisk en une phrase",
+    "bullets": [
+     "Les équipes font vivre leurs risques et leurs barrières chaque mois — et la direction voit l'ensemble sous forme de bowties, de cartes des risques et de montants financiers."
+    ]
+   },
+   {
+    "title": "Le bowtie : un risque sur une page",
+    "bullets": [
+     "Menaces → barrières préventives → événement redouté → barrières de protection → conséquences",
+     "Barrières colorées selon leur efficacité",
+     "Failles signalées par des lignes rouges en pointillés"
+    ],
+    "image": "domain-bowtie.png"
+   },
+   {
+    "title": "De l'équipe au CEO",
+    "bullets": [
+     "Les membres de l'équipe saisissent et revoient les risques",
+     "Les responsables d'équipe contrôlent les barrières et valident le rapport mensuel",
+     "Le CEO et le CISO reçoivent la synthèse de direction"
+    ]
+   },
+   {
+    "title": "De l'équipe projet au chef de projet",
+    "bullets": [
+     "Chaque projet est une équipe avec ses propres risques",
+     "Les chefs de projet soumettent le rapport mensuel",
+     "Tous les projets côte à côte, exportables"
+    ],
+    "image": "projects.png"
+   },
+   {
+    "title": "Un rythme mensuel qui s'installe",
+    "bullets": [
+     "Chaque risque revu, chaque barrière contrôlée",
+     "Le rapport ne peut être soumis qu'une fois le travail terminé",
+     "Les tendances montrent si le risque augmente ou diminue"
+    ],
+    "image": "executive-dashboard.png"
+   },
+   {
+    "title": "Le risque chiffré",
+    "bullets": [
+     "Exposition totale, Value at Risk (VaR) et perte annuelle attendue",
+     "Avant et après barrières",
+     "Le rendement de chaque couronne investie dans les mesures de maîtrise"
+    ],
+    "image": "financial-perspective.png"
+   },
+   {
+    "title": "Prêt pour le conseil d'administration",
+    "bullets": [
+     "Synthèse de direction avec messages clés et votre commentaire",
+     "PDF, PowerPoint et Excel pour chaque page, équipe et projet"
+    ],
+    "image": "executive-summary.png"
+   },
+   {
+    "title": "Conçu pour votre secteur",
+    "bullets": [
+     "93 entreprises de démonstration réalistes",
+     "Des hôpitaux et compagnies aériennes aux plateformes pétrolières et hedge funds",
+     "Chargez-en une en un clic sur une nouvelle installation"
+    ]
+   },
+   {
+    "title": "Nous contacter",
+    "bullets": [
+     "Nous hébergeons SpaceRisk pour vous — ou vous l'hébergez vous-même",
+     "Exportez vos données dans de nombreux formats : PDF, PowerPoint, Excel et sauvegardes complètes de la base de données",
+     "Vos données vous appartiennent",
+     "thomas.frivold@frivolddigital.com"
+    ]
+   }
+  ]
+ },
+ "social": {
+  "headline": "Tous vos risques, du terrain jusqu'au conseil d'administration.",
+  "sub": "Bowties · barrières · revues mensuelles · Value at Risk (VaR)"
+ }
+}

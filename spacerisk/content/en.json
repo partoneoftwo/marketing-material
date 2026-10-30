@@ -12,7 +12,7 @@
   "features": "Features",
   "screens": "Screenshots",
   "sectors": "Sectors",
-  "start": "Get started"
+  "start": "Contact us"
  },
  "hero": {
   "eyebrow": "Risk management that people actually use",
@@ -284,10 +284,11 @@
   }
  },
  "start": {
-  "title": "Get started",
-  "text": "SpaceRisk runs on your own server. Install it on Cloudron in a few clicks, load a showcase, and invite your teams.",
-  "cta": "Install on Cloudron",
-  "note": "Self-hosted · your data stays with you · no tracking"
+  "title": "Contact us",
+  "text": "We host SpaceRisk for you, or you run it on your own servers — your choice. Either way, your data is yours: export it any time as PDF, PowerPoint, Excel or a complete database backup.",
+  "cta": "Contact us",
+  "contact": "thomas.frivold@frivolddigital.com",
+  "note": "Hosted by us or self-hosted · export in many formats · your data is yours · no tracking"
  },
  "footer": {
   "text": "SpaceRisk — friendly risk management for teams, projects and boards."
@@ -300,15 +301,15 @@
   ],
   "short": "SpaceRisk is a friendly ISO 31000 risk register where teams keep their risks and barriers up to date every month, and leaders see the whole picture in bowties, heat maps and a financial view.",
   "medium": "SpaceRisk helps organisations manage risk where it lives: in the teams. Every month, team members review their risks and check the barriers that protect against them; team leads and project managers submit a short return; and the CEO gets an executive summary with heat maps, bowties and a financial perspective — Value at Risk, expected loss and the return on controls. Everything exports to PDF, PowerPoint and Excel.",
-  "long": "Most risk registers die in a spreadsheet. SpaceRisk keeps yours alive by making risk part of every team's month. Each risk is drawn as a bowtie: the threats that could cause it, the event you want to avoid, its consequences, and the barriers in between — coloured by how well they work today. Teams review their risks and check their barriers in a monthly cycle; team leads and project managers attest the result; and executives see everything on one dashboard, from a heat map to a financial view that puts a value on risk and on the controls that reduce it. A barrier panel shows which controls carry the most weight and where the gaps are. Domain bowties draw every risk in a category on one page. Top events, consequences, projects and executive summaries export to PDF, PowerPoint and Excel in one click. SpaceRisk is self-hosted, follows ISO 31000 and comes with 93 realistic showcase companies, from hospitals and airlines to oil platforms and hedge funds.",
-  "boilerplate": "About SpaceRisk: SpaceRisk is a self-hosted risk management application built on ISO 31000. It combines a risk register, monthly team reviews, bowtie analysis, barrier management, project portfolio views and a financial perspective for executives."
+  "long": "Most risk registers die in a spreadsheet. SpaceRisk keeps yours alive by making risk part of every team's month. Each risk is drawn as a bowtie: the threats that could cause it, the event you want to avoid, its consequences, and the barriers in between — coloured by how well they work today. Teams review their risks and check their barriers in a monthly cycle; team leads and project managers attest the result; and executives see everything on one dashboard, from a heat map to a financial view that puts a value on risk and on the controls that reduce it. A barrier panel shows which controls carry the most weight and where the gaps are. Domain bowties draw every risk in a category on one page. Top events, consequences, projects and executive summaries export to PDF, PowerPoint and Excel in one click. SpaceRisk can be hosted by us or self-hosted, follows ISO 31000 and comes with 93 realistic showcase companies, from hospitals and airlines to oil platforms and hedge funds.",
+  "boilerplate": "About SpaceRisk: SpaceRisk is a risk management application built on ISO 31000, hosted by us or self-hosted. It combines a risk register, monthly team reviews, bowtie analysis, barrier management, project portfolio views and a financial perspective for executives. Customers own their data and can export it in many formats."
  },
  "sheet": {
   "headline": "See every risk — from the team floor to the boardroom.",
   "sub": "Friendly ISO 31000 risk management with bowties, barriers and a monthly rhythm.",
   "flow_title": "How risk flows",
   "features_title": "What you get",
-  "cta": "Install on Cloudron · self-hosted · your data stays with you"
+  "cta": "Contact us: thomas.frivold@frivolddigital.com · hosted by us or self-hosted · your data is yours"
  },
  "deck": {
   "slides": [
@@ -388,11 +389,12 @@
     ]
    },
    {
-    "title": "Get started",
+    "title": "Contact us",
     "bullets": [
-     "Self-hosted on Cloudron",
-     "Your data stays with you",
-     "Load a showcase and invite your teams today"
+     "We host SpaceRisk for you — or you self-host it",
+     "Export your data in many formats: PDF, PowerPoint, Excel and full database backups",
+     "Your data is yours",
+     "thomas.frivold@frivolddigital.com"
     ]
    }
   ]

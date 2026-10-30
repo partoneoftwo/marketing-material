@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 CONTENT = Path(__file__).resolve().parent.parent / "content"
-FIXED = {"file", "icon", "image"}  # must stay identical to English
+FIXED = {"file", "icon", "image", "contact"}  # must stay identical to English
 
 
 def compare(en, other, path, problems):
