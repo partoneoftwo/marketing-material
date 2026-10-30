@@ -1,0 +1,404 @@
+{
+ "lang": "en",
+ "lang_name": "English",
+ "html_lang": "en",
+ "meta": {
+  "title": "SpaceRisk — see every risk, from the team floor to the boardroom",
+  "description": "SpaceRisk is a friendly ISO 31000 risk register with bowties, barriers, monthly team reviews, project overviews and a financial view for the CEO."
+ },
+ "nav": {
+  "bowtie": "Bowties",
+  "flow": "Risk flow",
+  "features": "Features",
+  "screens": "Screenshots",
+  "sectors": "Sectors",
+  "start": "Get started"
+ },
+ "hero": {
+  "eyebrow": "Risk management that people actually use",
+  "title": "See every risk — from the team floor to the boardroom.",
+  "subtitle": "SpaceRisk turns your teams' risks into living bowties: what can go wrong, which barriers stop it, and what it would cost. Every month, risks flow from the people closest to them up to the CEO — and across every project.",
+  "cta_primary": "Explore the bowtie",
+  "cta_secondary": "See how risk flows"
+ },
+ "bowtie": {
+  "title": "What is a bowtie?",
+  "intro": "A bowtie shows one risk on a single page. On the left, the threats that could cause it. In the middle, the event you never want. On the right, what happens if it occurs. In between sit your barriers — the controls that keep the knot tied.",
+  "threat": "Threats",
+  "barrier_p": "Preventive barriers",
+  "event": "Top event",
+  "barrier_m": "Mitigative barriers",
+  "consequence": "Consequences",
+  "toggle_p": "Preventive barriers",
+  "toggle_m": "Mitigative barriers",
+  "caption_on": "Barriers in place: threats are stopped before the top event, and the damage is contained.",
+  "caption_off": "A barrier is missing: risk gets through. SpaceRisk shows this gap as a dashed red line.",
+  "explain": [
+   "Green, amber and red bars show how well each barrier works today.",
+   "One barrier can protect many risks — and its health shows up everywhere it is used.",
+   "Domain bowties draw every risk in a category on one picture: cyber, safety, finance and more."
+  ]
+ },
+ "flow": {
+  "title": "How risk flows through your organisation",
+  "intro": "Risks are owned by the people who know them best. SpaceRisk makes sure they are reviewed every month and reach the people who decide.",
+  "lane_team": "Operational teams",
+  "lane_project": "Projects",
+  "steps_team": [
+   {
+    "who": "Team member",
+    "what": "Logs new risks and reviews existing ones."
+   },
+   {
+    "who": "Team lead",
+    "what": "Checks the team's barriers and attests the monthly return."
+   },
+   {
+    "who": "CEO / CISO",
+    "what": "Gets the executive summary, heat map and financial view — as PDF or PowerPoint."
+   }
+  ],
+  "steps_project": [
+   {
+    "who": "Project team",
+    "what": "Tracks delivery, cost, safety and supplier risks."
+   },
+   {
+    "who": "Project manager",
+    "what": "Reviews and submits the project's monthly return."
+   },
+   {
+    "who": "Portfolio view",
+    "what": "All projects side by side, exportable for the steering group."
+   }
+  ],
+  "barrier_note": "Barrier owners confirm every month that their controls still work — or flag them before they fail."
+ },
+ "features": {
+  "title": "Everything a risk owner needs. Nothing they don't.",
+  "items": [
+   {
+    "icon": "register",
+    "title": "ISO 31000 risk register",
+    "text": "Likelihood × consequence, inherent, residual and target ratings, appetite and treatment plans."
+   },
+   {
+    "icon": "cycle",
+    "title": "Monthly review cycle",
+    "text": "Every team reviews every risk and checks every barrier it owns, then the lead submits the return."
+   },
+   {
+    "icon": "bowtie",
+    "title": "Bowties and barrier panel",
+    "text": "Per-risk and per-domain bowties, a barrier board and a risk × barrier matrix that reveals gaps."
+   },
+   {
+    "icon": "events",
+    "title": "Top events and consequences",
+    "text": "See what you are really protecting against, grouped by domain, across all teams."
+   },
+   {
+    "icon": "money",
+    "title": "Financial perspective",
+    "text": "Value at Risk, expected annual loss before and after barriers, and the return on every krone spent on controls."
+   },
+   {
+    "icon": "summary",
+    "title": "Executive summary",
+    "text": "Key messages written from the data, plus your own comment — ready for the board."
+   },
+   {
+    "icon": "export",
+    "title": "One-click exports",
+    "text": "PDF, PowerPoint and Excel for every page, every team and every project."
+   },
+   {
+    "icon": "showcase",
+    "title": "93 sector showcases",
+    "text": "Start with a realistic demo company from your own industry, from hospital to oil platform."
+   }
+  ]
+ },
+ "screens": {
+  "title": "Take a look inside",
+  "items": [
+   {
+    "file": "domain-bowtie.png",
+    "caption": "A domain bowtie: every cyber risk, its barriers and its gaps on one picture."
+   },
+   {
+    "file": "executive-dashboard.png",
+    "caption": "The executive dashboard: heat map, monthly returns and risks outside appetite."
+   },
+   {
+    "file": "financial-perspective.png",
+    "caption": "The financial perspective: Value at Risk, expected loss and return on barriers."
+   },
+   {
+    "file": "barrier-panel.png",
+    "caption": "The barrier panel: every control, its effectiveness and its monthly check."
+   },
+   {
+    "file": "projects.png",
+    "caption": "All projects at a glance, ready for the steering group."
+   },
+   {
+    "file": "executive-summary.png",
+    "caption": "The executive summary, also as PDF and PowerPoint."
+   }
+  ]
+ },
+ "sectors": {
+  "title": "Built for your sector",
+  "intro": "Pick one of 93 showcase companies and explore SpaceRisk with risks and barriers from your own world. All companies are fictional.",
+  "groups": {
+   "Generic": [
+    "Generic sample (the original showcase)",
+    "Generic company with many projects",
+    "Generic sample, smaller (about 1/3 of the risks)"
+   ],
+   "Public sector": [
+    "Government logistics central",
+    "Government bureau"
+   ],
+   "Professional services": [
+    "Law firm",
+    "Consulting advisory company (large)",
+    "Multinational accounting and audit house company",
+    "Consulting advisory company (small)"
+   ],
+   "Technology": [
+    "AI software development house studio",
+    "Datacenter business",
+    "NVIDIA-like",
+    "AI lab",
+    "Neocloud",
+    "FAANG company",
+    "Hyperscaler",
+    "IT infrastructure operator",
+    "System integrator company",
+    "Valve-like"
+   ],
+   "Telecom": [
+    "Virtual telecom operator",
+    "Telecom operator"
+   ],
+   "Finance": [
+    "Insurance broker",
+    "Insurance company",
+    "Banking / finance"
+   ],
+   "Capital markets & investment": [
+    "Business angel investor",
+    "Commodities exchange",
+    "Crypto exchange",
+    "Index fund",
+    "Investment bank",
+    "Hedge fund",
+    "Stock broker",
+    "Private equity",
+    "Fund of funds",
+    "Stock exchange",
+    "Venture capital"
+   ],
+   "Energy & resources": [
+    "Downstream oil service company with many projects",
+    "Energy (electricity)",
+    "Oil rig (boat oil platforms) company",
+    "Oil company operator with 10 operating assets (oil platforms)"
+   ],
+   "Industry & seafood": [
+    "Seafood producer (salmon farming)",
+    "Car factory integrator",
+    "Car factory plant",
+    "Kongsberg-like",
+    "A Fortune 500 industrial conglomerate",
+    "Electronic device production facility",
+    "Manufacturing / logistics",
+    "Car production parts producer"
+   ],
+   "Food & agriculture": [
+    "Berry plantation",
+    "A farmer",
+    "Fruit plantation",
+    "Industrial farming operation (potatoes)",
+    "Vegetable plantation",
+    "A vineyard (producing batches of wine)"
+   ],
+   "Transport": [
+    "Mass transit company: buses, trams, trains",
+    "Shipping container boats",
+    "Trailer logistics land operator",
+    "Global logistics, shipping (boats)",
+    "Airline, global company",
+    "Helicopter logistics operator",
+    "Airline, low-cost airline",
+    "National train operator",
+    "Cruise line",
+    "Airport",
+    "Shipping ro-ro operator",
+    "Logistics central"
+   ],
+   "Health, science & education": [
+    "Biology lab business",
+    "Private university college",
+    "University",
+    "Hospital",
+    "A medical company such as Novo Nordisk or Bayer"
+   ],
+   "Retail": [
+    "Fashion clothing store",
+    "Grocery store chain",
+    "A fish market",
+    "Pharmacy chain",
+    "Shopping center (mall) operator"
+   ],
+   "Hospitality & leisure": [
+    "A 4-star hotel chain",
+    "Restaurant chain",
+    "Tour guide operator",
+    "Health club chain",
+    "A 3-star hotel",
+    "Restaurant",
+    "A 5-star hotel chain",
+    "A luxury hotel resort",
+    "A surf resort"
+   ],
+   "Events & venues": [
+    "Football stadium",
+    "Football stadium event",
+    "Concert venue",
+    "Concert event"
+   ],
+   "Consumer": [
+    "Personal longevity coach business",
+    "Car sales company"
+   ],
+   "Construction": [
+    "Builder company with many projects"
+   ],
+   "Personal": [
+    "Household family of four",
+    "A tourist in a very dangerous country"
+   ]
+  }
+ },
+ "start": {
+  "title": "Get started",
+  "text": "SpaceRisk runs on your own server. Install it on Cloudron in a few clicks, load a showcase, and invite your teams.",
+  "cta": "Install on Cloudron",
+  "note": "Self-hosted · your data stays with you · no tracking"
+ },
+ "footer": {
+  "text": "SpaceRisk — friendly risk management for teams, projects and boards."
+ },
+ "texts": {
+  "taglines": [
+   "See every risk — from the team floor to the boardroom.",
+   "Bowties your teams will actually keep up to date.",
+   "Know your risks. Prove your barriers. Show the value."
+  ],
+  "short": "SpaceRisk is a friendly ISO 31000 risk register where teams keep their risks and barriers up to date every month, and leaders see the whole picture in bowties, heat maps and a financial view.",
+  "medium": "SpaceRisk helps organisations manage risk where it lives: in the teams. Every month, team members review their risks and check the barriers that protect against them; team leads and project managers submit a short return; and the CEO gets an executive summary with heat maps, bowties and a financial perspective — Value at Risk, expected loss and the return on controls. Everything exports to PDF, PowerPoint and Excel.",
+  "long": "Most risk registers die in a spreadsheet. SpaceRisk keeps yours alive by making risk part of every team's month. Each risk is drawn as a bowtie: the threats that could cause it, the event you want to avoid, its consequences, and the barriers in between — coloured by how well they work today. Teams review their risks and check their barriers in a monthly cycle; team leads and project managers attest the result; and executives see everything on one dashboard, from a heat map to a financial view that puts a value on risk and on the controls that reduce it. A barrier panel shows which controls carry the most weight and where the gaps are. Domain bowties draw every risk in a category on one page. Top events, consequences, projects and executive summaries export to PDF, PowerPoint and Excel in one click. SpaceRisk is self-hosted, follows ISO 31000 and comes with 93 realistic showcase companies, from hospitals and airlines to oil platforms and hedge funds.",
+  "boilerplate": "About SpaceRisk: SpaceRisk is a self-hosted risk management application built on ISO 31000. It combines a risk register, monthly team reviews, bowtie analysis, barrier management, project portfolio views and a financial perspective for executives."
+ },
+ "sheet": {
+  "headline": "See every risk — from the team floor to the boardroom.",
+  "sub": "Friendly ISO 31000 risk management with bowties, barriers and a monthly rhythm.",
+  "flow_title": "How risk flows",
+  "features_title": "What you get",
+  "cta": "Install on Cloudron · self-hosted · your data stays with you"
+ },
+ "deck": {
+  "slides": [
+   {
+    "title": "Risk registers die in spreadsheets",
+    "bullets": [
+     "Updated once a year, read by nobody",
+     "Controls are listed, never tested",
+     "Executives see numbers, not barriers",
+     "Projects and teams keep separate lists"
+    ]
+   },
+   {
+    "title": "SpaceRisk in one sentence",
+    "bullets": [
+     "Teams keep their risks and barriers alive every month — and leaders see the whole picture as bowties, heat maps and money."
+    ]
+   },
+   {
+    "title": "The bowtie: one risk on one page",
+    "bullets": [
+     "Threats → preventive barriers → top event → mitigative barriers → consequences",
+     "Barriers coloured by effectiveness",
+     "Gaps shown as dashed red lines"
+    ],
+    "image": "domain-bowtie.png"
+   },
+   {
+    "title": "From team to CEO",
+    "bullets": [
+     "Team members log and review risks",
+     "Team leads check barriers and attest the monthly return",
+     "CEO and CISO get the executive summary"
+    ]
+   },
+   {
+    "title": "From project team to project manager",
+    "bullets": [
+     "Every project is a team with its own risks",
+     "Project managers submit the monthly return",
+     "All projects side by side, exportable"
+    ],
+    "image": "projects.png"
+   },
+   {
+    "title": "A monthly rhythm that sticks",
+    "bullets": [
+     "Every risk reviewed, every owned barrier checked",
+     "Returns can only be submitted when the work is done",
+     "Trends show whether risk is going up or down"
+    ],
+    "image": "executive-dashboard.png"
+   },
+   {
+    "title": "Risk in money",
+    "bullets": [
+     "Total exposure, Value at Risk and expected annual loss",
+     "Before and after barriers",
+     "Return on every krone spent on controls"
+    ],
+    "image": "financial-perspective.png"
+   },
+   {
+    "title": "Ready for the board",
+    "bullets": [
+     "Executive summary with key messages and your comment",
+     "PDF, PowerPoint and Excel for every page, team and project"
+    ],
+    "image": "executive-summary.png"
+   },
+   {
+    "title": "Built for your sector",
+    "bullets": [
+     "93 realistic showcase companies",
+     "From hospitals and airlines to oil platforms and hedge funds",
+     "Load one in a click on a fresh install"
+    ]
+   },
+   {
+    "title": "Get started",
+    "bullets": [
+     "Self-hosted on Cloudron",
+     "Your data stays with you",
+     "Load a showcase and invite your teams today"
+    ]
+   }
+  ]
+ },
+ "social": {
+  "headline": "See every risk — from the team floor to the boardroom.",
+  "sub": "Bowties · barriers · monthly reviews · Value at Risk"
+ }
+}

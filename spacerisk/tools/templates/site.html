@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="{{ c.html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ c.meta.title }}</title>
+<meta name="description" content="{{ c.meta.description }}">
+<meta property="og:title" content="{{ c.meta.title }}">
+<meta property="og:description" content="{{ c.meta.description }}">
+<meta property="og:image" content="../materials/{{ c.lang }}/social/linkedin-1200x627.png">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l.html_lang }}" href="../{{ l.lang }}/">
+{% endfor %}<link rel="icon" href="../assets/icon.png">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#top"><img src="../assets/icon.png" alt="" width="28" height="28"> SpaceRisk</a>
+  <nav>
+    <a href="#bowtie">{{ c.nav.bowtie }}</a><a href="#flow">{{ c.nav.flow }}</a><a href="#features">{{ c.nav.features }}</a>
+    <a href="#screens">{{ c.nav.screens }}</a><a href="#sectors">{{ c.nav.sectors }}</a><a class="pill-link" href="#start">{{ c.nav.start }}</a>
+  </nav>
+  <div class="langs">{% for l in langs %}<a href="../{{ l.lang }}/" {% if l.lang == c.lang %}aria-current="page"{% endif %}>{{ l.lang|upper if l.lang != 'pt-br' else 'PT-BR' }}</a>{% endfor %}</div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">{{ c.hero.eyebrow }}</p>
+    <h1>{{ c.hero.title }}</h1>
+    <p class="lead">{{ c.hero.subtitle }}</p>
+    <p class="ctas"><a class="btn primary" href="#bowtie">{{ c.hero.cta_primary }}</a> <a class="btn" href="#flow">{{ c.hero.cta_secondary }}</a></p>
+  </div>
+  <div class="hero-art" aria-hidden="true">{{ bowtie_svg('hero') }}</div>
+</section>
+
+<section id="bowtie" class="band band-sun">
+  <h2>{{ c.bowtie.title }}</h2>
+  <p class="lead narrow">{{ c.bowtie.intro }}</p>
+  <div class="bowtie-demo" data-bowtie>
+    <div class="labels">
+      <span>{{ c.bowtie.threat }}</span><span>{{ c.bowtie.barrier_p }}</span><span class="ev">{{ c.bowtie.event }}</span><span>{{ c.bowtie.barrier_m }}</span><span>{{ c.bowtie.consequence }}</span>
+    </div>
+    {{ bowtie_svg('demo') }}
+    <div class="toggles" role="group">
+      <label class="switch"><input type="checkbox" data-toggle="prev" checked> <span>{{ c.bowtie.toggle_p }}</span></label>
+      <label class="switch"><input type="checkbox" data-toggle="mit" checked> <span>{{ c.bowtie.toggle_m }}</span></label>
+    </div>
+    <p class="caption" data-caption data-on="{{ c.bowtie.caption_on }}" data-off="{{ c.bowtie.caption_off }}">{{ c.bowtie.caption_on }}</p>
+  </div>
+  <ul class="ticks narrow">{% for t in c.bowtie.explain %}<li>{{ t }}</li>{% endfor %}</ul>
+</section>
+
+<section id="flow" class="band">
+  <h2>{{ c.flow.title }}</h2>
+  <p class="lead narrow">{{ c.flow.intro }}</p>
+  {% for lane, steps, tone in [(c.flow.lane_team, c.flow.steps_team, 'teal'), (c.flow.lane_project, c.flow.steps_project, 'coral')] %}
+  <div class="lane lane-{{ tone }}">
+    <div class="lane-name">{{ lane }}</div>
+    <div class="steps">
+      {% for s in steps %}
+      <div class="step"><div class="who">{{ s.who }}</div><div class="what">{{ s.what }}</div></div>
+      {% if not loop.last %}<div class="arrow" aria-hidden="true"><span class="dot"></span></div>{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+  <p class="note">🛡️ {{ c.flow.barrier_note }}</p>
+</section>
+
+<section id="features" class="band band-mint">
+  <h2>{{ c.features.title }}</h2>
+  <div class="cards">
+    {% for f in c.features["items"] %}
+    <div class="card card-{{ loop.index0 % 4 }}"><div class="icon">{{ icons[f.icon] }}</div><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="screens" class="band">
+  <h2>{{ c.screens.title }}</h2>
+  <div class="shots" tabindex="0">
+    {% for s in c.screens["items"] %}
+    <figure><img src="../assets/screens/{{ s.file }}" alt="{{ s.caption }}" loading="lazy"><figcaption>{{ s.caption }}</figcaption></figure>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="sectors" class="band band-lilac">
+  <h2>{{ c.sectors.title }}</h2>
+  <p class="lead narrow">{{ c.sectors.intro }}</p>
+  <div class="sector-groups">
+    {% for group, labels in c.sectors.groups.items() %}
+    <div class="sector-group"><h3>{{ group }}</h3><div class="chips">{% for l in labels %}<span class="chip">{{ l }}</span>{% endfor %}</div></div>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="start" class="band band-navy">
+  <h2>{{ c.start.title }}</h2>
+  <p class="lead narrow">{{ c.start.text }}</p>
+  <p><a class="btn primary big" href="https://raw.githubusercontent.com/partoneoftwo/cloudron-apps/main/spacerisk/CloudronVersions.json">{{ c.start.cta }}</a></p>
+  <p class="small">{{ c.start.note }}</p>
+  <p class="downloads">
+    <a href="../materials/{{ c.lang }}/spacerisk-product-sheet.pdf">⬇ {{ downloads[0] }}</a> ·
+    <a href="../materials/{{ c.lang }}/spacerisk-sales-deck.pptx">⬇ {{ downloads[1] }}</a> ·
+    <a href="../materials/{{ c.lang }}/texts.md">{{ downloads[2] }}</a>
+  </p>
+</section>
+</main>
+<footer class="foot">{{ c.footer.text }}</footer>
+<script src="../assets/bowtie.js" defer></script>
+</body>
+</html>

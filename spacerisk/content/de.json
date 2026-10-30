@@ -1,0 +1,404 @@
+{
+ "lang": "de",
+ "lang_name": "Deutsch",
+ "html_lang": "de",
+ "meta": {
+  "title": "SpaceRisk — jedes Risiko im Blick, vom Team bis in die Chefetage",
+  "description": "SpaceRisk ist ein benutzerfreundliches Risikoregister nach ISO 31000 mit Bowties, Barrieren, monatlichen Team-Reviews, Projektübersichten und einer Finanzsicht für den CEO."
+ },
+ "nav": {
+  "bowtie": "Bowties",
+  "flow": "Risikofluss",
+  "features": "Funktionen",
+  "screens": "Screenshots",
+  "sectors": "Branchen",
+  "start": "Loslegen"
+ },
+ "hero": {
+  "eyebrow": "Risikomanagement, das wirklich genutzt wird",
+  "title": "Jedes Risiko im Blick — vom Team bis in die Chefetage.",
+  "subtitle": "SpaceRisk macht aus den Risiken Ihrer Teams lebendige Bowties: Was kann schiefgehen, welche Barrieren halten es auf und was würde es kosten? Jeden Monat gelangen die Risiken von den Menschen, die sie am besten kennen, bis zum CEO — und das über alle Projekte hinweg.",
+  "cta_primary": "Bowtie entdecken",
+  "cta_secondary": "So fließen Risiken"
+ },
+ "bowtie": {
+  "title": "Was ist ein Bowtie?",
+  "intro": "Ein Bowtie (Fliegen-Diagramm) zeigt ein Risiko auf einer einzigen Seite. Links die Bedrohungen, die es auslösen können. In der Mitte das Ereignis, das Sie auf keinen Fall erleben wollen. Rechts die Folgen, falls es doch eintritt. Dazwischen stehen Ihre Barrieren — die Maßnahmen, die den Knoten zusammenhalten.",
+  "threat": "Bedrohungen",
+  "barrier_p": "Präventive Barrieren",
+  "event": "Top-Ereignis",
+  "barrier_m": "Mitigierende Barrieren",
+  "consequence": "Folgen",
+  "toggle_p": "Präventive Barrieren",
+  "toggle_m": "Mitigierende Barrieren",
+  "caption_on": "Barrieren greifen: Bedrohungen werden vor dem Top-Ereignis gestoppt, und der Schaden bleibt begrenzt.",
+  "caption_off": "Eine Barriere fehlt: Das Risiko kommt durch. SpaceRisk zeigt diese Lücke als rote gestrichelte Linie.",
+  "explain": [
+   "Grüne, gelbe und rote Balken zeigen, wie gut jede Barriere heute funktioniert.",
+   "Eine Barriere kann viele Risiken absichern — und ihr Zustand ist überall sichtbar, wo sie eingesetzt wird.",
+   "Domänen-Bowties zeigen alle Risiken einer Kategorie in einem Bild: Cyber, Sicherheit, Finanzen und mehr."
+  ]
+ },
+ "flow": {
+  "title": "So fließen Risiken durch Ihre Organisation",
+  "intro": "Risiken gehören den Menschen, die sie am besten kennen. SpaceRisk sorgt dafür, dass sie jeden Monat überprüft werden und bei denen ankommen, die entscheiden.",
+  "lane_team": "Operative Teams",
+  "lane_project": "Projekte",
+  "steps_team": [
+   {
+    "who": "Teammitglied",
+    "what": "Erfasst neue Risiken und überprüft bestehende."
+   },
+   {
+    "who": "Teamleitung",
+    "what": "Prüft die Barrieren des Teams und bestätigt den Monatsbericht."
+   },
+   {
+    "who": "CEO / CISO",
+    "what": "Erhält Management-Zusammenfassung, Heatmap und Finanzsicht — als PDF oder PowerPoint."
+   }
+  ],
+  "steps_project": [
+   {
+    "who": "Projektteam",
+    "what": "Verfolgt Risiken zu Lieferung, Kosten, Sicherheit und Lieferanten."
+   },
+   {
+    "who": "Projektleitung",
+    "what": "Überprüft den Monatsbericht des Projekts und reicht ihn ein."
+   },
+   {
+    "who": "Portfolio-Sicht",
+    "what": "Alle Projekte nebeneinander, exportierbar für den Lenkungsausschuss."
+   }
+  ],
+  "barrier_note": "Barrieren-Verantwortliche bestätigen jeden Monat, dass ihre Maßnahmen noch wirken — oder melden Schwachstellen, bevor etwas versagt."
+ },
+ "features": {
+  "title": "Alles, was Risikoverantwortliche brauchen. Nichts, was sie nicht brauchen.",
+  "items": [
+   {
+    "icon": "register",
+    "title": "Risikoregister nach ISO 31000",
+    "text": "Wahrscheinlichkeit × Auswirkung, Brutto-, Netto- und Zielbewertung, Risikoappetit und Maßnahmenpläne."
+   },
+   {
+    "icon": "cycle",
+    "title": "Monatlicher Review-Zyklus",
+    "text": "Jedes Team überprüft alle seine Risiken und Barrieren, danach reicht die Teamleitung den Bericht ein."
+   },
+   {
+    "icon": "bowtie",
+    "title": "Bowties und Barrieren-Panel",
+    "text": "Bowties pro Risiko und pro Domäne, eine Barrieren-Übersicht und eine Risiko-×-Barrieren-Matrix, die Lücken sichtbar macht."
+   },
+   {
+    "icon": "events",
+    "title": "Top-Ereignisse und Folgen",
+    "text": "Sehen Sie, wovor Sie sich wirklich schützen — nach Domäne gruppiert, über alle Teams hinweg."
+   },
+   {
+    "icon": "money",
+    "title": "Finanzielle Perspektive",
+    "text": "Value at Risk (VaR), erwarteter Jahresverlust vor und nach Barrieren und die Rendite jeder in Maßnahmen investierten Krone."
+   },
+   {
+    "icon": "summary",
+    "title": "Management-Zusammenfassung",
+    "text": "Kernaussagen direkt aus den Daten, ergänzt um Ihren eigenen Kommentar — bereit für den Vorstand."
+   },
+   {
+    "icon": "export",
+    "title": "Export mit einem Klick",
+    "text": "PDF, PowerPoint und Excel für jede Seite, jedes Team und jedes Projekt."
+   },
+   {
+    "icon": "showcase",
+    "title": "93 Branchen-Beispiele",
+    "text": "Starten Sie mit einem realistischen Demo-Unternehmen aus Ihrer Branche — vom Krankenhaus bis zur Ölplattform."
+   }
+  ]
+ },
+ "screens": {
+  "title": "Ein Blick hinein",
+  "items": [
+   {
+    "file": "domain-bowtie.png",
+    "caption": "Ein Domänen-Bowtie: alle Cyberrisiken, ihre Barrieren und Lücken in einem Bild."
+   },
+   {
+    "file": "executive-dashboard.png",
+    "caption": "Das Management-Dashboard: Heatmap, Monatsberichte und Risiken außerhalb des Risikoappetits."
+   },
+   {
+    "file": "financial-perspective.png",
+    "caption": "Die finanzielle Perspektive: Value at Risk, erwarteter Verlust und Rendite der Barrieren."
+   },
+   {
+    "file": "barrier-panel.png",
+    "caption": "Das Barrieren-Panel: jede Maßnahme, ihre Wirksamkeit und ihre monatliche Prüfung."
+   },
+   {
+    "file": "projects.png",
+    "caption": "Alle Projekte auf einen Blick, bereit für den Lenkungsausschuss."
+   },
+   {
+    "file": "executive-summary.png",
+    "caption": "Die Management-Zusammenfassung, auch als PDF und PowerPoint."
+   }
+  ]
+ },
+ "sectors": {
+  "title": "Gemacht für Ihre Branche",
+  "intro": "Wählen Sie eines von 93 Beispielunternehmen und erkunden Sie SpaceRisk mit Risiken und Barrieren aus Ihrer eigenen Welt. Alle Unternehmen sind fiktiv.",
+  "groups": {
+   "Allgemein": [
+    "Allgemeines Beispiel (das Original)",
+    "Allgemeines Unternehmen mit vielen Projekten",
+    "Allgemeines Beispiel, kleiner (etwa 1/3 der Risiken)"
+   ],
+   "Öffentlicher Sektor": [
+    "Staatliches Logistikzentrum",
+    "Behörde"
+   ],
+   "Beratung & Dienstleistungen": [
+    "Anwaltskanzlei",
+    "Unternehmensberatung (groß)",
+    "Internationale Wirtschaftsprüfungsgesellschaft",
+    "Unternehmensberatung (klein)"
+   ],
+   "Technologie": [
+    "KI-Softwareentwicklungsstudio",
+    "Rechenzentrumsbetreiber",
+    "Wie NVIDIA",
+    "KI-Labor",
+    "Neocloud",
+    "FAANG-Konzern",
+    "Hyperscaler",
+    "IT-Infrastrukturbetreiber",
+    "Systemintegrator",
+    "Wie Valve"
+   ],
+   "Telekommunikation": [
+    "Virtueller Netzbetreiber",
+    "Telekommunikationsanbieter"
+   ],
+   "Finanzen": [
+    "Versicherungsmakler",
+    "Versicherungsgesellschaft",
+    "Bank / Finanzdienstleister"
+   ],
+   "Kapitalmarkt & Investment": [
+    "Business Angel",
+    "Rohstoffbörse",
+    "Kryptobörse",
+    "Indexfonds",
+    "Investmentbank",
+    "Hedgefonds",
+    "Wertpapiermakler",
+    "Private Equity",
+    "Dachfonds",
+    "Wertpapierbörse",
+    "Risikokapitalgeber"
+   ],
+   "Energie & Rohstoffe": [
+    "Downstream-Öldienstleister mit vielen Projekten",
+    "Energie (Strom)",
+    "Bohrinsel-Unternehmen (schwimmende Ölplattformen)",
+    "Ölgesellschaft mit 10 Förderanlagen (Ölplattformen)"
+   ],
+   "Industrie & Meeresfrüchte": [
+    "Fischzucht (Lachsfarm)",
+    "Automobilwerk-Integrator",
+    "Automobilwerk",
+    "Wie Kongsberg",
+    "Ein Fortune-500-Industriekonzern",
+    "Elektronikfertigung",
+    "Produktion / Logistik",
+    "Autoteile-Zulieferer"
+   ],
+   "Lebensmittel & Landwirtschaft": [
+    "Beerenplantage",
+    "Ein Landwirt",
+    "Obstplantage",
+    "Industrieller Ackerbau (Kartoffeln)",
+    "Gemüseanbau",
+    "Ein Weingut (Weinproduktion in Chargen)"
+   ],
+   "Transport": [
+    "Nahverkehrsunternehmen: Busse, Straßenbahnen, Züge",
+    "Containerschifffahrt",
+    "Lkw-Logistik (Auflieger)",
+    "Globale Logistik, Seefracht",
+    "Fluggesellschaft, global",
+    "Hubschrauber-Logistik",
+    "Billigfluggesellschaft",
+    "Nationale Eisenbahngesellschaft",
+    "Kreuzfahrtreederei",
+    "Flughafen",
+    "Ro-Ro-Reederei",
+    "Logistikzentrum"
+   ],
+   "Gesundheit, Wissenschaft & Bildung": [
+    "Biologielabor",
+    "Private Hochschule",
+    "Universität",
+    "Krankenhaus",
+    "Ein Pharmaunternehmen wie Novo Nordisk oder Bayer"
+   ],
+   "Einzelhandel": [
+    "Modegeschäft",
+    "Supermarktkette",
+    "Ein Fischmarkt",
+    "Apothekenkette",
+    "Einkaufszentrum-Betreiber"
+   ],
+   "Gastgewerbe & Freizeit": [
+    "Eine 4-Sterne-Hotelkette",
+    "Restaurantkette",
+    "Reiseveranstalter mit Führungen",
+    "Fitnessstudio-Kette",
+    "Ein 3-Sterne-Hotel",
+    "Restaurant",
+    "Eine 5-Sterne-Hotelkette",
+    "Ein Luxus-Resort",
+    "Ein Surf-Resort"
+   ],
+   "Events & Veranstaltungsorte": [
+    "Fußballstadion",
+    "Fußballspiel (Veranstaltung)",
+    "Konzerthalle",
+    "Konzert (Veranstaltung)"
+   ],
+   "Verbraucher": [
+    "Coaching für Langlebigkeit",
+    "Autohaus"
+   ],
+   "Bau": [
+    "Bauunternehmen mit vielen Projekten"
+   ],
+   "Privat": [
+    "Vierköpfige Familie",
+    "Ein Tourist in einem sehr gefährlichen Land"
+   ]
+  }
+ },
+ "start": {
+  "title": "Loslegen",
+  "text": "SpaceRisk läuft auf Ihrem eigenen Server. Installieren Sie es mit wenigen Klicks auf Cloudron, laden Sie ein Beispielunternehmen und laden Sie Ihre Teams ein.",
+  "cta": "Auf Cloudron installieren",
+  "note": "Selbst gehostet · Ihre Daten bleiben bei Ihnen · kein Tracking"
+ },
+ "footer": {
+  "text": "SpaceRisk — benutzerfreundliches Risikomanagement für Teams, Projekte und Vorstände."
+ },
+ "texts": {
+  "taglines": [
+   "Jedes Risiko im Blick — vom Team bis in die Chefetage.",
+   "Bowties, die Ihre Teams wirklich aktuell halten.",
+   "Risiken kennen. Barrieren belegen. Wert zeigen."
+  ],
+  "short": "SpaceRisk ist ein benutzerfreundliches Risikoregister nach ISO 31000: Teams halten ihre Risiken und Barrieren jeden Monat aktuell, und die Führung sieht das Gesamtbild in Bowties, Heatmaps und einer Finanzsicht.",
+  "medium": "SpaceRisk hilft Organisationen, Risiken dort zu steuern, wo sie entstehen: in den Teams. Jeden Monat überprüfen Teammitglieder ihre Risiken und kontrollieren die Barrieren, die davor schützen; Teamleitungen und Projektleitungen reichen einen kurzen Bericht ein; und der CEO erhält eine Management-Zusammenfassung mit Heatmaps, Bowties und einer finanziellen Perspektive — Value at Risk (VaR), erwarteter Verlust und die Rendite der Maßnahmen. Alles lässt sich als PDF, PowerPoint und Excel exportieren.",
+  "long": "Die meisten Risikoregister verstauben in einer Tabelle. SpaceRisk hält Ihres lebendig, indem Risiko fester Bestandteil jedes Teammonats wird. Jedes Risiko wird als Bowtie dargestellt: die Bedrohungen, die es auslösen können, das Ereignis, das Sie vermeiden wollen, seine Folgen und die Barrieren dazwischen — eingefärbt danach, wie gut sie heute wirken. Teams überprüfen ihre Risiken und Barrieren in einem monatlichen Zyklus; Teamleitungen und Projektleitungen bestätigen das Ergebnis; und die Geschäftsleitung sieht alles in einem Dashboard, von der Heatmap bis zur Finanzsicht, die Risiken und den Maßnahmen, die sie senken, einen Wert gibt. Ein Barrieren-Panel zeigt, welche Maßnahmen das meiste Gewicht tragen und wo Lücken bestehen. Domänen-Bowties zeigen alle Risiken einer Kategorie auf einer Seite. Top-Ereignisse, Folgen, Projekte und Management-Zusammenfassungen lassen sich mit einem Klick als PDF, PowerPoint und Excel exportieren. SpaceRisk wird selbst gehostet, folgt ISO 31000 und bringt 93 realistische Beispielunternehmen mit — von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds.",
+  "boilerplate": "Über SpaceRisk: SpaceRisk ist eine selbst gehostete Anwendung für Risikomanagement auf Basis von ISO 31000. Sie vereint Risikoregister, monatliche Team-Reviews, Bowtie-Analyse, Barrierenmanagement, Projektportfolio-Ansichten und eine finanzielle Perspektive für die Geschäftsleitung."
+ },
+ "sheet": {
+  "headline": "Jedes Risiko im Blick — vom Team bis in die Chefetage.",
+  "sub": "Benutzerfreundliches Risikomanagement nach ISO 31000 mit Bowties, Barrieren und einem monatlichen Rhythmus.",
+  "flow_title": "So fließen Risiken",
+  "features_title": "Das bekommen Sie",
+  "cta": "Auf Cloudron installieren · selbst gehostet · Ihre Daten bleiben bei Ihnen"
+ },
+ "deck": {
+  "slides": [
+   {
+    "title": "Risikoregister verstauben in Tabellen",
+    "bullets": [
+     "Einmal im Jahr aktualisiert, von niemandem gelesen",
+     "Maßnahmen werden aufgelistet, aber nie geprüft",
+     "Die Geschäftsleitung sieht Zahlen, keine Barrieren",
+     "Projekte und Teams führen getrennte Listen"
+    ]
+   },
+   {
+    "title": "SpaceRisk in einem Satz",
+    "bullets": [
+     "Teams halten ihre Risiken und Barrieren jeden Monat aktuell — und die Führung sieht das Gesamtbild als Bowties, Heatmaps und in Geld."
+    ]
+   },
+   {
+    "title": "Der Bowtie: ein Risiko auf einer Seite",
+    "bullets": [
+     "Bedrohungen → präventive Barrieren → Top-Ereignis → mitigierende Barrieren → Folgen",
+     "Barrieren nach Wirksamkeit eingefärbt",
+     "Lücken als rote gestrichelte Linien"
+    ],
+    "image": "domain-bowtie.png"
+   },
+   {
+    "title": "Vom Team bis zum CEO",
+    "bullets": [
+     "Teammitglieder erfassen und überprüfen Risiken",
+     "Teamleitungen prüfen Barrieren und bestätigen den Monatsbericht",
+     "CEO und CISO erhalten die Management-Zusammenfassung"
+    ]
+   },
+   {
+    "title": "Vom Projektteam zur Projektleitung",
+    "bullets": [
+     "Jedes Projekt ist ein Team mit eigenen Risiken",
+     "Projektleitungen reichen den Monatsbericht ein",
+     "Alle Projekte nebeneinander, exportierbar"
+    ],
+    "image": "projects.png"
+   },
+   {
+    "title": "Ein Monatsrhythmus, der sich hält",
+    "bullets": [
+     "Jedes Risiko überprüft, jede eigene Barriere kontrolliert",
+     "Berichte lassen sich erst einreichen, wenn die Arbeit erledigt ist",
+     "Trends zeigen, ob das Risiko steigt oder sinkt"
+    ],
+    "image": "executive-dashboard.png"
+   },
+   {
+    "title": "Risiko in Geld",
+    "bullets": [
+     "Gesamtexposition, Value at Risk (VaR) und erwarteter Jahresverlust",
+     "Vor und nach Barrieren",
+     "Rendite jeder in Maßnahmen investierten Krone"
+    ],
+    "image": "financial-perspective.png"
+   },
+   {
+    "title": "Bereit für den Vorstand",
+    "bullets": [
+     "Management-Zusammenfassung mit Kernaussagen und Ihrem Kommentar",
+     "PDF, PowerPoint und Excel für jede Seite, jedes Team und jedes Projekt"
+    ],
+    "image": "executive-summary.png"
+   },
+   {
+    "title": "Gemacht für Ihre Branche",
+    "bullets": [
+     "93 realistische Beispielunternehmen",
+     "Von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds",
+     "Bei einer Neuinstallation mit einem Klick laden"
+    ]
+   },
+   {
+    "title": "Loslegen",
+    "bullets": [
+     "Selbst gehostet auf Cloudron",
+     "Ihre Daten bleiben bei Ihnen",
+     "Laden Sie ein Beispielunternehmen und holen Sie Ihre Teams noch heute dazu"
+    ]
+   }
+  ]
+ },
+ "social": {
+  "headline": "Jedes Risiko im Blick — vom Team bis in die Chefetage.",
+  "sub": "Bowties · Barrieren · monatliche Reviews · Value at Risk"
+ }
+}
