@@ -34,6 +34,10 @@
       <span>{{ c.bowtie.threat }}</span><span>{{ c.bowtie.barrier_p }}</span><span class="ev">{{ c.bowtie.event }}</span><span>{{ c.bowtie.barrier_m }}</span><span>{{ c.bowtie.consequence }}</span>
     </div>
     {{ bowtie_svg('demo') }}
+    <div class="event-row" data-event-row hidden>
+      <button type="button" class="event-btn" data-event aria-pressed="false">{{ c.bowtie.event }}</button>
+      <span class="hint">{{ c.bowtie.event_toggle }}</span>
+    </div>
     <div class="toggles" role="group">
       <label class="switch"><input type="checkbox" data-toggle="prev" checked> <span>{{ c.bowtie.toggle_p }}</span></label>
       <label class="switch"><input type="checkbox" data-toggle="mit" checked> <span>{{ c.bowtie.toggle_m }}</span></label>

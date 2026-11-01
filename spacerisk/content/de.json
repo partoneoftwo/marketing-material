@@ -26,12 +26,13 @@
   "intro": "Ein Bowtie (Fliegen-Diagramm) zeigt ein Risiko auf einer einzigen Seite. Links die Bedrohungen, die es auslösen können. In der Mitte das Ereignis, das Sie auf keinen Fall erleben wollen. Rechts die Folgen, falls es doch eintritt. Dazwischen stehen Ihre Barrieren — die Maßnahmen, die den Knoten zusammenhalten.",
   "threat": "Bedrohungen",
   "barrier_p": "Präventive Barrieren",
-  "event": "Top-Ereignis",
+  "event": "Gefährdungsereignis",
+  "event_toggle": "Klicken Sie auf das Gefährdungsereignis, um alle Barrieren zu aktivieren.",
   "barrier_m": "Mitigierende Barrieren",
   "consequence": "Folgen",
   "toggle_p": "Präventive Barrieren",
   "toggle_m": "Mitigierende Barrieren",
-  "caption_on": "Barrieren greifen: Bedrohungen werden vor dem Top-Ereignis gestoppt, und der Schaden bleibt begrenzt.",
+  "caption_on": "Barrieren greifen: Bedrohungen werden vor dem Gefährdungsereignis gestoppt, und der Schaden bleibt begrenzt.",
   "caption_off": "Eine Barriere fehlt: Das Risiko kommt durch. SpaceRisk zeigt diese Lücke als rote gestrichelte Linie.",
   "explain": [
    "Grüne, gelbe und rote Balken zeigen, wie gut jede Barriere heute funktioniert.",
@@ -94,7 +95,7 @@
    },
    {
     "icon": "events",
-    "title": "Top-Ereignisse und Folgen",
+    "title": "Gefährdungen und Folgen",
     "text": "Sehen Sie, wovor Sie sich wirklich schützen — nach Domäne gruppiert, über alle Teams hinweg."
    },
    {
@@ -174,14 +175,14 @@
    "Technologie": [
     "KI-Softwareentwicklungsstudio",
     "Rechenzentrumsbetreiber",
-    "Wie NVIDIA",
+    "Großer KI-Chip-Entwickler",
     "KI-Labor",
     "Neocloud",
-    "FAANG-Konzern",
+    "Großer Tech-Plattformkonzern",
     "Hyperscaler",
     "IT-Infrastrukturbetreiber",
     "Systemintegrator",
-    "Wie Valve"
+    "PC-Spieleplattform"
    ],
    "Telekommunikation": [
     "Virtueller Netzbetreiber",
@@ -215,8 +216,8 @@
     "Fischzucht (Lachsfarm)",
     "Automobilwerk-Integrator",
     "Automobilwerk",
-    "Wie Kongsberg",
-    "Ein Fortune-500-Industriekonzern",
+    "Großer Rüstungskonzern",
+    "Großer Industriekonzern",
     "Elektronikfertigung",
     "Produktion / Logistik",
     "Autoteile-Zulieferer"
@@ -247,7 +248,7 @@
     "Biologielabor",
     "Private Hochschule",
     "Universität",
-    "Ein Pharmaunternehmen wie Novo Nordisk oder Bayer"
+    "Großes Pharmaunternehmen"
    ],
    "Einzelhandel": [
     "Modegeschäft",
@@ -300,7 +301,7 @@
   ],
   "short": "SpaceRisk ist ein benutzerfreundliches Risikoregister nach ISO 31000: Teams halten ihre Risiken und Barrieren jeden Monat aktuell, und die Führung sieht das Gesamtbild in Bowties, Heatmaps und einer Finanzsicht.",
   "medium": "SpaceRisk hilft Organisationen, Risiken dort zu steuern, wo sie entstehen: in den Teams. Jeden Monat überprüfen Teammitglieder ihre Risiken und kontrollieren die Barrieren, die davor schützen; Teamleitungen und Projektleitungen reichen einen kurzen Bericht ein; und der CEO erhält eine Management-Zusammenfassung mit Heatmaps, Bowties und einer finanziellen Perspektive — Value at Risk (VaR), erwarteter Verlust und die Rendite der Maßnahmen. Alles lässt sich als PDF, PowerPoint und Excel exportieren.",
-  "long": "Die meisten Risikoregister verstauben in einer Tabelle. SpaceRisk hält Ihres lebendig, indem Risiko fester Bestandteil jedes Teammonats wird. Jedes Risiko wird als Bowtie dargestellt: die Bedrohungen, die es auslösen können, das Ereignis, das Sie vermeiden wollen, seine Folgen und die Barrieren dazwischen — eingefärbt danach, wie gut sie heute wirken. Teams überprüfen ihre Risiken und Barrieren in einem monatlichen Zyklus; Teamleitungen und Projektleitungen bestätigen das Ergebnis; und die Geschäftsleitung sieht alles in einem Dashboard, von der Heatmap bis zur Finanzsicht, die Risiken und den Maßnahmen, die sie senken, einen Wert gibt. Ein Barrieren-Panel zeigt, welche Maßnahmen das meiste Gewicht tragen und wo Lücken bestehen. Domänen-Bowties zeigen alle Risiken einer Kategorie auf einer Seite. Top-Ereignisse, Folgen, Projekte und Management-Zusammenfassungen lassen sich mit einem Klick als PDF, PowerPoint und Excel exportieren. SpaceRisk kann von uns gehostet oder selbst gehostet werden, folgt ISO 31000 und bringt 92 realistische Beispielunternehmen mit — von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds.",
+  "long": "Die meisten Risikoregister verstauben in einer Tabelle. SpaceRisk hält Ihres lebendig, indem Risiko fester Bestandteil jedes Teammonats wird. Jedes Risiko wird als Bowtie dargestellt: die Bedrohungen, die es auslösen können, das Ereignis, das Sie vermeiden wollen, seine Folgen und die Barrieren dazwischen — eingefärbt danach, wie gut sie heute wirken. Teams überprüfen ihre Risiken und Barrieren in einem monatlichen Zyklus; Teamleitungen und Projektleitungen bestätigen das Ergebnis; und die Geschäftsleitung sieht alles in einem Dashboard, von der Heatmap bis zur Finanzsicht, die Risiken und den Maßnahmen, die sie senken, einen Wert gibt. Ein Barrieren-Panel zeigt, welche Maßnahmen das meiste Gewicht tragen und wo Lücken bestehen. Domänen-Bowties zeigen alle Risiken einer Kategorie auf einer Seite. Gefährdungen, Folgen, Projekte und Management-Zusammenfassungen lassen sich mit einem Klick als PDF, PowerPoint und Excel exportieren. SpaceRisk kann von uns gehostet oder selbst gehostet werden, folgt ISO 31000 und bringt 92 realistische Beispielunternehmen mit — von Krankenhäusern und Fluggesellschaften bis zu Ölplattformen und Hedgefonds.",
   "boilerplate": "Über SpaceRisk: SpaceRisk ist eine Anwendung für Risikomanagement auf Basis von ISO 31000, von uns gehostet oder selbst gehostet. Sie vereint Risikoregister, monatliche Team-Reviews, Bowtie-Analyse, Barrierenmanagement, Projektportfolio-Ansichten und eine finanzielle Perspektive für die Geschäftsleitung. Kunden besitzen ihre Daten und können sie in vielen Formaten exportieren."
  },
  "sheet": {
@@ -330,7 +331,7 @@
    {
     "title": "Der Bowtie: ein Risiko auf einer Seite",
     "bullets": [
-     "Bedrohungen → präventive Barrieren → Top-Ereignis → mitigierende Barrieren → Folgen",
+     "Bedrohungen → präventive Barrieren → Gefährdungsereignis → mitigierende Barrieren → Folgen",
      "Barrieren nach Wirksamkeit eingefärbt",
      "Lücken als rote gestrichelte Linien"
     ],

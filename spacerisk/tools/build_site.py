@@ -54,7 +54,7 @@ def bowtie_svg(prefix):
             for d in (0, dur / 2):
                 out.append(f'<circle class="{cls}" r="7"><animateMotion dur="{dur}s" begin="{d + i * 0.3:.1f}s" repeatCount="indefinite" path="{path}"/>'
                            f'<animate attributeName="opacity" values="0;1;1;0" dur="{dur}s" begin="{d + i * 0.3:.1f}s" repeatCount="indefinite"/></circle>')
-    out.append(f'<ellipse class="knot" cx="500" cy="{cy}" rx="62" ry="50"/><text class="knot-t" x="500" y="{cy + 14}" text-anchor="middle">!</text>')
+    out.append(f'<g class="knot-g" data-event-knot><ellipse class="knot" cx="500" cy="{cy}" rx="62" ry="50"/><text class="knot-t" x="500" y="{cy + 14}" text-anchor="middle">!</text></g>')
     out.append("</svg>")
     return Markup("".join(out))
 

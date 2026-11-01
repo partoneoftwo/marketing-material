@@ -26,12 +26,13 @@
   "intro": "Um bowtie (diagrama gravata-borboleta) mostra um risco em uma única página. À esquerda, as ameaças que podem causá-lo. No centro, o evento que você nunca quer que aconteça. À direita, o que acontece se ele ocorrer. Entre eles ficam suas barreiras — os controles que mantêm o nó bem amarrado.",
   "threat": "Ameaças",
   "barrier_p": "Barreiras preventivas",
-  "event": "Evento topo",
+  "event": "Evento de perigo",
+  "event_toggle": "Clique no evento de perigo para ativar todas as barreiras.",
   "barrier_m": "Barreiras mitigadoras",
   "consequence": "Consequências",
   "toggle_p": "Barreiras preventivas",
   "toggle_m": "Barreiras mitigadoras",
-  "caption_on": "Barreiras no lugar: as ameaças são detidas antes do evento topo e o dano fica contido.",
+  "caption_on": "Barreiras no lugar: as ameaças são detidas antes do evento de perigo e o dano fica contido.",
   "caption_off": "Falta uma barreira: o risco passa. O SpaceRisk mostra essa lacuna como uma linha vermelha tracejada.",
   "explain": [
    "Barras verdes, amarelas e vermelhas mostram o quanto cada barreira funciona hoje.",
@@ -94,7 +95,7 @@
    },
    {
     "icon": "events",
-    "title": "Eventos topo e consequências",
+    "title": "Perigos e consequências",
     "text": "Veja contra o que você está realmente se protegendo, agrupado por domínio, em todas as equipes."
    },
    {
@@ -174,14 +175,14 @@
    "Tecnologia": [
     "Estúdio de desenvolvimento de software com IA",
     "Empresa de datacenter",
-    "Estilo NVIDIA",
+    "Grande projetista de chips de IA",
     "Laboratório de IA",
     "Neocloud",
-    "Empresa FAANG",
+    "Grande empresa de plataforma de tecnologia",
     "Hyperscaler",
     "Operadora de infraestrutura de TI",
     "Integradora de sistemas",
-    "Estilo Valve"
+    "Empresa de plataforma de jogos para PC"
    ],
    "Telecomunicações": [
     "Operadora de telecom virtual",
@@ -215,8 +216,8 @@
     "Produtor de pescados (salmonicultura)",
     "Integradora de fábrica de automóveis",
     "Fábrica de automóveis",
-    "Estilo Kongsberg",
-    "Um conglomerado industrial da Fortune 500",
+    "Grande empresa de defesa",
+    "Grande conglomerado industrial",
     "Fábrica de dispositivos eletrônicos",
     "Manufatura / logística",
     "Fabricante de autopeças"
@@ -247,7 +248,7 @@
     "Laboratório de biologia",
     "Faculdade particular",
     "Universidade",
-    "Uma empresa farmacêutica como Novo Nordisk ou Bayer"
+    "Grande empresa farmacêutica"
    ],
    "Varejo": [
     "Loja de moda",
@@ -300,7 +301,7 @@
   ],
   "short": "O SpaceRisk é um registro de riscos ISO 31000 fácil de usar, em que as equipes mantêm seus riscos e barreiras atualizados todo mês e os líderes enxergam o quadro completo em bowties, mapas de calor e uma visão financeira.",
   "medium": "O SpaceRisk ajuda as organizações a gerenciar o risco onde ele vive: nas equipes. Todo mês, os membros das equipes revisam seus riscos e verificam as barreiras que os protegem; líderes de equipe e gerentes de projeto enviam um breve relatório; e o CEO recebe um resumo executivo com mapas de calor, bowties e uma perspectiva financeira — Valor em Risco (VaR), perda esperada e o retorno dos controles. Tudo pode ser exportado para PDF, PowerPoint e Excel.",
-  "long": "A maioria dos registros de riscos morre numa planilha. O SpaceRisk mantém o seu vivo ao tornar o risco parte do mês de cada equipe. Cada risco é desenhado como um bowtie: as ameaças que podem causá-lo, o evento que você quer evitar, suas consequências e as barreiras entre eles — coloridas de acordo com o quanto funcionam hoje. As equipes revisam seus riscos e verificam suas barreiras em um ciclo mensal; líderes de equipe e gerentes de projeto atestam o resultado; e os executivos veem tudo em um único painel, do mapa de calor a uma visão financeira que atribui valor ao risco e aos controles que o reduzem. Um painel de barreiras mostra quais controles têm mais peso e onde estão as lacunas. Os bowties por domínio reúnem todos os riscos de uma categoria em uma só página. Eventos topo, consequências, projetos e resumos executivos são exportados para PDF, PowerPoint e Excel com um clique. O SpaceRisk pode ser hospedado por nós ou auto-hospedado, segue a ISO 31000 e vem com 92 empresas de vitrine realistas, de hospitais e companhias aéreas a plataformas de petróleo e hedge funds.",
+  "long": "A maioria dos registros de riscos morre numa planilha. O SpaceRisk mantém o seu vivo ao tornar o risco parte do mês de cada equipe. Cada risco é desenhado como um bowtie: as ameaças que podem causá-lo, o evento que você quer evitar, suas consequências e as barreiras entre eles — coloridas de acordo com o quanto funcionam hoje. As equipes revisam seus riscos e verificam suas barreiras em um ciclo mensal; líderes de equipe e gerentes de projeto atestam o resultado; e os executivos veem tudo em um único painel, do mapa de calor a uma visão financeira que atribui valor ao risco e aos controles que o reduzem. Um painel de barreiras mostra quais controles têm mais peso e onde estão as lacunas. Os bowties por domínio reúnem todos os riscos de uma categoria em uma só página. Perigos, consequências, projetos e resumos executivos são exportados para PDF, PowerPoint e Excel com um clique. O SpaceRisk pode ser hospedado por nós ou auto-hospedado, segue a ISO 31000 e vem com 92 empresas de vitrine realistas, de hospitais e companhias aéreas a plataformas de petróleo e hedge funds.",
   "boilerplate": "Sobre o SpaceRisk: o SpaceRisk é um aplicativo de gestão de riscos baseado na ISO 31000, hospedado por nós ou auto-hospedado. Ele combina registro de riscos, revisões mensais das equipes, análise bowtie, gestão de barreiras, visão de portfólio de projetos e uma perspectiva financeira para executivos. Os clientes são donos dos seus dados e podem exportá-los em vários formatos."
  },
  "sheet": {
@@ -330,7 +331,7 @@
    {
     "title": "O bowtie: um risco em uma página",
     "bullets": [
-     "Ameaças → barreiras preventivas → evento topo → barreiras mitigadoras → consequências",
+     "Ameaças → barreiras preventivas → evento de perigo → barreiras mitigadoras → consequências",
      "Barreiras coloridas conforme a eficácia",
      "Lacunas exibidas como linhas vermelhas tracejadas"
     ],

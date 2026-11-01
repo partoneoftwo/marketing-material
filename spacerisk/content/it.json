@@ -26,12 +26,13 @@
   "intro": "Un bowtie (diagramma a farfallino) mostra un rischio in una sola pagina. A sinistra, le minacce che potrebbero causarlo. Al centro, l'evento che non vorrebbe mai vedere accadere. A destra, ciò che succede se si verifica. In mezzo, le Sue barriere — i controlli che tengono stretto il nodo.",
   "threat": "Minacce",
   "barrier_p": "Barriere preventive",
-  "event": "Evento principale (top event)",
+  "event": "Evento pericoloso",
+  "event_toggle": "Prema l'evento pericoloso per attivare tutte le barriere.",
   "barrier_m": "Barriere mitigative",
   "consequence": "Conseguenze",
   "toggle_p": "Barriere preventive",
   "toggle_m": "Barriere mitigative",
-  "caption_on": "Barriere attive: le minacce vengono fermate prima dell'evento principale e i danni restano contenuti.",
+  "caption_on": "Barriere attive: le minacce vengono fermate prima dell'evento pericoloso e i danni restano contenuti.",
   "caption_off": "Manca una barriera: il rischio passa. SpaceRisk evidenzia questa lacuna con una linea rossa tratteggiata.",
   "explain": [
    "Le barre verdi, gialle e rosse indicano quanto funziona oggi ciascuna barriera.",
@@ -94,7 +95,7 @@
    },
    {
     "icon": "events",
-    "title": "Eventi principali e conseguenze",
+    "title": "Pericoli e conseguenze",
     "text": "Veda da cosa si sta davvero proteggendo, raggruppato per dominio, in tutti i team."
    },
    {
@@ -174,14 +175,14 @@
    "Tecnologia": [
     "Studio di sviluppo software AI",
     "Azienda di data center",
-    "Tipo NVIDIA",
+    "Grande progettista di chip IA",
     "Laboratorio di AI",
     "Neocloud",
-    "Azienda FAANG",
+    "Grande piattaforma tecnologica",
     "Hyperscaler",
     "Operatore di infrastrutture IT",
     "System integrator",
-    "Tipo Valve"
+    "Piattaforma di videogiochi per PC"
    ],
    "Telecomunicazioni": [
     "Operatore di telefonia virtuale",
@@ -215,8 +216,8 @@
     "Produttore ittico (allevamento di salmoni)",
     "Integratore di stabilimenti automobilistici",
     "Stabilimento automobilistico",
-    "Tipo Kongsberg",
-    "Un conglomerato industriale di Fortune 500",
+    "Grande azienda della difesa",
+    "Grande conglomerato industriale",
     "Stabilimento di produzione di dispositivi elettronici",
     "Produzione / logistica",
     "Produttore di componenti per auto"
@@ -247,7 +248,7 @@
     "Laboratorio di biologia",
     "Istituto universitario privato",
     "Università",
-    "Un'azienda farmaceutica come Novo Nordisk o Bayer"
+    "Grande azienda farmaceutica"
    ],
    "Commercio al dettaglio": [
     "Negozio di abbigliamento e moda",
@@ -300,7 +301,7 @@
   ],
   "short": "SpaceRisk è un registro dei rischi ISO 31000 semplice e intuitivo, in cui i team aggiornano ogni mese rischi e barriere e i vertici aziendali vedono il quadro completo attraverso bowtie, mappe di calore e una vista finanziaria.",
   "medium": "SpaceRisk aiuta le organizzazioni a gestire il rischio là dove nasce: nei team. Ogni mese i membri del team rivedono i propri rischi e verificano le barriere che li proteggono; responsabili di team e project manager inviano un breve report mensile; e il CEO riceve una sintesi direzionale con mappe di calore, bowtie e una prospettiva finanziaria — Value at Risk (VaR), perdita attesa e ritorno dei controlli. Tutto è esportabile in PDF, PowerPoint ed Excel.",
-  "long": "La maggior parte dei registri dei rischi finisce dimenticata in un foglio di calcolo. SpaceRisk mantiene vivo il Suo, rendendo il rischio parte del mese di ogni team. Ogni rischio è rappresentato come un bowtie: le minacce che potrebbero causarlo, l'evento da evitare, le sue conseguenze e le barriere nel mezzo — colorate in base a quanto funzionano oggi. I team rivedono i propri rischi e verificano le proprie barriere in un ciclo mensile; responsabili di team e project manager attestano il risultato; e i dirigenti vedono tutto in un'unica dashboard, dalla mappa di calore a una vista finanziaria che attribuisce un valore al rischio e ai controlli che lo riducono. Un pannello delle barriere mostra quali controlli hanno il peso maggiore e dove si trovano le lacune. I bowtie di dominio riuniscono in una pagina tutti i rischi di una categoria. Eventi principali, conseguenze, progetti e sintesi direzionali si esportano in PDF, PowerPoint ed Excel con un clic. SpaceRisk può essere ospitato da noi o installato in self-hosting, segue la norma ISO 31000 e include 92 aziende dimostrative realistiche, da ospedali e compagnie aeree a piattaforme petrolifere e hedge fund.",
+  "long": "La maggior parte dei registri dei rischi finisce dimenticata in un foglio di calcolo. SpaceRisk mantiene vivo il Suo, rendendo il rischio parte del mese di ogni team. Ogni rischio è rappresentato come un bowtie: le minacce che potrebbero causarlo, l'evento da evitare, le sue conseguenze e le barriere nel mezzo — colorate in base a quanto funzionano oggi. I team rivedono i propri rischi e verificano le proprie barriere in un ciclo mensile; responsabili di team e project manager attestano il risultato; e i dirigenti vedono tutto in un'unica dashboard, dalla mappa di calore a una vista finanziaria che attribuisce un valore al rischio e ai controlli che lo riducono. Un pannello delle barriere mostra quali controlli hanno il peso maggiore e dove si trovano le lacune. I bowtie di dominio riuniscono in una pagina tutti i rischi di una categoria. Pericoli, conseguenze, progetti e sintesi direzionali si esportano in PDF, PowerPoint ed Excel con un clic. SpaceRisk può essere ospitato da noi o installato in self-hosting, segue la norma ISO 31000 e include 92 aziende dimostrative realistiche, da ospedali e compagnie aeree a piattaforme petrolifere e hedge fund.",
   "boilerplate": "Informazioni su SpaceRisk: SpaceRisk è un'applicazione di gestione del rischio basata sulla norma ISO 31000, disponibile con hosting gestito da noi o in self-hosting. Combina registro dei rischi, revisioni mensili dei team, analisi bowtie, gestione delle barriere, viste di portafoglio dei progetti e una prospettiva finanziaria per i dirigenti. I clienti restano proprietari dei propri dati e possono esportarli in molti formati."
  },
  "sheet": {
@@ -330,7 +331,7 @@
    {
     "title": "Il bowtie: un rischio in una pagina",
     "bullets": [
-     "Minacce → barriere preventive → evento principale (top event) → barriere mitigative → conseguenze",
+     "Minacce → barriere preventive → evento pericoloso → barriere mitigative → conseguenze",
      "Barriere colorate in base all'efficacia",
      "Lacune evidenziate da linee rosse tratteggiate"
     ],
