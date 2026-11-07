@@ -1,0 +1,173 @@
+{
+ "lang": "nb",
+ "html_lang": "nb",
+ "lang_name": "Norsk (bokmål)",
+ "app_lang": "nb",
+ "meta": {
+  "title": "SpaceRisk · Risikostyring som teamene faktisk bruker",
+  "description": "SpaceRisk er et risikoregister etter ISO 31000 med sløyfediagrammer, barrierer og månedlige gjennomganger per team, et økonomisk bilde for ledelsen, ISO 27001 og andre rammeverk, og et cyberprogram bygget på reelle sikkerhetsfunn."
+ },
+ "nav": {
+  "skip": "Gå til innholdet",
+  "product": "Produkt",
+  "compliance": "Samsvar",
+  "security": "Sikkerhet",
+  "pricing": "Priser",
+  "contact": "Kontakt oss",
+  "language": "Språk",
+  "home": "SpaceRisk forside"
+ },
+ "hero": {
+  "eyebrow": "Risikostyring etter ISO 31000",
+  "title": "Hver risiko, fra teamet til styrerommet.",
+  "subtitle": "SpaceRisk gjør risikoene teamene kjenner til, om til levende sløyfediagrammer, kontrollerer barrierene som stopper dem hver måned, og viser ledelsen hva det kan koste.",
+  "cta_primary": "Snakk med oss",
+  "cta_secondary": "Se priser",
+  "note": "Driftet av oss eller på egne servere. Dataene er alltid deres."
+ },
+ "sectors": {
+  "label": "Med demodata for",
+  "items": ["Bank", "Forsikring", "Sykehus", "Olje og gass", "Kraft", "Programvare", "Offentlig sektor", "Logistikk", "Bygg og anlegg", "Varehandel"]
+ },
+ "loop": {
+  "eyebrow": "Slik virker det",
+  "title": "ISO 31000-sløyfen, bygget inn i måneden.",
+  "text": "Ikke et eget risikoprosjekt som går ut på dato. SpaceRisk gjør standarden til en enkel månedlig rytme som alle team kan følge.",
+  "steps": [
+   {"title": "Sett kriteriene", "text": "Én skala for sannsynlighet og konsekvens, risikoappetitten og kategoriene deres."},
+   {"title": "Identifiser", "text": "Team og prosjekter registrerer hva som kan gå galt, der de jobber."},
+   {"title": "Analyser og evaluer", "text": "Iboende risiko, restrisiko og målrisiko, målt mot risikoappetitten."},
+   {"title": "Håndter", "text": "Barrierer og tiltak med eiere og frister."},
+   {"title": "Overvåk og gjennomgå", "text": "Hver måned gjennomgår hvert team risikoene sine, kontrollerer barrierene og leverer månedsrapporten."}
+  ]
+ },
+ "bowtie": {
+  "eyebrow": "Sløyfediagrammer og barrierer",
+  "title": "Se hva som står mellom en trussel og skaden.",
+  "text": "Hver risiko er et sløyfediagram (bowtie): truslene til venstre, konsekvensene til høyre og barrierene imellom. Barrierene ligger i ett felles register, så ett tiltak kan beskytte mange risikoer, og dere ser med en gang når en svak barriere bærer for mye.",
+  "points": [
+   "Forebyggende og konsekvensreduserende barrierer, med effektivitet og dato for siste test",
+   "Et barrierepanel for hele virksomheten, gruppert etter eierteam eller type",
+   "Eskaleringsfaktorer, og barrierene som beskytter barrierene"
+  ],
+  "labels": {"threats": "Trusler", "hazard": "Farehendelse", "consequences": "Konsekvenser", "preventive": "Forebyggende barrierer", "mitigating": "Konsekvensreduserende barrierer"}
+ },
+ "reviews": {
+  "eyebrow": "Månedlige gjennomganger",
+  "title": "Én rytme for alle team.",
+  "text": "Hver måned gjennomgår teamet alle risikoene det eier og kontrollerer hver barriere, og så leverer teamlederen månedsrapporten. Dere vet alltid hvem som er à jour, og trenden for hver risiko bygger seg selv.",
+  "points": [
+   "Oversikter per team og prosjekt, med risikomatrise og trenden for hver risiko",
+   "Månedsrapporten kan bare leveres når alle risikoene er gjennomgått",
+   "En kommentar for hver måned, og hele historikken for revisor"
+  ],
+  "steps": ["Gjennomgå hver risiko", "Kontrollere hver barriere teamet eier", "Skrive en kommentar for måneden", "Levere månedsrapporten"]
+ },
+ "executive": {
+  "eyebrow": "For ledelsen",
+  "title": "Risiko på styrets språk.",
+  "text": "SpaceRisk setter en pris på eksponeringen: forventet tap, en simulert Value at Risk før og etter barrierene, og avkastningen på det barrierene koster. Lederoppsummeringen skriver sine egne hovedbudskap og er klar til å presenteres.",
+  "stats": [
+   {"value": "VaR 95 %", "label": "simulert, før og etter barrierene"},
+   {"value": "1 klikk", "label": "lederoppsummering som PDF eller PowerPoint"},
+   {"value": "Excel", "label": "alle registre, klare til analyse"}
+  ]
+ },
+ "compliance": {
+  "eyebrow": "Samsvar",
+  "title": "Ett styringssystem, mange standarder.",
+  "text": "Slå på rammeverkene dere trenger. Hvert av dem viser sin Planlegg–Utfør–Kontroller–Korriger-sløyfe med framdrift og neste steg, og de deler de samme registrene: interessenter, juridiske forpliktelser, mål, dokumenter, revisjoner, ledelsens gjennomganger og avvik.",
+  "live": "Tilgjengelig",
+  "coming": "Kommer",
+  "items": [
+   {"name": "ISO/IEC 27001 og 27002", "text": "Punkt 4–10, alle 93 kontroller, en erklæring om anvendelse, ISMS-sløyfen og eksport klar for revisjon.", "state": "live"},
+   {"name": "ISO 22301", "text": "Kontinuitetsstyring: sløyfen for styringssystemet og hvert krav, med eiere og dokumentasjon.", "state": "live"},
+   {"name": "ISO 45001", "text": "Arbeidsmiljø og sikkerhet, med medvirkning fra arbeidstakerne og lovkrav.", "state": "live"},
+   {"name": "NIS2 og DORA", "text": "Frister for hendelsesrapportering, leverandørregistre og testing av motstandsdyktighet.", "state": "coming"},
+   {"name": "GDPR og ISO 27701", "text": "Protokoll over behandlingsaktiviteter, DPIA og henvendelser fra de registrerte.", "state": "coming"},
+   {"name": "ISO 42001 og CRA", "text": "Styringssystem for KI og produktsikkerhet etter Cyber Resilience Act.", "state": "coming"}
+  ],
+  "note": "Veiledning, ikke juridisk rådgivning. Kravtekstene er skrevet med våre egne ord."
+ },
+ "security": {
+  "eyebrow": "Cyberprogram",
+  "title": "Fra sikkerhetsfunn til en treårsplan.",
+  "text": "Last opp resultater fra verktøyene teamet allerede bruker. SpaceRisk gjør funnene om til dokumentasjon på de riktige ISO-kontrollene, finner de korteste angrepsveiene til domeneadministratorene og foreslår et prioritert program på et transformasjonskart dere kan ta rett til styret.",
+  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "points": [
+   "Funn, trender og utbedringer per mål, på tvers av alle kjøringer",
+   "Angrepsveier til Tier 0 fra Active Directory-data",
+   "Et poengsatt transformasjonskart, eksportert til PowerPoint og PDF"
+  ]
+ },
+ "agents": {
+  "eyebrow": "Agenter og API",
+  "title": "La agentene ta papirarbeidet. Folk bestemmer fortsatt.",
+  "text": "Skript og KI-agenter får egne tokens og et dokumentert REST-API. De melder og gjennomgår risikoer, kontrollerer barrierer og laster opp verktøyresultater. I forslagsmodus venter hver endring i en innboks til en person godkjenner den.",
+  "points": ["OpenAPI-dokumentasjon", "Hvert forslag sjekkes før noen godkjenner det", "Agent-tokens lagres som hash"],
+  "inbox": "venter på godkjenning i innboksen",
+  "stored": "resultater lagret"
+ },
+ "showcases": {
+  "eyebrow": "Demodata",
+  "title": "92 virksomheter å utforske, fra banker til sykehus.",
+  "text": "Start i en verden dere kjenner igjen. Hvert eksempel er en fiktiv virksomhet med egne team, risikoer, barrierer og historikk, klar på minutter. Hvert eksempel har en lederoppsummering som PDF."
+ },
+ "trust": {
+  "title": "Bygget for å være til å stole på.",
+  "items": [
+   {"title": "Driftet av oss eller selv", "text": "Vi drifter det for dere, eller dere kjører det på egne servere, på Intel eller ARM."},
+   {"title": "Dataene er deres", "text": "Eksporter alt som PDF, PowerPoint, Excel eller en komplett sikkerhetskopi av databasen, når som helst."},
+   {"title": "Tilgang etter rolle", "text": "Ledelsen ser alt. Team ser sitt eget. Pengene er forbeholdt ledelsen."},
+   {"title": "Sju språk", "text": "Engelsk, norsk, tysk, spansk, fransk, italiensk og portugisisk, for hver bruker."}
+  ]
+ },
+ "pricing_teaser": {
+  "title": "Én årspris. Alle funksjoner.",
+  "text": "Planene følger antallet team som bruker SpaceRisk, fra små virksomheter til hele konsernet.",
+  "cta": "Se priser"
+ },
+ "contact": {
+  "title": "Se SpaceRisk med deres egne risikoer.",
+  "text": "Fortell oss om virksomheten, så setter vi opp et eksempel som ligner deres.",
+  "cta": "Kontakt oss",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "SpaceRisk"
+ },
+ "footer": {
+  "tagline": "Risikostyring som teamene faktisk bruker.",
+  "classic": "Klassisk nettsted",
+  "privacy": "Ingen informasjonskapsler. Ingen sporing."
+ },
+ "shots": {
+  "dashboard": "Ledelsens risikooversikt med månedsrapportene og risikomatrisen for restrisiko",
+  "bowtie": "En risiko tegnet som sløyfediagram, med trusler, barrierer og konsekvenser",
+  "panel": "Barrierepanelet: hver barriere og effektiviteten",
+  "summary": "Lederoppsummeringen, med hovedbudskap, Value at Risk og risikomatrisen",
+  "iso": "Modenhet for ISO 27001 og ISMS-sløyfen",
+  "compliance": "ISO 22301 kontinuitetsstyring: sløyfen for styringssystemet og kravene",
+  "cyber": "Transformasjonskartet for cybersikkerhet over tre år",
+  "paths": "SharpHound-resultater med de korteste angrepsveiene til Tier 0"
+ },
+ "pricing": {
+  "title": "Enkle priser per år",
+  "intro": "Én årspris per virksomhet, ut fra hvor mange team som bruker SpaceRisk. Alle planer har alle funksjoner.",
+  "currency": "Valuta",
+  "per_year": "per år",
+  "names": ["Small", "Business", "Enterprise"],
+  "teams": ["Opptil 5 team", "Opptil 10 team", "Ubegrenset antall team"],
+  "popular": "Mest valgt",
+  "included_title": "Alle planer inkluderer",
+  "included": [
+   "Risikoregister, sløyfediagrammer, barrierer og månedlige gjennomganger",
+   "Prosjekter, det økonomiske bildet og lederoppsummeringen",
+   "ISO 27001, ISO 22301 og ISO 45001",
+   "Kart for cyberprogrammet og import fra sikkerhetsverktøy",
+   "Agent-API med godkjenningsinnboks",
+   "Eksport til PDF, PowerPoint og Excel, og fullstendige sikkerhetskopier",
+   "Driftet av oss eller på egne servere"
+  ],
+  "cta": "Kontakt oss",
+  "note": "Spørsmål om planer, drift eller større utrullinger? Ta kontakt."
+ }
+}

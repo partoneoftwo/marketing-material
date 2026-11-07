@@ -82,7 +82,7 @@ def main():
     (OUT / "index.html").write_text(
         '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="color-scheme" content="light only"><title>SpaceRisk</title>\n'
         f'<script>var have={codes},want=(navigator.languages||[navigator.language||"en"]).map(function(x){{x=x.toLowerCase();'
-        'return x.indexOf("pt")===0?"pt-br":/^(nb|nn|no)\\b/.test(x)?"nb":x.slice(0,2)}}),pick="en";'
+        'return x.indexOf("pt")===0?"pt-br":/^(nb|nn|no)\\b/.test(x)?"nb":x.slice(0,2)}),pick="en";'
         'for(var i=0;i<want.length;i++){if(have.indexOf(want[i])>=0){pick=want[i];break}}location.replace(pick+"/");</script>\n'
         '<meta http-equiv="refresh" content="1; url=en/"></head><body style="background:#fff"><a href="en/">SpaceRisk</a></body></html>\n')
     (OUT / "assets" / "mark.svg").write_text(str(MARK).replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"'))

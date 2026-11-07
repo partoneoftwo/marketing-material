@@ -1,0 +1,173 @@
+{
+ "lang": "de",
+ "html_lang": "de",
+ "lang_name": "Deutsch",
+ "app_lang": "de",
+ "meta": {
+  "title": "SpaceRisk · Risikomanagement, das Ihre Teams wirklich nutzen",
+  "description": "SpaceRisk ist ein Risikoregister nach ISO 31000 mit Bowties, Barrieren und monatlichen Teamüberprüfungen, einer Finanzsicht für die Geschäftsleitung, ISO 27001 und weiteren Compliance-Frameworks sowie einem Cyber-Programm auf Basis echter Sicherheitsbefunde."
+ },
+ "nav": {
+  "skip": "Zum Inhalt",
+  "product": "Produkt",
+  "compliance": "Compliance",
+  "security": "Sicherheit",
+  "pricing": "Preise",
+  "contact": "Kontakt",
+  "language": "Sprache",
+  "home": "SpaceRisk Startseite"
+ },
+ "hero": {
+  "eyebrow": "Risikomanagement nach ISO 31000",
+  "title": "Jedes Risiko, vom Team bis in den Vorstand.",
+  "subtitle": "SpaceRisk macht aus den Risiken, die Ihre Teams kennen, lebendige Bowties, prüft jeden Monat die Barrieren, die sie aufhalten, und zeigt der Geschäftsleitung, was es kosten würde.",
+  "cta_primary": "Sprechen Sie mit uns",
+  "cta_secondary": "Preise ansehen",
+  "note": "Von uns gehostet oder auf Ihren eigenen Servern. Ihre Daten gehören immer Ihnen."
+ },
+ "sectors": {
+  "label": "Mit Beispielunternehmen für",
+  "items": ["Banken", "Versicherungen", "Krankenhäuser", "Öl und Gas", "Energie", "Software", "Öffentlicher Sektor", "Logistik", "Bauwesen", "Handel"]
+ },
+ "loop": {
+  "eyebrow": "So funktioniert es",
+  "title": "Der ISO-31000-Kreislauf, eingebaut in den Monat.",
+  "text": "Kein separates Risikoprojekt, das veraltet. SpaceRisk setzt die Norm als einfachen Monatsrhythmus um, dem jedes Team folgen kann.",
+  "steps": [
+   {"title": "Kriterien festlegen", "text": "Eine Skala für Wahrscheinlichkeit und Auswirkung, Ihre Risikobereitschaft und Ihre Kategorien."},
+   {"title": "Identifizieren", "text": "Teams und Projekte erfassen, was schiefgehen kann – dort, wo sie arbeiten."},
+   {"title": "Analysieren und bewerten", "text": "Brutto-, Netto- und Zielrisiko, gemessen an der Risikobereitschaft."},
+   {"title": "Behandeln", "text": "Barrieren und Maßnahmen mit Verantwortlichen und Fristen."},
+   {"title": "Überwachen und überprüfen", "text": "Jeden Monat prüft jedes Team seine Risiken und Barrieren und reicht seine Meldung ein."}
+  ]
+ },
+ "bowtie": {
+  "eyebrow": "Bowties und Barrieren",
+  "title": "Sehen Sie, was zwischen einer Bedrohung und dem Schaden steht.",
+  "text": "Jedes Risiko ist ein Bowtie: die Bedrohungen links, die Auswirkungen rechts und die Barrieren dazwischen. Barrieren liegen in einem gemeinsamen Register, so schützt eine Kontrolle viele Risiken, und Sie sehen sofort, wenn eine schwache zu viel trägt.",
+  "points": [
+   "Präventive und mindernde Barrieren, mit Wirksamkeit und dem Datum des letzten Tests",
+   "Ein Barrieren-Panel für die ganze Organisation, gruppiert nach verantwortlichem Team oder Typ",
+   "Eskalationsfaktoren und die Barrieren, die die Barrieren schützen"
+  ],
+  "labels": {"threats": "Bedrohungen", "hazard": "Gefährdungsereignis", "consequences": "Auswirkungen", "preventive": "Präventive Barrieren", "mitigating": "Mindernde Barrieren"}
+ },
+ "reviews": {
+  "eyebrow": "Monatsüberprüfungen",
+  "title": "Ein Rhythmus für jedes Team.",
+  "text": "Jeden Monat überprüft das Team alle eigenen Risiken und jede Barriere, dann reicht die Teamleitung die Meldung ein. Sie wissen immer, wer auf dem neuesten Stand ist, und der Trend jedes Risikos entsteht von selbst.",
+  "points": [
+   "Team- und Projekt-Dashboards mit Heatmap und dem Trend jedes Risikos",
+   "Meldungen lassen sich erst einreichen, wenn jedes Risiko überprüft ist",
+   "Ein Kommentar für jeden Monat und die ganze Historie für die Revision"
+  ],
+  "steps": ["Jedes Risiko überprüfen", "Jede Barriere des Teams prüfen", "Einen Monatskommentar schreiben", "Die Meldung einreichen"]
+ },
+ "executive": {
+  "eyebrow": "Für die Geschäftsleitung",
+  "title": "Risiko in der Sprache des Vorstands.",
+  "text": "SpaceRisk beziffert das Risiko: erwarteter Verlust, ein simulierter Value at Risk vor und nach den Barrieren und die Rendite dessen, was die Barrieren kosten. Die Management-Zusammenfassung formuliert ihre Kernaussagen selbst und ist bereit zur Präsentation.",
+  "stats": [
+   {"value": "VaR 95 %", "label": "simuliert, vor und nach den Barrieren"},
+   {"value": "1 Klick", "label": "Management-Zusammenfassung als PDF oder PowerPoint"},
+   {"value": "Excel", "label": "jedes Register, bereit zur Analyse"}
+  ]
+ },
+ "compliance": {
+  "eyebrow": "Compliance",
+  "title": "Ein Managementsystem, viele Normen.",
+  "text": "Schalten Sie die Frameworks ein, die Sie brauchen. Jedes zeigt seinen Plan-Do-Check-Act-Kreislauf mit aktuellem Fortschritt und Ihren nächsten Schritten, und alle teilen dieselben Register: interessierte Parteien, rechtliche Pflichten, Ziele, Dokumente, Audits, Managementbewertungen und Nichtkonformitäten.",
+  "live": "Verfügbar",
+  "coming": "Demnächst",
+  "items": [
+   {"name": "ISO/IEC 27001 und 27002", "text": "Abschnitte 4–10, alle 93 Controls, eine Erklärung zur Anwendbarkeit, der ISMS-Kreislauf und prüfungsfertige Exporte.", "state": "live"},
+   {"name": "ISO 22301", "text": "Business Continuity: der BCMS-Kreislauf und jede Anforderung, mit Verantwortlichen und Nachweisen.", "state": "live"},
+   {"name": "ISO 45001", "text": "Arbeitsschutz, mit Beteiligung der Beschäftigten und rechtlichen Anforderungen.", "state": "live"},
+   {"name": "NIS2 und DORA", "text": "Meldefristen für Vorfälle, Dienstleisterregister und Resilienztests.", "state": "coming"},
+   {"name": "DSGVO und ISO 27701", "text": "Verzeichnis der Verarbeitungstätigkeiten, DSFA und Betroffenenanfragen.", "state": "coming"},
+   {"name": "ISO 42001 und der CRA", "text": "KI-Managementsysteme und Produktsicherheit nach dem Cyber Resilience Act.", "state": "coming"}
+  ],
+  "note": "Orientierungshilfe, keine Rechtsberatung. Anforderungstexte sind in unseren eigenen Worten formuliert."
+ },
+ "security": {
+  "eyebrow": "Cyber-Programm",
+  "title": "Von Sicherheitsbefunden zum Dreijahresplan.",
+  "text": "Laden Sie Ergebnisse der Tools hoch, die Ihr Team schon nutzt. SpaceRisk macht aus den Befunden Nachweise für die richtigen ISO-Controls, findet die kürzesten Angriffspfade zu Ihren Domänen-Admins und schlägt ein priorisiertes Programm auf einer Transformationskarte vor, die Sie direkt in den Vorstand bringen können.",
+  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "points": [
+   "Befunde, Trends und Behebungen pro Ziel, über alle Läufe hinweg",
+   "Angriffspfade zu Tier 0 aus Active-Directory-Daten",
+   "Eine bewertete Transformationskarte, exportiert nach PowerPoint und PDF"
+  ]
+ },
+ "agents": {
+  "eyebrow": "Agenten und API",
+  "title": "Überlassen Sie den Papierkram Ihren Agenten. Entscheiden tun Menschen.",
+  "text": "Skripte und KI-Agenten erhalten eigene Tokens und eine dokumentierte REST-API. Sie melden und überprüfen Risiken, prüfen Barrieren und laden Tool-Ergebnisse hoch. Im Vorschlagsmodus wartet jede Änderung im Posteingang, bis ein Mensch sie freigibt.",
+  "points": ["OpenAPI-Dokumentation", "Jeder Vorschlag wird geprüft, bevor ihn jemand freigibt", "Agenten-Tokens werden nur als Hash gespeichert"],
+  "inbox": "wartet im Posteingang auf Freigabe",
+  "stored": "Ergebnisse gespeichert"
+ },
+ "showcases": {
+  "eyebrow": "Beispielunternehmen",
+  "title": "92 Unternehmen zum Erkunden, von Banken bis Krankenhäusern.",
+  "text": "Starten Sie in einer Welt, die Sie kennen. Jedes Beispiel ist ein fiktives Unternehmen mit eigenen Teams, Risiken, Barrieren und Historie, in Minuten bereit. Zu jedem gibt es eine Beispiel-Management-Zusammenfassung als PDF."
+ },
+ "trust": {
+  "title": "Gebaut für Vertrauen.",
+  "items": [
+   {"title": "Gehostet oder selbst betrieben", "text": "Wir betreiben es für Sie, oder Sie betreiben es auf eigenen Servern, auf Intel oder ARM."},
+   {"title": "Ihre Daten gehören Ihnen", "text": "Exportieren Sie alles als PDF, PowerPoint, Excel oder vollständiges Datenbank-Backup, jederzeit."},
+   {"title": "Zugriff nach Rolle", "text": "Die Geschäftsleitung sieht alles. Teams sehen ihr Eigenes. Geldbeträge bleiben bei der Geschäftsleitung."},
+   {"title": "Sieben Sprachen", "text": "Englisch, Norwegisch, Deutsch, Spanisch, Französisch, Italienisch und Portugiesisch, für jeden Nutzer."}
+  ]
+ },
+ "pricing_teaser": {
+  "title": "Ein Jahrespreis. Alle Funktionen.",
+  "text": "Die Pläne richten sich nach der Zahl der Teams, die SpaceRisk nutzen, von kleinen Organisationen bis zum ganzen Konzern.",
+  "cta": "Preise ansehen"
+ },
+ "contact": {
+  "title": "Sehen Sie SpaceRisk mit Ihren eigenen Risiken.",
+  "text": "Erzählen Sie uns von Ihrer Organisation, und wir richten ein Beispiel ein, das Ihrem ähnelt.",
+  "cta": "Kontakt",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "SpaceRisk"
+ },
+ "footer": {
+  "tagline": "Risikomanagement, das Ihre Teams wirklich nutzen.",
+  "classic": "Klassische Website",
+  "privacy": "Keine Cookies. Kein Tracking."
+ },
+ "shots": {
+  "dashboard": "Risiko-Dashboard der Geschäftsleitung mit den Monatsmeldungen und der Heatmap der Nettorisiken",
+  "bowtie": "Ein Risiko als Bowtie, mit Bedrohungen, Barrieren und Auswirkungen",
+  "panel": "Das Barrieren-Panel: jede Barriere und ihre Wirksamkeit",
+  "summary": "Die Management-Zusammenfassung mit Kernaussagen, Value at Risk und Heatmap",
+  "iso": "ISO-27001-Reifegrad und der ISMS-Kreislauf",
+  "compliance": "ISO 22301 Business Continuity: der Kreislauf des Managementsystems und seine Anforderungen",
+  "cyber": "Die Cyber-Transformationskarte über drei Jahre",
+  "paths": "SharpHound-Ergebnisse mit den kürzesten Angriffspfaden zu Tier 0"
+ },
+ "pricing": {
+  "title": "Einfache Preise pro Jahr",
+  "intro": "Ein Jahrespreis pro Organisation, je nachdem, wie viele Teams SpaceRisk nutzen. Jeder Plan enthält alle Funktionen.",
+  "currency": "Währung",
+  "per_year": "pro Jahr",
+  "names": ["Small", "Business", "Enterprise"],
+  "teams": ["Bis zu 5 Teams", "Bis zu 10 Teams", "Unbegrenzt viele Teams"],
+  "popular": "Am beliebtesten",
+  "included_title": "Jeder Plan enthält",
+  "included": [
+   "Risikoregister, Bowties, Barrieren und Monatsüberprüfungen",
+   "Projekte, die Finanzsicht und die Management-Zusammenfassung",
+   "ISO 27001, ISO 22301 und ISO 45001",
+   "Cyber-Programmkarte und Import aus Sicherheitstools",
+   "Agenten-API mit Freigabe-Posteingang",
+   "Exporte nach PDF, PowerPoint und Excel sowie vollständige Backups",
+   "Von uns gehostet oder selbst betrieben"
+  ],
+  "cta": "Kontakt",
+  "note": "Fragen zu Plänen, Hosting oder größeren Einführungen? Melden Sie sich."
+ }
+}

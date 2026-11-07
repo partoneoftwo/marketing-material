@@ -1,0 +1,173 @@
+{
+ "lang": "fr",
+ "html_lang": "fr",
+ "lang_name": "Français",
+ "app_lang": "fr",
+ "meta": {
+  "title": "SpaceRisk · La gestion des risques que vos équipes utilisent vraiment",
+  "description": "SpaceRisk est un registre des risques ISO 31000 avec bowties, barrières et revues mensuelles par équipe, une vue financière pour la direction, ISO 27001 et d'autres référentiels de conformité, et un programme cyber fondé sur des constats de sécurité réels."
+ },
+ "nav": {
+  "skip": "Aller au contenu",
+  "product": "Produit",
+  "compliance": "Conformité",
+  "security": "Sécurité",
+  "pricing": "Tarifs",
+  "contact": "Nous contacter",
+  "language": "Langue",
+  "home": "Accueil SpaceRisk"
+ },
+ "hero": {
+  "eyebrow": "Gestion des risques ISO 31000",
+  "title": "Chaque risque, du terrain au conseil d'administration.",
+  "subtitle": "SpaceRisk transforme les risques que connaissent vos équipes en bowties vivants, vérifie chaque mois les barrières qui les arrêtent et montre à la direction ce qu'ils coûteraient.",
+  "cta_primary": "Parlons-en",
+  "cta_secondary": "Voir les tarifs",
+  "note": "Hébergé par nous ou sur vos propres serveurs. Vos données restent toujours les vôtres."
+ },
+ "sectors": {
+  "label": "Avec des démonstrations pour",
+  "items": ["Banque", "Assurance", "Hôpitaux", "Pétrole et gaz", "Électricité", "Logiciel", "Secteur public", "Logistique", "Construction", "Commerce de détail"]
+ },
+ "loop": {
+  "eyebrow": "Comment ça marche",
+  "title": "La boucle ISO 31000, intégrée au mois.",
+  "text": "Pas de projet risques à part qui devient obsolète. SpaceRisk fait de la norme un rythme mensuel simple que chaque équipe peut suivre.",
+  "steps": [
+   {"title": "Fixer les critères", "text": "Une échelle de vraisemblance et de gravité, votre appétence au risque et vos catégories."},
+   {"title": "Identifier", "text": "Équipes et projets notent ce qui peut mal tourner, là où ils travaillent."},
+   {"title": "Analyser et évaluer", "text": "Niveaux brut, résiduel et cible, au regard de l'appétence."},
+   {"title": "Traiter", "text": "Barrières et actions avec responsables et échéances."},
+   {"title": "Surveiller et revoir", "text": "Chaque mois, chaque équipe revoit ses risques, vérifie ses barrières et remet sa déclaration."}
+  ]
+ },
+ "bowtie": {
+  "eyebrow": "Bowties et barrières",
+  "title": "Voyez ce qui se dresse entre une menace et le dommage.",
+  "text": "Chaque risque est un bowtie : les menaces à gauche, les conséquences à droite et les barrières entre les deux. Les barrières vivent dans un registre partagé, si bien qu'un contrôle protège plusieurs risques, et vous voyez tout de suite quand une barrière faible porte trop.",
+  "points": [
+   "Barrières préventives et d'atténuation, avec leur efficacité et la date du dernier test",
+   "Un tableau des barrières pour toute l'organisation, regroupé par équipe responsable ou par type",
+   "Les facteurs d'escalade, et les barrières qui protègent les barrières"
+  ],
+  "labels": {"threats": "Menaces", "hazard": "Événement redouté", "consequences": "Conséquences", "preventive": "Barrières préventives", "mitigating": "Barrières d'atténuation"}
+ },
+ "reviews": {
+  "eyebrow": "Revues mensuelles",
+  "title": "Un même rythme pour chaque équipe.",
+  "text": "Chaque mois, l'équipe revoit tous ses risques et vérifie chaque barrière, puis le responsable d'équipe remet la déclaration. Vous savez toujours qui est à jour, et la tendance de chaque risque se construit toute seule.",
+  "points": [
+   "Tableaux de bord par équipe et par projet, avec carte de chaleur et tendance de chaque risque",
+   "Une déclaration ne peut être remise que lorsque tous les risques sont revus",
+   "Un commentaire pour chaque mois, et tout l'historique pour l'auditeur"
+  ],
+  "steps": ["Revoir chaque risque", "Vérifier chaque barrière de l'équipe", "Ajouter un commentaire du mois", "Remettre la déclaration"]
+ },
+ "executive": {
+  "eyebrow": "Pour la direction",
+  "title": "Le risque dans la langue du conseil.",
+  "text": "SpaceRisk chiffre l'exposition : perte attendue, Value at Risk simulée avant et après les barrières, et rendement de ce que coûtent les barrières. La synthèse de direction rédige ses propres messages clés et est prête à être présentée.",
+  "stats": [
+   {"value": "VaR 95 %", "label": "simulée, avant et après les barrières"},
+   {"value": "1 clic", "label": "synthèse de direction en PDF ou PowerPoint"},
+   {"value": "Excel", "label": "chaque registre, prêt à analyser"}
+  ]
+ },
+ "compliance": {
+  "eyebrow": "Conformité",
+  "title": "Un système de management, de nombreuses normes.",
+  "text": "Activez les référentiels dont vous avez besoin. Chacun affiche sa boucle Planifier, Faire, Vérifier, Agir avec l'avancement en direct et vos prochaines étapes, et tous partagent les mêmes registres : parties intéressées, obligations légales, objectifs, documents, audits, revues de direction et non-conformités.",
+  "live": "Disponible",
+  "coming": "Bientôt",
+  "items": [
+   {"name": "ISO/IEC 27001 et 27002", "text": "Chapitres 4 à 10, les 93 mesures, une déclaration d'applicabilité, la boucle du SMSI et des exports prêts pour l'audit.", "state": "live"},
+   {"name": "ISO 22301", "text": "Continuité d'activité : la boucle du SMCA et chaque exigence, avec responsables et preuves.", "state": "live"},
+   {"name": "ISO 45001", "text": "Santé et sécurité au travail, avec la participation des travailleurs et les exigences légales.", "state": "live"},
+   {"name": "NIS2 et DORA", "text": "Délais de notification des incidents, registres des prestataires et tests de résilience.", "state": "coming"},
+   {"name": "RGPD et ISO 27701", "text": "Registre des traitements, AIPD et demandes des personnes concernées.", "state": "coming"},
+   {"name": "ISO 42001 et le CRA", "text": "Systèmes de management de l'IA et sécurité des produits au titre du Cyber Resilience Act.", "state": "coming"}
+  ],
+  "note": "Des conseils, pas un avis juridique. Les exigences sont rédigées avec nos propres mots."
+ },
+ "security": {
+  "eyebrow": "Programme cyber",
+  "title": "Des constats de sécurité à un plan sur trois ans.",
+  "text": "Importez les résultats des outils que votre équipe utilise déjà. SpaceRisk transforme les constats en preuves pour les bonnes mesures ISO, trouve les chemins d'attaque les plus courts vers vos administrateurs de domaine et propose un programme priorisé sur une carte de transformation à présenter directement au conseil.",
+  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "points": [
+   "Constats, tendances et corrections par cible, sur toutes les exécutions",
+   "Chemins d'attaque vers le Tier 0 à partir des données Active Directory",
+   "Une carte de transformation notée, exportée en PowerPoint et PDF"
+  ]
+ },
+ "agents": {
+  "eyebrow": "Agents et API",
+  "title": "Confiez la paperasse à vos agents. Les humains décident toujours.",
+  "text": "Les scripts et agents IA ont leurs propres jetons et une API REST documentée. Ils déclarent et revoient des risques, vérifient des barrières et importent des résultats d'outils. En mode proposition, chaque changement attend dans une boîte de réception qu'une personne l'approuve.",
+  "points": ["Documentation OpenAPI", "Chaque proposition est vérifiée avant toute approbation", "Les jetons des agents sont stockés sous forme de hachage"],
+  "inbox": "en attente d'approbation dans la boîte de réception",
+  "stored": "résultats enregistrés"
+ },
+ "showcases": {
+  "eyebrow": "Démonstrations",
+  "title": "92 entreprises à explorer, des banques aux hôpitaux.",
+  "text": "Commencez dans un univers que vous connaissez. Chaque démonstration est une entreprise fictive avec ses équipes, ses risques, ses barrières et son historique, prête en quelques minutes. Chacune est livrée avec un exemple de synthèse de direction en PDF."
+ },
+ "trust": {
+  "title": "Conçu pour inspirer confiance.",
+  "items": [
+   {"title": "Hébergé ou auto-hébergé", "text": "Nous l'exploitons pour vous, ou vous l'exécutez sur vos propres serveurs, Intel ou ARM."},
+   {"title": "Vos données sont à vous", "text": "Exportez tout en PDF, PowerPoint, Excel ou sous forme de sauvegarde complète de la base, à tout moment."},
+   {"title": "Accès par rôle", "text": "La direction voit tout. Les équipes voient ce qui les concerne. Les montants restent réservés à la direction."},
+   {"title": "Sept langues", "text": "Anglais, norvégien, allemand, espagnol, français, italien et portugais, pour chaque utilisateur."}
+  ]
+ },
+ "pricing_teaser": {
+  "title": "Un prix annuel. Toutes les fonctionnalités.",
+  "text": "Les offres suivent le nombre d'équipes qui utilisent SpaceRisk, des petites organisations au groupe entier.",
+  "cta": "Voir les tarifs"
+ },
+ "contact": {
+  "title": "Découvrez SpaceRisk avec vos propres risques.",
+  "text": "Parlez-nous de votre organisation et nous préparerons une démonstration qui lui ressemble.",
+  "cta": "Nous contacter",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "SpaceRisk"
+ },
+ "footer": {
+  "tagline": "La gestion des risques que vos équipes utilisent vraiment.",
+  "classic": "Site classique",
+  "privacy": "Pas de cookies. Pas de suivi."
+ },
+ "shots": {
+  "dashboard": "Tableau de bord des risques de la direction, avec les déclarations mensuelles et la carte de chaleur résiduelle",
+  "bowtie": "Un risque dessiné en bowtie, avec ses menaces, ses barrières et ses conséquences",
+  "panel": "Le tableau des barrières : chaque barrière et son efficacité",
+  "summary": "La synthèse de direction, avec messages clés, Value at Risk et carte de chaleur",
+  "iso": "Maturité ISO 27001 et boucle du SMSI",
+  "compliance": "Continuité d'activité ISO 22301 : la boucle du système de management et ses exigences",
+  "cyber": "La carte de transformation cyber sur trois ans",
+  "paths": "Résultats SharpHound avec les chemins d'attaque les plus courts vers le Tier 0"
+ },
+ "pricing": {
+  "title": "Des tarifs simples, à l'année",
+  "intro": "Un prix annuel par organisation, selon le nombre d'équipes qui utilisent SpaceRisk. Chaque offre comprend toutes les fonctionnalités.",
+  "currency": "Devise",
+  "per_year": "par an",
+  "names": ["Small", "Business", "Enterprise"],
+  "teams": ["Jusqu'à 5 équipes", "Jusqu'à 10 équipes", "Équipes illimitées"],
+  "popular": "La plus choisie",
+  "included_title": "Chaque offre comprend",
+  "included": [
+   "Registre des risques, bowties, barrières et revues mensuelles",
+   "Projets, vue financière et synthèse de direction",
+   "ISO 27001, ISO 22301 et ISO 45001",
+   "Carte du programme cyber et import des outils de sécurité",
+   "API pour agents avec boîte d'approbation",
+   "Exports PDF, PowerPoint et Excel, et sauvegardes complètes",
+   "Hébergé par nous ou auto-hébergé"
+  ],
+  "cta": "Nous contacter",
+  "note": "Des questions sur les offres, l'hébergement ou un déploiement plus large ? Écrivez-nous."
+ }
+}

@@ -6,6 +6,25 @@ Public marketing assets, one folder per product.
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
 for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact: thomas.frivold@frivolddigital.com
+
+- **Website v2 (sleek, white):** https://partoneoftwo.github.io/marketing-material/spacerisk/v2/ in 7 languages, each with
+  app screens in that language:
+
+| Language | Home | Pricing |
+|---|---|---|
+| English | [en](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/en/) | [pricing](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/en/pricing.html) |
+| Español | [es](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/es/) | [precios](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/es/pricing.html) |
+| Norsk (bokmål) | [nb](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/nb/) | [priser](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/nb/pricing.html) |
+| Deutsch | [de](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/de/) | [Preise](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/de/pricing.html) |
+| Français | [fr](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/fr/) | [tarifs](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/fr/pricing.html) |
+| Italiano | [it](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/it/) | [prezzi](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/it/pricing.html) |
+| Português (Brasil) | [pt-br](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/pt-br/) | [preços](https://partoneoftwo.github.io/marketing-material/spacerisk/v2/pt-br/pricing.html) |
+
+  Texts in `spacerisk/content/v2/<lang>.json`. Rebuild with `python spacerisk/tools/build_site_v2.py` (check the texts first with
+  `check_content_v2.py`). Screens: `shots_v2.py <app lang>` against a running SpaceRisk with the banking showcase. Social
+  images: `og_v2.py`. No cookies, no tracking, no third-party requests (the Inter font is self-hosted, SIL OFL).
+
+### Classic site and materials
 - **Pricing:** per language at `spacerisk/<lang>/pricing.html` (prices in `spacerisk/content/pricing.json`, NOK, EUR and USD)
 
 - **Website:** https://partoneoftwo.github.io/marketing-material/spacerisk/ (English, Español, Deutsch, Português (Brasil), Français, Italiano)
@@ -25,7 +44,7 @@ for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact
 | Français | [fr](https://partoneoftwo.github.io/marketing-material/spacerisk/fr/) | [PDF](spacerisk/materials/fr/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/fr/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/fr/texts.md) |
 | Italiano | [it](https://partoneoftwo.github.io/marketing-material/spacerisk/it/) | [PDF](spacerisk/materials/it/spacerisk-product-sheet.pdf) | [PPTX](spacerisk/materials/it/spacerisk-sales-deck.pptx) | [texts](spacerisk/materials/it/texts.md) |
 
-> **Translations** (es, de, pt-br, fr, it) were machine-written from the English source. Have a native speaker review them before
+> **Translations** (es, nb, de, pt-br, fr, it; classic site and v2) were machine-written from the English source. Have a native speaker review them before
 > campaigns.
 
 ### Editing and rebuilding
