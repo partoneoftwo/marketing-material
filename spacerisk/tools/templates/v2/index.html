@@ -1,0 +1,137 @@
+{% extends "_base.html" %}
+{% macro shot(name, eager=False, cls="") %}<figure class="frame {{ cls }}"><div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="../assets/shots/{{ shot_lang }}/{{ name }}.webp" width="{{ shot_h[name][0] }}" height="{{ shot_h[name][1] }}" alt="{{ c.shots[name] }}"{% if not eager %} loading="lazy"{% endif %} decoding="async"></figure>{% endmacro %}
+{% macro checks(items) %}<ul class="checks">{% for p in items %}<li>{{ check }}<span>{{ p }}</span></li>{% endfor %}</ul>{% endmacro %}
+{% block main %}
+<section class="hero">
+  <div class="wrap narrow center">
+    <p class="eyebrow">{{ c.hero.eyebrow }}</p>
+    <h1>{{ c.hero.title }}</h1>
+    <p class="lede">{{ c.hero.subtitle }}</p>
+    <div class="cta-row">
+      <a class="btn btn-accent" href="{{ mailto }}">{{ c.hero.cta_primary }}</a>
+      <a class="btn btn-ghost" href="pricing.html">{{ c.hero.cta_secondary }} →</a>
+    </div>
+    <p class="fine">{{ c.hero.note }}</p>
+  </div>
+  <div class="wrap hero-shot reveal">{{ shot("dashboard", eager=True) }}</div>
+</section>
+
+<section class="strip" aria-label="{{ c.sectors.label }}">
+  <div class="wrap strip-in"><span class="strip-label">{{ c.sectors.label }}</span>
+    <ul>{% for s in c.sectors["items"] %}<li>{{ s }}</li>{% endfor %}</ul></div>
+</section>
+
+<section class="sec" id="product">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">{{ c.loop.eyebrow }}</p><h2>{{ c.loop.title }}</h2><p class="lede">{{ c.loop.text }}</p></div>
+    <ol class="loop reveal">
+      {% for s in c.loop.steps %}<li><span class="loop-n">{{ loop.index }}</span><h3>{{ s.title }}</h3><p>{{ s.text }}</p></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec-soft">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">{{ c.bowtie.eyebrow }}</p><h2>{{ c.bowtie.title }}</h2><p class="lede">{{ c.bowtie.text }}</p>
+      {{ checks(c.bowtie.points) }}
+    </div>
+    <div class="reveal">{{ bowtie }}</div>
+  </div>
+  <div class="wrap duo">
+    <div class="reveal">{{ shot("bowtie") }}</div>
+    <div class="reveal">{{ shot("panel") }}</div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split split-rev">
+    <div class="reveal">
+      <p class="eyebrow">{{ c.reviews.eyebrow }}</p><h2>{{ c.reviews.title }}</h2><p class="lede">{{ c.reviews.text }}</p>
+      {{ checks(c.reviews.points) }}
+    </div>
+    <div class="reveal">
+      <ol class="month" aria-hidden="true">
+        {% for t, done in month %}<li class="{{ 'done' if done }}"><span>{{ t }}</span><b>{{ tick if done else '' }}</b></li>{% endfor %}
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-ink">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">{{ c.executive.eyebrow }}</p><h2>{{ c.executive.title }}</h2><p class="lede">{{ c.executive.text }}</p></div>
+    <dl class="stats reveal">{% for s in c.executive.stats %}<div><dt>{{ s.value }}</dt><dd>{{ s.label }}</dd></div>{% endfor %}</dl>
+    <div class="reveal">{{ shot("summary", cls="frame-lg") }}</div>
+  </div>
+</section>
+
+<section class="sec" id="compliance">
+  <div class="wrap">
+    <div class="head reveal"><p class="eyebrow">{{ c.compliance.eyebrow }}</p><h2>{{ c.compliance.title }}</h2><p class="lede">{{ c.compliance.text }}</p></div>
+    <ul class="cards reveal">
+      {% for f in c.compliance["items"] %}<li class="card {{ f.state }}"><span class="badge {{ f.state }}">{{ c.compliance[f.state] }}</span><h3>{{ f.name }}</h3><p>{{ f.text }}</p></li>{% endfor %}
+    </ul>
+    <div class="duo">
+      <div class="reveal">{{ shot("iso") }}</div>
+      <div class="reveal">{{ shot("compliance") }}</div>
+    </div>
+    <p class="fine center">{{ c.compliance.note }}</p>
+  </div>
+</section>
+
+<section class="sec sec-soft" id="security">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">{{ c.security.eyebrow }}</p><h2>{{ c.security.title }}</h2><p class="lede">{{ c.security.text }}</p>
+      <ul class="chips">{% for t in c.security.tools %}<li>{{ t }}</li>{% endfor %}</ul>
+      {{ checks(c.security.points) }}
+    </div>
+    <div class="reveal">{{ shot("paths") }}</div>
+  </div>
+  <div class="wrap reveal">{{ shot("cyber", cls="frame-lg") }}</div>
+</section>
+
+<section class="sec">
+  <div class="wrap split split-rev">
+    <div class="reveal">
+      <p class="eyebrow">{{ c.agents.eyebrow }}</p><h2>{{ c.agents.title }}</h2><p class="lede">{{ c.agents.text }}</p>
+      {{ checks(c.agents.points) }}
+    </div>
+    <div class="reveal">
+<pre class="code" aria-label="API example"><code><span class="c-m">POST</span> /api/v1/risks/ICT-014/review
+<span class="c-k">Authorization:</span> Bearer ••••••••
+<span class="c-ok">← 202</span> <span class="c-d">{{ c.agents.inbox }}</span>
+
+<span class="c-m">POST</span> /api/v1/assessments/uploads?tool=pingcastle
+<span class="c-k">Content-Type:</span> application/xml
+<span class="c-ok">← 201</span> <span class="c-d">{{ c.agents.stored }}</span></code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-soft">
+  <div class="wrap narrow center reveal">
+    <p class="eyebrow">{{ c.showcases.eyebrow }}</p><h2>{{ c.showcases.title }}</h2><p class="lede">{{ c.showcases.text }}</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <h2 class="center reveal">{{ c.trust.title }}</h2>
+    <ul class="trust reveal">{% for t in c.trust["items"] %}<li><h3>{{ t.title }}</h3><p>{{ t.text }}</p></li>{% endfor %}</ul>
+    <div class="teaser reveal">
+      <div><h3>{{ c.pricing_teaser.title }}</h3><p>{{ c.pricing_teaser.text }}</p></div>
+      <a class="btn btn-ghost" href="pricing.html">{{ c.pricing_teaser.cta }} →</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec cta" id="contact">
+  <div class="wrap narrow center reveal">
+    <h2>{{ c.contact.title }}</h2><p class="lede">{{ c.contact.text }}</p>
+    <div class="cta-row"><a class="btn btn-accent" href="{{ mailto }}">{{ c.contact.cta }}</a></div>
+    <p class="fine"><a href="{{ mailto }}">{{ c.contact.email }}</a></p>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,271 @@
+{
+ "lang": "en",
+ "html_lang": "en",
+ "lang_name": "English",
+ "app_lang": "en",
+ "meta": {
+  "title": "SpaceRisk · Risk management your teams actually use",
+  "description": "SpaceRisk is an ISO 31000 risk register with bowties, barriers and monthly team reviews, a financial view for the board, ISO 27001 and other compliance frameworks, and a cyber programme built on real security findings."
+ },
+ "nav": {
+  "skip": "Skip to content",
+  "product": "Product",
+  "compliance": "Compliance",
+  "security": "Security",
+  "pricing": "Pricing",
+  "contact": "Contact us",
+  "language": "Language",
+  "home": "SpaceRisk home"
+ },
+ "hero": {
+  "eyebrow": "ISO 31000 risk management",
+  "title": "Every risk, from the team floor to the boardroom.",
+  "subtitle": "SpaceRisk turns the risks your teams know about into living bowties, checks the barriers that stop them every month, and shows the board what it would cost.",
+  "cta_primary": "Talk to us",
+  "cta_secondary": "See pricing",
+  "note": "Hosted by us or on your own servers. Your data is always yours."
+ },
+ "sectors": {
+  "label": "With showcases for",
+  "items": [
+   "Banking",
+   "Insurance",
+   "Hospitals",
+   "Oil and gas",
+   "Electricity",
+   "Software",
+   "Public sector",
+   "Logistics",
+   "Construction",
+   "Retail"
+  ]
+ },
+ "loop": {
+  "eyebrow": "How it works",
+  "title": "The ISO 31000 loop, built into the month.",
+  "text": "No separate risk project that goes stale. SpaceRisk runs the standard as a simple monthly rhythm that every team can follow.",
+  "steps": [
+   {
+    "title": "Set the criteria",
+    "text": "One scale for likelihood and consequence, your appetite and your categories."
+   },
+   {
+    "title": "Identify",
+    "text": "Teams and projects record what can go wrong, where they work."
+   },
+   {
+    "title": "Analyse and evaluate",
+    "text": "Inherent, residual and target ratings, against the appetite."
+   },
+   {
+    "title": "Treat",
+    "text": "Barriers and actions with owners and deadlines."
+   },
+   {
+    "title": "Monitor and review",
+    "text": "Every month each team reviews its risks, checks its barriers and submits its return."
+   }
+  ]
+ },
+ "bowtie": {
+  "eyebrow": "Bowties and barriers",
+  "title": "See what stands between a threat and the damage.",
+  "text": "Each risk is a bowtie: the threats on the left, the consequences on the right, and the barriers in between. Barriers live in one shared registry, so one control can protect many risks, and you see at once when a weak one carries too much.",
+  "points": [
+   "Preventive and mitigating barriers, with effectiveness and the date each was last tested",
+   "A Barrier Panel for the whole organisation, grouped by owning team or type",
+   "Escalation factors, and the barriers that protect the barriers"
+  ],
+  "labels": {
+   "threats": "Threats",
+   "hazard": "Hazard event",
+   "consequences": "Consequences",
+   "preventive": "Preventive barriers",
+   "mitigating": "Mitigating barriers"
+  }
+ },
+ "reviews": {
+  "eyebrow": "Monthly reviews",
+  "title": "One rhythm for every team.",
+  "text": "Each month the team reviews every risk it owns and checks every barrier, then the team lead submits the return. You always know who is up to date, and the trend of every risk builds itself.",
+  "points": [
+   "Team and project dashboards, with a heat map and the trend for each risk",
+   "Returns that can only be submitted once every risk is reviewed",
+   "A comment for every month, and a full history for the auditor"
+  ],
+  "steps": [
+   "Review every risk",
+   "Check every barrier the team owns",
+   "Add a comment for the month",
+   "Submit the return"
+  ]
+ },
+ "executive": {
+  "eyebrow": "For the board",
+  "title": "Risk in the language of the board.",
+  "text": "SpaceRisk puts a price on exposure: expected loss, a simulated Value at Risk before and after barriers, and the return on what the barriers cost. The executive summary writes its own key messages and is ready to present.",
+  "stats": [
+   {
+    "value": "VaR 95 %",
+    "label": "simulated, before and after barriers"
+   },
+   {
+    "value": "1 click",
+    "label": "executive summary as PDF or PowerPoint"
+   },
+   {
+    "value": "Excel",
+    "label": "every register, ready to analyse"
+   }
+  ]
+ },
+ "compliance": {
+  "eyebrow": "Compliance",
+  "title": "One management system, many standards.",
+  "text": "Switch on the frameworks you need. Each one shows its Plan, Do, Check, Act loop with live progress and your next steps, and they share one set of registers: interested parties, legal obligations, objectives, documents, audits, management reviews and nonconformities.",
+  "live": "Available",
+  "coming": "Coming",
+  "items": [
+   {
+    "name": "ISO/IEC 27001 and 27002",
+    "text": "Clauses 4–10, all 93 controls, a Statement of Applicability, the ISMS loop and audit-ready exports.",
+    "state": "live"
+   },
+   {
+    "name": "ISO 22301",
+    "text": "Business continuity: the BCMS loop and every requirement, with owners and evidence.",
+    "state": "live"
+   },
+   {
+    "name": "ISO 45001",
+    "text": "Occupational health and safety, with worker participation and legal requirements.",
+    "state": "live"
+   },
+   {
+    "name": "NIS2 and DORA",
+    "text": "Incident reporting deadlines, supplier registers and resilience testing.",
+    "state": "coming"
+   },
+   {
+    "name": "GDPR and ISO 27701",
+    "text": "Records of processing, DPIAs and data subject requests.",
+    "state": "coming"
+   },
+   {
+    "name": "ISO 42001 and the CRA",
+    "text": "AI management systems and product security under the Cyber Resilience Act.",
+    "state": "coming"
+   }
+  ],
+  "note": "Guidance, not legal advice. Requirement texts are written in our own words."
+ },
+ "security": {
+  "eyebrow": "Cyber programme",
+  "title": "From security findings to a three-year plan.",
+  "text": "Upload results from the tools your team already runs. SpaceRisk turns the findings into evidence on the right ISO controls, finds the shortest attack paths to your domain admins, and suggests a prioritised programme on a transformation map you can take straight to the board.",
+  "tools": [
+   "PingCastle",
+   "Prowler",
+   "SharpHound"
+  ],
+  "points": [
+   "Findings, trends and fixes per target, across every run",
+   "Attack paths to Tier 0 from Active Directory data",
+   "A scored transformation map, exported to PowerPoint and PDF"
+  ]
+ },
+ "agents": {
+  "eyebrow": "Agents and API",
+  "title": "Let your agents do the paperwork. People still decide.",
+  "text": "Scripts and AI agents get their own tokens and a documented REST API. They report and review risks, check barriers and upload tool results. In propose mode, every change waits in an inbox until a person approves it.",
+  "points": [
+   "OpenAPI documentation",
+   "Every proposal is checked before anyone approves it",
+   "Agent tokens are stored hashed"
+  ],
+  "inbox": "waiting for approval in the inbox",
+  "stored": "results stored"
+ },
+ "showcases": {
+  "eyebrow": "Showcases",
+  "title": "92 companies to explore, from banks to hospitals.",
+  "text": "Start in a world you recognise. Every showcase is a fictional company with its own teams, risks, barriers and history, ready in minutes. Each comes with a sample executive summary as a PDF."
+ },
+ "trust": {
+  "title": "Built to be trusted.",
+  "items": [
+   {
+    "title": "Hosted or self-hosted",
+    "text": "We run it for you, or you run it on your own servers, on Intel or ARM."
+   },
+   {
+    "title": "Your data is yours",
+    "text": "Export everything as PDF, PowerPoint, Excel or a complete database backup, at any time."
+   },
+   {
+    "title": "Access by role",
+    "text": "Executives see everything. Teams see their own. Money stays with the executives."
+   },
+   {
+    "title": "Seven languages",
+    "text": "English, Norwegian, German, Spanish, French, Italian and Portuguese, for every user."
+   }
+  ]
+ },
+ "pricing_teaser": {
+  "title": "One yearly price. Every feature.",
+  "text": "Plans follow the number of teams that use SpaceRisk, from small organisations to the whole group.",
+  "cta": "See pricing"
+ },
+ "contact": {
+  "title": "See SpaceRisk with your own risks.",
+  "text": "Tell us about your organisation and we will set up a showcase that looks like yours.",
+  "cta": "Contact us",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "SpaceRisk"
+ },
+ "footer": {
+  "tagline": "Risk management your teams actually use.",
+  "classic": "Classic site",
+  "privacy": "No cookies. No tracking."
+ },
+ "shots": {
+  "dashboard": "Executive risk dashboard with the monthly returns and the residual heat map",
+  "bowtie": "A risk drawn as a bowtie, with its threats, barriers and consequences",
+  "panel": "The Barrier Panel: every barrier and its effectiveness",
+  "summary": "The executive summary, with key messages, Value at Risk and the heat map",
+  "iso": "ISO 27001 readiness and the ISMS loop",
+  "compliance": "ISO 22301 business continuity: the management system loop and its requirements",
+  "cyber": "The cyber transformation map over three years",
+  "paths": "SharpHound results with the shortest attack paths to Tier 0"
+ },
+ "pricing": {
+  "title": "Simple pricing per year",
+  "intro": "One annual price per organisation, based on how many teams use SpaceRisk. Every plan includes every feature.",
+  "currency": "Currency",
+  "per_year": "per year",
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Up to 5 teams",
+   "Up to 10 teams",
+   "Unlimited teams"
+  ],
+  "popular": "Most popular",
+  "included_title": "Every plan includes",
+  "included": [
+   "Risk register, bowties, barriers and monthly reviews",
+   "Projects, the financial view and the executive summary",
+   "ISO 27001, ISO 22301 and ISO 45001",
+   "Cyber programme map and security tool imports",
+   "Agent API with approval inbox",
+   "PDF, PowerPoint and Excel exports, and full backups",
+   "Hosted by us or self-hosted"
+  ],
+  "cta": "Contact us",
+  "note": "Questions about plans, hosting or larger rollouts? Get in touch."
+ }
+}

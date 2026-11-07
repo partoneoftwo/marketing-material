@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="{{ c.html_lang }}" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#ffffff">
+<title>{% block title %}{{ c.meta.title }}{% endblock %}</title>
+<meta name="description" content="{{ c.meta.description }}">
+<meta property="og:title" content="{{ c.meta.title }}">
+<meta property="og:description" content="{{ c.meta.description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="{{ base_url }}assets/og/{{ c.lang }}.png">
+<meta name="twitter:card" content="summary_large_image">
+{% for l in langs %}<link rel="alternate" hreflang="{{ l.html_lang }}" href="{{ base_url }}{{ l.lang }}/{{ page_file if page_file != 'index.html' else '' }}">
+{% endfor %}<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v={{ version }}">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+<script>document.documentElement.classList.replace("no-js","js")</script>
+<script src="../assets/site.js?v={{ version }}" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">{{ c.nav.skip }}</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="./" aria-label="{{ c.nav.home }}">{{ mark }}<span>SpaceRisk</span></a>
+    <nav class="links" aria-label="Main">
+      <a href="./#product">{{ c.nav.product }}</a>
+      <a href="./#compliance">{{ c.nav.compliance }}</a>
+      <a href="./#security">{{ c.nav.security }}</a>
+      <a href="pricing.html"{% if page_file == 'pricing.html' %} aria-current="page"{% endif %}>{{ c.nav.pricing }}</a>
+    </nav>
+    <div class="top-end">
+      <details class="lang">
+        <summary aria-label="{{ c.nav.language }}">{{ globe }}<span>{{ c.lang|upper if c.lang != 'pt-br' else 'PT' }}</span></summary>
+        <ul>{% for l in langs %}<li><a href="../{{ l.lang }}/{{ page_file if page_file != 'index.html' else '' }}" hreflang="{{ l.html_lang }}" lang="{{ l.html_lang }}"{% if l.lang == c.lang %} aria-current="true"{% endif %}>{{ l.lang_name }}</a></li>{% endfor %}</ul>
+      </details>
+      <a class="btn btn-dark btn-sm" href="{{ mailto }}">{{ c.nav.contact }}</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand"><span class="brand">{{ mark }}<span>SpaceRisk</span></span><p>{{ c.footer.tagline }}</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="pricing.html">{{ c.nav.pricing }}</a>
+      <a href="{{ mailto }}">{{ c.contact.email }}</a>
+      <a href="../../{{ classic_lang }}/">{{ c.footer.classic }}</a>
+    </nav>
+    <p class="foot-note">© {{ year }} SpaceRisk · {{ c.footer.privacy }}</p>
+  </div>
+</footer>
+</body>
+</html>
