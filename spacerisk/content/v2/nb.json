@@ -27,18 +27,44 @@
  },
  "sectors": {
   "label": "Med demodata for",
-  "items": ["Bank", "Forsikring", "Sykehus", "Olje og gass", "Kraft", "Programvare", "Offentlig sektor", "Logistikk", "Bygg og anlegg", "Varehandel"]
+  "items": [
+   "Bank",
+   "Forsikring",
+   "Sykehus",
+   "Olje og gass",
+   "Kraft",
+   "Programvare",
+   "Offentlig sektor",
+   "Logistikk",
+   "Bygg og anlegg",
+   "Varehandel"
+  ]
  },
  "loop": {
   "eyebrow": "Slik virker det",
   "title": "ISO 31000-sløyfen, bygget inn i måneden.",
   "text": "Ikke et eget risikoprosjekt som går ut på dato. SpaceRisk gjør standarden til en enkel månedlig rytme som alle team kan følge.",
   "steps": [
-   {"title": "Sett kriteriene", "text": "Én skala for sannsynlighet og konsekvens, risikoappetitten og kategoriene deres."},
-   {"title": "Identifiser", "text": "Team og prosjekter registrerer hva som kan gå galt, der de jobber."},
-   {"title": "Analyser og evaluer", "text": "Iboende risiko, restrisiko og målrisiko, målt mot risikoappetitten."},
-   {"title": "Håndter", "text": "Barrierer og tiltak med eiere og frister."},
-   {"title": "Overvåk og gjennomgå", "text": "Hver måned gjennomgår hvert team risikoene sine, kontrollerer barrierene og leverer månedsrapporten."}
+   {
+    "title": "Sett kriteriene",
+    "text": "Én skala for sannsynlighet og konsekvens, risikoappetitten og kategoriene deres."
+   },
+   {
+    "title": "Identifiser",
+    "text": "Team og prosjekter registrerer hva som kan gå galt, der de jobber."
+   },
+   {
+    "title": "Analyser og evaluer",
+    "text": "Iboende risiko, restrisiko og målrisiko, målt mot risikoappetitten."
+   },
+   {
+    "title": "Håndter",
+    "text": "Barrierer og tiltak med eiere og frister."
+   },
+   {
+    "title": "Overvåk og gjennomgå",
+    "text": "Hver måned gjennomgår hvert team risikoene sine, kontrollerer barrierene og leverer månedsrapporten."
+   }
   ]
  },
  "bowtie": {
@@ -50,7 +76,13 @@
    "Et barrierepanel for hele virksomheten, gruppert etter eierteam eller type",
    "Eskaleringsfaktorer, og barrierene som beskytter barrierene"
   ],
-  "labels": {"threats": "Trusler", "hazard": "Farehendelse", "consequences": "Konsekvenser", "preventive": "Forebyggende barrierer", "mitigating": "Konsekvensreduserende barrierer"}
+  "labels": {
+   "threats": "Trusler",
+   "hazard": "Farehendelse",
+   "consequences": "Konsekvenser",
+   "preventive": "Forebyggende barrierer",
+   "mitigating": "Konsekvensreduserende barrierer"
+  }
  },
  "reviews": {
   "eyebrow": "Månedlige gjennomganger",
@@ -61,39 +93,92 @@
    "Månedsrapporten kan bare leveres når alle risikoene er gjennomgått",
    "En kommentar for hver måned, og hele historikken for revisor"
   ],
-  "steps": ["Gjennomgå hver risiko", "Kontrollere hver barriere teamet eier", "Skrive en kommentar for måneden", "Levere månedsrapporten"]
+  "steps": [
+   "Gjennomgå hver risiko",
+   "Kontrollere hver barriere teamet eier",
+   "Skrive en kommentar for måneden",
+   "Levere månedsrapporten"
+  ]
  },
  "executive": {
   "eyebrow": "For ledelsen",
   "title": "Risiko på styrets språk.",
   "text": "SpaceRisk setter en pris på eksponeringen: forventet tap, en simulert Value at Risk før og etter barrierene, og avkastningen på det barrierene koster. Lederoppsummeringen skriver sine egne hovedbudskap og er klar til å presenteres.",
   "stats": [
-   {"value": "VaR 95 %", "label": "simulert, før og etter barrierene"},
-   {"value": "1 klikk", "label": "lederoppsummering som PDF eller PowerPoint"},
-   {"value": "Excel", "label": "alle registre, klare til analyse"}
+   {
+    "value": "VaR 95 %",
+    "label": "simulert, før og etter barrierene"
+   },
+   {
+    "value": "1 klikk",
+    "label": "lederoppsummering som PDF eller PowerPoint"
+   },
+   {
+    "value": "Excel",
+    "label": "alle registre, klare til analyse"
+   }
   ]
  },
  "compliance": {
   "eyebrow": "Samsvar",
-  "title": "Ett styringssystem, mange standarder.",
-  "text": "Slå på rammeverkene dere trenger. Hvert av dem viser sin Planlegg–Utfør–Kontroller–Korriger-sløyfe med framdrift og neste steg, og de deler de samme registrene: interessenter, juridiske forpliktelser, mål, dokumenter, revisjoner, ledelsens gjennomganger og avvik.",
+  "title": "To moduler. Ett styringssystem.",
+  "text": "Legg til ISO 27001-modulen, samsvarsmodulen eller begge. Hvert rammeverk viser sin sløyfe med fremdrift og neste steg, og de deler ett sett registre: interessenter, lovkrav, mål, dokumenter, revisjoner, ledelsens gjennomganger, avvik, hendelser og leverandører.",
   "live": "Tilgjengelig",
   "coming": "Kommer",
   "items": [
-   {"name": "ISO/IEC 27001 og 27002", "text": "Punkt 4–10, alle 93 kontroller, en erklæring om anvendelse, ISMS-sløyfen og eksport klar for revisjon.", "state": "live"},
-   {"name": "ISO 22301", "text": "Kontinuitetsstyring: sløyfen for styringssystemet og hvert krav, med eiere og dokumentasjon.", "state": "live"},
-   {"name": "ISO 45001", "text": "Arbeidsmiljø og sikkerhet, med medvirkning fra arbeidstakerne og lovkrav.", "state": "live"},
-   {"name": "NIS2 og DORA", "text": "Frister for hendelsesrapportering, leverandørregistre og testing av motstandsdyktighet.", "state": "coming"},
-   {"name": "GDPR og ISO 27701", "text": "Protokoll over behandlingsaktiviteter, DPIA og henvendelser fra de registrerte.", "state": "coming"},
-   {"name": "ISO 42001 og CRA", "text": "Styringssystem for KI og produktsikkerhet etter Cyber Resilience Act.", "state": "coming"}
+   {
+    "name": "ISO/IEC 27001 og 27002",
+    "text": "Kapittel 4–10, alle 93 tiltak, anvendelseserklæring, ISMS-sløyfen og eksporter klare for revisjon. Inkluderer cyberprogrammet.",
+    "state": "live",
+    "module": "ISO 27001-modulen"
+   },
+   {
+    "name": "ISO 22301 og ISO 45001",
+    "text": "Konsekvensanalyse med RTO og RPO, kontinuitetsøvelser, medvirkning fra arbeidstakerne og tiltakshierarkiet.",
+    "state": "live",
+    "module": "Samsvarsmodulen"
+   },
+   {
+    "name": "NIS2 og DORA",
+    "text": "Frister for hendelsesrapportering, leverandørregister og informasjonsregister, og testing av motstandsdyktighet. Med de norske lovene.",
+    "state": "live",
+    "module": "Samsvarsmodulen"
+   },
+   {
+    "name": "GDPR og ISO 27701",
+    "text": "Behandlingsprotokoll, DPIA-er og henvendelser fra registrerte med fristen på én måned.",
+    "state": "live",
+    "module": "Samsvarsmodulen"
+   },
+   {
+    "name": "ISO 42001",
+    "text": "Oversikt over KI-systemer med deres vurdering etter KI-forordningen, og konsekvensvurderinger for KI.",
+    "state": "live",
+    "module": "Samsvarsmodulen"
+   },
+   {
+    "name": "Cyber Resilience Act",
+    "text": "Produkter med digitale elementer og sårbarheter, med rapporteringsfristene på 24 timer, 72 timer og 14 dager.",
+    "state": "live",
+    "module": "Samsvarsmodulen"
+   }
   ],
-  "note": "Veiledning, ikke juridisk rådgivning. Kravtekstene er skrevet med våre egne ord."
+  "note": "Veiledning, ikke juridisk rådgivning. Kravtekstene er skrevet med våre egne ord.",
+  "points": [
+   "Hvert krav viser ISO 27001-tiltakene som allerede dekker det samme arbeidet",
+   "Hvert rammeverk eksporteres til PDF, PowerPoint og Excel og tas med i lederrapporten",
+   "Forfalte varsler til myndighetene vises på ledelsens dashbord"
+  ]
  },
  "security": {
   "eyebrow": "Cyberprogram",
   "title": "Fra sikkerhetsfunn til en treårsplan.",
   "text": "Last opp resultater fra verktøyene teamet allerede bruker. SpaceRisk gjør funnene om til dokumentasjon på de riktige ISO-kontrollene, finner de korteste angrepsveiene til domeneadministratorene og foreslår et prioritert program på et transformasjonskart dere kan ta rett til styret.",
-  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "tools": [
+   "PingCastle",
+   "Prowler",
+   "SharpHound"
+  ],
   "points": [
    "Funn, trender og utbedringer per mål, på tvers av alle kjøringer",
    "Angrepsveier til Tier 0 fra Active Directory-data",
@@ -104,7 +189,11 @@
   "eyebrow": "Agenter og API",
   "title": "La agentene ta papirarbeidet. Folk bestemmer fortsatt.",
   "text": "Skript og KI-agenter får egne tokens og et dokumentert REST-API. De melder og gjennomgår risikoer, kontrollerer barrierer og laster opp verktøyresultater. I forslagsmodus venter hver endring i en innboks til en person godkjenner den.",
-  "points": ["OpenAPI-dokumentasjon", "Hvert forslag sjekkes før noen godkjenner det", "Agent-tokens lagres som hash"],
+  "points": [
+   "OpenAPI-dokumentasjon",
+   "Hvert forslag sjekkes før noen godkjenner det",
+   "Agent-tokens lagres som hash"
+  ],
   "inbox": "venter på godkjenning i innboksen",
   "stored": "resultater lagret"
  },
@@ -116,10 +205,22 @@
  "trust": {
   "title": "Bygget for å være til å stole på.",
   "items": [
-   {"title": "Driftet av oss eller selv", "text": "Vi drifter det for dere, eller dere kjører det på egne servere, på Intel eller ARM."},
-   {"title": "Dataene er deres", "text": "Eksporter alt som PDF, PowerPoint, Excel eller en komplett sikkerhetskopi av databasen, når som helst."},
-   {"title": "Tilgang etter rolle", "text": "Ledelsen ser alt. Team ser sitt eget. Pengene er forbeholdt ledelsen."},
-   {"title": "Sju språk", "text": "Engelsk, norsk, tysk, spansk, fransk, italiensk og portugisisk, for hver bruker."}
+   {
+    "title": "Driftet av oss eller selv",
+    "text": "Vi drifter det for dere, eller dere kjører det på egne servere, på Intel eller ARM."
+   },
+   {
+    "title": "Dataene er deres",
+    "text": "Eksporter alt som PDF, PowerPoint, Excel eller en komplett sikkerhetskopi av databasen, når som helst."
+   },
+   {
+    "title": "Tilgang etter rolle",
+    "text": "Ledelsen ser alt. Team ser sitt eget. Pengene er forbeholdt ledelsen."
+   },
+   {
+    "title": "Sju språk",
+    "text": "Engelsk, norsk, tysk, spansk, fransk, italiensk og portugisisk, for hver bruker."
+   }
   ]
  },
  "pricing_teaser": {
@@ -145,7 +246,7 @@
   "panel": "Barrierepanelet: hver barriere og effektiviteten",
   "summary": "Lederoppsummeringen, med hovedbudskap, Value at Risk og risikomatrisen",
   "iso": "Modenhet for ISO 27001 og ISMS-sløyfen",
-  "compliance": "ISO 22301 kontinuitetsstyring: sløyfen for styringssystemet og kravene",
+  "compliance": "DORA digital operasjonell motstandsdyktighet: sløyfen og kravene med fremdrift",
   "cyber": "Transformasjonskartet for cybersikkerhet over tre år",
   "paths": "SharpHound-resultater med de korteste angrepsveiene til Tier 0"
  },
@@ -154,15 +255,23 @@
   "intro": "Én årspris per virksomhet, ut fra hvor mange team som bruker SpaceRisk. Alle planer har alle funksjoner.",
   "currency": "Valuta",
   "per_year": "per år",
-  "names": ["Small", "Business", "Enterprise"],
-  "teams": ["Opptil 5 team", "Opptil 10 team", "Ubegrenset antall team"],
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Opptil 5 team",
+   "Opptil 10 team",
+   "Ubegrenset antall team"
+  ],
   "popular": "Mest valgt",
   "included_title": "Alle planer inkluderer",
   "included": [
    "Risikoregister, sløyfediagrammer, barrierer og månedlige gjennomganger",
    "Prosjekter, det økonomiske bildet og lederoppsummeringen",
-   "ISO 27001, ISO 22301 og ISO 45001",
-   "Kart for cyberprogrammet og import fra sikkerhetsverktøy",
+   "ISO 27001-modulen: ISMS, cyberprogrammet og import fra sikkerhetsverktøy",
+   "Samsvarsmodulen: ISO 22301, 45001, 27701, 42001, GDPR, NIS2, DORA og CRA",
    "Agent-API med godkjenningsinnboks",
    "Eksport til PDF, PowerPoint og Excel, og fullstendige sikkerhetskopier",
    "Driftet av oss eller på egne servere"

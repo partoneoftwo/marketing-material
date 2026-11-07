@@ -1,6 +1,6 @@
 """Screens for the v2 site (ADR 0091 in the app repo): python tools/shots_v2.py APP_LANG [name...]
 
-Needs a running SpaceRisk on BASE (default http://127.0.0.1:5081) with the banking showcase, ISO 27001, ISO 22301/45001,
+Needs a running SpaceRisk on BASE (default http://127.0.0.1:5081) with the banking showcase (ISO 27001, DORA, GDPR and ISO 22301 on),
 the cyber area and a SharpHound upload switched on, and the login ceo / demo1234. Fictional data only. Writes
 v2/assets/shots/<APP_LANG>/<name>.webp at 2x. RID picks the risk for the bowtie shot (default 5)."""
 import io
@@ -21,7 +21,7 @@ SHOTS = {  # name: (path, scroll-to selector, width, height); two-up shots are n
     "bowtie": (f"/risks/{RID}", ".bowtie", 1100, 760),
     "panel": ("/barriers/panel", None, 1100, 760),
     "iso": ("/iso27001/readiness", None, 1100, 760),
-    "compliance": ("/compliance/iso22301", None, 1100, 760),
+    "compliance": ("/compliance/dora", None, 1100, 760),
     "paths": ("/cyber/assessments/targets/1", None, 1100, 800),
 }
 
@@ -38,7 +38,7 @@ def main(lang, names):
             pg.goto(BASE + "/login"); pg.fill("#username", "ceo"); pg.fill("#password", "demo1234"); pg.press("#password", "Enter")
             pg.wait_for_load_state()
             pg.goto(f"{BASE}/lang/{lang}"); pg.goto(BASE + path); pg.wait_for_timeout(400)
-            pg.add_style_tag(content=".cycle-banner,.banner.info{display:none!important}")
+            pg.add_style_tag(content=".cycle-banner,.banner.info,.banner.error{display:none!important}")  # cycle note and the demo-data warning
             if sel and pg.query_selector(sel):
                 pg.eval_on_selector(sel, "e => window.scrollTo(0, e.getBoundingClientRect().top + window.scrollY - 24)")
                 pg.wait_for_timeout(200)

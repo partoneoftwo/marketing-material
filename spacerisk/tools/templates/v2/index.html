@@ -70,8 +70,9 @@
   <div class="wrap">
     <div class="head reveal"><p class="eyebrow">{{ c.compliance.eyebrow }}</p><h2>{{ c.compliance.title }}</h2><p class="lede">{{ c.compliance.text }}</p></div>
     <ul class="cards reveal">
-      {% for f in c.compliance["items"] %}<li class="card {{ f.state }}"><span class="badge {{ f.state }}">{{ c.compliance[f.state] }}</span><h3>{{ f.name }}</h3><p>{{ f.text }}</p></li>{% endfor %}
+      {% for f in c.compliance["items"] %}<li class="card {{ f.state }}"><div class="card-tags"><span class="badge {{ f.state }}">{{ c.compliance[f.state] }}</span><span class="module">{{ f.module }}</span></div><h3>{{ f.name }}</h3><p>{{ f.text }}</p></li>{% endfor %}
     </ul>
+    <div class="reveal points-row">{{ checks(c.compliance.points) }}</div>
     <div class="duo">
       <div class="reveal">{{ shot("iso") }}</div>
       <div class="reveal">{{ shot("compliance") }}</div>

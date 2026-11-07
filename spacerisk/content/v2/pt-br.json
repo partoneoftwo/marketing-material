@@ -27,18 +27,44 @@
  },
  "sectors": {
   "label": "Com demonstrações para",
-  "items": ["Bancos", "Seguros", "Hospitais", "Petróleo e gás", "Energia elétrica", "Software", "Setor público", "Logística", "Construção", "Varejo"]
+  "items": [
+   "Bancos",
+   "Seguros",
+   "Hospitais",
+   "Petróleo e gás",
+   "Energia elétrica",
+   "Software",
+   "Setor público",
+   "Logística",
+   "Construção",
+   "Varejo"
+  ]
  },
  "loop": {
   "eyebrow": "Como funciona",
   "title": "O ciclo ISO 31000, dentro do mês.",
   "text": "Nada de um projeto de riscos à parte que fica desatualizado. O SpaceRisk aplica a norma como um ritmo mensal simples que qualquer equipe consegue seguir.",
   "steps": [
-   {"title": "Defina os critérios", "text": "Uma escala de probabilidade e consequência, seu apetite a risco e suas categorias."},
-   {"title": "Identifique", "text": "Equipes e projetos registram o que pode dar errado, onde trabalham."},
-   {"title": "Analise e avalie", "text": "Níveis inerente, residual e alvo, frente ao apetite a risco."},
-   {"title": "Trate", "text": "Barreiras e ações com responsáveis e prazos."},
-   {"title": "Monitore e revise", "text": "Todo mês cada equipe revisa seus riscos, verifica suas barreiras e envia seu reporte."}
+   {
+    "title": "Defina os critérios",
+    "text": "Uma escala de probabilidade e consequência, seu apetite a risco e suas categorias."
+   },
+   {
+    "title": "Identifique",
+    "text": "Equipes e projetos registram o que pode dar errado, onde trabalham."
+   },
+   {
+    "title": "Analise e avalie",
+    "text": "Níveis inerente, residual e alvo, frente ao apetite a risco."
+   },
+   {
+    "title": "Trate",
+    "text": "Barreiras e ações com responsáveis e prazos."
+   },
+   {
+    "title": "Monitore e revise",
+    "text": "Todo mês cada equipe revisa seus riscos, verifica suas barreiras e envia seu reporte."
+   }
   ]
  },
  "bowtie": {
@@ -50,7 +76,13 @@
    "Um painel de barreiras para toda a organização, agrupado por equipe responsável ou por tipo",
    "Fatores de escalonamento, e as barreiras que protegem as barreiras"
   ],
-  "labels": {"threats": "Ameaças", "hazard": "Evento perigoso", "consequences": "Consequências", "preventive": "Barreiras preventivas", "mitigating": "Barreiras mitigadoras"}
+  "labels": {
+   "threats": "Ameaças",
+   "hazard": "Evento perigoso",
+   "consequences": "Consequências",
+   "preventive": "Barreiras preventivas",
+   "mitigating": "Barreiras mitigadoras"
+  }
  },
  "reviews": {
   "eyebrow": "Revisões mensais",
@@ -61,39 +93,92 @@
    "O reporte só pode ser enviado quando todos os riscos foram revisados",
    "Um comentário para cada mês e todo o histórico para o auditor"
   ],
-  "steps": ["Revisar cada risco", "Verificar cada barreira da equipe", "Adicionar um comentário do mês", "Enviar o reporte"]
+  "steps": [
+   "Revisar cada risco",
+   "Verificar cada barreira da equipe",
+   "Adicionar um comentário do mês",
+   "Enviar o reporte"
+  ]
  },
  "executive": {
   "eyebrow": "Para a diretoria",
   "title": "Risco na língua do conselho.",
   "text": "O SpaceRisk põe preço na exposição: perda esperada, um Value at Risk simulado antes e depois das barreiras, e o retorno do que as barreiras custam. O resumo executivo escreve suas próprias mensagens-chave e fica pronto para apresentar.",
   "stats": [
-   {"value": "VaR 95 %", "label": "simulado, antes e depois das barreiras"},
-   {"value": "1 clique", "label": "resumo executivo em PDF ou PowerPoint"},
-   {"value": "Excel", "label": "todos os registros, prontos para análise"}
+   {
+    "value": "VaR 95 %",
+    "label": "simulado, antes e depois das barreiras"
+   },
+   {
+    "value": "1 clique",
+    "label": "resumo executivo em PDF ou PowerPoint"
+   },
+   {
+    "value": "Excel",
+    "label": "todos os registros, prontos para análise"
+   }
   ]
  },
  "compliance": {
   "eyebrow": "Conformidade",
-  "title": "Um sistema de gestão, muitas normas.",
-  "text": "Ative os frameworks de que você precisa. Cada um mostra seu ciclo Planejar, Fazer, Checar, Agir com o progresso em tempo real e seus próximos passos, e todos compartilham os mesmos registros: partes interessadas, obrigações legais, objetivos, documentos, auditorias, revisões pela gestão e não conformidades.",
+  "title": "Dois módulos. Um sistema de gestão.",
+  "text": "Adicione o módulo ISO 27001, o módulo de conformidade ou os dois. Cada framework mostra seu ciclo com o progresso atualizado e os próximos passos, e todos compartilham os mesmos registros: partes interessadas, obrigações legais, objetivos, documentos, auditorias, análises críticas, não conformidades, incidentes e fornecedores.",
   "live": "Disponível",
   "coming": "Em breve",
   "items": [
-   {"name": "ISO/IEC 27001 e 27002", "text": "Cláusulas 4–10, todos os 93 controles, uma Declaração de Aplicabilidade, o ciclo do SGSI e exportações prontas para auditoria.", "state": "live"},
-   {"name": "ISO 22301", "text": "Continuidade de negócios: o ciclo do SGCN e cada requisito, com responsáveis e evidências.", "state": "live"},
-   {"name": "ISO 45001", "text": "Saúde e segurança ocupacional, com participação dos trabalhadores e requisitos legais.", "state": "live"},
-   {"name": "NIS2 e DORA", "text": "Prazos de notificação de incidentes, registros de fornecedores e testes de resiliência.", "state": "coming"},
-   {"name": "GDPR/LGPD e ISO 27701", "text": "Registro das operações de tratamento, relatórios de impacto e solicitações dos titulares.", "state": "coming"},
-   {"name": "ISO 42001 e o CRA", "text": "Sistemas de gestão de IA e segurança de produtos segundo o Cyber Resilience Act.", "state": "coming"}
+   {
+    "name": "ISO/IEC 27001 e 27002",
+    "text": "Cláusulas 4–10, os 93 controles, uma declaração de aplicabilidade, o ciclo do SGSI e exportações prontas para auditoria. Inclui o programa cibernético.",
+    "state": "live",
+    "module": "Módulo ISO 27001"
+   },
+   {
+    "name": "ISO 22301 e ISO 45001",
+    "text": "Análise de impacto nos negócios com RTO e RPO, exercícios de continuidade, consulta aos trabalhadores e a hierarquia de controles.",
+    "state": "live",
+    "module": "Módulo de conformidade"
+   },
+   {
+    "name": "NIS2 e DORA",
+    "text": "Prazos de notificação de incidentes, o registro de fornecedores e o registro de informações, e testes de resiliência. Com as leis norueguesas.",
+    "state": "live",
+    "module": "Módulo de conformidade"
+   },
+   {
+    "name": "GDPR e ISO 27701",
+    "text": "Registro das operações de tratamento, DPIAs e solicitações de titulares com o prazo de um mês.",
+    "state": "live",
+    "module": "Módulo de conformidade"
+   },
+   {
+    "name": "ISO 42001",
+    "text": "Um inventário de sistemas de IA com a sua avaliação segundo o regulamento europeu de IA, e avaliações de impacto de IA.",
+    "state": "live",
+    "module": "Módulo de conformidade"
+   },
+   {
+    "name": "Cyber Resilience Act",
+    "text": "Produtos com elementos digitais e vulnerabilidades, com os prazos de notificação de 24 horas, 72 horas e 14 dias.",
+    "state": "live",
+    "module": "Módulo de conformidade"
+   }
   ],
-  "note": "Orientação, não aconselhamento jurídico. Os textos dos requisitos são escritos com nossas próprias palavras."
+  "note": "Orientação, não aconselhamento jurídico. Os textos dos requisitos são escritos com nossas próprias palavras.",
+  "points": [
+   "Cada requisito mostra os controles da ISO 27001 que já cobrem o mesmo trabalho",
+   "Cada framework é exportado para PDF, PowerPoint e Excel e entra no resumo executivo",
+   "Notificações às autoridades em atraso aparecem no painel da diretoria"
+  ]
  },
  "security": {
   "eyebrow": "Programa de cibersegurança",
   "title": "Dos achados de segurança a um plano de três anos.",
   "text": "Envie os resultados das ferramentas que sua equipe já usa. O SpaceRisk transforma os achados em evidências para os controles ISO certos, encontra os caminhos de ataque mais curtos até os administradores de domínio e sugere um programa priorizado em um mapa de transformação que você leva direto ao conselho.",
-  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "tools": [
+   "PingCastle",
+   "Prowler",
+   "SharpHound"
+  ],
   "points": [
    "Achados, tendências e correções por alvo, em todas as execuções",
    "Caminhos de ataque até o Tier 0 a partir de dados do Active Directory",
@@ -104,7 +189,11 @@
   "eyebrow": "Agentes e API",
   "title": "Deixe a papelada com seus agentes. As pessoas continuam decidindo.",
   "text": "Scripts e agentes de IA têm seus próprios tokens e uma API REST documentada. Eles registram e revisam riscos, verificam barreiras e enviam resultados de ferramentas. No modo proposta, cada mudança espera em uma caixa de entrada até que uma pessoa a aprove.",
-  "points": ["Documentação OpenAPI", "Cada proposta é verificada antes de alguém aprová-la", "Os tokens dos agentes são guardados como hash"],
+  "points": [
+   "Documentação OpenAPI",
+   "Cada proposta é verificada antes de alguém aprová-la",
+   "Os tokens dos agentes são guardados como hash"
+  ],
   "inbox": "aguardando aprovação na caixa de entrada",
   "stored": "resultados guardados"
  },
@@ -116,10 +205,22 @@
  "trust": {
   "title": "Feito para merecer confiança.",
   "items": [
-   {"title": "Hospedado ou próprio", "text": "Nós operamos para você, ou você roda nos seus próprios servidores, Intel ou ARM."},
-   {"title": "Seus dados são seus", "text": "Exporte tudo em PDF, PowerPoint, Excel ou um backup completo do banco de dados, a qualquer momento."},
-   {"title": "Acesso por papel", "text": "A diretoria vê tudo. As equipes veem o que é delas. Os valores financeiros ficam com a diretoria."},
-   {"title": "Sete idiomas", "text": "Inglês, norueguês, alemão, espanhol, francês, italiano e português, para cada usuário."}
+   {
+    "title": "Hospedado ou próprio",
+    "text": "Nós operamos para você, ou você roda nos seus próprios servidores, Intel ou ARM."
+   },
+   {
+    "title": "Seus dados são seus",
+    "text": "Exporte tudo em PDF, PowerPoint, Excel ou um backup completo do banco de dados, a qualquer momento."
+   },
+   {
+    "title": "Acesso por papel",
+    "text": "A diretoria vê tudo. As equipes veem o que é delas. Os valores financeiros ficam com a diretoria."
+   },
+   {
+    "title": "Sete idiomas",
+    "text": "Inglês, norueguês, alemão, espanhol, francês, italiano e português, para cada usuário."
+   }
   ]
  },
  "pricing_teaser": {
@@ -145,7 +246,7 @@
   "panel": "O painel de barreiras: cada barreira e sua eficácia",
   "summary": "O resumo executivo, com mensagens-chave, Value at Risk e mapa de calor",
   "iso": "Prontidão para a ISO 27001 e o ciclo do SGSI",
-  "compliance": "Continuidade de negócios ISO 22301: o ciclo do sistema de gestão e seus requisitos",
+  "compliance": "DORA resiliência operacional digital: o ciclo e seus requisitos com o progresso atualizado",
   "cyber": "O mapa de transformação de cibersegurança em três anos",
   "paths": "Resultados do SharpHound com os caminhos de ataque mais curtos até o Tier 0"
  },
@@ -154,15 +255,23 @@
   "intro": "Um preço anual por organização, conforme o número de equipes que usam o SpaceRisk. Todos os planos incluem todas as funcionalidades.",
   "currency": "Moeda",
   "per_year": "por ano",
-  "names": ["Small", "Business", "Enterprise"],
-  "teams": ["Até 5 equipes", "Até 10 equipes", "Equipes ilimitadas"],
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Até 5 equipes",
+   "Até 10 equipes",
+   "Equipes ilimitadas"
+  ],
   "popular": "Mais escolhido",
   "included_title": "Todos os planos incluem",
   "included": [
    "Registro de riscos, bowties, barreiras e revisões mensais",
    "Projetos, a visão financeira e o resumo executivo",
-   "ISO 27001, ISO 22301 e ISO 45001",
-   "Mapa do programa de cibersegurança e importação de ferramentas de segurança",
+   "Módulo ISO 27001: o SGSI, o programa cibernético e a importação de ferramentas de segurança",
+   "Módulo de conformidade: ISO 22301, 45001, 27701, 42001, GDPR, NIS2, DORA e CRA",
    "API para agentes com caixa de aprovação",
    "Exportações em PDF, PowerPoint e Excel, e backups completos",
    "Hospedado por nós ou nos seus servidores"

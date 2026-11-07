@@ -121,43 +121,54 @@
  },
  "compliance": {
   "eyebrow": "Compliance",
-  "title": "One management system, many standards.",
-  "text": "Switch on the frameworks you need. Each one shows its Plan, Do, Check, Act loop with live progress and your next steps, and they share one set of registers: interested parties, legal obligations, objectives, documents, audits, management reviews and nonconformities.",
+  "title": "Two modules. One management system.",
+  "text": "Add the ISO 27001 module, the Compliance module or both. Each framework shows its loop with live progress and your next steps, and they share one set of registers: interested parties, legal obligations, objectives, documents, audits, management reviews, nonconformities, incidents and suppliers.",
   "live": "Available",
   "coming": "Coming",
   "items": [
    {
     "name": "ISO/IEC 27001 and 27002",
-    "text": "Clauses 4–10, all 93 controls, a Statement of Applicability, the ISMS loop and audit-ready exports.",
-    "state": "live"
+    "text": "Clauses 4–10, all 93 controls, a Statement of Applicability, the ISMS loop and audit-ready exports. Includes the cyber programme.",
+    "state": "live",
+    "module": "ISO 27001 module"
    },
    {
-    "name": "ISO 22301",
-    "text": "Business continuity: the BCMS loop and every requirement, with owners and evidence.",
-    "state": "live"
-   },
-   {
-    "name": "ISO 45001",
-    "text": "Occupational health and safety, with worker participation and legal requirements.",
-    "state": "live"
+    "name": "ISO 22301 and ISO 45001",
+    "text": "Business impact analysis with RTO and RPO, continuity exercises, worker consultation and the hierarchy of controls.",
+    "state": "live",
+    "module": "Compliance module"
    },
    {
     "name": "NIS2 and DORA",
-    "text": "Incident reporting deadlines, supplier registers and resilience testing.",
-    "state": "coming"
+    "text": "Incident reporting clocks, the supplier register and register of information, and resilience testing. With the Norwegian acts.",
+    "state": "live",
+    "module": "Compliance module"
    },
    {
     "name": "GDPR and ISO 27701",
-    "text": "Records of processing, DPIAs and data subject requests.",
-    "state": "coming"
+    "text": "Records of processing, DPIAs and data subject requests with their one-month deadline.",
+    "state": "live",
+    "module": "Compliance module"
    },
    {
-    "name": "ISO 42001 and the CRA",
-    "text": "AI management systems and product security under the Cyber Resilience Act.",
-    "state": "coming"
+    "name": "ISO 42001",
+    "text": "An AI system inventory with your EU AI Act assessment, and AI impact assessments.",
+    "state": "live",
+    "module": "Compliance module"
+   },
+   {
+    "name": "Cyber Resilience Act",
+    "text": "Products with digital elements and vulnerabilities, with the 24-hour, 72-hour and 14-day reporting clock.",
+    "state": "live",
+    "module": "Compliance module"
    }
   ],
-  "note": "Guidance, not legal advice. Requirement texts are written in our own words."
+  "note": "Guidance, not legal advice. Requirement texts are written in our own words.",
+  "points": [
+   "Each requirement shows the ISO 27001 controls that already cover the same work",
+   "Every framework exports to PDF, PowerPoint and Excel, and joins the executive summary",
+   "Overdue regulatory reports show on the executive dashboard"
+  ]
  },
  "security": {
   "eyebrow": "Cyber programme",
@@ -235,7 +246,7 @@
   "panel": "The Barrier Panel: every barrier and its effectiveness",
   "summary": "The executive summary, with key messages, Value at Risk and the heat map",
   "iso": "ISO 27001 readiness and the ISMS loop",
-  "compliance": "ISO 22301 business continuity: the management system loop and its requirements",
+  "compliance": "DORA digital operational resilience: the loop and its requirements with live progress",
   "cyber": "The cyber transformation map over three years",
   "paths": "SharpHound results with the shortest attack paths to Tier 0"
  },
@@ -259,8 +270,8 @@
   "included": [
    "Risk register, bowties, barriers and monthly reviews",
    "Projects, the financial view and the executive summary",
-   "ISO 27001, ISO 22301 and ISO 45001",
-   "Cyber programme map and security tool imports",
+   "ISO 27001 module: the ISMS, cyber programme and security tool imports",
+   "Compliance module: ISO 22301, 45001, 27701, 42001, GDPR, NIS2, DORA and the CRA",
    "Agent API with approval inbox",
    "PDF, PowerPoint and Excel exports, and full backups",
    "Hosted by us or self-hosted"

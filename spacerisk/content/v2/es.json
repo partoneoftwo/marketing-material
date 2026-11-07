@@ -27,18 +27,44 @@
  },
  "sectors": {
   "label": "Con demostraciones para",
-  "items": ["Banca", "Seguros", "Hospitales", "Petróleo y gas", "Electricidad", "Software", "Sector público", "Logística", "Construcción", "Comercio minorista"]
+  "items": [
+   "Banca",
+   "Seguros",
+   "Hospitales",
+   "Petróleo y gas",
+   "Electricidad",
+   "Software",
+   "Sector público",
+   "Logística",
+   "Construcción",
+   "Comercio minorista"
+  ]
  },
  "loop": {
   "eyebrow": "Cómo funciona",
   "title": "El ciclo ISO 31000, integrado en el mes.",
   "text": "Nada de un proyecto de riesgos aparte que se queda obsoleto. SpaceRisk aplica la norma como un ritmo mensual sencillo que cualquier equipo puede seguir.",
   "steps": [
-   {"title": "Fije los criterios", "text": "Una escala de probabilidad y consecuencia, su apetito de riesgo y sus categorías."},
-   {"title": "Identifique", "text": "Equipos y proyectos registran lo que puede salir mal, allí donde trabajan."},
-   {"title": "Analice y evalúe", "text": "Niveles inherente, residual y objetivo, frente al apetito de riesgo."},
-   {"title": "Trate", "text": "Barreras y acciones con responsables y plazos."},
-   {"title": "Supervise y revise", "text": "Cada mes, cada equipo revisa sus riesgos, comprueba sus barreras y entrega su informe."}
+   {
+    "title": "Fije los criterios",
+    "text": "Una escala de probabilidad y consecuencia, su apetito de riesgo y sus categorías."
+   },
+   {
+    "title": "Identifique",
+    "text": "Equipos y proyectos registran lo que puede salir mal, allí donde trabajan."
+   },
+   {
+    "title": "Analice y evalúe",
+    "text": "Niveles inherente, residual y objetivo, frente al apetito de riesgo."
+   },
+   {
+    "title": "Trate",
+    "text": "Barreras y acciones con responsables y plazos."
+   },
+   {
+    "title": "Supervise y revise",
+    "text": "Cada mes, cada equipo revisa sus riesgos, comprueba sus barreras y entrega su informe."
+   }
   ]
  },
  "bowtie": {
@@ -50,7 +76,13 @@
    "Un panel de barreras para toda la organización, agrupado por equipo responsable o por tipo",
    "Factores de escalada y las barreras que protegen a las barreras"
   ],
-  "labels": {"threats": "Amenazas", "hazard": "Evento peligroso", "consequences": "Consecuencias", "preventive": "Barreras preventivas", "mitigating": "Barreras mitigadoras"}
+  "labels": {
+   "threats": "Amenazas",
+   "hazard": "Evento peligroso",
+   "consequences": "Consecuencias",
+   "preventive": "Barreras preventivas",
+   "mitigating": "Barreras mitigadoras"
+  }
  },
  "reviews": {
   "eyebrow": "Revisiones mensuales",
@@ -61,39 +93,92 @@
    "Informes que solo se pueden entregar cuando todos los riesgos están revisados",
    "Un comentario para cada mes y todo el historial para el auditor"
   ],
-  "steps": ["Revisar cada riesgo", "Comprobar cada barrera del equipo", "Añadir un comentario del mes", "Entregar el informe"]
+  "steps": [
+   "Revisar cada riesgo",
+   "Comprobar cada barrera del equipo",
+   "Añadir un comentario del mes",
+   "Entregar el informe"
+  ]
  },
  "executive": {
   "eyebrow": "Para la dirección",
   "title": "El riesgo en el idioma del consejo.",
   "text": "SpaceRisk pone precio a la exposición: pérdida esperada, un Value at Risk simulado antes y después de las barreras, y el retorno de lo que cuestan las barreras. El resumen ejecutivo redacta sus propios mensajes clave y está listo para presentar.",
   "stats": [
-   {"value": "VaR 95 %", "label": "simulado, antes y después de las barreras"},
-   {"value": "1 clic", "label": "resumen ejecutivo en PDF o PowerPoint"},
-   {"value": "Excel", "label": "todos los registros, listos para analizar"}
+   {
+    "value": "VaR 95 %",
+    "label": "simulado, antes y después de las barreras"
+   },
+   {
+    "value": "1 clic",
+    "label": "resumen ejecutivo en PDF o PowerPoint"
+   },
+   {
+    "value": "Excel",
+    "label": "todos los registros, listos para analizar"
+   }
   ]
  },
  "compliance": {
   "eyebrow": "Cumplimiento",
-  "title": "Un sistema de gestión, muchas normas.",
-  "text": "Active los marcos que necesite. Cada uno muestra su ciclo Planificar, Hacer, Verificar, Actuar con el avance en vivo y sus próximos pasos, y todos comparten los mismos registros: partes interesadas, obligaciones legales, objetivos, documentos, auditorías, revisiones por la dirección y no conformidades.",
+  "title": "Dos módulos. Un sistema de gestión.",
+  "text": "Añada el módulo ISO 27001, el módulo de cumplimiento o ambos. Cada marco muestra su ciclo con el progreso al día y sus próximos pasos, y todos comparten los mismos registros: partes interesadas, obligaciones legales, objetivos, documentos, auditorías, revisiones por la dirección, no conformidades, incidentes y proveedores.",
   "live": "Disponible",
   "coming": "Próximamente",
   "items": [
-   {"name": "ISO/IEC 27001 y 27002", "text": "Cláusulas 4–10, los 93 controles, una Declaración de aplicabilidad, el ciclo del SGSI y exportaciones listas para auditoría.", "state": "live"},
-   {"name": "ISO 22301", "text": "Continuidad de negocio: el ciclo del SGCN y cada requisito, con responsables y evidencias.", "state": "live"},
-   {"name": "ISO 45001", "text": "Seguridad y salud en el trabajo, con participación de los trabajadores y requisitos legales.", "state": "live"},
-   {"name": "NIS2 y DORA", "text": "Plazos de notificación de incidentes, registros de proveedores y pruebas de resiliencia.", "state": "coming"},
-   {"name": "RGPD e ISO 27701", "text": "Registro de actividades de tratamiento, EIPD y solicitudes de los interesados.", "state": "coming"},
-   {"name": "ISO 42001 y el CRA", "text": "Sistemas de gestión de IA y seguridad de productos según la Ley de Ciberresiliencia.", "state": "coming"}
+   {
+    "name": "ISO/IEC 27001 y 27002",
+    "text": "Cláusulas 4–10, los 93 controles, una declaración de aplicabilidad, el ciclo del SGSI y exportaciones listas para auditoría. Incluye el programa cibernético.",
+    "state": "live",
+    "module": "Módulo ISO 27001"
+   },
+   {
+    "name": "ISO 22301 e ISO 45001",
+    "text": "Análisis de impacto en el negocio con RTO y RPO, ejercicios de continuidad, consulta a los trabajadores y la jerarquía de controles.",
+    "state": "live",
+    "module": "Módulo de cumplimiento"
+   },
+   {
+    "name": "NIS2 y DORA",
+    "text": "Plazos de notificación de incidentes, el registro de proveedores y el registro de información, y pruebas de resiliencia. Con las leyes noruegas.",
+    "state": "live",
+    "module": "Módulo de cumplimiento"
+   },
+   {
+    "name": "RGPD e ISO 27701",
+    "text": "Registro de actividades de tratamiento, EIPD y solicitudes de los interesados con su plazo de un mes.",
+    "state": "live",
+    "module": "Módulo de cumplimiento"
+   },
+   {
+    "name": "ISO 42001",
+    "text": "Un inventario de sistemas de IA con su evaluación según el Reglamento de IA de la UE, y evaluaciones de impacto de la IA.",
+    "state": "live",
+    "module": "Módulo de cumplimiento"
+   },
+   {
+    "name": "Cyber Resilience Act",
+    "text": "Productos con elementos digitales y vulnerabilidades, con los plazos de notificación de 24 horas, 72 horas y 14 días.",
+    "state": "live",
+    "module": "Módulo de cumplimiento"
+   }
   ],
-  "note": "Orientación, no asesoramiento jurídico. Los textos de los requisitos están redactados con nuestras propias palabras."
+  "note": "Orientación, no asesoramiento jurídico. Los textos de los requisitos están redactados con nuestras propias palabras.",
+  "points": [
+   "Cada requisito muestra los controles de ISO 27001 que ya cubren el mismo trabajo",
+   "Cada marco se exporta a PDF, PowerPoint y Excel y se incluye en el resumen ejecutivo",
+   "Las notificaciones a las autoridades vencidas aparecen en el panel de la dirección"
+  ]
  },
  "security": {
   "eyebrow": "Programa de ciberseguridad",
   "title": "De los hallazgos de seguridad a un plan a tres años.",
   "text": "Suba los resultados de las herramientas que su equipo ya utiliza. SpaceRisk convierte los hallazgos en evidencias para los controles ISO correctos, encuentra los caminos de ataque más cortos hacia sus administradores de dominio y propone un programa priorizado en un mapa de transformación que puede llevar directamente al consejo.",
-  "tools": ["PingCastle", "Prowler", "SharpHound"],
+  "tools": [
+   "PingCastle",
+   "Prowler",
+   "SharpHound"
+  ],
   "points": [
    "Hallazgos, tendencias y correcciones por objetivo, en cada ejecución",
    "Caminos de ataque hacia el Tier 0 a partir de datos de Active Directory",
@@ -104,7 +189,11 @@
   "eyebrow": "Agentes y API",
   "title": "Deje el papeleo a sus agentes. Las personas siguen decidiendo.",
   "text": "Los scripts y agentes de IA tienen sus propios tokens y una API REST documentada. Notifican y revisan riesgos, comprueban barreras y suben resultados de herramientas. En modo propuesta, cada cambio espera en una bandeja hasta que una persona lo aprueba.",
-  "points": ["Documentación OpenAPI", "Cada propuesta se valida antes de que nadie la apruebe", "Los tokens de los agentes se guardan como hash"],
+  "points": [
+   "Documentación OpenAPI",
+   "Cada propuesta se valida antes de que nadie la apruebe",
+   "Los tokens de los agentes se guardan como hash"
+  ],
   "inbox": "esperando aprobación en la bandeja",
   "stored": "resultados guardados"
  },
@@ -116,10 +205,22 @@
  "trust": {
   "title": "Hecho para inspirar confianza.",
   "items": [
-   {"title": "Alojado o en sus servidores", "text": "Lo gestionamos por usted, o lo ejecuta en sus propios servidores, en Intel o ARM."},
-   {"title": "Sus datos son suyos", "text": "Exporte todo en PDF, PowerPoint, Excel o una copia completa de la base de datos, cuando quiera."},
-   {"title": "Acceso por rol", "text": "La dirección lo ve todo. Los equipos ven lo suyo. Las cifras económicas quedan en la dirección."},
-   {"title": "Siete idiomas", "text": "Inglés, noruego, alemán, español, francés, italiano y portugués, para cada usuario."}
+   {
+    "title": "Alojado o en sus servidores",
+    "text": "Lo gestionamos por usted, o lo ejecuta en sus propios servidores, en Intel o ARM."
+   },
+   {
+    "title": "Sus datos son suyos",
+    "text": "Exporte todo en PDF, PowerPoint, Excel o una copia completa de la base de datos, cuando quiera."
+   },
+   {
+    "title": "Acceso por rol",
+    "text": "La dirección lo ve todo. Los equipos ven lo suyo. Las cifras económicas quedan en la dirección."
+   },
+   {
+    "title": "Siete idiomas",
+    "text": "Inglés, noruego, alemán, español, francés, italiano y portugués, para cada usuario."
+   }
   ]
  },
  "pricing_teaser": {
@@ -145,7 +246,7 @@
   "panel": "El panel de barreras: cada barrera y su eficacia",
   "summary": "El resumen ejecutivo, con mensajes clave, Value at Risk y el mapa de calor",
   "iso": "Preparación para ISO 27001 y el ciclo del SGSI",
-  "compliance": "Continuidad de negocio ISO 22301: el ciclo del sistema de gestión y sus requisitos",
+  "compliance": "DORA resiliencia operativa digital: el ciclo y sus requisitos con el progreso al día",
   "cyber": "El mapa de transformación de ciberseguridad a tres años",
   "paths": "Resultados de SharpHound con los caminos de ataque más cortos hacia el Tier 0"
  },
@@ -154,15 +255,23 @@
   "intro": "Un precio anual por organización, según cuántos equipos usan SpaceRisk. Todos los planes incluyen todas las funciones.",
   "currency": "Moneda",
   "per_year": "al año",
-  "names": ["Small", "Business", "Enterprise"],
-  "teams": ["Hasta 5 equipos", "Hasta 10 equipos", "Equipos ilimitados"],
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Hasta 5 equipos",
+   "Hasta 10 equipos",
+   "Equipos ilimitados"
+  ],
   "popular": "El más elegido",
   "included_title": "Todos los planes incluyen",
   "included": [
    "Registro de riesgos, bowties, barreras y revisiones mensuales",
    "Proyectos, la vista financiera y el resumen ejecutivo",
-   "ISO 27001, ISO 22301 e ISO 45001",
-   "Mapa del programa de ciberseguridad e importación de herramientas de seguridad",
+   "Módulo ISO 27001: el SGSI, el programa cibernético y la importación de herramientas de seguridad",
+   "Módulo de cumplimiento: ISO 22301, 45001, 27701, 42001, RGPD, NIS2, DORA y CRA",
    "API para agentes con bandeja de aprobación",
    "Exportación a PDF, PowerPoint y Excel, y copias de seguridad completas",
    "Alojado por nosotros o en sus servidores"
