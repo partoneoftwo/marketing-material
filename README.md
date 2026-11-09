@@ -33,6 +33,8 @@ for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact
   - `spacerisk-sales-deck.pptx`: 11-slide sales deck, 16:9;
   - `social/`: LinkedIn (1200×627), X (1500×500) and square (1080×1080) images;
   - `texts.md`: taglines, short, medium and long descriptions, feature blurbs and boilerplate.
+- **Sales (English, drafts):** [`interview-guide.md`](spacerisk/materials/en/sales/interview-guide.md) for discovery
+  conversations, and [`pilot-offer.md`](spacerisk/materials/en/sales/pilot-offer.md), a one-page 90-day pilot offer.
 - **Screenshots:** [`spacerisk/screenshots/`](spacerisk/screenshots). Real product screens with fictional showcase data.
 
 | Language | Website | Product sheet | Sales deck | Texts |
