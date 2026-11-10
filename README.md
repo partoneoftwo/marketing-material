@@ -35,6 +35,10 @@ for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact
   - `texts.md`: taglines, short, medium and long descriptions, feature blurbs and boilerplate.
 - **Sales (English, drafts):** [`interview-guide.md`](spacerisk/materials/en/sales/interview-guide.md) for discovery
   conversations, and [`pilot-offer.md`](spacerisk/materials/en/sales/pilot-offer.md), a one-page 90-day pilot offer.
+  Around them: [`outreach-messages.md`](spacerisk/materials/en/sales/outreach-messages.md) (English and Norwegian),
+  [`interview-notes.md`](spacerisk/materials/en/sales/interview-notes.md) (notes template, tally, what to do with the
+  result), [`pilot-agreement.md`](spacerisk/materials/en/sales/pilot-agreement.md) (template, needs a lawyer's check) and
+  [`pilot-runbook.md`](spacerisk/materials/en/sales/pilot-runbook.md).
 - **Screenshots:** [`spacerisk/screenshots/`](spacerisk/screenshots). Real product screens with fictional showcase data.
 
 | Language | Website | Product sheet | Sales deck | Texts |
