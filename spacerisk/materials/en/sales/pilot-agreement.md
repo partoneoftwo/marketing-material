@@ -53,8 +53,7 @@ approved by the Customer / nothing without separate written consent.]
 
 ## 10. The service as it is
 SpaceRisk is under active development and is delivered as it is during the pilot. It gives guidance, not legal advice;
-the Customer remains responsible for its own compliance. Single sign-on and two-factor login are not available at
-the time of writing. The Supplier's total liability under this agreement is limited to the pilot fee.
+the Customer remains responsible for its own compliance. The Supplier's total liability under this agreement is limited to the pilot fee.
 
 ## 11. Ending early
 Either party may end the pilot with [14] days' written notice. The pilot fee is not refunded [unless the Supplier

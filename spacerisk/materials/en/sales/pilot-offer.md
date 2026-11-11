@@ -46,7 +46,8 @@ Pick two or three, for example:
 | 9–12 | Board report from SpaceRisk, final review, decision |
 
 ## Good to know
-- Single sign-on and two-factor login are not available yet. Tell us if you need them; they're next on the list.
+- Single sign-on (OpenID Connect or SAML 2.0, e.g. Entra ID, Google, Okta) and two-factor login are included in every
+  plan.
 - Translations other than English are machine-made and under review.
 - SpaceRisk gives guidance, not legal advice.
 
