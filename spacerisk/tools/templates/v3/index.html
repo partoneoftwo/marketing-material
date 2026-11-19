@@ -1,5 +1,5 @@
 {% extends "_base.html" %}
-{% macro shot(name, eager=False, cls="") %}<figure class="frame {{ cls }}"><div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="../../v2/assets/shots/{{ shot_lang }}/{{ name }}.webp" width="{{ shot_h[name][0] }}" height="{{ shot_h[name][1] }}" alt="{{ c.shots[name] }}"{% if not eager %} loading="lazy"{% endif %} decoding="async"></figure>{% endmacro %}
+{% macro shot(name, eager=False, cls="") %}<figure class="frame {{ cls }}"><div class="frame-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="../assets/shots/{{ shot_lang }}/{{ name }}.webp" width="{{ shot_h[name][0] }}" height="{{ shot_h[name][1] }}" alt="{{ c.shots[name] }}"{% if not eager %} loading="lazy"{% endif %} decoding="async"></figure>{% endmacro %}
 {% macro checks(items) %}<ul class="checks">{% for p in items %}<li>{{ check }}<span>{{ p }}</span></li>{% endfor %}</ul>{% endmacro %}
 {% block main %}
 <section class="hero">

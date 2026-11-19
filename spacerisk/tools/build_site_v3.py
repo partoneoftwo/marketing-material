@@ -1,6 +1,6 @@
 """Build SpaceRisk site v3: v3/<lang>/index.html and pricing.html from content/v3/<lang>.json, plus the language redirect at
-v3/index.html. v3 is v2 plus the risk signals illustration under the hero screen. It has its own stylesheet, script and
-font, and reuses the app screens and social images in v2/assets. White only, no third-party requests."""
+v3/index.html. v3 is v2 plus the risk signals illustration under the hero screen. The v3 folder is self-contained (own stylesheet, script, font,
+app screens and social images), so it can be uploaded to any static host on its own. White only, no third-party requests."""
 import datetime
 import json
 from pathlib import Path
@@ -12,11 +12,10 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "v3"
-SHARED = ROOT / "v2" / "assets"  # app screens and social images are shared with v2
 ORDER = ["en", "es", "nb", "de", "fr", "it", "pt-br"]  # menu order
 CLASSIC = {"en", "es", "de", "fr", "it", "pt-br"}  # languages of the colourful site (0055); nb links to English
 BASE_URL = "https://partoneoftwo.github.io/marketing-material/spacerisk/v3/"
-OG_URL = "https://partoneoftwo.github.io/marketing-material/spacerisk/v2/assets/og/"
+CLASSIC_URL = "https://partoneoftwo.github.io/marketing-material/spacerisk/"  # absolute, so v3 also works when hosted on its own
 SHOTS = ["dashboard", "bowtie", "panel", "summary", "iso", "compliance", "cyber", "paths"]
 
 MARK = Markup('<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 7.5 14 16 3 24.5z" fill="#2f5bff"/>'
@@ -115,10 +114,10 @@ def main():
         shot_lang = c["app_lang"]
         heights = {}
         for name in SHOTS:
-            with Image.open(SHARED / "shots" / shot_lang / f"{name}.webp") as im:
+            with Image.open(OUT / "assets" / "shots" / shot_lang / f"{name}.webp") as im:
                 heights[name] = (im.width // 2, im.height // 2)  # 2x screens: CSS pixels
         mailto = Markup(f"mailto:{c['contact']['email']}?subject={quote(c['contact']['subject'])}")
-        common = dict(c=c, langs=langs, base_url=BASE_URL, og_url=OG_URL, version=version, mark=MARK, check=CHECK, globe=GLOBE, mailto=mailto,
+        common = dict(c=c, langs=langs, base_url=BASE_URL, classic_url=CLASSIC_URL, version=version, mark=MARK, check=CHECK, globe=GLOBE, mailto=mailto,
                       classic_lang=lang if lang in CLASSIC else "en", year=datetime.date.today().year)
         (OUT / lang).mkdir(parents=True, exist_ok=True)
         page = env.get_template("index.html").render(

@@ -10,7 +10,7 @@
 <meta property="og:title" content="{{ c.meta.title }}">
 <meta property="og:description" content="{{ c.meta.description }}">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ og_url }}{{ c.lang }}.png">
+<meta property="og:image" content="{{ base_url }}assets/og/{{ c.lang }}.png">
 <meta name="twitter:card" content="summary_large_image">
 {% for l in langs %}<link rel="alternate" hreflang="{{ l.html_lang }}" href="{{ base_url }}{{ l.lang }}/{{ page_file if page_file != 'index.html' else '' }}">
 {% endfor %}<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
@@ -48,7 +48,7 @@
     <nav class="foot-links" aria-label="Footer">
       <a href="pricing.html">{{ c.nav.pricing }}</a>
       <a href="{{ mailto }}">{{ c.contact.email }}</a>
-      <a href="../../{{ classic_lang }}/">{{ c.footer.classic }}</a>
+      <a href="{{ classic_url }}{{ classic_lang }}/">{{ c.footer.classic }}</a>
     </nav>
     <p class="foot-note">© {{ year }} SpaceRisk · {{ c.footer.privacy }}</p>
   </div>
