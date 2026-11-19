@@ -11,13 +11,14 @@ on:
       - identity/website/**
       - cloud/website/**
       - historian/website/**
+      - frontpage/**
       - deploy/**
   workflow_dispatch:
     inputs:
       site:
         description: Website to deploy
         type: choice
-        options: [all, spacerisk, products, identity, cloud, historian]
+        options: [all, spacerisk, products, identity, cloud, historian, frontpage]
         default: all
 
 concurrency:

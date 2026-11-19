@@ -18,6 +18,10 @@ if [ -z "$site" ] || [ -z "$src" ]; then
   exit 2
 fi
 domain="$(site_field "$site" 3)"
+if [ ! -d "$src" ]; then
+  echo "::warning::Folder $src/ is not in the repo yet, nothing to deploy for $site"
+  exit 0
+fi
 [ -f "$src/index.html" ] || { echo "No index.html in $src, refusing to deploy" >&2; exit 1; }
 
 # Copy the folder contents to a staging folder, leaving out build inputs (texts, tools).

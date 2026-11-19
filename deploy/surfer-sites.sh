@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# The five websites that deploy to Cloudron Surfer, one line per site:
+# The websites that deploy to Cloudron Surfer, one line per site:
 #   name  source folder in this repo  Surfer domain  token secret  folders/files left out
 # "name" is what you say, e.g. "deploy identity website" -> identity.
 # The CONTENTS of the source folder land at the Surfer root "/", never in a subfolder.
@@ -9,6 +9,7 @@ products   products-top-level-website products.frivolddigital.com   SURFER_TOKEN
 identity   identity/website           identity.frivolddigital.com   SURFER_TOKEN_IDENTITY
 cloud      cloud/website              cloud.frivolddigital.com      SURFER_TOKEN_CLOUD
 historian  historian/website          historian.frivolddigital.com  SURFER_TOKEN_HISTORIAN
+frontpage  frontpage                  frontpage.frivold.digital     SURFER_TOKEN_FRONTPAGE
 '
 
 # site_field <name> <column 1-4>  |  site_excludes <name>  |  site_names

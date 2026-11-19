@@ -109,6 +109,7 @@ secrets are listed in [`deploy/surfer-sites.sh`](deploy/surfer-sites.sh):
 | identity | `identity/website/` | identity.frivolddigital.com | `SURFER_TOKEN_IDENTITY` |
 | cloud | `cloud/website/` | cloud.frivolddigital.com | `SURFER_TOKEN_CLOUD` |
 | historian | `historian/website/` | historian.frivolddigital.com | `SURFER_TOKEN_HISTORIAN` |
+| frontpage | `frontpage/` (not added yet) | frontpage.frivold.digital (also www.frivolddigital.com) | `SURFER_TOKEN_FRONTPAGE` |
 
 Deploy one site by hand from the Actions tab ("Deploy websites to Surfer", Run workflow), or locally with
 `SURFER_TOKEN=... deploy/deploy-to-surfer.sh identity` (add `--dry-run` to list the files first).
