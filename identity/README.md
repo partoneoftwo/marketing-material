@@ -7,7 +7,8 @@ which it can send to SpaceRisk.
 
 - **Website:** `website/`, in English, Norwegian (bokmål) and Spanish. Same look as the Historian site. The folder is
   self-contained and can be uploaded to any static host on its own. No cookies, no third-party requests, and no scripts
-  apart from the language redirect.
+  apart from the language redirect. The same folder, zipped for upload: [`many-worlds-identity-website.zip`](many-worlds-identity-website.zip)
+  (rebuild it after a text change).
 - **Texts** in `content/<lang>.json` (nb and es were machine-written from English; have a native speaker review them).
   Check with `python identity/tools/check_content.py`. Rebuild with `python identity/tools/build_site.py` (needs `jinja2`).
   Adding a language is one more content file: de, fr, it and pt-br are picked up when they exist.
