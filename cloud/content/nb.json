@@ -1,0 +1,131 @@
+{
+ "lang": "nb",
+ "html_lang": "nb",
+ "lang_name": "Norsk (bokmål)",
+ "meta": {
+  "title": "Many Worlds Cloud: dyp innsikt i skyinfrastrukturen",
+  "description": "Cloud leser hva en sikkerhetsskanning har funnet i AWS-, Azure- og Google Cloud-kontoene deres, og gjør det om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver."
+ },
+ "nav": {"skip": "Hopp til innholdet", "home": "Many Worlds Cloud, forsiden", "contact": "Snakk med oss",
+  "links": [{"href": "#reads", "text": "Slik virker det"}, {"href": "#report", "text": "Rapporten"}, {"href": "#compliance", "text": "Etterlevelse"}, {"href": "#conclusions", "text": "Konklusjoner"}, {"href": "#accounts", "text": "Alle kontoer"}]},
+ "hero": {
+  "eyebrow": "Dyp innsikt i skyinfrastrukturen",
+  "title": "Vit hva som er eksponert i skyen, og hva som bør gjøres med det.",
+  "text": "Cloud leser hva en sikkerhetsskanning har funnet i skykontoene deres, og gjør det om til en rapport og en liste over ting å handle på.",
+  "cta_primary": "Snakk med oss",
+  "cta_secondary": "Se hva den finner",
+  "meta": [{"k": "Skanning", "v": "med lesetilgang"}, {"k": "Leser", "v": "AWS, Azure, Google Cloud"}, {"k": "Endrer", "v": "ingenting i skyen"}, {"k": "Skanner", "v": "Prowler, åpen kildekode"}]
+ },
+ "tally": [
+  {"n": "3", "label": "visninger av samme rapport: ledelsen, skyeiere og de som gjør jobben"},
+  {"n": "5", "label": "plattformer i ett bilde: AWS, Azure, Google Cloud, Kubernetes og Microsoft 365"},
+  {"n": "3", "label": "lister å handle på: risikoer, hendelser og oppgaver"},
+  {"n": "0", "label": "endringer i skyen deres"}
+ ],
+ "table_note": "Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.",
+ "sections": [
+  {
+   "id": "reads", "label": "Den bare leser",
+   "title": "Ingenting installeres i skyen, og ingenting i den endres.",
+   "text": "En skanner ser på hvordan skykontoene er satt opp, med en rolle som kan lese og ikke noe mer. Cloud tar det skanneren fant, og gjør det lesbart. Den oppretter, endrer eller sletter aldri en ressurs, og den retter ingenting på egen hånd.",
+   "flow": ["Skykontoer", "Rolle med lesetilgang", "Skanner", "Many Worlds Cloud", "Risikoer, hendelser, oppgaver"],
+   "points": ["Skanneren er Prowler, den åpne programvaren for sikkerhetsskanning av sky, og forblir et eget system", "AWS, Azure, Google Cloud, Kubernetes og Microsoft 365 i samme rapport", "Hundrevis av kontroller: identitet, lagring, nettverk, kryptering og logging", "Kjører på egen server"]
+  },
+  {
+   "id": "report", "label": "Kan man stole på resultatene?",
+   "title": "Rapporten begynner med å si hvor fullstendig hver konto kunne skannes.",
+   "text": "En konto som ser ren ut fordi skanneren ble nektet tilgang, må aldri leses som en konto uten feil. Derfor åpner hver rapport med hva som ble skannet, når, og hvilke kontroller som ikke kunne kjøres, og sier om tallene under er fullstendige eller nedre grenser.",
+   "table": {
+    "title": "Skannedekning",
+    "head": ["Konto", "Leverandør", "Siste skanning", "Kontroller kjørt", "Kunne ikke kjøres", "Vurdering"],
+    "rows": [
+     {"sev": 0, "cells": ["Produksjon", "AWS", "I dag 06:00", "412", "0", "Fullstendig"]},
+     {"sev": 2, "cells": ["Dataplattform", "Azure", "I dag 06:05", "287", "31", "Nedre grense: mangler tilgang til å lese nøkkelhvelvene"]},
+     {"sev": 1, "cells": ["Analyse", "Google Cloud", "9 dager siden", "0", "Alle", "Ikke skannet: påloggingen har utløpt"]}
+    ]
+   },
+   "points": ["Kontoer som er skannet, og når hver av dem sist ble skannet", "Kontroller som ikke kunne kjøres, og tilgangen hver av dem manglet", "Hvis en skanning feiler, bygges rapporten likevel og sier hva som mangler"]
+  },
+  {
+   "id": "findings", "label": "Funn, rangert etter alvorlighet",
+   "title": "Hvert funn kommer med hvorfor det betyr noe, hva som bør gjøres, og bevisene.",
+   "text": "Et funn er noe i skyen som krever en beslutning. De verste kommer først, og hvert funn navngir ressursene bak det.",
+   "table": {
+    "title": "Funn",
+    "head": ["Alvorlighet", "Hva som ble funnet", "Hvor", "Anbefalt tiltak"],
+    "rows": [
+     {"sev": 1, "cells": ["Kritisk", "Lagring som kan leses av hvem som helst på internett", "Produksjon, 2 bøtter", "Blokker offentlig tilgang"]},
+     {"sev": 1, "cells": ["Kritisk", "Rotkontoen mangler tofaktorpålogging", "Produksjon", "Slå på flerfaktorautentisering"]},
+     {"sev": 2, "cells": ["Høy", "En database kan nås fra internett", "Dataplattform, 1 server", "Stram inn brannmurregelen"]},
+     {"sev": 2, "cells": ["Høy", "Tilgangsnøkler eldre enn 90 dager", "3 kontoer, 14 nøkler", "Bytt nøklene"]},
+     {"sev": 3, "cells": ["Middels", "Revisjonslogging er slått av i to regioner", "Produksjon", "Slå på logging i alle regioner"]}
+    ]
+   },
+   "points": ["Åpen lagring, administratorer uten flerfaktorautentisering, gamle tilgangsnøkler, databaser som vender mot internett", "Trender mot forrige skanning, så dere ser om risikoen går opp eller ned", "PDF, Excel og PowerPoint fra hver side"]
+  },
+  {
+   "id": "questions", "label": "Én rapport, tre lesere",
+   "title": "Ledelsen og skyeiere stiller ulike spørsmål. Hver får sin egen visning.",
+   "text": "Ledersammendraget svarer på én side. Visningen for skyeiere går ned til den enkelte ressursen. Den fullstendige rapporten har bevisene for den som skal gjøre jobben.",
+   "columns": [
+    {"title": "Spørsmål for ledelsen", "items": ["Går risikoen opp eller ned?", "Vet vi hva som kjører i skyen vår?", "Er noe åpent mot internett som ikke skulle vært det?", "Hvem har administratortilgang?", "Er dataene våre kryptert?", "Tas det vare på logger, slik at en hendelse kan etterforskes?", "Hvilke kontoer trenger oppmerksomhet først?", "Hvordan står vi mot rammeverkene vi må svare for?"]},
+    {"title": "Spørsmål for skyeiere", "items": ["Hvilke ressurser feilet hvilken kontroll?", "Hva har endret seg siden forrige skanning?", "Hvilke feil er nye, og hvilke er rettet?", "Hvilke nøkler og roller er ubrukte eller for mektige?", "Hvor mangler kryptering?", "Hvor mangler logging?", "Hvilke nettverksregler er åpne for alle?", "Hva er rettingen for hvert funn?"]}
+   ]
+  },
+  {
+   "id": "compliance", "label": "Etterlevelse",
+   "title": "De samme funnene, lest mot rammeverkene dere må svare for.",
+   "text": "Én skanning svarer mange revisorer. Cloud viser hvilke krav i hvert rammeverk som er oppfylt, hvilke som feiler, og hvilke som ikke kunne vurderes, med funnene bak hvert av dem.",
+   "table": {
+    "title": "Rammeverk",
+    "head": ["Rammeverk", "Krav oppfylt", "Feiler", "Kunne ikke vurderes"],
+    "rows": [
+     {"sev": 2, "cells": ["CIS Benchmark", "48", "9", "2"]},
+     {"sev": 2, "cells": ["ISO 27001", "71", "12", "6"]},
+     {"sev": 3, "cells": ["NIS2", "29", "5", "4"]},
+     {"sev": 3, "cells": ["GDPR", "17", "3", "1"]}
+    ]
+   },
+   "points": ["Rammeverk som CIS, ISO 27001, NIS2, GDPR, SOC 2, PCI DSS og ENS", "Et krav som feiler, åpner funnene som forårsaket det", "Ikke vurdert vises aldri som oppfylt"]
+  },
+  {
+   "id": "conclusions", "label": "Konklusjoner",
+   "title": "Rapporten ender i tre lister som noen kan handle på.",
+   "text": "Risikoer går til et register, hendelser til en SOC og oppgaver til en kø. Hver vurdering har med regelen som ga den, fordi dette er første lesninger av én skanning, og siden sier det.",
+   "boxes": [
+    {"k": "Risikoer", "t": "Til risikoregisteret", "d": "En vedvarende svakhet, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt til en eier."},
+    {"k": "Hendelser", "t": "Til SOC", "d": "Noe som er eksponert akkurat nå og må håndteres."},
+    {"k": "Oppgaver", "t": "Til en kø", "d": "Ett stykke arbeid med en kø, en frist og en måte å se når det er ferdig på."}
+   ],
+   "points": ["Send de tre listene til et SpaceRisk-register med én knapp. Ingenting sendes før den trykkes", "Å sende på nytt oppdaterer det som ble sendt før, og lager aldri en kopi til", "Eksport til SIEM (OCSF) og til Jira, ServiceNow eller en postkasse, i tillegg til Excel og PowerPoint"]
+  },
+  {
+   "id": "accounts", "label": "Alle kontoer samtidig",
+   "title": "Ranger skykontoene etter hva som må avgjøres.",
+   "text": "Med mer enn én konto, ett abonnement eller ett prosjekt vises de side om side: hvilken som trenger oppmerksomhet først, hva som gjelder flere av dem mot hva som gjelder én, og hvilke som ikke kunne skannes fullstendig.",
+   "table": {
+    "title": "Organisasjon",
+    "head": ["Konto", "Leverandør", "Kritiske", "Høye", "Nye siden forrige skanning", "Skannet"],
+    "rows": [
+     {"sev": 1, "cells": ["Produksjon", "AWS", "2", "7", "3", "Fullstendig"]},
+     {"sev": 2, "cells": ["Dataplattform", "Azure", "0", "5", "1", "Delvis"]},
+     {"sev": 3, "cells": ["Utvikling", "AWS", "0", "1", "0", "Fullstendig"]},
+     {"sev": 1, "cells": ["Analyse", "Google Cloud", "Ukjent", "Ukjent", "Ukjent", "Ikke skannet"]}
+    ]
+   },
+   "points": ["Hver rad åpner kontoens egen rapport", "Funn som deles av flere kontoer, vises samlet", "Uskannet vises aldri som rent"]
+  }
+ ],
+ "contact": {
+  "title": "Se Cloud lese deres egne kontoer.",
+  "text": "Fortell oss om skyen deres, så viser vi rapporten først på simulerte data og deretter på deres egne.",
+  "cta": "Snakk med oss",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Many Worlds Cloud"
+ },
+ "footer": {
+  "tagline": "Dyp innsikt i skyinfrastrukturen.",
+  "spacerisk": "SpaceRisk, risikoregisteret den sender til",
+  "note": "Ingen informasjonskapsler, ingen sporing. Rapporttabellene viser oppdiktede data."
+ }
+}

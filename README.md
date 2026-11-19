@@ -15,6 +15,11 @@ https://partoneoftwo.github.io/marketing-material/products-top-level-website/ . 
 Many Worlds Historian: OT and IT deep network visibility. Website in seven languages:
 https://partoneoftwo.github.io/marketing-material/historian/website/ . Sales material still to be added: see [`historian/`](historian).
 
+## Cloud
+
+Many Worlds Cloud: cloud infrastructure deep visibility, a front end to the open-source scanner Prowler. Website in
+English, Norwegian and Spanish: https://partoneoftwo.github.io/marketing-material/cloud/website/ . See [`cloud/`](cloud).
+
 ## SpaceRisk
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view

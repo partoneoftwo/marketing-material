@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Cloud: visibilidad profunda de su infraestructura en la nube</title>
+<meta name="description" content="Cloud lee lo que un análisis de seguridad ha encontrado en sus cuentas de AWS, Azure y Google Cloud y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.">
+<meta property="og:title" content="Many Worlds Cloud: visibilidad profunda de su infraestructura en la nube">
+<meta property="og:description" content="Cloud lee lo que un análisis de seguridad ha encontrado en sus cuentas de AWS, Azure y Google Cloud y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Cloud, inicio"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Cloud</span></a>
+    <nav class="links" aria-label="Main"><a href="#reads">Cómo funciona</a><a href="#report">El informe</a><a href="#compliance">Cumplimiento</a><a href="#conclusions">Conclusiones</a><a href="#accounts">Todas las cuentas</a></nav>
+<details class="langs"><summary aria-label="Language">ES</summary><ul><li><a href="../en/" hreflang="en" lang="en">English</a></li><li><a href="../es/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="../nb/" hreflang="nb" lang="nb">Norsk (bokmål)</a></li></ul></details>    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Hable con nosotros</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">Visibilidad profunda de su infraestructura en la nube</p>
+  <h1>Sepa qué está expuesto en su nube y qué hacer al respecto.</h1>
+  <p class="lede">Cloud lee lo que un análisis de seguridad ha encontrado en sus cuentas en la nube y lo convierte en un informe y en una lista de cosas sobre las que actuar.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Hable con nosotros</a><a class="btn btn-line" href="#report">Vea lo que encuentra ↓</a></div>
+  <dl class="meta"><div><dt>Analiza</dt><dd>en solo lectura</dd></div><div><dt>Lee</dt><dd>AWS, Azure, Google Cloud</dd></div><div><dt>Cambia</dt><dd>nada en su nube</dd></div><div><dt>Escáner</dt><dd>Prowler, código abierto</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">vistas de un mismo informe: dirección, responsables de la nube y quienes hacen el trabajo</dd></div><div><dt class="n">5</dt><dd class="lbl">plataformas en una sola imagen: AWS, Azure, Google Cloud, Kubernetes y Microsoft 365</dd></div><div><dt class="n">3</dt><dd class="lbl">listas sobre las que actuar: riesgos, incidentes y tareas</dd></div><div><dt class="n">0</dt><dd class="lbl">cambios en su nube</dd></div></dl></div>
+
+<section class="page part" id="reads">
+  <p class="part-h"><b>01</b> Solo lee</p>
+  <div class="part-top">
+    <div><h2>No se instala nada en su nube ni se cambia nada en ella.</h2><p class="lede">Un escáner examina cómo están configuradas sus cuentas en la nube, con un rol que puede leer y nada más. Cloud toma lo que el escáner encontró y lo hace legible. Nunca crea, modifica ni elimina un recurso, y no corrige nada por su cuenta.</p></div>
+<ul class="points"><li>El escáner es Prowler, el escáner de seguridad en la nube de código abierto, y sigue siendo un sistema independiente</li><li>AWS, Azure, Google Cloud, Kubernetes y Microsoft 365 en el mismo informe</li><li>Cientos de comprobaciones: identidad, almacenamiento, redes, cifrado y registros</li><li>Funciona en su propio servidor</li></ul>  </div>
+<ol class="flow" aria-label="Solo lee"><li>Cuentas en la nube</li><li>Rol de solo lectura</li><li>Escáner</li><li class="own">Many Worlds Cloud</li><li>Riesgos, incidentes, tareas</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>02</b> ¿Se puede confiar en estos resultados?</p>
+  <div class="part-top">
+    <div><h2>El informe empieza diciendo hasta qué punto pudo analizarse cada cuenta.</h2><p class="lede">Una cuenta que parece limpia porque al escáner se le denegó el acceso nunca debe leerse como una cuenta sin problemas. Por eso cada informe empieza con lo que se analizó, cuándo, y qué comprobaciones no pudieron ejecutarse, y dice si las cifras que siguen son completas o son mínimos.</p></div>
+<ul class="points"><li>Cuentas analizadas, y cuándo se analizó cada una por última vez</li><li>Comprobaciones que no pudieron ejecutarse, y el permiso que le faltaba a cada una</li><li>Si un análisis falla, el informe se genera igualmente y dice qué falta</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Cobertura del análisis</p><div class="panel-scroll"><table><thead><tr><th scope="col">Cuenta</th><th scope="col">Proveedor</th><th scope="col">Último análisis</th><th scope="col">Comprobaciones ejecutadas</th><th scope="col">No pudieron ejecutarse</th><th scope="col">Valoración</th></tr></thead><tbody><tr class="s0"><td>Producción</td><td>AWS</td><td>Hoy 06:00</td><td>412</td><td>0</td><td>Completo</td></tr><tr class="s2"><td>Plataforma de datos</td><td>Azure</td><td>Hoy 06:05</td><td>287</td><td>31</td><td>Mínimo: falta permiso para leer los almacenes de claves</td></tr><tr class="s1"><td>Analítica</td><td>Google Cloud</td><td>Hace 9 días</td><td>0</td><td>Todas</td><td>Sin analizar: las credenciales han caducado</td></tr></tbody></table></div><figcaption>Ilustración del informe. El producto está en desarrollo y todas las cifras son inventadas.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>03</b> Hallazgos, ordenados por gravedad</p>
+  <div class="part-top">
+    <div><h2>Cada hallazgo incluye por qué importa, qué hacer y las pruebas.</h2><p class="lede">Un hallazgo es algo en su nube que requiere una decisión. Los peores aparecen primero, y cada uno nombra los recursos que hay detrás.</p></div>
+<ul class="points"><li>Almacenamiento abierto, administradores sin autenticación multifactor, claves de acceso antiguas, bases de datos expuestas a internet</li><li>Tendencias frente al análisis anterior, para ver si el riesgo sube o baja</li><li>PDF, Excel y PowerPoint desde cada página</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Hallazgos</p><div class="panel-scroll"><table><thead><tr><th scope="col">Gravedad</th><th scope="col">Qué se encontró</th><th scope="col">Dónde</th><th scope="col">Acción recomendada</th></tr></thead><tbody><tr class="s1"><td>Crítica</td><td>Almacenamiento que cualquiera puede leer desde internet</td><td>Producción, 2 buckets</td><td>Bloquear el acceso público</td></tr><tr class="s1"><td>Crítica</td><td>La cuenta raíz no tiene segundo factor de acceso</td><td>Producción</td><td>Activar la autenticación multifactor</td></tr><tr class="s2"><td>Alta</td><td>Una base de datos es accesible desde internet</td><td>Plataforma de datos, 1 servidor</td><td>Restringir la regla del cortafuegos</td></tr><tr class="s2"><td>Alta</td><td>Claves de acceso con más de 90 días</td><td>3 cuentas, 14 claves</td><td>Rotar las claves</td></tr><tr class="s3"><td>Media</td><td>El registro de auditoría está desactivado en dos regiones</td><td>Producción</td><td>Activar el registro en todas las regiones</td></tr></tbody></table></div><figcaption>Ilustración del informe. El producto está en desarrollo y todas las cifras son inventadas.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>04</b> Un informe, tres lectores</p>
+  <div class="part-top">
+    <div><h2>La dirección y los responsables de la nube hacen preguntas distintas. Cada uno tiene su vista.</h2><p class="lede">El resumen ejecutivo responde en una página. La vista del responsable de la nube baja hasta el recurso concreto. El informe completo lleva las pruebas para quien hace el trabajo.</p></div>
+  </div>
+<div class="cols"><div><h3>Preguntas de la dirección</h3><ul><li>¿El riesgo sube o baja?</li><li>¿Sabemos qué se está ejecutando en nuestra nube?</li><li>¿Hay algo abierto a internet que no debería estarlo?</li><li>¿Quién tiene acceso de administrador?</li><li>¿Están cifrados nuestros datos?</li><li>¿Se conservan los registros para poder investigar un incidente?</li><li>¿Qué cuentas necesitan atención primero?</li><li>¿Cómo estamos frente a los marcos ante los que respondemos?</li></ul></div><div><h3>Preguntas de los responsables de la nube</h3><ul><li>¿Qué recursos fallaron en qué comprobación?</li><li>¿Qué ha cambiado desde el análisis anterior?</li><li>¿Qué fallos son nuevos y cuáles se corrigieron?</li><li>¿Qué claves y roles no se usan o tienen demasiado poder?</li><li>¿Dónde falta cifrado?</li><li>¿Dónde faltan registros?</li><li>¿Qué reglas de red están abiertas a todo el mundo?</li><li>¿Cuál es la corrección de cada hallazgo?</li></ul></div></div></section>
+<section class="page part" id="compliance">
+  <p class="part-h"><b>05</b> Cumplimiento</p>
+  <div class="part-top">
+    <div><h2>Los mismos hallazgos, leídos frente a los marcos ante los que responde.</h2><p class="lede">Un solo análisis responde a muchos auditores. Cloud muestra qué requisitos de cada marco se cumplen, cuáles fallan y cuáles no pudieron evaluarse, con los hallazgos que hay detrás de cada uno.</p></div>
+<ul class="points"><li>Marcos como CIS, ISO 27001, NIS2, RGPD, SOC 2, PCI DSS y ENS</li><li>Un requisito que falla abre los hallazgos que lo causaron</li><li>Lo no evaluado nunca se muestra como cumplido</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Marcos</p><div class="panel-scroll"><table><thead><tr><th scope="col">Marco</th><th scope="col">Requisitos cumplidos</th><th scope="col">Fallan</th><th scope="col">No pudieron evaluarse</th></tr></thead><tbody><tr class="s2"><td>CIS Benchmark</td><td>48</td><td>9</td><td>2</td></tr><tr class="s2"><td>ISO 27001</td><td>71</td><td>12</td><td>6</td></tr><tr class="s3"><td>NIS2</td><td>29</td><td>5</td><td>4</td></tr><tr class="s3"><td>ENS</td><td>38</td><td>6</td><td>3</td></tr></tbody></table></div><figcaption>Ilustración del informe. El producto está en desarrollo y todas las cifras son inventadas.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>06</b> Conclusiones</p>
+  <div class="part-top">
+    <div><h2>El informe termina en tres listas sobre las que alguien puede actuar.</h2><p class="lede">Los riesgos van a un registro, los incidentes a un SOC y las tareas a una cola. Cada valoración lleva la regla que la produjo, porque son primeras lecturas de un solo análisis y la página lo dice.</p></div>
+<ul class="points"><li>Envíe las tres listas a un registro de SpaceRisk con un botón. No se envía nada hasta que se pulsa</li><li>Volver a enviar actualiza lo enviado antes y nunca crea una segunda copia</li><li>Exportaciones para un SIEM (OCSF) y para Jira, ServiceNow o un buzón, además de Excel y PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">Para el registro de riesgos</p><p class="k">Riesgos</p><p>Una debilidad persistente, valorada como probabilidad por consecuencia, cada una de 1 a 5, y asignada a un responsable.</p></div><div><p class="lbl">Para el SOC</p><p class="k">Incidentes</p><p>Algo que está expuesto ahora mismo y requiere respuesta.</p></div><div><p class="lbl">Para una cola</p><p class="k">Tareas</p><p>Un trabajo concreto con una cola, una fecha límite y una forma de saber cuándo está terminado.</p></div></div></section>
+<section class="page part" id="accounts">
+  <p class="part-h"><b>07</b> Todas las cuentas a la vez</p>
+  <div class="part-top">
+    <div><h2>Ordene sus cuentas en la nube por lo que hay que decidir.</h2><p class="lede">Con más de una cuenta, suscripción o proyecto las tiene una junto a otra: cuál necesita atención primero, qué ocurre en varias frente a lo que ocurre en una sola, y cuáles no pudieron analizarse por completo.</p></div>
+<ul class="points"><li>Cada fila abre el informe de esa cuenta</li><li>Los hallazgos que comparten varias cuentas se muestran juntos</li><li>Lo no analizado nunca se muestra como limpio</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Organización</p><div class="panel-scroll"><table><thead><tr><th scope="col">Cuenta</th><th scope="col">Proveedor</th><th scope="col">Críticos</th><th scope="col">Altos</th><th scope="col">Nuevos desde el último análisis</th><th scope="col">Analizada</th></tr></thead><tbody><tr class="s1"><td>Producción</td><td>AWS</td><td>2</td><td>7</td><td>3</td><td>Por completo</td></tr><tr class="s2"><td>Plataforma de datos</td><td>Azure</td><td>0</td><td>5</td><td>1</td><td>En parte</td></tr><tr class="s3"><td>Desarrollo</td><td>AWS</td><td>0</td><td>1</td><td>0</td><td>Por completo</td></tr><tr class="s1"><td>Analítica</td><td>Google Cloud</td><td>Desconocido</td><td>Desconocido</td><td>Desconocido</td><td>Sin analizar</td></tr></tbody></table></div><figcaption>Ilustración del informe. El producto está en desarrollo y todas las cifras son inventadas.</figcaption></figure></section>
+
+<section class="page cta" id="contact">
+  <h2>Vea a Cloud leer sus propias cuentas.</h2>
+  <p class="lede">Háblenos de su nube y le mostraremos el informe primero con datos simulados y después con los suyos.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Hable con nosotros</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Cloud</b> · Visibilidad profunda de su infraestructura en la nube.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/es/">SpaceRisk, el registro de riesgos al que envía</a></p>
+  <p class="fine">© 2026 Frivold Digital AS · Sin cookies ni seguimiento. Las tablas del informe muestran datos inventados.</p>
+</footer>
+</body>
+</html>

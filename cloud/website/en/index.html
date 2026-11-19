@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Cloud: cloud infrastructure deep visibility</title>
+<meta name="description" content="Cloud reads what a security scan has found in your AWS, Azure and Google Cloud accounts and turns it into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:title" content="Many Worlds Cloud: cloud infrastructure deep visibility">
+<meta property="og:description" content="Cloud reads what a security scan has found in your AWS, Azure and Google Cloud accounts and turns it into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Cloud, home"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Cloud</span></a>
+    <nav class="links" aria-label="Main"><a href="#reads">How it works</a><a href="#report">The report</a><a href="#compliance">Compliance</a><a href="#conclusions">Conclusions</a><a href="#accounts">Every account</a></nav>
+<details class="langs"><summary aria-label="Language">EN</summary><ul><li><a href="../en/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="../es/" hreflang="es" lang="es">Español</a></li><li><a href="../nb/" hreflang="nb" lang="nb">Norsk (bokmål)</a></li></ul></details>    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Talk to us</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">Cloud infrastructure deep visibility</p>
+  <h1>Know what is exposed in your cloud, and what to do about it.</h1>
+  <p class="lede">Cloud reads what a security scan has found in your cloud accounts and turns it into a report and a list of things to act on.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Talk to us</a><a class="btn btn-line" href="#report">See what it finds ↓</a></div>
+  <dl class="meta"><div><dt>Scans</dt><dd>read-only</dd></div><div><dt>Reads</dt><dd>AWS, Azure, Google Cloud</dd></div><div><dt>Changes</dt><dd>nothing in your cloud</dd></div><div><dt>Scanner</dt><dd>open-source Prowler</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">views of one report: leadership, cloud owners, the people doing the work</dd></div><div><dt class="n">5</dt><dd class="lbl">platforms in one picture: AWS, Azure, Google Cloud, Kubernetes and Microsoft 365</dd></div><div><dt class="n">3</dt><dd class="lbl">lists to act on: risks, incidents and tasks</dd></div><div><dt class="n">0</dt><dd class="lbl">changes to your cloud</dd></div></dl></div>
+
+<section class="page part" id="reads">
+  <p class="part-h"><b>01</b> It only reads</p>
+  <div class="part-top">
+    <div><h2>Nothing is installed in your cloud, and nothing in it is changed.</h2><p class="lede">A scanner looks at how your cloud accounts are set up, using a role that can read and nothing more. Cloud takes what the scanner found and makes it readable. It never creates, changes or deletes a resource, and it fixes nothing on its own.</p></div>
+<ul class="points"><li>The scanner is Prowler, the open-source cloud security scanner, and stays a separate system</li><li>AWS, Azure, Google Cloud, Kubernetes and Microsoft 365 in the same report</li><li>Hundreds of checks: identity, storage, networks, encryption, logging</li><li>Runs on your own server</li></ul>  </div>
+<ol class="flow" aria-label="It only reads"><li>Cloud accounts</li><li>Read-only role</li><li>Scanner</li><li class="own">Many Worlds Cloud</li><li>Risks, incidents, tasks</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>02</b> Can these results be trusted?</p>
+  <div class="part-top">
+    <div><h2>The report starts by saying how completely each account could be scanned.</h2><p class="lede">An account that looks clean because the scanner was refused access must never read as an account with nothing wrong. So every report opens with what was scanned, when, and which checks could not run, and says whether the figures below are complete or lower bounds.</p></div>
+<ul class="points"><li>Accounts scanned, and when each was last scanned</li><li>Checks that could not run, and the permission each one was missing</li><li>If a scan fails, the report still builds and says what is missing</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Scan coverage</p><div class="panel-scroll"><table><thead><tr><th scope="col">Account</th><th scope="col">Provider</th><th scope="col">Last scan</th><th scope="col">Checks run</th><th scope="col">Could not run</th><th scope="col">Verdict</th></tr></thead><tbody><tr class="s0"><td>Production</td><td>AWS</td><td>Today 06:00</td><td>412</td><td>0</td><td>Complete</td></tr><tr class="s2"><td>Data platform</td><td>Azure</td><td>Today 06:05</td><td>287</td><td>31</td><td>Lower bound: no permission to read the key vaults</td></tr><tr class="s1"><td>Analytics</td><td>Google Cloud</td><td>9 days ago</td><td>0</td><td>All</td><td>Not scanned: the credentials have expired</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>03</b> Findings, ranked by severity</p>
+  <div class="part-top">
+    <div><h2>Each finding comes with why it matters, what to do and the evidence.</h2><p class="lede">A finding is something in your cloud that needs a decision. The worst come first, and each one names the resources behind it.</p></div>
+<ul class="points"><li>Open storage, administrators without multi-factor authentication, old access keys, databases facing the internet</li><li>Trends against the scan before, so you can see whether risk is going up or down</li><li>PDF, Excel and PowerPoint from every page</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Findings</p><div class="panel-scroll"><table><thead><tr><th scope="col">Severity</th><th scope="col">What was found</th><th scope="col">Where</th><th scope="col">Recommended action</th></tr></thead><tbody><tr class="s1"><td>Critical</td><td>Storage readable by anyone on the internet</td><td>Production, 2 buckets</td><td>Block public access</td></tr><tr class="s1"><td>Critical</td><td>The root account has no second sign-in factor</td><td>Production</td><td>Turn on multi-factor authentication</td></tr><tr class="s2"><td>High</td><td>A database can be reached from the internet</td><td>Data platform, 1 server</td><td>Narrow the firewall rule</td></tr><tr class="s2"><td>High</td><td>Access keys older than 90 days</td><td>3 accounts, 14 keys</td><td>Rotate the keys</td></tr><tr class="s3"><td>Medium</td><td>Audit logging is off in two regions</td><td>Production</td><td>Turn on logging in every region</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>04</b> One report, three readers</p>
+  <div class="part-top">
+    <div><h2>Leadership and cloud owners ask different questions. Each gets its own view.</h2><p class="lede">The executive summary answers in a page. The cloud owner view goes down to the single resource. The full report carries the evidence for whoever does the work.</p></div>
+  </div>
+<div class="cols"><div><h3>Questions for leadership</h3><ul><li>Is risk going up or down?</li><li>Do we know what is running in our cloud?</li><li>Is anything open to the internet that should not be?</li><li>Who has administrator access?</li><li>Is our data encrypted?</li><li>Are logs kept, so an incident can be investigated?</li><li>Which accounts need attention first?</li><li>Where do we stand against the frameworks we answer to?</li></ul></div><div><h3>Questions for cloud owners</h3><ul><li>Which resources failed which check?</li><li>What changed since the scan before?</li><li>Which failures are new, and which were fixed?</li><li>Which keys and roles are unused or too powerful?</li><li>Where is encryption missing?</li><li>Where is logging missing?</li><li>Which network rules are open to everyone?</li><li>What is the fix for each finding?</li></ul></div></div></section>
+<section class="page part" id="compliance">
+  <p class="part-h"><b>05</b> Compliance</p>
+  <div class="part-top">
+    <div><h2>The same findings, read against the frameworks you answer to.</h2><p class="lede">One scan answers many auditors. Cloud shows which requirements of each framework are met, which are failing and which could not be assessed, with the findings behind every one.</p></div>
+<ul class="points"><li>Frameworks such as CIS, ISO 27001, NIS2, GDPR, SOC 2, PCI DSS and ENS</li><li>A failing requirement opens the findings that caused it</li><li>Not assessed is never shown as met</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Frameworks</p><div class="panel-scroll"><table><thead><tr><th scope="col">Framework</th><th scope="col">Requirements met</th><th scope="col">Failing</th><th scope="col">Could not be assessed</th></tr></thead><tbody><tr class="s2"><td>CIS Benchmark</td><td>48</td><td>9</td><td>2</td></tr><tr class="s2"><td>ISO 27001</td><td>71</td><td>12</td><td>6</td></tr><tr class="s3"><td>NIS2</td><td>29</td><td>5</td><td>4</td></tr><tr class="s3"><td>GDPR</td><td>17</td><td>3</td><td>1</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>06</b> Conclusions</p>
+  <div class="part-top">
+    <div><h2>The report ends in three lists somebody can act on.</h2><p class="lede">Risks go to a register, incidents to a SOC, tasks to a queue. Every rating carries the rule that produced it, because these are first readings from one scan and the page says so.</p></div>
+<ul class="points"><li>Send the three lists to a SpaceRisk register with one button. Nothing is sent until it is pressed</li><li>Sending again updates what was sent before and never makes a second copy</li><li>Exports for a SIEM (OCSF) and for Jira, ServiceNow or a mailbox, plus Excel and PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">For the risk register</p><p class="k">Risks</p><p>A standing weakness, rated likelihood times consequence, each from 1 to 5, and given to an owner.</p></div><div><p class="lbl">For the SOC</p><p class="k">Incidents</p><p>Something that is exposed right now and needs responding to.</p></div><div><p class="lbl">For a queue</p><p class="k">Tasks</p><p>One piece of work with a queue, a due date and a way to tell when it is finished.</p></div></div></section>
+<section class="page part" id="accounts">
+  <p class="part-h"><b>07</b> Every account at once</p>
+  <div class="part-top">
+    <div><h2>Rank your cloud accounts by what needs deciding.</h2><p class="lede">With more than one account, subscription or project you get them side by side: which needs attention first, what is true at several of them against what is true at one, and which could not be scanned completely.</p></div>
+<ul class="points"><li>Each row opens that account&#39;s own report</li><li>Findings shared by several accounts are shown together</li><li>Unscanned is never shown as clean</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Organization</p><div class="panel-scroll"><table><thead><tr><th scope="col">Account</th><th scope="col">Provider</th><th scope="col">Critical</th><th scope="col">High</th><th scope="col">New since last scan</th><th scope="col">Scanned</th></tr></thead><tbody><tr class="s1"><td>Production</td><td>AWS</td><td>2</td><td>7</td><td>3</td><td>Completely</td></tr><tr class="s2"><td>Data platform</td><td>Azure</td><td>0</td><td>5</td><td>1</td><td>In part</td></tr><tr class="s3"><td>Development</td><td>AWS</td><td>0</td><td>1</td><td>0</td><td>Completely</td></tr><tr class="s1"><td>Analytics</td><td>Google Cloud</td><td>Unknown</td><td>Unknown</td><td>Unknown</td><td>Not scanned</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+
+<section class="page cta" id="contact">
+  <h2>See Cloud read your own accounts.</h2>
+  <p class="lede">Tell us about your cloud and we will show you the report on simulated data first, then on yours.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">Talk to us</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Cloud">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Cloud</b> · Cloud infrastructure deep visibility.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/en/">SpaceRisk, the risk register it sends to</a></p>
+  <p class="fine">© 2026 Frivold Digital AS · No cookies, no tracking. The report tables show invented data.</p>
+</footer>
+</body>
+</html>
