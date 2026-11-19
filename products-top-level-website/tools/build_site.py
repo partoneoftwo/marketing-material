@@ -27,9 +27,10 @@ def main():
     for lang, c in content.items():
         values = {k: html.escape(v, quote=True) for k, v in c.items()}
         values["alternates"] = alternates
-        words = c["src_teams"].split()  # the teams label is too long for one line in its box: break near the middle
-        cut = min(range(1, len(words)), key=lambda i: abs(len(" ".join(words[:i])) - len(" ".join(words[i:]))))
-        values["src_teams_1"], values["src_teams_2"] = html.escape(" ".join(words[:cut])), html.escape(" ".join(words[cut:]))
+        for key in ("src_teams", "bar_protect", "bar_recover"):  # too long for one line in the diagram: break near the middle
+            words = c[key].split()
+            cut = min(range(1, len(words)), key=lambda i: abs(len(" ".join(words[:i])) - len(" ".join(words[i:]))))
+            values[key + "_1"], values[key + "_2"] = html.escape(" ".join(words[:cut])), html.escape(" ".join(words[cut:]))
         values["lang_code"] = lang.split("-")[0].upper()
         values["lang_menu"] = "".join(
             f'<li><a href="../{l}/" hreflang="{content[l]["html_lang"]}" lang="{content[l]["html_lang"]}"'

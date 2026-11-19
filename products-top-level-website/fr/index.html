@@ -65,6 +65,7 @@
   svg .box { fill: var(--panel); stroke: var(--line); }
   svg .tri { fill: rgba(111,143,224,0.10); stroke: var(--soft); stroke-width: 1.2; stroke-linejoin: round; }
   svg .bar { stroke: var(--soft); stroke-width: 2.2; stroke-linecap: round; }
+  svg .brk { fill: none; stroke: var(--muted); stroke-width: 0.8; }
   svg .knot { fill: var(--bg); stroke: var(--signal); stroke-width: 1.5; }
   svg .wire { fill: none; stroke: var(--signal); stroke-width: 1.2; stroke-dasharray: 3 6; stroke-linecap: round; animation: flow 1.2s linear infinite; opacity: 0.85; }
   svg .dot { fill: var(--signal); }
@@ -140,10 +141,10 @@
         <text class="lbl" x="22" y="358" font-size="7.5">Identité et accès</text>
       </a>
 
-      <path id="w1" class="wire" d="M148,58 C172,58 164,157 188,157"/>
-      <path id="w2" class="wire" d="M148,150 C172,150 164,189 188,189"/>
-      <path id="w3" class="wire" d="M148,242 C172,242 164,221 188,221"/>
-      <path id="w4" class="wire" d="M148,334 C172,334 164,253 188,253"/>
+      <path id="w1" class="wire" d="M148,58 C172,58 164,167 188,167"/>
+      <path id="w2" class="wire" d="M148,150 C172,150 164,199 188,199"/>
+      <path id="w3" class="wire" d="M148,242 C172,242 164,231 188,231"/>
+      <path id="w4" class="wire" d="M148,334 C172,334 164,263 188,263"/>
       <circle class="dot" r="2.6"><animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
       <circle class="dot" r="2.6"><animateMotion dur="2.4s" begin="-0.6s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
       <circle class="dot" r="2.6"><animateMotion dur="2.4s" begin="-1.2s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion></circle>
@@ -151,25 +152,31 @@
       <text class="lbl" x="168" y="392" font-size="7.5" text-anchor="middle" style="fill:#f5b942">Signaux de risque →</text>
 
       <a href="https://spacerisk.frivolddigital.com" target="_blank" rel="noopener">
-        <rect class="box" x="188" y="64" width="208" height="248" rx="10"/>
-        <text x="202" y="92" font-size="14" font-weight="600">SpaceRisk</text>
-        <text class="lbl" x="202" y="110" font-size="7.5">Nœud papillon des risques</text>
-        <polygon class="tri" points="206,135 206,275 296,205"/>
-        <polygon class="tri" points="386,135 386,275 296,205"/>
-        <line class="bar" x1="238" y1="160" x2="238" y2="250"/>
-        <line class="bar" x1="264" y1="180" x2="264" y2="230"/>
-        <line class="bar" x1="328" y1="180" x2="328" y2="230"/>
-        <line class="bar" x1="354" y1="160" x2="354" y2="250"/>
-        <circle class="knot" cx="296" cy="205" r="19"/>
-        <text x="296" y="209" font-size="9" font-weight="600" text-anchor="middle">Risque</text>
-        <text class="lbl" x="206" y="297" font-size="7">Menaces</text>
-        <text class="lbl" x="296" y="297" font-size="7" text-anchor="middle">Événement</text>
-        <text class="lbl" x="386" y="297" font-size="7" text-anchor="end">Conséquences</text>
+        <rect class="box" x="188" y="40" width="208" height="290" rx="10"/>
+        <text x="202" y="68" font-size="14" font-weight="600">SpaceRisk</text>
+        <text class="lbl" x="202" y="86" font-size="7.5">Nœud papillon des risques</text>
+        <text class="lbl" x="251" y="116" font-size="6" text-anchor="middle">Barrières de</text>
+        <text class="lbl" x="251" y="125" font-size="6" text-anchor="middle">protection</text>
+        <path class="brk" d="M238,140 V133 H264 V140"/>
+        <text class="lbl" x="341" y="116" font-size="6" text-anchor="middle">Barrières de</text>
+        <text class="lbl" x="341" y="125" font-size="6" text-anchor="middle">récupération</text>
+        <path class="brk" d="M328,140 V133 H354 V140"/>
+        <polygon class="tri" points="206,145 206,285 296,215"/>
+        <polygon class="tri" points="386,145 386,285 296,215"/>
+        <line class="bar" x1="238" y1="170" x2="238" y2="260"/>
+        <line class="bar" x1="264" y1="190" x2="264" y2="240"/>
+        <line class="bar" x1="328" y1="190" x2="328" y2="240"/>
+        <line class="bar" x1="354" y1="170" x2="354" y2="260"/>
+        <circle class="knot" cx="296" cy="215" r="19"/>
+        <text x="296" y="218.5" font-size="9" font-weight="600" text-anchor="middle">Risque</text>
+        <text class="lbl" x="206" y="309" font-size="7">Menaces</text>
+        <text class="lbl" x="296" y="309" font-size="7" text-anchor="middle">Événement</text>
+        <text class="lbl" x="386" y="309" font-size="7" text-anchor="end">Conséquences</text>
       </a>
-      <circle class="node" cx="188" cy="157" r="3"/>
-      <circle class="node" cx="188" cy="189" r="3"/>
-      <circle class="node" cx="188" cy="221" r="3"/>
-      <circle class="node" cx="188" cy="253" r="3"/>
+      <circle class="node" cx="188" cy="167" r="3"/>
+      <circle class="node" cx="188" cy="199" r="3"/>
+      <circle class="node" cx="188" cy="231" r="3"/>
+      <circle class="node" cx="188" cy="263" r="3"/>
     </svg>
   </section>
 

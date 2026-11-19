@@ -26,5 +26,7 @@
   "p_historian": "Insights from deep analysis of your OT and IT networks. Passive monitoring that reports what it finds as risk signals to SpaceRisk.",
   "p_cloud": "Insights from deep analysis of your cloud infrastructure, reported as risk signals to SpaceRisk.",
   "p_identity": "Insights from deep analysis of your access system — who joins, moves and leaves — reported as risk signals to SpaceRisk.",
-  "src_teams": "The teams in your organization"
+  "src_teams": "The teams in your organization",
+  "bar_protect": "Protective barriers",
+  "bar_recover": "Recovery barriers"
 }
