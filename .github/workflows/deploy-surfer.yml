@@ -1,0 +1,89 @@
+name: Deploy websites to Surfer
+
+# A merge to main deploys only the websites whose files changed.
+# "Run workflow" on the Actions tab deploys one site (or all) by hand.
+on:
+  push:
+    branches: [main]
+    paths:
+      - spacerisk/**
+      - products-top-level-website/**
+      - identity/website/**
+      - cloud/website/**
+      - historian/website/**
+      - deploy/**
+  workflow_dispatch:
+    inputs:
+      site:
+        description: Website to deploy
+        type: choice
+        options: [all, spacerisk, products, identity, cloud, historian]
+        default: all
+
+concurrency:
+  group: deploy-surfer
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      sites: ${{ steps.pick.outputs.sites }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: pick
+        env:
+          EVENT: ${{ github.event_name }}
+          INPUT_SITE: ${{ inputs.site }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          . deploy/surfer-sites.sh
+          if [ "$EVENT" = workflow_dispatch ]; then
+            if [ "$INPUT_SITE" = all ]; then names="$(site_names)"; else names="$INPUT_SITE"; fi
+          elif [ -z "$BEFORE" ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            names="$(site_names)"                       # first push or history rewritten: deploy all
+          else
+            changed="$(git diff --name-only "$BEFORE" "$GITHUB_SHA")"
+            if printf '%s\n' "$changed" | grep -q '^deploy/'; then
+              names="$(site_names)"                     # deploy scripts changed: deploy all
+            else
+              names=""
+              for n in $(site_names); do
+                src="$(site_field "$n" 2)"
+                printf '%s\n' "$changed" | grep -q "^$src/" && names="$names $n"
+              done
+            fi
+          fi
+          json="$(for n in $names; do printf '{"name":"%s","secret":"%s"}\n' "$n" "$(site_field "$n" 4)"; done | jq -sc .)"
+          echo "Sites to deploy: $json"
+          echo "sites=$json" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: plan
+    if: needs.plan.outputs.sites != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        site: ${{ fromJSON(needs.plan.outputs.sites) }}
+    name: deploy ${{ matrix.site.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g cloudron-surfer@6
+      - name: Upload folder contents to the Surfer root
+        env:
+          SURFER_TOKEN: ${{ secrets[matrix.site.secret] }}
+        run: |
+          if [ -z "$SURFER_TOKEN" ]; then
+            echo "::warning::Secret ${{ matrix.site.secret }} is not set, skipping ${{ matrix.site.name }}"
+            exit 0
+          fi
+          deploy/deploy-to-surfer.sh "${{ matrix.site.name }}"

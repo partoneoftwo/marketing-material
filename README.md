@@ -95,3 +95,20 @@ python spacerisk/tools/build_materials.py    # PDF, PPTX, social images, texts.m
 ```
 The site is static HTML and CSS with a small script for the bowtie demo. No tracking, no cookies, and it works without JavaScript.
 Fonts in `spacerisk/tools/fonts/` are DejaVu (see the licence file there).
+
+## Deploying to Cloudron Surfer
+
+A merge to `main` uploads each changed website to its Surfer, with the folder **contents** at the Surfer root `/`
+(not in a subfolder). Files on the Surfer that are no longer in the folder are removed. Sites, folders and token
+secrets are listed in [`deploy/surfer-sites.sh`](deploy/surfer-sites.sh):
+
+| Name | Folder | Surfer | Secret |
+|---|---|---|---|
+| spacerisk | `spacerisk/` (without `content/`, `tools/`, `materials/*/sales/`) | spacerisk.frivolddigital.com | `SURFER_TOKEN_SPACERISK` |
+| products | `products-top-level-website/` (without `content/`, `tools/`) | products.frivolddigital.com | `SURFER_TOKEN_PRODUCTS` |
+| identity | `identity/website/` | identity.frivolddigital.com | `SURFER_TOKEN_IDENTITY` |
+| cloud | `cloud/website/` | cloud.frivolddigital.com | `SURFER_TOKEN_CLOUD` |
+| historian | `historian/website/` | historian.frivolddigital.com | `SURFER_TOKEN_HISTORIAN` |
+
+Deploy one site by hand from the Actions tab ("Deploy websites to Surfer", Run workflow), or locally with
+`SURFER_TOKEN=... deploy/deploy-to-surfer.sh identity` (add `--dry-run` to list the files first).
