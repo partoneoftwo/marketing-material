@@ -23,7 +23,34 @@
   "subtitle": "SpaceRisk gjør risikoene teamene kjenner til, om til levende sløyfediagrammer, kontrollerer barrierene som stopper dem hver måned, og viser ledelsen hva det kan koste.",
   "cta_primary": "Snakk med oss",
   "cta_secondary": "Se priser",
-  "note": "Driftet av oss eller på egne servere. Dataene er alltid deres."
+  "statement": "Skap og beskytt."
+ },
+ "signals": {
+  "title": "Risikosignaler fra menneskene og driften deres. Klare oppdateringer til ledelsen.",
+  "aria": "Risikosignaler fra menneskene deres (enkeltpersoner og team) og driften deres (OT-anlegg, IT-nettverk, skyproduksjon og identitet) går inn i SpaceRisk. SpaceRisk sender oppdateringer til CEO og CISO.",
+  "groups": [
+   {
+    "label": "Menneskene deres",
+    "items": [
+     "Enkeltpersoner",
+     "Team"
+    ]
+   },
+   {
+    "label": "Driften deres",
+    "items": [
+     "OT-anlegg",
+     "IT-nettverk",
+     "Skyproduksjon",
+     "Identitet"
+    ]
+   }
+  ],
+  "hub_note": "Ett samlet risikobilde for virksomheten",
+  "outputs": [
+   "Oppdateringer til CEO",
+   "Oppdateringer til CISO"
+  ]
  },
  "sectors": {
   "label": "Med demodata for",

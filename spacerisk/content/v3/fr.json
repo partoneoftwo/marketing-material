@@ -23,7 +23,34 @@
   "subtitle": "SpaceRisk transforme les risques que connaissent vos équipes en bowties vivants, vérifie chaque mois les barrières qui les arrêtent et montre à la direction ce qu'ils coûteraient.",
   "cta_primary": "Parlons-en",
   "cta_secondary": "Voir les tarifs",
-  "note": "Hébergé par nous ou sur vos propres serveurs. Vos données restent toujours les vôtres."
+  "statement": "Créer et protéger."
+ },
+ "signals": {
+  "title": "Les signaux de risque de vos collaborateurs et de vos opérations. Des points clairs pour la direction.",
+  "aria": "Les signaux de risque de vos collaborateurs (personnes et équipes) et de vos opérations (sites OT, réseaux IT, production cloud et identité) arrivent dans SpaceRisk. SpaceRisk envoie des mises à jour au PDG et au RSSI.",
+  "groups": [
+   {
+    "label": "Vos collaborateurs",
+    "items": [
+     "Personnes",
+     "Équipes"
+    ]
+   },
+   {
+    "label": "Vos opérations",
+    "items": [
+     "Sites OT",
+     "Réseaux IT",
+     "Production cloud",
+     "Identité"
+    ]
+   }
+  ],
+  "hub_note": "Une seule vision du risque de l'entreprise",
+  "outputs": [
+   "Mises à jour pour le PDG",
+   "Mises à jour pour le RSSI"
+  ]
  },
  "sectors": {
   "label": "Avec des démonstrations pour",

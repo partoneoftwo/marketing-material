@@ -23,7 +23,34 @@
   "subtitle": "SpaceRisk trasforma i rischi che i vostri team conoscono in bowtie vivi, verifica ogni mese le barriere che li fermano e mostra alla direzione quanto costerebbero.",
   "cta_primary": "Parliamone",
   "cta_secondary": "Vedi i prezzi",
-  "note": "Ospitato da noi o sui vostri server. I vostri dati restano sempre vostri."
+  "statement": "Creare e proteggere."
+ },
+ "signals": {
+  "title": "Segnali di rischio dalle vostre persone e dalle vostre attività operative. Aggiornamenti chiari per il vertice.",
+  "aria": "I segnali di rischio dalle vostre persone (singoli e team) e dalle vostre attività operative (impianti OT, reti IT, produzione in cloud e identità) confluiscono in SpaceRisk. SpaceRisk invia aggiornamenti al CEO e al CISO.",
+  "groups": [
+   {
+    "label": "Le vostre persone",
+    "items": [
+     "Singoli",
+     "Team"
+    ]
+   },
+   {
+    "label": "Le vostre attività operative",
+    "items": [
+     "Impianti OT",
+     "Reti IT",
+     "Produzione in cloud",
+     "Identità"
+    ]
+   }
+  ],
+  "hub_note": "Un unico quadro del rischio aziendale",
+  "outputs": [
+   "Aggiornamenti per il CEO",
+   "Aggiornamenti per il CISO"
+  ]
  },
  "sectors": {
   "label": "Con aziende dimostrative per",

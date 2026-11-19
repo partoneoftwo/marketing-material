@@ -9,8 +9,7 @@ for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact
 
 - **Website v3 (v2 plus the risk signals illustration under the hero screen):** https://partoneoftwo.github.io/marketing-material/spacerisk/v3/
   Texts in `spacerisk/content/v3/<lang>.json`, rebuild with `python spacerisk/tools/build_site_v3.py` (check with `check_content_v3.py`).
-  The illustration is in English only so far: a language shows it once its JSON has the `signals` block. v3 reuses the app
-  screens and social images in `spacerisk/v2/assets`.
+  All seven languages. v3 reuses the app screens and social images in `spacerisk/v2/assets`.
 - **Website v2 (sleek, white):** https://partoneoftwo.github.io/marketing-material/spacerisk/v2/ in 7 languages, each with
   app screens in that language:
 
