@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Identity: joiners, movers and leavers, with the risk in plain sight</title>
+<meta name="description" content="Many Worlds Identity runs joiners, movers and leavers from your HR system on midPoint, and turns what midPoint records into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:title" content="Many Worlds Identity: joiners, movers and leavers, with the risk in plain sight">
+<meta property="og:description" content="Many Worlds Identity runs joiners, movers and leavers from your HR system on midPoint, and turns what midPoint records into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Identity, home"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Identity</span></a>
+    <nav class="links" aria-label="Main"><a href="#jml">How it works</a><a href="#signals">Risk signals</a><a href="#findings">Findings</a><a href="#outliers">Outliers</a><a href="#conclusions">Conclusions</a></nav>
+<nav class="langs" aria-label="Language"><a href="../en/index.html" hreflang="en" lang="en" title="English" aria-current="true">EN</a><a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a><a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk (bokmål)">NO</a></nav>    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Talk to us</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">Identity governance, automated</p>
+  <h1>The right access on day one, and none on the last.</h1>
+  <p class="lede">Many Worlds Identity gives and takes away access as people join, move and leave, driven by your HR system. Then it reads what midPoint has recorded and turns it into a report and a list of things to act on.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Talk to us</a><a class="btn btn-line" href="#report">See what it finds ↓</a></div>
+  <dl class="meta"><div><dt>Built on</dt><dd>midPoint</dd></div><div><dt>Source of truth</dt><dd>your HR system</dd></div><div><dt>Reads</dt><dd>midPoint&#39;s own records</dd></div><div><dt>Runs</dt><dd>on your own servers</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">events run from HR: joiner, mover and leaver</dd></div><div><dt class="n">5</dt><dd class="lbl">midPoint sources read: audit trail, policy rules, reconciliation, role analysis, certification</dd></div><div><dt class="n">6</dt><dd class="lbl">situations an account can be in, from linked to unmatched</dd></div><div><dt class="n">3</dt><dd class="lbl">lists to act on: risks, incidents and tasks</dd></div></dl></div>
+
+<section class="page part" id="jml">
+  <p class="part-h"><b>01</b> Joiners, movers, leavers</p>
+  <div class="part-top">
+    <div><h2>HR says it once. Every system follows.</h2><p class="lede">Your HR system is the source of truth. midPoint reads it, works out which roles each person is born with from department, location and job, and creates, changes or disables the accounts in the systems people sign in to. Nobody has to raise a ticket for the basics.</p></div>
+<ul class="points"><li>Birthright roles assigned automatically from HR attributes, and removed when they no longer apply</li><li>Accounts in Active Directory, Entra ID, LDAP, databases and applications through midPoint&#39;s connectors</li><li>Preview a change with midPoint&#39;s simulations before it touches a real account</li><li>midPoint is the open-source identity governance platform from Evolveum, and stays a separate system you can inspect</li></ul>  </div>
+<figure class="panel"><p class="panel-h">What happens, and what is kept</p><div class="panel-scroll"><table><thead><tr><th scope="col">Event</th><th scope="col">HR says</th><th scope="col">midPoint does</th><th scope="col">Signal kept</th></tr></thead><tbody><tr class="s0"><td>Joiner</td><td>Starts 1 March in Sales, Oslo</td><td>Creates the user, assigns the birthright roles for Sales and Oslo and creates the accounts</td><td>An audit record for every account. A failed one becomes a task</td></tr><tr class="s3"><td>Mover</td><td>Moves from Sales to Finance</td><td>Removes the Sales birthrights and adds the Finance ones. Access given by hand stays, and a policy rule can send it for review</td><td>Access the move did not explain is flagged</td></tr><tr class="s1"><td>Leaver</td><td>Last day 30 April</td><td>Disables every account when the contract ends, and deletes them after the retention period you choose</td><td>An account still active after the last day is an incident</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="signals">
+  <p class="part-h"><b>02</b> Risk signals from midPoint</p>
+  <div class="part-top">
+    <div><h2>The risk signals come straight from what midPoint records.</h2><p class="lede">Many Worlds Identity does not guess. It reads midPoint&#39;s audit trail, the results of its policy rules, the situation of every account after reconciliation, role analysis and certification decisions, with an account that can read and nothing more. The reading side never changes a user, an account or a role.</p></div>
+<ul class="points"><li>Audit trail: who changed what, on whose behalf, through which channel, and whether it succeeded, from the audit tables or the audit log file</li><li>Policy rules: segregation of duties breaches, roles without an owner, too many or too few holders of a role</li><li>Reconciliation: accounts with no owner, two owners or more than one possible owner</li><li>Role analysis: users whose access does not look like their peers&#39;</li><li>Certification: decisions to revoke that were never carried out, and reviews nobody answered</li></ul>  </div>
+<ol class="flow" aria-label="Risk signals from midPoint"><li>HR system</li><li>midPoint</li><li>Audit trail and policy results</li><li class="own">Many Worlds Identity</li><li>Risks, incidents, tasks</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>03</b> Can these signals be trusted?</p>
+  <div class="part-top">
+    <div><h2>The report starts by saying how completely each system could be read.</h2><p class="lede">A system that looks clean because it was never reconciled must never read as a system with nothing wrong. So every report opens with which systems midPoint has read, when, and how many accounts it could not place, and says whether the figures below are complete or lower bounds.</p></div>
+<ul class="points"><li>Systems connected, and when each was last reconciled</li><li>Reconciliation tasks that failed, and the error they stopped on</li><li>If a source cannot be read, the report still builds and says what is missing</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Coverage</p><div class="panel-scroll"><table><thead><tr><th scope="col">System</th><th scope="col">Last reconciliation</th><th scope="col">Accounts</th><th scope="col">Without an owner</th><th scope="col">Verdict</th></tr></thead><tbody><tr class="s0"><td>HR system</td><td>Today 05:00</td><td>1,284</td><td>0</td><td>Complete</td></tr><tr class="s0"><td>Active Directory</td><td>Today 05:30</td><td>1,412</td><td>37</td><td>Complete</td></tr><tr class="s2"><td>Payroll</td><td>3 days ago</td><td>311</td><td>4</td><td>Lower bound: the last reconciliation stopped with errors</td></tr><tr class="s1"><td>Badge system</td><td>Never</td><td>Unknown</td><td>Unknown</td><td>Not read: no reconciliation task is set up</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>04</b> Findings, ranked by severity</p>
+  <div class="part-top">
+    <div><h2>Each finding comes with why it matters, what to do and the evidence.</h2><p class="lede">A finding is something about who has access that needs a decision. The worst come first, and each one names the midPoint record behind it, so it can be checked by anyone with access to midPoint.</p></div>
+<ul class="points"><li>Accounts with no owner, toxic combinations, leavers with live access, changes made by hand instead of from HR</li><li>Trends against the report before, so you can see whether risk is going up or down</li><li>PDF, Excel and PowerPoint from every page</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Findings</p><div class="panel-scroll"><table><thead><tr><th scope="col">Severity</th><th scope="col">What was found</th><th scope="col">Source in midPoint</th><th scope="col">Recommended action</th></tr></thead><tbody><tr class="s1"><td>Critical</td><td>An account in Domain Admins that nobody owns</td><td>Reconciliation: unmatched</td><td>Find the owner or decommission it</td></tr><tr class="s1"><td>Critical</td><td>A leaver can still sign in to payroll</td><td>Audit trail: the disable failed with a fatal error</td><td>Disable the account, then fix the connector</td></tr><tr class="s2"><td>High</td><td>The same person can create and approve payments</td><td>Policy rule: exclusion</td><td>Remove one role, or record an exception with an owner and an end date</td></tr><tr class="s2"><td>High</td><td>A mover kept access from the old department</td><td>Role analysis: outlier</td><td>Send the access for review</td></tr><tr class="s3"><td>Medium</td><td>A role that grants payment approval has no owner</td><td>Policy rule: minimum assignees</td><td>Name an owner</td></tr><tr class="s3"><td>Medium</td><td>42 review cases nobody answered</td><td>Certification campaign</td><td>Escalate to the managers</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>05</b> One report, three readers</p>
+  <div class="part-top">
+    <div><h2>Leadership and identity owners ask different questions. Each gets its own view.</h2><p class="lede">The executive summary answers in a page. The identity owner view goes down to the single account and the audit record behind it. The full report carries the evidence for whoever does the work.</p></div>
+  </div>
+<div class="cols"><div><h3>Questions for leadership</h3><ul><li>Is identity risk going up or down?</li><li>Do leavers lose their access on the last day?</li><li>How many accounts does nobody own?</li><li>Who holds administrator rights, and who approved them?</li><li>Where can one person both do and approve?</li><li>Are access reviews done, and done on time?</li><li>Which systems are not under control yet?</li><li>Where do we stand against the access controls in ISO 27001 and NIS2?</li></ul></div><div><h3>Questions for identity owners</h3><ul><li>Which accounts are unmatched, disputed or in collision?</li><li>Which provisioning operations failed, and why?</li><li>Which roles have no owner?</li><li>Which assignments break a segregation of duties rule?</li><li>Which users have access their peers do not?</li><li>What changed in the audit trail since the report before?</li><li>Which changes were made by hand instead of from HR?</li><li>Which review decisions were never carried out?</li></ul></div></div></section>
+<section class="page part" id="outliers">
+  <p class="part-h"><b>06</b> Outliers</p>
+  <div class="part-top">
+    <div><h2>See who has access that their peers do not.</h2><p class="lede">midPoint&#39;s role analysis groups people with similar access and points out the ones who do not fit: a customer service agent who can approve payments, a developer with administrator rights in production. midPoint only suggests. Many Worlds Identity puts each suggestion where a person decides on it.</p></div>
+<ul class="points"><li>Uses the role mining and outlier detection built into midPoint</li><li>Each outlier shows the peer group it was measured against</li><li>A suggestion, never an automatic removal: it becomes a review or a task</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Outliers</p><div class="panel-scroll"><table><thead><tr><th scope="col">User</th><th scope="col">Peer group</th><th scope="col">Unusual access</th><th scope="col">Confidence</th></tr></thead><tbody><tr class="s1"><td>Employee 1041</td><td>Customer service, 48 people</td><td>Payment approver, Payroll administrator</td><td>92%</td></tr><tr class="s2"><td>Employee 2207</td><td>Developers, 31 people</td><td>Production database administrator</td><td>81%</td></tr><tr class="s3"><td>Employee 0388</td><td>Warehouse, 120 people</td><td>Remote access for contractors</td><td>64%</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="reviews">
+  <p class="part-h"><b>07</b> Access reviews</p>
+  <div class="part-top">
+    <div><h2>Reviews that close the loop, and proof that they did.</h2><p class="lede">midPoint runs certification campaigns: managers and role owners confirm or revoke the access of the people they answer for. Many Worlds Identity reads the outcome and shows what an auditor asks for: what was reviewed, what was revoked, and whether the revoking actually happened.</p></div>
+<ul class="points"><li>Scheduled campaigns, and reviews started on their own by a policy rule after a move</li><li>A revoke that was decided but not carried out is a finding</li><li>Unanswered is never shown as kept</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Certification campaigns</p><div class="panel-scroll"><table><thead><tr><th scope="col">Campaign</th><th scope="col">Cases</th><th scope="col">Kept</th><th scope="col">Revoked</th><th scope="col">No answer</th></tr></thead><tbody><tr class="s0"><td>Finance roles, quarterly</td><td>214</td><td>198</td><td>16</td><td>0</td></tr><tr class="s2"><td>Administrators, monthly</td><td>37</td><td>29</td><td>5</td><td>3</td></tr><tr class="s3"><td>All employees, yearly</td><td>1,284</td><td>1,121</td><td>121</td><td>42</td></tr></tbody></table></div><figcaption>Illustration of the report. The product is in development and every figure is invented.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>08</b> Conclusions</p>
+  <div class="part-top">
+    <div><h2>The report ends in three lists somebody can act on.</h2><p class="lede">Risks go to a register, incidents to a SOC, tasks to a queue. Every rating carries the rule that produced it, because these are first readings from what midPoint recorded and the page says so.</p></div>
+<ul class="points"><li>Send the three lists to a SpaceRisk register with one button. Nothing is sent until it is pressed</li><li>Sending again updates what was sent before and never makes a second copy</li><li>Exports for a SIEM (OCSF) and for Jira, ServiceNow or a mailbox, plus Excel and PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">For the risk register</p><p class="k">Risks</p><p>A standing weakness, such as a toxic combination or a role without an owner, rated likelihood times consequence, each from 1 to 5, and given to an owner.</p></div><div><p class="lbl">For the SOC</p><p class="k">Incidents</p><p>Something that needs responding to now, such as a leaver who can still sign in.</p></div><div><p class="lbl">For a queue</p><p class="k">Tasks</p><p>One piece of work, such as decommissioning an account, with a queue, a due date and a way to tell when it is finished.</p></div></div></section>
+
+<section class="page cta" id="contact">
+  <h2>See Identity read your own access.</h2>
+  <p class="lede">Tell us about your HR system and the systems people sign in to. We will show you the report on simulated data first, then on yours. If you already run midPoint, we start from what you have.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Talk to us</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Identity</b> · Identity governance, automated.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/en/">SpaceRisk, the risk register it sends to</a></p>
+<p class="foot-langs"><a href="../en/index.html" hreflang="en" lang="en" aria-current="true">English</a><a href="../es/index.html" hreflang="es" lang="es">Español</a><a href="../nb/index.html" hreflang="nb" lang="nb">Norsk (bokmål)</a></p>  <p class="fine">© 2026 Frivold Digital AS · No cookies, no tracking. The report tables show invented data.</p>
+  <p class="fine">midPoint is open-source software from Evolveum. Many Worlds Identity is built on it and is not an Evolveum product.</p>
+</footer>
+</body>
+</html>

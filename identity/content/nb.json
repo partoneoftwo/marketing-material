@@ -1,0 +1,147 @@
+{
+ "lang": "nb",
+ "html_lang": "nb",
+ "lang_name": "Norsk (bokmål)",
+ "meta": {
+  "title": "Many Worlds Identity: nyansatte, interne bytter og avganger, med risikoen synlig",
+  "description": "Many Worlds Identity styrer nyansatte, interne bytter og avganger fra HR-systemet ditt på midPoint, og gjør det midPoint registrerer om til en rapport og en liste over ting å gjøre noe med: risikoer, hendelser og oppgaver."
+ },
+ "nav": {"skip": "Gå til innholdet", "home": "Many Worlds Identity, forsiden", "contact": "Snakk med oss",
+  "links": [{"href": "#jml", "text": "Slik virker det"}, {"href": "#signals", "text": "Risikosignaler"}, {"href": "#findings", "text": "Funn"}, {"href": "#outliers", "text": "Avvikere"}, {"href": "#conclusions", "text": "Konklusjoner"}]},
+ "hero": {
+  "eyebrow": "Identitetsstyring, automatisert",
+  "title": "Riktig tilgang første dag, og ingen den siste.",
+  "text": "Many Worlds Identity gir og fjerner tilgang når folk begynner, bytter stilling og slutter, styrt av HR-systemet ditt. Deretter leser den det midPoint har registrert, og gjør det om til en rapport og en liste over ting å gjøre noe med.",
+  "cta_primary": "Snakk med oss",
+  "cta_secondary": "Se hva den finner",
+  "meta": [{"k": "Bygget på", "v": "midPoint"}, {"k": "Fasit", "v": "HR-systemet ditt"}, {"k": "Leser", "v": "midPoints egne registreringer"}, {"k": "Kjører", "v": "på egne servere"}]
+ },
+ "tally": [
+  {"n": "3", "label": "hendelser styrt fra HR: ny, bytte og avgang"},
+  {"n": "5", "label": "kilder i midPoint: revisjonslogg, policyregler, avstemming, rolleanalyse, sertifisering"},
+  {"n": "6", "label": "situasjoner en konto kan være i, fra koblet til uten eier"},
+  {"n": "3", "label": "lister å handle på: risikoer, hendelser og oppgaver"}
+ ],
+ "table_note": "Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.",
+ "sections": [
+  {
+   "id": "jml", "label": "Nyansatte, bytter, avganger",
+   "title": "HR sier det én gang. Alle systemer følger etter.",
+   "text": "HR-systemet ditt er fasiten. midPoint leser det, finner ut hvilke roller hver person får fra første dag ut fra avdeling, sted og stilling, og oppretter, endrer eller deaktiverer kontoene i systemene folk logger inn i. Ingen trenger å lage en sak for det grunnleggende.",
+   "table": {
+    "title": "Hva skjer, og hva blir tatt vare på",
+    "head": ["Hendelse", "HR sier", "midPoint gjør", "Signal som lagres"],
+    "rows": [
+     {"sev": 0, "cells": ["Ny", "Begynner 1. mars i Salg, Oslo", "Oppretter brukeren, tildeler grunnrollene for Salg og Oslo og oppretter kontoene", "En revisjonspost per konto. En som feiler blir en oppgave"]},
+     {"sev": 3, "cells": ["Bytte", "Går fra Salg til Økonomi", "Fjerner grunnrollene for Salg og legger til de for Økonomi. Tilgang gitt for hånd blir stående, og en policyregel kan sende den til gjennomgang", "Tilgang som byttet ikke forklarer, blir flagget"]},
+     {"sev": 1, "cells": ["Avgang", "Siste dag 30. april", "Deaktiverer alle kontoer når kontrakten går ut, og sletter dem etter oppbevaringstiden du velger", "En konto som fortsatt er aktiv etter siste dag, er en hendelse"]}
+    ]
+   },
+   "points": ["Grunnroller tildeles automatisk fra HR-attributter, og fjernes når de ikke lenger gjelder", "Kontoer i Active Directory, Entra ID, LDAP, databaser og applikasjoner gjennom midPoints koblinger", "Forhåndsvis en endring med midPoints simuleringer før den rører en ekte konto", "midPoint er åpen kildekode for identitetsstyring fra Evolveum, og forblir et eget system du kan se inn i"]
+  },
+  {
+   "id": "signals", "label": "Risikosignaler fra midPoint",
+   "title": "Risikosignalene kommer rett fra det midPoint registrerer.",
+   "text": "Many Worlds Identity gjetter ikke. Den leser midPoints revisjonslogg, resultatene av policyreglene, situasjonen til hver konto etter avstemming, rolleanalyse og beslutninger fra sertifisering, med en konto som kan lese og ingenting mer. Lesesiden endrer aldri en bruker, en konto eller en rolle.",
+   "flow": ["HR-system", "midPoint", "Revisjonslogg og policyresultater", "Many Worlds Identity", "Risikoer, hendelser, oppgaver"],
+   "points": ["Revisjonslogg: hvem endret hva, på vegne av hvem, gjennom hvilken kanal, og om det lyktes, fra revisjonstabellene eller revisjonsloggfilen", "Policyregler: brudd på arbeidsdeling, roller uten eier, for mange eller for få innehavere av en rolle", "Avstemming: kontoer uten eier, med to eiere eller med mer enn én mulig eier", "Rolleanalyse: brukere med tilgang som ikke ligner kollegenes", "Sertifisering: beslutninger om å fjerne tilgang som aldri ble gjennomført, og gjennomganger ingen svarte på"]
+  },
+  {
+   "id": "report", "label": "Kan disse signalene stoles på?",
+   "title": "Rapporten begynner med å si hvor fullstendig hvert system kunne leses.",
+   "text": "Et system som ser rent ut fordi det aldri ble avstemt, må aldri se ut som et system uten feil. Derfor åpner hver rapport med hvilke systemer midPoint har lest, når, og hvor mange kontoer den ikke kunne plassere, og sier om tallene under er fullstendige eller minimumstall.",
+   "table": {
+    "title": "Dekning",
+    "head": ["System", "Siste avstemming", "Kontoer", "Uten eier", "Vurdering"],
+    "rows": [
+     {"sev": 0, "cells": ["HR-system", "I dag 05:00", "1 284", "0", "Fullstendig"]},
+     {"sev": 0, "cells": ["Active Directory", "I dag 05:30", "1 412", "37", "Fullstendig"]},
+     {"sev": 2, "cells": ["Lønn", "For 3 dager siden", "311", "4", "Minimumstall: siste avstemming stoppet med feil"]},
+     {"sev": 1, "cells": ["Adgangskort", "Aldri", "Ukjent", "Ukjent", "Ikke lest: ingen avstemmingsjobb er satt opp"]}
+    ]
+   },
+   "points": ["Tilkoblede systemer, og når hvert av dem sist ble avstemt", "Avstemmingsjobber som feilet, og feilen de stoppet på", "Hvis en kilde ikke kan leses, bygges rapporten likevel og sier hva som mangler"]
+  },
+  {
+   "id": "findings", "label": "Funn, rangert etter alvorlighet",
+   "title": "Hvert funn kommer med hvorfor det betyr noe, hva du bør gjøre og bevisene.",
+   "text": "Et funn er noe ved hvem som har tilgang som krever en beslutning. De verste kommer først, og hvert funn viser til midPoint-posten bak, så alle med tilgang til midPoint kan kontrollere det.",
+   "table": {
+    "title": "Funn",
+    "head": ["Alvorlighet", "Hva ble funnet", "Kilde i midPoint", "Anbefalt tiltak"],
+    "rows": [
+     {"sev": 1, "cells": ["Kritisk", "En konto i Domain Admins som ingen eier", "Avstemming: uten eier", "Finn eieren eller fas den ut"]},
+     {"sev": 1, "cells": ["Kritisk", "En som har sluttet, kan fortsatt logge inn i lønnssystemet", "Revisjonslogg: deaktiveringen feilet med en kritisk feil", "Deaktiver kontoen, og rett så koblingen"]},
+     {"sev": 2, "cells": ["Høy", "Samme person kan både opprette og godkjenne betalinger", "Policyregel: utelukkelse", "Fjern en av rollene, eller registrer et unntak med eier og sluttdato"]},
+     {"sev": 2, "cells": ["Høy", "En som byttet stilling, beholdt tilgang fra den gamle avdelingen", "Rolleanalyse: avviker", "Send tilgangen til gjennomgang"]},
+     {"sev": 3, "cells": ["Middels", "En rolle som gir betalingsgodkjenning, har ingen eier", "Policyregel: minste antall innehavere", "Utnevn en eier"]},
+     {"sev": 3, "cells": ["Middels", "42 gjennomganger ingen svarte på", "Sertifiseringskampanje", "Eskaler til lederne"]}
+    ]
+   },
+   "points": ["Kontoer uten eier, giftige kombinasjoner, tidligere ansatte med aktiv tilgang, endringer gjort for hånd i stedet for fra HR", "Trender mot forrige rapport, så du ser om risikoen går opp eller ned", "PDF, Excel og PowerPoint fra hver side"]
+  },
+  {
+   "id": "questions", "label": "Én rapport, tre lesere",
+   "title": "Ledelsen og identitetseierne stiller ulike spørsmål. Hver får sin egen visning.",
+   "text": "Ledersammendraget svarer på én side. Visningen for identitetseiere går ned til den enkelte konto og revisjonsposten bak den. Hele rapporten har bevisene for den som skal gjøre jobben.",
+   "columns": [
+    {"title": "Spørsmål fra ledelsen", "items": ["Går identitetsrisikoen opp eller ned?", "Mister de som slutter tilgangen sin på siste dag?", "Hvor mange kontoer eier ingen?", "Hvem har administratorrettigheter, og hvem godkjente dem?", "Hvor kan én person både utføre og godkjenne?", "Blir tilgangsgjennomganger gjort, og gjort i tide?", "Hvilke systemer er ikke under kontroll ennå?", "Hvor står vi mot tilgangskontrollene i ISO 27001 og NIS2?"]},
+    {"title": "Spørsmål fra identitetseiere", "items": ["Hvilke kontoer er uten eier, omstridt eller i kollisjon?", "Hvilke tildelinger feilet, og hvorfor?", "Hvilke roller har ingen eier?", "Hvilke tildelinger bryter en regel om arbeidsdeling?", "Hvilke brukere har tilgang kollegene ikke har?", "Hva er endret i revisjonsloggen siden forrige rapport?", "Hvilke endringer ble gjort for hånd i stedet for fra HR?", "Hvilke beslutninger fra gjennomganger ble aldri gjennomført?"]}
+   ]
+  },
+  {
+   "id": "outliers", "label": "Avvikere",
+   "title": "Se hvem som har tilgang kollegene ikke har.",
+   "text": "midPoints rolleanalyse grupperer folk med lik tilgang og peker ut dem som ikke passer inn: en kundebehandler som kan godkjenne betalinger, en utvikler med administratorrettigheter i produksjon. midPoint foreslår bare. Many Worlds Identity legger hvert forslag der en person tar stilling til det.",
+   "table": {
+    "title": "Avvikere",
+    "head": ["Bruker", "Sammenligningsgruppe", "Uvanlig tilgang", "Sikkerhet"],
+    "rows": [
+     {"sev": 1, "cells": ["Ansatt 1041", "Kundeservice, 48 personer", "Betalingsgodkjenner, lønnsadministrator", "92 %"]},
+     {"sev": 2, "cells": ["Ansatt 2207", "Utviklere, 31 personer", "Databaseadministrator i produksjon", "81 %"]},
+     {"sev": 3, "cells": ["Ansatt 0388", "Lager, 120 personer", "Fjerntilgang for innleide", "64 %"]}
+    ]
+   },
+   "points": ["Bruker rolleutvinningen og avviksdeteksjonen som er innebygd i midPoint", "Hver avviker viser gruppen den ble målt mot", "Et forslag, aldri en automatisk fjerning: det blir en gjennomgang eller en oppgave"]
+  },
+  {
+   "id": "reviews", "label": "Tilgangsgjennomganger",
+   "title": "Gjennomganger som lukker sløyfen, og bevis på at de gjorde det.",
+   "text": "midPoint kjører sertifiseringskampanjer: ledere og rolleeiere bekrefter eller fjerner tilgangen til dem de har ansvar for. Many Worlds Identity leser utfallet og viser det en revisor spør om: hva som ble gjennomgått, hva som ble fjernet, og om fjerningen faktisk skjedde.",
+   "table": {
+    "title": "Sertifiseringskampanjer",
+    "head": ["Kampanje", "Saker", "Beholdt", "Fjernet", "Ikke besvart"],
+    "rows": [
+     {"sev": 0, "cells": ["Økonomiroller, kvartalsvis", "214", "198", "16", "0"]},
+     {"sev": 2, "cells": ["Administratorer, månedlig", "37", "29", "5", "3"]},
+     {"sev": 3, "cells": ["Alle ansatte, årlig", "1 284", "1 121", "121", "42"]}
+    ]
+   },
+   "points": ["Planlagte kampanjer, og gjennomganger som en policyregel starter av seg selv etter et bytte", "En fjerning som ble besluttet men ikke gjennomført, er et funn", "Ikke besvart vises aldri som beholdt"]
+  },
+  {
+   "id": "conclusions", "label": "Konklusjoner",
+   "title": "Rapporten ender i tre lister noen kan handle på.",
+   "text": "Risikoer går til et register, hendelser til et SOC, oppgaver til en kø. Hver vurdering viser regelen som ga den, fordi dette er første avlesninger av det midPoint registrerte, og siden sier det.",
+   "boxes": [
+    {"k": "Risikoer", "t": "Til risikoregisteret", "d": "En vedvarende svakhet, som en giftig kombinasjon eller en rolle uten eier, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt en eier."},
+    {"k": "Hendelser", "t": "Til SOC", "d": "Noe som må håndteres nå, som en som har sluttet og fortsatt kan logge inn."},
+    {"k": "Oppgaver", "t": "Til en kø", "d": "Én arbeidsoppgave, som å fase ut en konto, med kø, frist og en måte å se når den er ferdig."}
+   ],
+   "points": ["Send de tre listene til et SpaceRisk-register med én knapp. Ingenting sendes før den trykkes", "Sender du igjen, oppdateres det som ble sendt før, og det lages aldri en kopi", "Eksport til SIEM (OCSF) og til Jira, ServiceNow eller en e-postkasse, pluss Excel og PowerPoint"]
+  }
+ ],
+ "contact": {
+  "title": "Se Identity lese deres egne tilganger.",
+  "text": "Fortell oss om HR-systemet og systemene folk logger inn i. Vi viser rapporten på simulerte data først, så på deres. Kjører dere allerede midPoint, starter vi fra det dere har.",
+  "cta": "Snakk med oss",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Many Worlds Identity"
+ },
+ "footer": {
+  "tagline": "Identitetsstyring, automatisert.",
+  "spacerisk": "SpaceRisk, risikoregisteret den sender til",
+  "note": "Ingen informasjonskapsler, ingen sporing. Rapporttabellene viser oppdiktede data.",
+  "midpoint": "midPoint er åpen kildekode fra Evolveum. Many Worlds Identity er bygget på den og er ikke et Evolveum-produkt."
+ }
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Identity: nyansatte, interne bytter og avganger, med risikoen synlig</title>
+<meta name="description" content="Many Worlds Identity styrer nyansatte, interne bytter og avganger fra HR-systemet ditt på midPoint, og gjør det midPoint registrerer om til en rapport og en liste over ting å gjøre noe med: risikoer, hendelser og oppgaver.">
+<meta property="og:title" content="Many Worlds Identity: nyansatte, interne bytter og avganger, med risikoen synlig">
+<meta property="og:description" content="Many Worlds Identity styrer nyansatte, interne bytter og avganger fra HR-systemet ditt på midPoint, og gjør det midPoint registrerer om til en rapport og en liste over ting å gjøre noe med: risikoer, hendelser og oppgaver.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Gå til innholdet</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Identity, forsiden"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Identity</span></a>
+    <nav class="links" aria-label="Main"><a href="#jml">Slik virker det</a><a href="#signals">Risikosignaler</a><a href="#findings">Funn</a><a href="#outliers">Avvikere</a><a href="#conclusions">Konklusjoner</a></nav>
+<nav class="langs" aria-label="Language"><a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a><a href="../es/index.html" hreflang="es" lang="es" title="Español">ES</a><a href="../nb/index.html" hreflang="nb" lang="nb" title="Norsk (bokmål)" aria-current="true">NO</a></nav>    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Snakk med oss</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">Identitetsstyring, automatisert</p>
+  <h1>Riktig tilgang første dag, og ingen den siste.</h1>
+  <p class="lede">Many Worlds Identity gir og fjerner tilgang når folk begynner, bytter stilling og slutter, styrt av HR-systemet ditt. Deretter leser den det midPoint har registrert, og gjør det om til en rapport og en liste over ting å gjøre noe med.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Snakk med oss</a><a class="btn btn-line" href="#report">Se hva den finner ↓</a></div>
+  <dl class="meta"><div><dt>Bygget på</dt><dd>midPoint</dd></div><div><dt>Fasit</dt><dd>HR-systemet ditt</dd></div><div><dt>Leser</dt><dd>midPoints egne registreringer</dd></div><div><dt>Kjører</dt><dd>på egne servere</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">hendelser styrt fra HR: ny, bytte og avgang</dd></div><div><dt class="n">5</dt><dd class="lbl">kilder i midPoint: revisjonslogg, policyregler, avstemming, rolleanalyse, sertifisering</dd></div><div><dt class="n">6</dt><dd class="lbl">situasjoner en konto kan være i, fra koblet til uten eier</dd></div><div><dt class="n">3</dt><dd class="lbl">lister å handle på: risikoer, hendelser og oppgaver</dd></div></dl></div>
+
+<section class="page part" id="jml">
+  <p class="part-h"><b>01</b> Nyansatte, bytter, avganger</p>
+  <div class="part-top">
+    <div><h2>HR sier det én gang. Alle systemer følger etter.</h2><p class="lede">HR-systemet ditt er fasiten. midPoint leser det, finner ut hvilke roller hver person får fra første dag ut fra avdeling, sted og stilling, og oppretter, endrer eller deaktiverer kontoene i systemene folk logger inn i. Ingen trenger å lage en sak for det grunnleggende.</p></div>
+<ul class="points"><li>Grunnroller tildeles automatisk fra HR-attributter, og fjernes når de ikke lenger gjelder</li><li>Kontoer i Active Directory, Entra ID, LDAP, databaser og applikasjoner gjennom midPoints koblinger</li><li>Forhåndsvis en endring med midPoints simuleringer før den rører en ekte konto</li><li>midPoint er åpen kildekode for identitetsstyring fra Evolveum, og forblir et eget system du kan se inn i</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Hva skjer, og hva blir tatt vare på</p><div class="panel-scroll"><table><thead><tr><th scope="col">Hendelse</th><th scope="col">HR sier</th><th scope="col">midPoint gjør</th><th scope="col">Signal som lagres</th></tr></thead><tbody><tr class="s0"><td>Ny</td><td>Begynner 1. mars i Salg, Oslo</td><td>Oppretter brukeren, tildeler grunnrollene for Salg og Oslo og oppretter kontoene</td><td>En revisjonspost per konto. En som feiler blir en oppgave</td></tr><tr class="s3"><td>Bytte</td><td>Går fra Salg til Økonomi</td><td>Fjerner grunnrollene for Salg og legger til de for Økonomi. Tilgang gitt for hånd blir stående, og en policyregel kan sende den til gjennomgang</td><td>Tilgang som byttet ikke forklarer, blir flagget</td></tr><tr class="s1"><td>Avgang</td><td>Siste dag 30. april</td><td>Deaktiverer alle kontoer når kontrakten går ut, og sletter dem etter oppbevaringstiden du velger</td><td>En konto som fortsatt er aktiv etter siste dag, er en hendelse</td></tr></tbody></table></div><figcaption>Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.</figcaption></figure></section>
+<section class="page part" id="signals">
+  <p class="part-h"><b>02</b> Risikosignaler fra midPoint</p>
+  <div class="part-top">
+    <div><h2>Risikosignalene kommer rett fra det midPoint registrerer.</h2><p class="lede">Many Worlds Identity gjetter ikke. Den leser midPoints revisjonslogg, resultatene av policyreglene, situasjonen til hver konto etter avstemming, rolleanalyse og beslutninger fra sertifisering, med en konto som kan lese og ingenting mer. Lesesiden endrer aldri en bruker, en konto eller en rolle.</p></div>
+<ul class="points"><li>Revisjonslogg: hvem endret hva, på vegne av hvem, gjennom hvilken kanal, og om det lyktes, fra revisjonstabellene eller revisjonsloggfilen</li><li>Policyregler: brudd på arbeidsdeling, roller uten eier, for mange eller for få innehavere av en rolle</li><li>Avstemming: kontoer uten eier, med to eiere eller med mer enn én mulig eier</li><li>Rolleanalyse: brukere med tilgang som ikke ligner kollegenes</li><li>Sertifisering: beslutninger om å fjerne tilgang som aldri ble gjennomført, og gjennomganger ingen svarte på</li></ul>  </div>
+<ol class="flow" aria-label="Risikosignaler fra midPoint"><li>HR-system</li><li>midPoint</li><li>Revisjonslogg og policyresultater</li><li class="own">Many Worlds Identity</li><li>Risikoer, hendelser, oppgaver</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>03</b> Kan disse signalene stoles på?</p>
+  <div class="part-top">
+    <div><h2>Rapporten begynner med å si hvor fullstendig hvert system kunne leses.</h2><p class="lede">Et system som ser rent ut fordi det aldri ble avstemt, må aldri se ut som et system uten feil. Derfor åpner hver rapport med hvilke systemer midPoint har lest, når, og hvor mange kontoer den ikke kunne plassere, og sier om tallene under er fullstendige eller minimumstall.</p></div>
+<ul class="points"><li>Tilkoblede systemer, og når hvert av dem sist ble avstemt</li><li>Avstemmingsjobber som feilet, og feilen de stoppet på</li><li>Hvis en kilde ikke kan leses, bygges rapporten likevel og sier hva som mangler</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Dekning</p><div class="panel-scroll"><table><thead><tr><th scope="col">System</th><th scope="col">Siste avstemming</th><th scope="col">Kontoer</th><th scope="col">Uten eier</th><th scope="col">Vurdering</th></tr></thead><tbody><tr class="s0"><td>HR-system</td><td>I dag 05:00</td><td>1 284</td><td>0</td><td>Fullstendig</td></tr><tr class="s0"><td>Active Directory</td><td>I dag 05:30</td><td>1 412</td><td>37</td><td>Fullstendig</td></tr><tr class="s2"><td>Lønn</td><td>For 3 dager siden</td><td>311</td><td>4</td><td>Minimumstall: siste avstemming stoppet med feil</td></tr><tr class="s1"><td>Adgangskort</td><td>Aldri</td><td>Ukjent</td><td>Ukjent</td><td>Ikke lest: ingen avstemmingsjobb er satt opp</td></tr></tbody></table></div><figcaption>Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>04</b> Funn, rangert etter alvorlighet</p>
+  <div class="part-top">
+    <div><h2>Hvert funn kommer med hvorfor det betyr noe, hva du bør gjøre og bevisene.</h2><p class="lede">Et funn er noe ved hvem som har tilgang som krever en beslutning. De verste kommer først, og hvert funn viser til midPoint-posten bak, så alle med tilgang til midPoint kan kontrollere det.</p></div>
+<ul class="points"><li>Kontoer uten eier, giftige kombinasjoner, tidligere ansatte med aktiv tilgang, endringer gjort for hånd i stedet for fra HR</li><li>Trender mot forrige rapport, så du ser om risikoen går opp eller ned</li><li>PDF, Excel og PowerPoint fra hver side</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Funn</p><div class="panel-scroll"><table><thead><tr><th scope="col">Alvorlighet</th><th scope="col">Hva ble funnet</th><th scope="col">Kilde i midPoint</th><th scope="col">Anbefalt tiltak</th></tr></thead><tbody><tr class="s1"><td>Kritisk</td><td>En konto i Domain Admins som ingen eier</td><td>Avstemming: uten eier</td><td>Finn eieren eller fas den ut</td></tr><tr class="s1"><td>Kritisk</td><td>En som har sluttet, kan fortsatt logge inn i lønnssystemet</td><td>Revisjonslogg: deaktiveringen feilet med en kritisk feil</td><td>Deaktiver kontoen, og rett så koblingen</td></tr><tr class="s2"><td>Høy</td><td>Samme person kan både opprette og godkjenne betalinger</td><td>Policyregel: utelukkelse</td><td>Fjern en av rollene, eller registrer et unntak med eier og sluttdato</td></tr><tr class="s2"><td>Høy</td><td>En som byttet stilling, beholdt tilgang fra den gamle avdelingen</td><td>Rolleanalyse: avviker</td><td>Send tilgangen til gjennomgang</td></tr><tr class="s3"><td>Middels</td><td>En rolle som gir betalingsgodkjenning, har ingen eier</td><td>Policyregel: minste antall innehavere</td><td>Utnevn en eier</td></tr><tr class="s3"><td>Middels</td><td>42 gjennomganger ingen svarte på</td><td>Sertifiseringskampanje</td><td>Eskaler til lederne</td></tr></tbody></table></div><figcaption>Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>05</b> Én rapport, tre lesere</p>
+  <div class="part-top">
+    <div><h2>Ledelsen og identitetseierne stiller ulike spørsmål. Hver får sin egen visning.</h2><p class="lede">Ledersammendraget svarer på én side. Visningen for identitetseiere går ned til den enkelte konto og revisjonsposten bak den. Hele rapporten har bevisene for den som skal gjøre jobben.</p></div>
+  </div>
+<div class="cols"><div><h3>Spørsmål fra ledelsen</h3><ul><li>Går identitetsrisikoen opp eller ned?</li><li>Mister de som slutter tilgangen sin på siste dag?</li><li>Hvor mange kontoer eier ingen?</li><li>Hvem har administratorrettigheter, og hvem godkjente dem?</li><li>Hvor kan én person både utføre og godkjenne?</li><li>Blir tilgangsgjennomganger gjort, og gjort i tide?</li><li>Hvilke systemer er ikke under kontroll ennå?</li><li>Hvor står vi mot tilgangskontrollene i ISO 27001 og NIS2?</li></ul></div><div><h3>Spørsmål fra identitetseiere</h3><ul><li>Hvilke kontoer er uten eier, omstridt eller i kollisjon?</li><li>Hvilke tildelinger feilet, og hvorfor?</li><li>Hvilke roller har ingen eier?</li><li>Hvilke tildelinger bryter en regel om arbeidsdeling?</li><li>Hvilke brukere har tilgang kollegene ikke har?</li><li>Hva er endret i revisjonsloggen siden forrige rapport?</li><li>Hvilke endringer ble gjort for hånd i stedet for fra HR?</li><li>Hvilke beslutninger fra gjennomganger ble aldri gjennomført?</li></ul></div></div></section>
+<section class="page part" id="outliers">
+  <p class="part-h"><b>06</b> Avvikere</p>
+  <div class="part-top">
+    <div><h2>Se hvem som har tilgang kollegene ikke har.</h2><p class="lede">midPoints rolleanalyse grupperer folk med lik tilgang og peker ut dem som ikke passer inn: en kundebehandler som kan godkjenne betalinger, en utvikler med administratorrettigheter i produksjon. midPoint foreslår bare. Many Worlds Identity legger hvert forslag der en person tar stilling til det.</p></div>
+<ul class="points"><li>Bruker rolleutvinningen og avviksdeteksjonen som er innebygd i midPoint</li><li>Hver avviker viser gruppen den ble målt mot</li><li>Et forslag, aldri en automatisk fjerning: det blir en gjennomgang eller en oppgave</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Avvikere</p><div class="panel-scroll"><table><thead><tr><th scope="col">Bruker</th><th scope="col">Sammenligningsgruppe</th><th scope="col">Uvanlig tilgang</th><th scope="col">Sikkerhet</th></tr></thead><tbody><tr class="s1"><td>Ansatt 1041</td><td>Kundeservice, 48 personer</td><td>Betalingsgodkjenner, lønnsadministrator</td><td>92 %</td></tr><tr class="s2"><td>Ansatt 2207</td><td>Utviklere, 31 personer</td><td>Databaseadministrator i produksjon</td><td>81 %</td></tr><tr class="s3"><td>Ansatt 0388</td><td>Lager, 120 personer</td><td>Fjerntilgang for innleide</td><td>64 %</td></tr></tbody></table></div><figcaption>Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.</figcaption></figure></section>
+<section class="page part" id="reviews">
+  <p class="part-h"><b>07</b> Tilgangsgjennomganger</p>
+  <div class="part-top">
+    <div><h2>Gjennomganger som lukker sløyfen, og bevis på at de gjorde det.</h2><p class="lede">midPoint kjører sertifiseringskampanjer: ledere og rolleeiere bekrefter eller fjerner tilgangen til dem de har ansvar for. Many Worlds Identity leser utfallet og viser det en revisor spør om: hva som ble gjennomgått, hva som ble fjernet, og om fjerningen faktisk skjedde.</p></div>
+<ul class="points"><li>Planlagte kampanjer, og gjennomganger som en policyregel starter av seg selv etter et bytte</li><li>En fjerning som ble besluttet men ikke gjennomført, er et funn</li><li>Ikke besvart vises aldri som beholdt</li></ul>  </div>
+<figure class="panel"><p class="panel-h">Sertifiseringskampanjer</p><div class="panel-scroll"><table><thead><tr><th scope="col">Kampanje</th><th scope="col">Saker</th><th scope="col">Beholdt</th><th scope="col">Fjernet</th><th scope="col">Ikke besvart</th></tr></thead><tbody><tr class="s0"><td>Økonomiroller, kvartalsvis</td><td>214</td><td>198</td><td>16</td><td>0</td></tr><tr class="s2"><td>Administratorer, månedlig</td><td>37</td><td>29</td><td>5</td><td>3</td></tr><tr class="s3"><td>Alle ansatte, årlig</td><td>1 284</td><td>1 121</td><td>121</td><td>42</td></tr></tbody></table></div><figcaption>Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>08</b> Konklusjoner</p>
+  <div class="part-top">
+    <div><h2>Rapporten ender i tre lister noen kan handle på.</h2><p class="lede">Risikoer går til et register, hendelser til et SOC, oppgaver til en kø. Hver vurdering viser regelen som ga den, fordi dette er første avlesninger av det midPoint registrerte, og siden sier det.</p></div>
+<ul class="points"><li>Send de tre listene til et SpaceRisk-register med én knapp. Ingenting sendes før den trykkes</li><li>Sender du igjen, oppdateres det som ble sendt før, og det lages aldri en kopi</li><li>Eksport til SIEM (OCSF) og til Jira, ServiceNow eller en e-postkasse, pluss Excel og PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">Til risikoregisteret</p><p class="k">Risikoer</p><p>En vedvarende svakhet, som en giftig kombinasjon eller en rolle uten eier, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt en eier.</p></div><div><p class="lbl">Til SOC</p><p class="k">Hendelser</p><p>Noe som må håndteres nå, som en som har sluttet og fortsatt kan logge inn.</p></div><div><p class="lbl">Til en kø</p><p class="k">Oppgaver</p><p>Én arbeidsoppgave, som å fase ut en konto, med kø, frist og en måte å se når den er ferdig.</p></div></div></section>
+
+<section class="page cta" id="contact">
+  <h2>Se Identity lese deres egne tilganger.</h2>
+  <p class="lede">Fortell oss om HR-systemet og systemene folk logger inn i. Vi viser rapporten på simulerte data først, så på deres. Kjører dere allerede midPoint, starter vi fra det dere har.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">Snakk med oss</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Many%20Worlds%20Identity">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Identity</b> · Identitetsstyring, automatisert.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/nb/">SpaceRisk, risikoregisteret den sender til</a></p>
+<p class="foot-langs"><a href="../en/index.html" hreflang="en" lang="en">English</a><a href="../es/index.html" hreflang="es" lang="es">Español</a><a href="../nb/index.html" hreflang="nb" lang="nb" aria-current="true">Norsk (bokmål)</a></p>  <p class="fine">© 2026 Frivold Digital AS · Ingen informasjonskapsler, ingen sporing. Rapporttabellene viser oppdiktede data.</p>
+  <p class="fine">midPoint er åpen kildekode fra Evolveum. Many Worlds Identity er bygget på den og er ikke et Evolveum-produkt.</p>
+</footer>
+</body>
+</html>
