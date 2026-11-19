@@ -1,0 +1,35 @@
+{% extends "_base.html" %}
+{% block title %}{{ c.pricing.title }} · SpaceRisk{% endblock %}
+{% block main %}
+<section class="hero hero-sm">
+  <div class="wrap narrow center">
+    <p class="eyebrow">{{ c.nav.pricing }}</p>
+    <h1>{{ c.pricing.title }}</h1>
+    <p class="lede">{{ c.pricing.intro }}</p>
+  </div>
+</section>
+<section class="sec sec-tight">
+  <div class="wrap prices">
+    {% for cur in prices.currencies %}<input type="radio" name="cur" id="cur-{{ cur }}" class="cur-in" value="{{ cur }}"{% if cur == default_currency %} checked{% endif %}>{% endfor %}
+    <fieldset class="cur-pick"><legend>{{ c.pricing.currency }}</legend>
+      {% for cur in prices.currencies %}<label for="cur-{{ cur }}">{{ cur }}</label>{% endfor %}
+    </fieldset>
+    <ul class="tiers">
+      {% for t in prices.tiers %}
+      <li class="tier{{ ' featured' if t.get('featured') }}">
+        {% if t.get('featured') %}<span class="badge live">{{ c.pricing.popular }}</span>{% endif %}
+        <h2>{{ c.pricing.names[loop.index0] }}</h2>
+        <p class="tier-teams">{{ c.pricing.teams[loop.index0] }}</p>
+        <p class="tier-price">{% for cur in prices.currencies %}<span class="p p-{{ cur }}">{{ t.prices[cur] }}</span>{% endfor %}<small>{{ c.pricing.per_year }}</small></p>
+        <a class="btn {{ 'btn-accent' if t.get('featured') else 'btn-ghost' }}" href="{{ mailto }}">{{ c.pricing.cta }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="included">
+      <h3>{{ c.pricing.included_title }}</h3>
+      <ul class="checks cols">{% for p in c.pricing.included %}<li>{{ check }}<span>{{ p }}</span></li>{% endfor %}</ul>
+    </div>
+    <p class="fine center">{{ c.pricing.note }} <a href="{{ mailto }}">{{ c.contact.email }}</a></p>
+  </div>
+</section>
+{% endblock %}
