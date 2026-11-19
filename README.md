@@ -12,6 +12,9 @@ https://partoneoftwo.github.io/marketing-material/historian/website/ . Sales mat
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
 for the CEO. Hosted by us or self-hosted, and your data is always yours. Contact: thomas.frivold@frivolddigital.com
 
+- **Website v4 (the look and elements of the Historian site; English only so far):** https://partoneoftwo.github.io/marketing-material/spacerisk/v4/
+  Texts in `spacerisk/content/v4/<lang>.json`, rebuild with `python spacerisk/tools/build_site_v4.py`. The `spacerisk/v4` folder is
+  self-contained and can be uploaded to any static host on its own.
 - **Website v3 (v2 plus the risk signals illustration under the hero screen):** https://partoneoftwo.github.io/marketing-material/spacerisk/v3/
   Texts in `spacerisk/content/v3/<lang>.json`, rebuild with `python spacerisk/tools/build_site_v3.py` (check with `check_content_v3.py`).
   All seven languages. The `spacerisk/v3` folder is self-contained and can be uploaded to any static host on its own.

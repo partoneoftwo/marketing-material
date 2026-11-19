@@ -1,0 +1,367 @@
+{
+ "lang": "en",
+ "html_lang": "en",
+ "lang_name": "English",
+ "meta": {
+  "title": "SpaceRisk: ISO 31000 risk management your teams actually use",
+  "description": "SpaceRisk is an ISO 31000 risk register with bowties, barriers and monthly team reviews, a financial view for the board, ISO 27001 and other compliance frameworks, and a cyber programme built on real security findings."
+ },
+ "nav": {
+  "skip": "Skip to content",
+  "home": "SpaceRisk home",
+  "small": "Risk management",
+  "contact": "Talk to us",
+  "pricing": "Pricing",
+  "links": [
+   {
+    "href": "./#signals",
+    "text": "Risk signals"
+   },
+   {
+    "href": "./#loop",
+    "text": "How it works"
+   },
+   {
+    "href": "./#bowties",
+    "text": "Bowties"
+   },
+   {
+    "href": "./#board",
+    "text": "For the board"
+   },
+   {
+    "href": "./#compliance",
+    "text": "Compliance"
+   },
+   {
+    "href": "pricing.html",
+    "text": "Pricing"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": "ISO 31000 risk management",
+  "title": "Every risk, from the team floor to the boardroom.",
+  "text": "SpaceRisk turns the risks your teams know about into living bowties, checks the barriers that stop them every month, and shows the board what it would cost.",
+  "statement": "Create and protect value.",
+  "cta_primary": "Talk to us",
+  "cta_secondary": "See how it works",
+  "meta": [
+   {
+    "k": "Standard",
+    "v": "ISO 31000"
+   },
+   {
+    "k": "Rhythm",
+    "v": "every month"
+   },
+   {
+    "k": "Exports",
+    "v": "PDF, PowerPoint, Excel"
+   },
+   {
+    "k": "Languages",
+    "v": "seven"
+   }
+  ]
+ },
+ "tally": [
+  {
+   "n": "5",
+   "label": "steps of the ISO 31000 loop, run as one monthly rhythm"
+  },
+  {
+   "n": "93",
+   "label": "ISO 27002 controls in the ISO 27001 module"
+  },
+  {
+   "n": "92",
+   "label": "showcase companies to explore, from banks to hospitals"
+  },
+  {
+   "n": "7",
+   "label": "languages, for every user"
+  }
+ ],
+ "shot_note": "Screen from the product. Showcase data: the company and its figures are fictional.",
+ "shots": {
+  "dashboard": "Executive risk dashboard with the monthly returns and the residual heat map",
+  "bowtie": "A risk drawn as a bowtie, with its threats, barriers and consequences",
+  "summary": "The executive summary, with key messages, Value at Risk and the heat map",
+  "iso": "ISO 27001 readiness and the ISMS loop",
+  "cyber": "The cyber transformation map over three years"
+ },
+ "sections": [
+  {
+   "id": "signals",
+   "label": "Risk signals",
+   "title": "Risk signals from your people and your operations. Clear updates for the top.",
+   "text": "Individuals and teams record what can go wrong where they work. Your plants, networks, cloud and identity systems add what the tools see. SpaceRisk gathers it into one enterprise risk picture and sends clear updates to the CEO and the CISO.",
+   "columns": [
+    {
+     "title": "Your people",
+     "items": [
+      "Individuals",
+      "Teams"
+     ]
+    },
+    {
+     "title": "Your operations",
+     "items": [
+      "OT plants",
+      "IT networks",
+      "Cloud production",
+      "Identity"
+     ]
+    }
+   ],
+   "flow": [
+    "Risk signals",
+    "SpaceRisk",
+    "Updates to the CEO and the CISO"
+   ],
+   "flow_own": 2,
+   "shot": "dashboard"
+  },
+  {
+   "id": "loop",
+   "label": "How it works",
+   "title": "The ISO 31000 loop, built into the month.",
+   "text": "No separate risk project that goes stale. SpaceRisk runs the standard as a simple monthly rhythm that every team can follow.",
+   "steps": [
+    {
+     "title": "Set the criteria",
+     "text": "One scale for likelihood and consequence, your appetite and your categories."
+    },
+    {
+     "title": "Identify",
+     "text": "Teams and projects record what can go wrong, where they work."
+    },
+    {
+     "title": "Analyse and evaluate",
+     "text": "Inherent, residual and target ratings, against the appetite."
+    },
+    {
+     "title": "Treat",
+     "text": "Barriers and actions with owners and deadlines."
+    },
+    {
+     "title": "Monitor and review",
+     "text": "Every month each team reviews its risks, checks its barriers and submits its return."
+    }
+   ]
+  },
+  {
+   "id": "bowties",
+   "label": "Bowties and barriers",
+   "title": "See what stands between a threat and the damage.",
+   "text": "Each risk is a bowtie: the threats on the left, the consequences on the right, and the barriers in between. Barriers live in one shared registry, so one control can protect many risks, and you see at once when a weak one carries too much.",
+   "points": [
+    "Preventive and mitigating barriers, with effectiveness and the date each was last tested",
+    "A Barrier Panel for the whole organisation, grouped by owning team or type",
+    "Escalation factors, and the barriers that protect the barriers"
+   ],
+   "shot": "bowtie"
+  },
+  {
+   "id": "reviews",
+   "label": "Monthly reviews",
+   "title": "One rhythm for every team.",
+   "text": "Each month the team reviews every risk it owns and checks every barrier, then the team lead submits the return. You always know who is up to date, and the trend of every risk builds itself.",
+   "points": [
+    "Team and project dashboards, with a heat map and the trend for each risk",
+    "Returns that can only be submitted once every risk is reviewed",
+    "A comment for every month, and a full history for the auditor"
+   ],
+   "flow": [
+    "Review every risk",
+    "Check every barrier the team owns",
+    "Add a comment for the month",
+    "Submit the return"
+   ],
+   "flow_own": 4
+  },
+  {
+   "id": "board",
+   "label": "For the board",
+   "title": "Risk in the language of the board.",
+   "text": "SpaceRisk puts a price on exposure: expected loss, a simulated Value at Risk before and after barriers, and the return on what the barriers cost. The executive summary writes its own key messages and is ready to present.",
+   "boxes": [
+    {
+     "k": "VaR 95 %",
+     "t": "Value at Risk",
+     "d": "Simulated, before and after barriers."
+    },
+    {
+     "k": "1 click",
+     "t": "Executive summary",
+     "d": "As PDF or PowerPoint, ready to present."
+    },
+    {
+     "k": "Excel",
+     "t": "Every register",
+     "d": "Exported and ready to analyse."
+    }
+   ],
+   "shot": "summary"
+  },
+  {
+   "id": "compliance",
+   "label": "Compliance",
+   "title": "Two modules. One management system.",
+   "text": "Add the ISO 27001 module, the Compliance module or both. Each framework shows its loop with live progress and your next steps, and they share one set of registers: interested parties, legal obligations, objectives, documents, audits, management reviews, nonconformities, incidents and suppliers.",
+   "points": [
+    "Each requirement shows the ISO 27001 controls that already cover the same work",
+    "Every framework exports to PDF, PowerPoint and Excel, and joins the executive summary",
+    "Overdue regulatory reports show on the executive dashboard"
+   ],
+   "columns": [
+    {
+     "title": "ISO 27001 module",
+     "items": [
+      {
+       "name": "ISO/IEC 27001 and 27002",
+       "text": "Clauses 4–10, all 93 controls, a Statement of Applicability, the ISMS loop and audit-ready exports. Includes the cyber programme."
+      }
+     ]
+    },
+    {
+     "title": "Compliance module",
+     "items": [
+      {
+       "name": "ISO 22301 and ISO 45001",
+       "text": "Business impact analysis with RTO and RPO, continuity exercises, worker consultation and the hierarchy of controls."
+      },
+      {
+       "name": "NIS2 and DORA",
+       "text": "Incident reporting clocks, the supplier register and register of information, and resilience testing. With the Norwegian acts."
+      },
+      {
+       "name": "GDPR and ISO 27701",
+       "text": "Records of processing, DPIAs and data subject requests with their one-month deadline."
+      },
+      {
+       "name": "ISO 42001",
+       "text": "An AI system inventory with your EU AI Act assessment, and AI impact assessments."
+      },
+      {
+       "name": "Cyber Resilience Act",
+       "text": "Products with digital elements and vulnerabilities, with the 24-hour, 72-hour and 14-day reporting clock."
+      }
+     ]
+    }
+   ],
+   "shot": "iso",
+   "note": "Guidance, not legal advice. Requirement texts are written in our own words."
+  },
+  {
+   "id": "security",
+   "label": "Cyber programme",
+   "title": "From security findings to a three-year plan.",
+   "text": "Upload results from the tools your team already runs. SpaceRisk turns the findings into evidence on the right ISO controls, finds the shortest attack paths to your domain admins, and suggests a prioritised programme on a transformation map you can take straight to the board.",
+   "points": [
+    "Imports from PingCastle, Prowler and SharpHound",
+    "Findings, trends and fixes per target, across every run",
+    "Attack paths to Tier 0 from Active Directory data",
+    "A scored transformation map, exported to PowerPoint and PDF"
+   ],
+   "shot": "cyber"
+  },
+  {
+   "id": "agents",
+   "label": "Agents and API",
+   "title": "Let your agents do the paperwork. People still decide.",
+   "text": "Scripts and AI agents get their own tokens and a documented REST API. They report and review risks, check barriers and upload tool results. In propose mode, every change waits in an inbox until a person approves it.",
+   "points": [
+    "OpenAPI documentation",
+    "Every proposal is checked before anyone approves it",
+    "Agent tokens are stored hashed"
+   ],
+   "evidence": [
+    {
+     "req": "POST /api/v1/risks/ICT-014/review",
+     "res": "202",
+     "note": "waiting for approval in the inbox"
+    },
+    {
+     "req": "POST /api/v1/assessments/uploads?tool=pingcastle",
+     "res": "201",
+     "note": "results stored"
+    }
+   ]
+  },
+  {
+   "id": "showcases",
+   "label": "Showcases",
+   "title": "92 companies to explore, from banks to hospitals.",
+   "text": "Start in a world you recognise. Every showcase is a fictional company with its own teams, risks, barriers and history, ready in minutes. Each comes with a sample executive summary as a PDF.",
+   "tags": [
+    "Banking",
+    "Insurance",
+    "Hospitals",
+    "Oil and gas",
+    "Electricity",
+    "Software",
+    "Public sector",
+    "Logistics",
+    "Construction",
+    "Retail"
+   ]
+  },
+  {
+   "id": "pricing",
+   "label": "Pricing",
+   "title": "One yearly price. Every feature.",
+   "text": "Plans follow the number of teams that use SpaceRisk, from small organisations to the whole group.",
+   "points": [
+    "Access by role: executives see everything, teams see their own, and money stays with the executives",
+    "Seven languages: English, Norwegian, German, Spanish, French, Italian and Portuguese"
+   ],
+   "link": {
+    "href": "pricing.html",
+    "text": "See pricing"
+   }
+  }
+ ],
+ "contact": {
+  "title": "See SpaceRisk with your own risks.",
+  "text": "Tell us about your organisation and we will set up a showcase that looks like yours.",
+  "cta": "Talk to us",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "SpaceRisk"
+ },
+ "footer": {
+  "tagline": "Risk management your teams actually use.",
+  "historian": "Many Worlds Historian, the network reports that feed it",
+  "note": "No cookies, no tracking. The screens show fictional showcase data."
+ },
+ "pricing": {
+  "label": "Pricing",
+  "title": "Simple pricing per year",
+  "intro": "One annual price per organisation, based on how many teams use SpaceRisk. Every plan includes every feature.",
+  "currency": "Currency",
+  "per_year": "per year",
+  "names": [
+   "Small",
+   "Business",
+   "Enterprise"
+  ],
+  "teams": [
+   "Up to 5 teams",
+   "Up to 10 teams",
+   "Unlimited teams"
+  ],
+  "included_title": "Every plan includes",
+  "included": [
+   "Risk register, bowties, barriers and monthly reviews",
+   "Projects, the financial view and the executive summary",
+   "ISO 27001 module: the ISMS, cyber programme and security tool imports",
+   "Compliance module: ISO 22301, 45001, 27701, 42001, GDPR, NIS2, DORA and the CRA",
+   "Agent API with approval inbox",
+   "PDF, PowerPoint and Excel exports, and full backups",
+   "Hosted by us or self-hosted"
+  ],
+  "cta": "Talk to us",
+  "note": "Questions about plans, hosting or larger rollouts? Get in touch."
+ }
+}

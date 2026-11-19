@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+{% block title %}{{ c.pricing.title }} · SpaceRisk{% endblock %}
+{% block main %}
+<section class="page hero hero-sm">
+  <p class="eyebrow">{{ c.pricing.label }}</p>
+  <h1>{{ c.pricing.title }}</h1>
+  <p class="lede">{{ c.pricing.intro }}</p>
+  <div class="meta"></div>
+</section>
+<section class="page prices">
+  {% for cur in prices.currencies %}<input type="radio" name="cur" id="cur-{{ cur }}" class="cur-in" value="{{ cur }}"{% if cur == default_currency %} checked{% endif %}>{% endfor %}
+  <fieldset class="cur-pick"><legend>{{ c.pricing.currency }}</legend>
+    {% for cur in prices.currencies %}<label for="cur-{{ cur }}">{{ cur }}</label>{% endfor %}
+  </fieldset>
+  <div class="boxes tiers">
+    {% for t in prices.tiers %}
+    <div>
+      <p class="lbl">{{ c.pricing.teams[loop.index0] }}</p>
+      <h2>{{ c.pricing.names[loop.index0] }}</h2>
+      <p class="k">{% for cur in prices.currencies %}<span class="p p-{{ cur }}">{{ t.prices[cur] }}</span>{% endfor %}</p>
+      <p class="lbl">{{ c.pricing.per_year }}</p>
+      <a class="btn {{ '' if t.get('featured') else 'btn-line' }}" href="{{ mailto }}">{{ c.pricing.cta }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<section class="page part">
+  <p class="part-h">{{ c.pricing.included_title }}</p>
+  <ul class="points two">{% for p in c.pricing.included %}<li>{{ p }}</li>{% endfor %}</ul>
+  <p class="fine">{{ c.pricing.note }} <a href="{{ mailto }}">{{ c.contact.email }}</a></p>
+</section>
+{% endblock %}

@@ -107,10 +107,12 @@ h3 { font: 600 11px var(--mono); letter-spacing: .14em; text-transform: uppercas
 .boxes p:last-child { font-size: 15px; }
 
 /* closing */
-.cta { margin-top: clamp(64px, 9vw, 112px); padding-top: 40px; padding-bottom: 48px; border-top: 3px solid var(--ink); }
+.cta { margin-top: clamp(64px, 9vw, 112px); padding-top: 40px; padding-bottom: 48px; position: relative; }
+.cta::before, .foot::before { content: ""; position: absolute; top: 0; left: clamp(18px, 4vw, 32px); right: clamp(18px, 4vw, 32px); border-top: 3px solid var(--ink); }
+.foot::before { border-top: 1px solid var(--line); }
 .cta h2 { font-size: clamp(28px, 4vw, 44px); max-width: 20ch; }
 .mail { font-family: var(--mono); font-size: 13px; }
-.foot { padding-top: 22px; padding-bottom: 48px; border-top: 1px solid var(--line); font-size: 14px; display: grid; gap: 6px; }
+.foot { padding-top: 22px; padding-bottom: 48px; position: relative; font-size: 14px; display: grid; gap: 6px; }
 .fine { font: 11px var(--mono); letter-spacing: .06em; color: var(--muted); margin-top: 6px; }
 
 @media (max-width: 1100px) {

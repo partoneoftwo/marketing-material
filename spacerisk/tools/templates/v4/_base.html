@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="{{ c.html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>{% block title %}{{ c.meta.title }}{% endblock %}</title>
+<meta name="description" content="{{ c.meta.description }}">
+<meta property="og:title" content="{{ c.meta.title }}">
+<meta property="og:description" content="{{ c.meta.description }}">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v={{ version }}">
+<link rel="icon" href="../assets/mark.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">{{ c.nav.skip }}</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="{{ c.nav.home }}"><img src="../assets/mark.svg" width="28" height="28" alt=""><span><small>{{ c.nav.small }}</small>SpaceRisk</span></a>
+    <nav class="links" aria-label="Main">{% for l in c.nav.links %}<a href="{{ l.href }}"{% if l.href == page_file %} aria-current="page"{% endif %}>{{ l.text }}</a>{% endfor %}</nav>
+    {% if langs|length > 1 %}<details class="langs"><summary aria-label="Language">{{ 'PT' if c.lang == 'pt-br' else c.lang|upper }}</summary><ul>{% for l in langs %}<li><a href="../{{ l.lang }}/{{ page_file if page_file != 'index.html' else '' }}" hreflang="{{ l.html_lang }}" lang="{{ l.html_lang }}"{% if l.lang == c.lang %} aria-current="true"{% endif %}>{{ l.lang_name }}</a></li>{% endfor %}</ul></details>{% endif %}
+    <a class="btn btn-sm" href="{{ mailto }}">{{ c.nav.contact }}</a>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+<section class="page cta" id="contact">
+  <h2>{{ c.contact.title }}</h2>
+  <p class="lede">{{ c.contact.text }}</p>
+  <div class="cta-row"><a class="btn" href="{{ mailto }}">{{ c.contact.cta }}</a><a class="mail" href="{{ mailto }}">{{ c.contact.email }}</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>SpaceRisk</b> · {{ c.footer.tagline }}</p>
+  <p><a href="{{ historian_url }}">{{ c.footer.historian }}</a></p>
+  <p class="fine">© {{ year }} Frivold Digital AS · {{ c.footer.note }}</p>
+</footer>
+</body>
+</html>
