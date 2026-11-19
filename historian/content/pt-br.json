@@ -1,0 +1,233 @@
+{
+ "lang": "pt-br",
+ "html_lang": "pt-BR",
+ "lang_name": "Português (Brasil)",
+ "meta": {
+  "title": "Many Worlds Historian: visibilidade profunda de redes de OT e TI",
+  "description": "O Historian lê o histórico de rede que um sensor coletou na sua planta e o transforma em um relatório e em uma lista de coisas sobre as quais agir: riscos, incidentes e tarefas."
+ },
+ "nav": {
+  "skip": "Ir para o conteúdo",
+  "home": "Many Worlds Historian, início",
+  "contact": "Fale conosco",
+  "links": [
+   {
+    "href": "#listens",
+    "text": "Como funciona"
+   },
+   {
+    "href": "#report",
+    "text": "O relatório"
+   },
+   {
+    "href": "#ai",
+    "text": "Agentes de IA"
+   },
+   {
+    "href": "#conclusions",
+    "text": "Conclusões"
+   },
+   {
+    "href": "#plants",
+    "text": "Todas as plantas"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": "Visibilidade profunda de redes de OT e TI",
+  "title": "Saiba o que aconteceu na rede da sua planta e o que fazer a respeito.",
+  "text": "O Historian lê o histórico de rede que um sensor coletou na sua planta e o transforma em um relatório e em uma lista de coisas sobre as quais agir.",
+  "cta_primary": "Fale conosco",
+  "cta_secondary": "Veja o que ele encontra",
+  "meta": [
+   {
+    "k": "Escuta",
+    "v": "de forma passiva"
+   },
+   {
+    "k": "Lê",
+    "v": "OT e TI"
+   },
+   {
+    "k": "Escreve",
+    "v": "nada na sua rede"
+   },
+   {
+    "k": "Sensores",
+    "v": "um por planta"
+   }
+  ]
+ },
+ "tally": [
+  {
+   "n": "3",
+   "label": "visões de um mesmo relatório: diretoria, responsáveis de OT e quem faz o trabalho"
+  },
+  {
+   "n": "22",
+   "label": "indicadores de atividade de agentes de IA no catálogo"
+  },
+  {
+   "n": "3",
+   "label": "listas sobre as quais agir: riscos, incidentes e tarefas"
+  },
+  {
+   "n": "0",
+   "label": "escritas na rede da sua planta"
+  }
+ ],
+ "shot_note": "Tela do produto, em inglês. Dados simulados: todos os números são inventados para demonstração.",
+ "shots": {
+  "conclusions": "As conclusões de uma planta: 13 riscos, 4 incidentes e 16 tarefas, com os riscos colocados em uma matriz de cinco por cinco de probabilidade contra consequência.",
+  "trust": "A primeira seção do relatório: se dá para confiar nos números, com um gráfico do que os sensores registraram e as lacunas no registro.",
+  "findings": "Achados ordenados por gravidade. Cada um diz o que foi observado, por que importa, a ação recomendada e as evidências.",
+  "controllers": "Comandos que alteram um controlador, por remetente, em Modbus e DNP3. Vêm primeiro um dispositivo desconhecido e um remetente com papel inesperado.",
+  "ai": "Vigilância de agentes de IA: cada máquina com um indicador de atividade de IA, sua avaliação, sua pontuação e se está aprovada.",
+  "organization": "Seis plantas lado a lado, ordenadas pelo que precisa ser decidido, com os achados de cada uma e quais não puderam ser monitoradas por completo."
+ },
+ "sections": [
+  {
+   "id": "listens",
+   "label": "Ele só escuta",
+   "title": "Nada é instalado nos seus controladores, e nada é enviado a eles.",
+   "text": "Um ponto de captura na planta registra uma cópia do tráfego e a entrega ao sensor de rede da planta. O Historian faz perguntas ao sensor com uma conta somente de leitura. Ele nunca escreve no sensor nem na rede, e nunca pede as senhas que vê passar, apenas quantas foram.",
+   "flow": [
+    "Rede da planta",
+    "Ponto de captura",
+    "Sensor de rede",
+    "Historian",
+    "Riscos, incidentes, tarefas"
+   ],
+   "points": [
+    "Um sensor de rede por planta, cada um com o histórico daquela planta",
+    "O sensor é o Malcolm, a suíte de código aberto para análise de tráfego de rede, e continua sendo um sistema separado",
+    "Nenhuma porta precisa ser aberta para a internet: os sensores e o Historian se encontram em uma rede privada",
+    "Roda no seu próprio servidor"
+   ]
+  },
+  {
+   "id": "report",
+   "label": "Dá para confiar nestes números?",
+   "title": "O relatório começa dizendo quão completamente a planta pôde ser observada.",
+   "text": "Uma planta que está quieta porque o sensor estava fora do ar nunca deve ser lida como uma planta onde nada aconteceu. Por isso todo relatório abre com o que os sensores registraram, onde estão as lacunas e se os números abaixo são completos ou são mínimos.",
+   "shot": "trust",
+   "points": [
+    "Pontos de captura entregando dados, e quando cada um entregou pela última vez",
+    "Lacunas no registro, indicadas ao minuto",
+    "Se o sensor recusa uma pergunta, o relatório é gerado mesmo assim e diz o que falta"
+   ]
+  },
+  {
+   "id": "findings",
+   "label": "Achados, por gravidade",
+   "title": "Cada achado traz por que importa, o que fazer e as evidências.",
+   "text": "Um achado é algo observado no período que exige uma decisão. Os piores vêm primeiro, e cada um pode ser rastreado até os registros por trás dele.",
+   "shot": "findings",
+   "points": [
+    "Senhas enviadas em texto claro, contato com endereços maliciosos conhecidos, dispositivos que não estão no inventário",
+    "Tendências em relação ao período anterior, para ver se o risco está subindo ou caindo",
+    "PDF, Excel e PowerPoint a partir de cada página"
+   ]
+  },
+  {
+   "id": "questions",
+   "label": "Um relatório, três leitores",
+   "title": "A diretoria e os responsáveis de OT fazem perguntas diferentes. Cada um tem a sua visão.",
+   "text": "O resumo executivo responde em uma página. A visão do responsável de OT desce até o controlador. O relatório completo traz as evidências para quem faz o trabalho.",
+   "columns": [
+    {
+     "title": "Perguntas para a diretoria",
+     "items": [
+      "O risco está subindo ou caindo?",
+      "Sabemos o que há na nossa rede?",
+      "As zonas da rede estão separadas?",
+      "Os dispositivos da planta falam com a internet?",
+      "Quem tem acesso remoto à planta?",
+      "Atacantes conhecidos foram vistos?",
+      "Algum malware circulou pela rede?",
+      "Que comportamento de atacante foi observado, em termos do MITRE ATT&CK?"
+     ]
+    },
+    {
+     "title": "Perguntas para os responsáveis de OT",
+     "items": [
+      "Quem enviou comandos aos controladores?",
+      "Quem fala com cada controlador?",
+      "O que mudou desde o período anterior?",
+      "Os controladores estão se comunicando sem erros?",
+      "Quais protocolos industriais estão na rede?",
+      "O que se sabe sobre cada dispositivo da planta?",
+      "Quais práticas fracas ou legadas estão em uso?",
+      "Quais softwares e versões foram vistos?"
+     ]
+    }
+   ],
+   "shot": "controllers"
+  },
+  {
+   "id": "ai",
+   "label": "Agentes de IA na rede",
+   "title": "Veja quais máquinas se comportam como um programa e não como uma pessoa.",
+   "text": "Os agentes de IA estão chegando às redes de escritório e de planta, aprovados ou não. O Historian reúne cada máquina que mostra um indicador de atividade de IA, o que ela fez na rede e se está na sua lista de aprovados.",
+   "shot": "ai",
+   "points": [
+    "Um catálogo de indicadores, e quais deles cada máquina mostrou",
+    "Máquinas que também agiram na rede são marcadas como preocupantes",
+    "Grupos de máquinas trabalhando em sincronia"
+   ]
+  },
+  {
+   "id": "conclusions",
+   "label": "Conclusões",
+   "title": "O relatório termina em três listas sobre as quais alguém pode agir.",
+   "text": "Os riscos vão para um registro, os incidentes para um SOC, as tarefas para uma fila. Cada avaliação traz a regra que a produziu, porque são primeiras leituras de um único período de tráfego, e a página diz isso.",
+   "shot": "conclusions",
+   "boxes": [
+    {
+     "k": "Riscos",
+     "t": "Para o registro de riscos",
+     "d": "Uma fraqueza persistente, avaliada como probabilidade vezes consequência, cada uma de 1 a 5, e atribuída a um responsável."
+    },
+    {
+     "k": "Incidentes",
+     "t": "Para o SOC",
+     "d": "Algo que aconteceu e precisa de resposta agora."
+    },
+    {
+     "k": "Tarefas",
+     "t": "Para uma fila",
+     "d": "Um trabalho específico com uma fila, um prazo e uma forma de saber quando terminou."
+    }
+   ],
+   "points": [
+    "Envie as três listas a um registro do SpaceRisk com um botão. Nada é enviado até que ele seja pressionado",
+    "Enviar de novo atualiza o que foi enviado antes e nunca cria uma segunda cópia",
+    "Exportações para um SIEM (OCSF) e para Jira, ServiceNow ou uma caixa de e-mail, além de Excel e PowerPoint"
+   ]
+  },
+  {
+   "id": "plants",
+   "label": "Todas as plantas de uma vez",
+   "title": "Ordene suas plantas pelo que precisa ser decidido.",
+   "text": "Com mais de uma planta, você as vê lado a lado: qual precisa de atenção primeiro, o que é verdade em várias delas e o que é verdade em uma só, e quais não puderam ser monitoradas por completo.",
+   "shot": "organization",
+   "points": [
+    "Cada linha abre o relatório daquela planta",
+    "Achados compartilhados por várias plantas aparecem juntos",
+    "O que não é vigiado nunca aparece como tranquilo"
+   ]
+  }
+ ],
+ "contact": {
+  "title": "Veja o Historian ler a sua própria rede.",
+  "text": "Conte-nos sobre as suas plantas e mostraremos o relatório primeiro com dados simulados e depois com os seus.",
+  "cta": "Fale conosco",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Historian"
+ },
+ "footer": {
+  "tagline": "Visibilidade profunda de redes de OT e TI.",
+  "spacerisk": "SpaceRisk, o registro de riscos para o qual ele envia",
+  "note": "Sem cookies, sem rastreamento. As telas mostram dados simulados."
+ }
+}

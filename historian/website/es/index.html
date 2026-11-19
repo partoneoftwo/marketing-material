@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Historian: visibilidad profunda de redes OT y TI</title>
+<meta name="description" content="Historian lee el historial de red que un sensor ha recogido en su planta y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.">
+<meta property="og:title" content="Many Worlds Historian: visibilidad profunda de redes OT y TI">
+<meta property="og:description" content="Historian lee el historial de red que un sensor ha recogido en su planta y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Ir al contenido</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Historian, inicio"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Historian</span></a>
+    <nav class="links" aria-label="Main"><a href="#listens">Cómo funciona</a><a href="#report">El informe</a><a href="#ai">Agentes de IA</a><a href="#conclusions">Conclusiones</a><a href="#plants">Todas las plantas</a></nav>
+<details class="langs"><summary aria-label="Language">ES</summary><ul><li><a href="../en/" hreflang="en" lang="en">English</a></li><li><a href="../es/" hreflang="es" lang="es" aria-current="true">Español</a></li><li><a href="../nb/" hreflang="nb" lang="nb">Norsk (bokmål)</a></li><li><a href="../de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="../it/" hreflang="it" lang="it">Italiano</a></li><li><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details>    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Hable con nosotros</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">Visibilidad profunda de redes OT y TI</p>
+  <h1>Sepa qué ocurrió en la red de su planta y qué hacer al respecto.</h1>
+  <p class="lede">Historian lee el historial de red que un sensor ha recogido en su planta y lo convierte en un informe y en una lista de cosas sobre las que actuar.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Hable con nosotros</a><a class="btn btn-line" href="#report">Vea lo que encuentra ↓</a></div>
+  <dl class="meta"><div><dt>Escucha</dt><dd>de forma pasiva</dd></div><div><dt>Lee</dt><dd>OT y TI</dd></div><div><dt>Escribe</dt><dd>nada en su red</dd></div><div><dt>Sensores</dt><dd>uno por planta</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">vistas de un mismo informe: dirección, responsables de OT y quienes hacen el trabajo</dd></div><div><dt class="n">22</dt><dd class="lbl">indicadores de actividad de agentes de IA en el catálogo</dd></div><div><dt class="n">3</dt><dd class="lbl">listas sobre las que actuar: riesgos, incidentes y tareas</dd></div><div><dt class="n">0</dt><dd class="lbl">escrituras en la red de su planta</dd></div></dl></div>
+
+<section class="page part" id="listens">
+  <p class="part-h"><b>01</b> Solo escucha</p>
+  <div class="part-top">
+    <div><h2>No se instala nada en sus controladores ni se les envía nada.</h2><p class="lede">Un punto de captura en la planta registra una copia del tráfico y la entrega al sensor de red de la planta. Historian hace preguntas al sensor con una cuenta de solo lectura. Nunca escribe en el sensor ni en la red, y nunca pide las contraseñas que ve pasar por el cable, solo cuántas fueron.</p></div>
+<ul class="points"><li>Un sensor de red por planta, cada uno con el historial de esa planta</li><li>El sensor es Malcolm, el conjunto de análisis de tráfico de red de código abierto, y sigue siendo un sistema independiente</li><li>No hay que abrir ningún puerto a internet: los sensores e Historian se encuentran en una red privada</li><li>Funciona en su propio servidor</li></ul>  </div>
+<ol class="flow" aria-label="Solo escucha"><li>Red de la planta</li><li>Punto de captura</li><li>Sensor de red</li><li class="own">Historian</li><li>Riesgos, incidentes, tareas</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>02</b> ¿Se puede confiar en estas cifras?</p>
+  <div class="part-top">
+    <div><h2>El informe empieza diciendo hasta qué punto se pudo observar la planta.</h2><p class="lede">Una planta que está en silencio porque su sensor estaba caído nunca debe leerse como una planta donde no pasó nada. Por eso cada informe empieza con lo que registraron los sensores, dónde están los huecos y si las cifras que siguen son completas o son mínimos.</p></div>
+<ul class="points"><li>Puntos de captura que entregan datos, y cuándo lo hizo cada uno por última vez</li><li>Huecos en el registro, indicados al minuto</li><li>Si el sensor rechaza una pregunta, el informe se genera igualmente y dice qué falta</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/trust.webp" width="924" height="760" alt="La primera sección del informe: si se puede confiar en las cifras, con un gráfico de lo que registraron los sensores y los huecos en el registro." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>03</b> Hallazgos, por gravedad</p>
+  <div class="part-top">
+    <div><h2>Cada hallazgo indica por qué importa, qué hacer y la evidencia.</h2><p class="lede">Un hallazgo es algo observado en el periodo que requiere una decisión. Los más graves van primero, y cada uno puede rastrearse hasta los registros que lo respaldan.</p></div>
+<ul class="points"><li>Contraseñas enviadas en claro, contacto con direcciones maliciosas conocidas, dispositivos que no están en el inventario</li><li>Tendencias frente al periodo anterior, para ver si el riesgo sube o baja</li><li>PDF, Excel y PowerPoint desde cada página</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/findings.webp" width="924" height="800" alt="Hallazgos ordenados por gravedad. Cada uno indica qué se observó, por qué importa, la acción recomendada y la evidencia." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>04</b> Un informe, tres lectores</p>
+  <div class="part-top">
+    <div><h2>La dirección y los responsables de OT hacen preguntas distintas. Cada uno tiene su propia vista.</h2><p class="lede">El resumen ejecutivo responde en una página. La vista del responsable de OT baja hasta el controlador. El informe completo lleva la evidencia para quien hace el trabajo.</p></div>
+  </div>
+<div class="cols"><div><h3>Preguntas para la dirección</h3><ul><li>¿El riesgo sube o baja?</li><li>¿Sabemos qué hay en nuestra red?</li><li>¿Están separadas las zonas de la red?</li><li>¿Los dispositivos de planta hablan con internet?</li><li>¿Quién tiene acceso remoto a la planta?</li><li>¿Se vio a atacantes conocidos?</li><li>¿Se movió malware por la red?</li><li>¿Qué comportamiento de atacante se observó, en términos de MITRE ATT&amp;CK?</li></ul></div><div><h3>Preguntas para los responsables de OT</h3><ul><li>¿Quién envió comandos a los controladores?</li><li>¿Quién habla con cada controlador?</li><li>¿Qué cambió respecto al periodo anterior?</li><li>¿Los controladores se comunican sin errores?</li><li>¿Qué protocolos industriales hay en la red?</li><li>¿Qué se sabe de cada dispositivo de planta?</li><li>¿Qué prácticas débiles u obsoletas se usan?</li><li>¿Qué software y qué versiones se vieron?</li></ul></div></div><figure class="shot"><img src="../assets/shots/en/controllers.webp" width="924" height="800" alt="Comandos que modifican un controlador, por remitente, sobre Modbus y DNP3. Primero aparecen un dispositivo desconocido y un remitente con un rol inesperado." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+<section class="page part" id="ai">
+  <p class="part-h"><b>05</b> Agentes de IA en la red</p>
+  <div class="part-top">
+    <div><h2>Vea qué máquinas se comportan como un programa y no como una persona.</h2><p class="lede">Los agentes de IA están llegando a las redes de oficina y de planta, aprobados o no. Historian reúne cada equipo que muestra un indicador de actividad de IA, lo que hizo en la red y si está en su lista de aprobados.</p></div>
+<ul class="points"><li>Un catálogo de indicadores, y cuáles mostró cada equipo</li><li>Los equipos que además actuaron en la red se marcan como preocupantes</li><li>Grupos de equipos que trabajan de forma coordinada</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/ai.webp" width="924" height="800" alt="Vigilancia de agentes de IA: cada equipo con un indicador de actividad de IA, su evaluación, su puntuación y si está aprobado." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>06</b> Conclusiones</p>
+  <div class="part-top">
+    <div><h2>El informe termina en tres listas sobre las que alguien puede actuar.</h2><p class="lede">Los riesgos van a un registro, los incidentes a un SOC y las tareas a una cola. Cada valoración lleva la regla que la produjo, porque son primeras lecturas de un solo periodo de tráfico y la página lo dice.</p></div>
+<ul class="points"><li>Envíe las tres listas a un registro de SpaceRisk con un botón. No se envía nada hasta que se pulsa</li><li>Volver a enviar actualiza lo enviado antes y nunca crea una segunda copia</li><li>Exportaciones para un SIEM (OCSF) y para Jira, ServiceNow o un buzón, además de Excel y PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">Para el registro de riesgos</p><p class="k">Riesgos</p><p>Una debilidad persistente, valorada como probabilidad por consecuencia, cada una de 1 a 5, y asignada a un responsable.</p></div><div><p class="lbl">Para el SOC</p><p class="k">Incidentes</p><p>Algo que ha ocurrido y requiere respuesta ahora.</p></div><div><p class="lbl">Para una cola</p><p class="k">Tareas</p><p>Un trabajo concreto con una cola, una fecha límite y una forma de saber cuándo está terminado.</p></div></div><figure class="shot"><img src="../assets/shots/en/conclusions.webp" width="924" height="830" alt="Las conclusiones de una planta: 13 riesgos, 4 incidentes y 16 tareas, con los riesgos situados en una matriz de cinco por cinco de probabilidad frente a consecuencia." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+<section class="page part" id="plants">
+  <p class="part-h"><b>07</b> Todas las plantas a la vez</p>
+  <div class="part-top">
+    <div><h2>Ordene sus plantas por lo que hay que decidir.</h2><p class="lede">Con más de una planta las tiene una junto a otra: cuál necesita atención primero, qué ocurre en varias frente a lo que ocurre en una sola, y cuáles no pudieron supervisarse por completo.</p></div>
+<ul class="points"><li>Cada fila abre el informe de esa planta</li><li>Los hallazgos que comparten varias plantas se muestran juntos</li><li>Lo no vigilado nunca se muestra como tranquilo</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/organization.webp" width="924" height="1180" alt="Seis plantas una junto a otra, ordenadas por lo que hay que decidir, con los hallazgos de cada una y cuáles no pudieron supervisarse por completo." loading="lazy" decoding="async"><figcaption>Pantalla del producto, en inglés. Datos simulados: todas las cifras son inventadas para la demostración.</figcaption></figure></section>
+
+<section class="page cta" id="contact">
+  <h2>Vea a Historian leer su propia red.</h2>
+  <p class="lede">Háblenos de sus plantas y le mostraremos el informe primero con datos simulados y después con los suyos.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Hable con nosotros</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Historian</b> · Visibilidad profunda de redes OT y TI.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/es/">SpaceRisk, el registro de riesgos al que envía</a></p>
+  <p class="fine">© 2026 Frivold Digital AS · Sin cookies ni seguimiento. Las pantallas muestran datos simulados.</p>
+</footer>
+</body>
+</html>

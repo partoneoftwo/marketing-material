@@ -1,0 +1,233 @@
+{
+ "lang": "nb",
+ "html_lang": "nb",
+ "lang_name": "Norsk (bokmål)",
+ "meta": {
+  "title": "Many Worlds Historian: dyp innsikt i OT- og IT-nettverk",
+  "description": "Historian leser nettverkshistorikken en sensor har samlet inn på anlegget, og gjør den om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver."
+ },
+ "nav": {
+  "skip": "Hopp til innholdet",
+  "home": "Many Worlds Historian, forsiden",
+  "contact": "Snakk med oss",
+  "links": [
+   {
+    "href": "#listens",
+    "text": "Slik virker det"
+   },
+   {
+    "href": "#report",
+    "text": "Rapporten"
+   },
+   {
+    "href": "#ai",
+    "text": "AI-agenter"
+   },
+   {
+    "href": "#conclusions",
+    "text": "Konklusjoner"
+   },
+   {
+    "href": "#plants",
+    "text": "Alle anlegg"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": "Dyp innsikt i OT- og IT-nettverk",
+  "title": "Vit hva som skjedde i anleggets nettverk, og hva som bør gjøres med det.",
+  "text": "Historian leser nettverkshistorikken en sensor har samlet inn på anlegget, og gjør den om til en rapport og en liste over ting å handle på.",
+  "cta_primary": "Snakk med oss",
+  "cta_secondary": "Se hva den finner",
+  "meta": [
+   {
+    "k": "Lytter",
+    "v": "passivt"
+   },
+   {
+    "k": "Leser",
+    "v": "OT og IT"
+   },
+   {
+    "k": "Skriver",
+    "v": "ingenting til nettverket"
+   },
+   {
+    "k": "Sensorer",
+    "v": "én per anlegg"
+   }
+  ]
+ },
+ "tally": [
+  {
+   "n": "3",
+   "label": "visninger av samme rapport: ledelsen, OT-eiere og de som gjør jobben"
+  },
+  {
+   "n": "22",
+   "label": "indikatorer på AI-agentaktivitet i katalogen"
+  },
+  {
+   "n": "3",
+   "label": "lister å handle på: risikoer, hendelser og oppgaver"
+  },
+  {
+   "n": "0",
+   "label": "skriveoperasjoner mot anleggets nettverk"
+  }
+ ],
+ "shot_note": "Skjermbilde fra produktet, på engelsk. Simulerte data: alle tall er oppdiktet for demonstrasjon.",
+ "shots": {
+  "conclusions": "Konklusjonene for ett anlegg: 13 risikoer, 4 hendelser og 16 oppgaver, med risikoene plassert i en fem ganger fem-matrise med sannsynlighet mot konsekvens.",
+  "trust": "Første del av rapporten: om tallene er til å stole på, med et diagram over hva sensorene registrerte og hullene i registreringen.",
+  "findings": "Funn rangert etter alvorlighet. Hvert funn sier hva som ble observert, hvorfor det betyr noe, anbefalt tiltak og bevisene.",
+  "controllers": "Kommandoer som endrer en kontroller, per avsender, over Modbus og DNP3. En ukjent enhet og en avsender med uventet rolle kommer først.",
+  "ai": "AI-agentvakt: hver maskin med en indikator på AI-aktivitet, vurderingen av den, poengsum og om den er godkjent.",
+  "organization": "Seks anlegg side om side, rangert etter hva som må avgjøres, med funnene på hvert anlegg og hvilke som ikke kunne overvåkes fullstendig."
+ },
+ "sections": [
+  {
+   "id": "listens",
+   "label": "Den bare lytter",
+   "title": "Ingenting installeres på kontrollerne, og ingenting sendes til dem.",
+   "text": "Et opptakspunkt på anlegget tar en kopi av trafikken og leverer den til anleggets nettverkssensor. Historian stiller sensoren spørsmål med en konto som bare kan lese. Den skriver aldri til sensoren eller nettverket, og den ber aldri om passordene den ser passere, bare hvor mange det var.",
+   "flow": [
+    "Anleggets nettverk",
+    "Opptakspunkt",
+    "Nettverkssensor",
+    "Historian",
+    "Risikoer, hendelser, oppgaver"
+   ],
+   "points": [
+    "Én nettverkssensor per anlegg, hver med anleggets egen historikk",
+    "Sensoren er Malcolm, den åpne programvaren for analyse av nettverkstrafikk, og forblir et eget system",
+    "Ingen port må åpnes mot internett: sensorene og Historian møtes på et privat nettverk",
+    "Kjører på egen server"
+   ]
+  },
+  {
+   "id": "report",
+   "label": "Kan vi stole på tallene?",
+   "title": "Rapporten begynner med å si hvor fullstendig anlegget kunne observeres.",
+   "text": "Et anlegg som er stille fordi sensoren var nede, må aldri leses som et anlegg der ingenting skjedde. Derfor åpner hver rapport med hva sensorene registrerte, hvor hullene er, og om tallene under er fullstendige eller nedre grenser.",
+   "shot": "trust",
+   "points": [
+    "Opptakspunkter som leverer, og når hvert av dem sist gjorde det",
+    "Hull i registreringen, angitt på minuttet",
+    "Hvis sensoren avviser et spørsmål, bygges rapporten likevel og sier hva som mangler"
+   ]
+  },
+  {
+   "id": "findings",
+   "label": "Funn, rangert etter alvorlighet",
+   "title": "Hvert funn kommer med hvorfor det betyr noe, hva som bør gjøres, og bevisene.",
+   "text": "Et funn er noe som er observert i perioden og som krever en beslutning. De verste kommer først, og hvert funn kan spores til registreringene bak.",
+   "shot": "findings",
+   "points": [
+    "Passord sendt i klartekst, kontakt med kjente ondsinnede adresser, enheter som ikke står i inventaret",
+    "Trender mot perioden før, så det går an å se om risikoen går opp eller ned",
+    "PDF, Excel og PowerPoint fra hver side"
+   ]
+  },
+  {
+   "id": "questions",
+   "label": "Én rapport, tre lesere",
+   "title": "Ledelsen og OT-eierne stiller ulike spørsmål. Hver får sin egen visning.",
+   "text": "Ledersammendraget svarer på én side. OT-eierens visning går helt ned til kontrolleren. Den fulle rapporten har bevisene for den som gjør jobben.",
+   "columns": [
+    {
+     "title": "Spørsmål for ledelsen",
+     "items": [
+      "Går risikoen opp eller ned?",
+      "Vet vi hva som er på nettverket vårt?",
+      "Er nettverkssonene adskilt?",
+      "Snakker anleggets enheter med internett?",
+      "Hvem har fjerntilgang til anlegget?",
+      "Ble kjente angripere sett?",
+      "Ble skadevare flyttet over nettverket?",
+      "Hvilken angriperatferd ble observert, uttrykt i MITRE ATT&CK?"
+     ]
+    },
+    {
+     "title": "Spørsmål for OT-eiere",
+     "items": [
+      "Hvem sendte kommandoer til kontrollerne?",
+      "Hvem snakker med hver kontroller?",
+      "Hva er endret siden perioden før?",
+      "Kommuniserer kontrollerne uten feil?",
+      "Hvilke industriprotokoller finnes på nettverket?",
+      "Hva er kjent om hver enhet på anlegget?",
+      "Hvilke svake eller utdaterte praksiser er i bruk?",
+      "Hvilken programvare og hvilke versjoner ble sett?"
+     ]
+    }
+   ],
+   "shot": "controllers"
+  },
+  {
+   "id": "ai",
+   "label": "AI-agenter på nettverket",
+   "title": "Se hvilke maskiner som oppfører seg som et program og ikke som et menneske.",
+   "text": "AI-agenter er på vei inn i kontor- og anleggsnettverk, godkjent eller ikke. Historian samler hver maskin som viser en indikator på AI-aktivitet, hva den gjorde på nettverket, og om den står på listen over godkjente.",
+   "shot": "ai",
+   "points": [
+    "En katalog over indikatorer, og hvilke hver maskin viste",
+    "Maskiner som også handlet på nettverket, merkes som bekymringsfulle",
+    "Grupper av maskiner som arbeider i takt"
+   ]
+  },
+  {
+   "id": "conclusions",
+   "label": "Konklusjoner",
+   "title": "Rapporten ender i tre lister som noen kan handle på.",
+   "text": "Risikoer går til et register, hendelser til en SOC og oppgaver til en kø. Hver vurdering har med regelen som ga den, fordi dette er første lesninger av én periode med trafikk, og siden sier det.",
+   "shot": "conclusions",
+   "boxes": [
+    {
+     "k": "Risikoer",
+     "t": "Til risikoregisteret",
+     "d": "En vedvarende svakhet, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt til en eier."
+    },
+    {
+     "k": "Hendelser",
+     "t": "Til SOC",
+     "d": "Noe som har skjedd og må håndteres nå."
+    },
+    {
+     "k": "Oppgaver",
+     "t": "Til en kø",
+     "d": "Ett stykke arbeid med en kø, en frist og en måte å se når det er ferdig på."
+    }
+   ],
+   "points": [
+    "Send de tre listene til et SpaceRisk-register med én knapp. Ingenting sendes før den trykkes",
+    "Å sende på nytt oppdaterer det som ble sendt før, og lager aldri en kopi til",
+    "Eksport til SIEM (OCSF) og til Jira, ServiceNow eller en postkasse, i tillegg til Excel og PowerPoint"
+   ]
+  },
+  {
+   "id": "plants",
+   "label": "Alle anlegg samtidig",
+   "title": "Ranger anleggene etter hva som må avgjøres.",
+   "text": "Med mer enn ett anlegg vises de side om side: hvilket som trenger oppmerksomhet først, hva som gjelder flere av dem mot hva som gjelder ett, og hvilke som ikke kunne overvåkes fullstendig.",
+   "shot": "organization",
+   "points": [
+    "Hver rad åpner anleggets egen rapport",
+    "Funn som deles av flere anlegg, vises samlet",
+    "Uovervåket vises aldri som stille"
+   ]
+  }
+ ],
+ "contact": {
+  "title": "Se Historian lese deres eget nettverk.",
+  "text": "Fortell oss om anleggene, så viser vi rapporten først på simulerte data og deretter på deres egne.",
+  "cta": "Snakk med oss",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Historian"
+ },
+ "footer": {
+  "tagline": "Dyp innsikt i OT- og IT-nettverk.",
+  "spacerisk": "SpaceRisk, risikoregisteret den sender til",
+  "note": "Ingen informasjonskapsler, ingen sporing. Skjermbildene viser simulerte data."
+ }
+}

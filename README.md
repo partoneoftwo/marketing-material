@@ -4,7 +4,7 @@ Public marketing assets, one folder per product.
 
 ## Historian
 
-Many Worlds Historian: OT and IT deep network visibility. Website (English):
+Many Worlds Historian: OT and IT deep network visibility. Website in seven languages:
 https://partoneoftwo.github.io/marketing-material/historian/website/ . Sales material still to be added: see [`historian/`](historian).
 
 ## SpaceRisk

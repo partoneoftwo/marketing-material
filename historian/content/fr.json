@@ -1,0 +1,233 @@
+{
+ "lang": "fr",
+ "html_lang": "fr",
+ "lang_name": "Français",
+ "meta": {
+  "title": "Many Worlds Historian : une visibilité approfondie des réseaux OT et IT",
+  "description": "Historian lit l'historique réseau qu'un capteur a collecté dans votre usine et en fait un rapport et une liste de choses sur lesquelles agir : risques, incidents et tâches."
+ },
+ "nav": {
+  "skip": "Aller au contenu",
+  "home": "Many Worlds Historian, accueil",
+  "contact": "Parlons-en",
+  "links": [
+   {
+    "href": "#listens",
+    "text": "Fonctionnement"
+   },
+   {
+    "href": "#report",
+    "text": "Le rapport"
+   },
+   {
+    "href": "#ai",
+    "text": "Agents IA"
+   },
+   {
+    "href": "#conclusions",
+    "text": "Conclusions"
+   },
+   {
+    "href": "#plants",
+    "text": "Toutes les usines"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": "Une visibilité approfondie des réseaux OT et IT",
+  "title": "Sachez ce qui s'est passé sur le réseau de votre usine, et quoi faire.",
+  "text": "Historian lit l'historique réseau qu'un capteur a collecté dans votre usine et en fait un rapport et une liste de choses sur lesquelles agir.",
+  "cta_primary": "Parlons-en",
+  "cta_secondary": "Voir ce qu'il trouve",
+  "meta": [
+   {
+    "k": "Écoute",
+    "v": "passivement"
+   },
+   {
+    "k": "Lit",
+    "v": "OT et IT"
+   },
+   {
+    "k": "Écrit",
+    "v": "rien sur votre réseau"
+   },
+   {
+    "k": "Capteurs",
+    "v": "un par usine"
+   }
+  ]
+ },
+ "tally": [
+  {
+   "n": "3",
+   "label": "vues d'un même rapport : direction, responsables OT et ceux qui font le travail"
+  },
+  {
+   "n": "22",
+   "label": "indicateurs d'activité d'agents IA dans le catalogue"
+  },
+  {
+   "n": "3",
+   "label": "listes sur lesquelles agir : risques, incidents et tâches"
+  },
+  {
+   "n": "0",
+   "label": "écriture sur le réseau de votre usine"
+  }
+ ],
+ "shot_note": "Écran du produit, en anglais. Données simulées : chaque chiffre est inventé pour la démonstration.",
+ "shots": {
+  "conclusions": "Les conclusions d'une usine : 13 risques, 4 incidents et 16 tâches, les risques étant placés sur une matrice cinq par cinq de la probabilité face à la conséquence.",
+  "trust": "La première section du rapport : peut-on se fier aux chiffres, avec un graphique de ce que les capteurs ont enregistré et les trous dans l'enregistrement.",
+  "findings": "Constats classés par gravité. Chacun indique ce qui a été observé, pourquoi c'est important, l'action recommandée et les preuves.",
+  "controllers": "Commandes qui modifient un automate, par émetteur, sur Modbus et DNP3. Un appareil inconnu et un émetteur au rôle inattendu viennent en premier.",
+  "ai": "Veille des agents IA : chaque machine présentant un indicateur d'activité IA, son évaluation, son score et si elle est approuvée.",
+  "organization": "Six usines côte à côte, classées selon ce qu'il faut décider, avec les constats de chacune et celles qui n'ont pas pu être surveillées complètement."
+ },
+ "sections": [
+  {
+   "id": "listens",
+   "label": "Il ne fait qu'écouter",
+   "title": "Rien n'est installé sur vos automates, et rien ne leur est envoyé.",
+   "text": "Un point de capture dans l'usine enregistre une copie du trafic et la remet au capteur réseau de l'usine. Historian pose des questions au capteur avec un compte en lecture seule. Il n'écrit jamais sur le capteur ni sur le réseau, et il ne demande jamais les mots de passe qu'il voit passer, seulement combien il y en avait.",
+   "flow": [
+    "Réseau de l'usine",
+    "Point de capture",
+    "Capteur réseau",
+    "Historian",
+    "Risques, incidents, tâches"
+   ],
+   "points": [
+    "Un capteur réseau par usine, chacun avec l'historique de cette usine",
+    "Le capteur est Malcolm, la suite open source d'analyse du trafic réseau, et reste un système à part",
+    "Aucun port à ouvrir vers internet : les capteurs et Historian se retrouvent sur un réseau privé",
+    "Fonctionne sur votre propre serveur"
+   ]
+  },
+  {
+   "id": "report",
+   "label": "Peut-on se fier à ces chiffres ?",
+   "title": "Le rapport commence par dire à quel point l'usine a pu être observée.",
+   "text": "Une usine silencieuse parce que son capteur était en panne ne doit jamais se lire comme une usine où il ne s'est rien passé. Chaque rapport s'ouvre donc sur ce que les capteurs ont enregistré, où sont les trous, et si les chiffres qui suivent sont complets ou des minimums.",
+   "shot": "trust",
+   "points": [
+    "Les points de capture qui livrent, et quand chacun l'a fait pour la dernière fois",
+    "Les trous dans l'enregistrement, à la minute près",
+    "Si le capteur refuse une question, le rapport se construit quand même et dit ce qui manque"
+   ]
+  },
+  {
+   "id": "findings",
+   "label": "Constats, par gravité",
+   "title": "Chaque constat dit pourquoi il compte, quoi faire, et donne les preuves.",
+   "text": "Un constat est une chose observée sur la période qui appelle une décision. Les plus graves viennent en premier, et chacun peut être relié aux enregistrements qui le fondent.",
+   "shot": "findings",
+   "points": [
+    "Mots de passe envoyés en clair, contact avec des adresses malveillantes connues, appareils absents de l'inventaire",
+    "Tendances par rapport à la période précédente, pour voir si le risque monte ou baisse",
+    "PDF, Excel et PowerPoint depuis chaque page"
+   ]
+  },
+  {
+   "id": "questions",
+   "label": "Un rapport, trois lecteurs",
+   "title": "La direction et les responsables OT posent des questions différentes. Chacun a sa propre vue.",
+   "text": "La synthèse pour la direction répond en une page. La vue du responsable OT descend jusqu'à l'automate. Le rapport complet porte les preuves pour ceux qui font le travail.",
+   "columns": [
+    {
+     "title": "Questions pour la direction",
+     "items": [
+      "Le risque monte-t-il ou baisse-t-il ?",
+      "Savons-nous ce qu'il y a sur notre réseau ?",
+      "Les zones du réseau sont-elles séparées ?",
+      "Les appareils de l'usine parlent-ils à internet ?",
+      "Qui a un accès distant à l'usine ?",
+      "Des attaquants connus ont-ils été vus ?",
+      "Un logiciel malveillant a-t-il circulé sur le réseau ?",
+      "Quel comportement d'attaquant a été observé, en termes MITRE ATT&CK ?"
+     ]
+    },
+    {
+     "title": "Questions pour les responsables OT",
+     "items": [
+      "Qui a envoyé des commandes aux automates ?",
+      "Qui parle à chaque automate ?",
+      "Qu'est-ce qui a changé depuis la période précédente ?",
+      "Les automates communiquent-ils sans erreur ?",
+      "Quels protocoles industriels sont sur le réseau ?",
+      "Que sait-on de chaque appareil de l'usine ?",
+      "Quelles pratiques faibles ou obsolètes sont utilisées ?",
+      "Quels logiciels et quelles versions ont été vus ?"
+     ]
+    }
+   ],
+   "shot": "controllers"
+  },
+  {
+   "id": "ai",
+   "label": "Agents IA sur le réseau",
+   "title": "Voyez quelles machines se comportent comme un programme et non comme une personne.",
+   "text": "Les agents IA arrivent sur les réseaux de bureau et d'usine, approuvés ou non. Historian rassemble chaque machine qui présente un indicateur d'activité IA, ce qu'elle a fait sur le réseau et si elle figure sur votre liste approuvée.",
+   "shot": "ai",
+   "points": [
+    "Un catalogue d'indicateurs, et ceux que chaque machine a présentés",
+    "Les machines qui ont aussi agi sur le réseau sont signalées comme préoccupantes",
+    "Des groupes de machines qui travaillent de concert"
+   ]
+  },
+  {
+   "id": "conclusions",
+   "label": "Conclusions",
+   "title": "Le rapport se termine par trois listes sur lesquelles quelqu'un peut agir.",
+   "text": "Les risques vont dans un registre, les incidents à un SOC, les tâches dans une file. Chaque évaluation porte la règle qui l'a produite, car ce sont de premières lectures d'une seule période de trafic, et la page le dit.",
+   "shot": "conclusions",
+   "boxes": [
+    {
+     "k": "Risques",
+     "t": "Pour le registre des risques",
+     "d": "Une faiblesse durable, évaluée par la probabilité multipliée par la conséquence, chacune de 1 à 5, et confiée à un responsable."
+    },
+    {
+     "k": "Incidents",
+     "t": "Pour le SOC",
+     "d": "Quelque chose qui s'est produit et appelle une réponse maintenant."
+    },
+    {
+     "k": "Tâches",
+     "t": "Pour une file",
+     "d": "Un travail précis avec une file, une échéance et un moyen de savoir quand il est terminé."
+    }
+   ],
+   "points": [
+    "Envoyez les trois listes à un registre SpaceRisk avec un seul bouton. Rien n'est envoyé tant qu'il n'est pas pressé",
+    "Renvoyer met à jour ce qui avait été envoyé et ne crée jamais de seconde copie",
+    "Exports pour un SIEM (OCSF) et pour Jira, ServiceNow ou une boîte aux lettres, plus Excel et PowerPoint"
+   ]
+  },
+  {
+   "id": "plants",
+   "label": "Toutes les usines à la fois",
+   "title": "Classez vos usines selon ce qu'il faut décider.",
+   "text": "Avec plus d'une usine, vous les voyez côte à côte : laquelle demande de l'attention en premier, ce qui est vrai dans plusieurs face à ce qui est vrai dans une seule, et lesquelles n'ont pas pu être surveillées complètement.",
+   "shot": "organization",
+   "points": [
+    "Chaque ligne ouvre le rapport de cette usine",
+    "Les constats partagés par plusieurs usines sont présentés ensemble",
+    "Ce qui n'est pas surveillé n'est jamais présenté comme calme"
+   ]
+  }
+ ],
+ "contact": {
+  "title": "Voyez Historian lire votre propre réseau.",
+  "text": "Parlez-nous de vos usines et nous vous montrerons le rapport d'abord sur des données simulées, puis sur les vôtres.",
+  "cta": "Parlons-en",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Historian"
+ },
+ "footer": {
+  "tagline": "Une visibilité approfondie des réseaux OT et IT.",
+  "spacerisk": "SpaceRisk, le registre des risques auquel il envoie",
+  "note": "Pas de cookies, pas de suivi. Les écrans montrent des données simulées."
+ }
+}

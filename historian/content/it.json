@@ -1,0 +1,233 @@
+{
+ "lang": "it",
+ "html_lang": "it",
+ "lang_name": "Italiano",
+ "meta": {
+  "title": "Many Worlds Historian: visibilità profonda delle reti OT e IT",
+  "description": "Historian legge la cronologia di rete che un sensore ha raccolto nel vostro impianto e la trasforma in un rapporto e in un elenco di cose su cui agire: rischi, incidenti e attività."
+ },
+ "nav": {
+  "skip": "Vai al contenuto",
+  "home": "Many Worlds Historian, home",
+  "contact": "Parliamone",
+  "links": [
+   {
+    "href": "#listens",
+    "text": "Come funziona"
+   },
+   {
+    "href": "#report",
+    "text": "Il rapporto"
+   },
+   {
+    "href": "#ai",
+    "text": "Agenti IA"
+   },
+   {
+    "href": "#conclusions",
+    "text": "Conclusioni"
+   },
+   {
+    "href": "#plants",
+    "text": "Tutti gli impianti"
+   }
+  ]
+ },
+ "hero": {
+  "eyebrow": "Visibilità profonda delle reti OT e IT",
+  "title": "Sapere che cosa è successo sulla rete del vostro impianto, e che cosa fare.",
+  "text": "Historian legge la cronologia di rete che un sensore ha raccolto nel vostro impianto e la trasforma in un rapporto e in un elenco di cose su cui agire.",
+  "cta_primary": "Parliamone",
+  "cta_secondary": "Guardate che cosa trova",
+  "meta": [
+   {
+    "k": "Ascolta",
+    "v": "passivamente"
+   },
+   {
+    "k": "Legge",
+    "v": "OT e IT"
+   },
+   {
+    "k": "Scrive",
+    "v": "nulla sulla vostra rete"
+   },
+   {
+    "k": "Sensori",
+    "v": "uno per impianto"
+   }
+  ]
+ },
+ "tally": [
+  {
+   "n": "3",
+   "label": "viste di un unico rapporto: direzione, responsabili OT e chi fa il lavoro"
+  },
+  {
+   "n": "22",
+   "label": "indicatori di attività di agenti IA nel catalogo"
+  },
+  {
+   "n": "3",
+   "label": "elenchi su cui agire: rischi, incidenti e attività"
+  },
+  {
+   "n": "0",
+   "label": "scritture sulla rete del vostro impianto"
+  }
+ ],
+ "shot_note": "Schermata del prodotto, in inglese. Dati simulati: ogni cifra è inventata a scopo dimostrativo.",
+ "shots": {
+  "conclusions": "Le conclusioni di un impianto: 13 rischi, 4 incidenti e 16 attività, con i rischi collocati su una matrice cinque per cinque di probabilità e conseguenza.",
+  "trust": "La prima sezione del rapporto: se ci si può fidare dei numeri, con un grafico di ciò che i sensori hanno registrato e dei vuoti nella registrazione.",
+  "findings": "Rilievi ordinati per gravità. Ognuno dice che cosa è stato osservato, perché conta, l'azione raccomandata e le prove.",
+  "controllers": "Comandi che modificano un controllore, per mittente, su Modbus e DNP3. Vengono prima un dispositivo sconosciuto e un mittente con un ruolo inatteso.",
+  "ai": "Osservatorio agenti IA: ogni macchina con un indicatore di attività IA, la sua valutazione, il punteggio e se è approvata.",
+  "organization": "Sei impianti fianco a fianco, ordinati per ciò che va deciso, con i rilievi di ciascuno e quali non è stato possibile monitorare del tutto."
+ },
+ "sections": [
+  {
+   "id": "listens",
+   "label": "Ascolta soltanto",
+   "title": "Sui vostri controllori non viene installato nulla e non viene inviato nulla.",
+   "text": "Un punto di acquisizione nell'impianto registra una copia del traffico e la consegna al sensore di rete dell'impianto. Historian pone domande al sensore con un account di sola lettura. Non scrive mai sul sensore né sulla rete, e non chiede mai le password che vede passare, ma solo quante erano.",
+   "flow": [
+    "Rete dell'impianto",
+    "Punto di acquisizione",
+    "Sensore di rete",
+    "Historian",
+    "Rischi, incidenti, attività"
+   ],
+   "points": [
+    "Un sensore di rete per impianto, ciascuno con la cronologia di quell'impianto",
+    "Il sensore è Malcolm, la suite open source per l'analisi del traffico di rete, e resta un sistema separato",
+    "Nessuna porta da aprire verso internet: i sensori e Historian si incontrano su una rete privata",
+    "Funziona sul vostro server"
+   ]
+  },
+  {
+   "id": "report",
+   "label": "Ci si può fidare di questi numeri?",
+   "title": "Il rapporto comincia dicendo quanto è stato possibile osservare l'impianto.",
+   "text": "Un impianto silenzioso perché il sensore era fermo non deve mai essere letto come un impianto in cui non è successo nulla. Per questo ogni rapporto si apre con ciò che i sensori hanno registrato, dove sono i vuoti e se le cifre che seguono sono complete o sono valori minimi.",
+   "shot": "trust",
+   "points": [
+    "I punti di acquisizione che consegnano dati, e quando ciascuno lo ha fatto l'ultima volta",
+    "I vuoti nella registrazione, indicati al minuto",
+    "Se il sensore rifiuta una domanda, il rapporto viene comunque prodotto e dice che cosa manca"
+   ]
+  },
+  {
+   "id": "findings",
+   "label": "Rilievi, per gravità",
+   "title": "Ogni rilievo dice perché conta, che cosa fare e porta le prove.",
+   "text": "Un rilievo è qualcosa di osservato nel periodo che richiede una decisione. I più gravi vengono per primi, e ciascuno può essere ricondotto alle registrazioni che lo sostengono.",
+   "shot": "findings",
+   "points": [
+    "Password inviate in chiaro, contatti con indirizzi malevoli noti, dispositivi che non sono in inventario",
+    "Andamenti rispetto al periodo precedente, per vedere se il rischio sale o scende",
+    "PDF, Excel e PowerPoint da ogni pagina"
+   ]
+  },
+  {
+   "id": "questions",
+   "label": "Un rapporto, tre lettori",
+   "title": "La direzione e i responsabili OT fanno domande diverse. Ognuno ha la propria vista.",
+   "text": "La sintesi per la direzione risponde in una pagina. La vista del responsabile OT scende fino al controllore. Il rapporto completo porta le prove per chi fa il lavoro.",
+   "columns": [
+    {
+     "title": "Domande per la direzione",
+     "items": [
+      "Il rischio sale o scende?",
+      "Sappiamo che cosa c'è sulla nostra rete?",
+      "Le zone della rete sono separate?",
+      "I dispositivi dell'impianto parlano con internet?",
+      "Chi ha accesso remoto all'impianto?",
+      "Sono stati visti attaccanti noti?",
+      "È stato spostato malware sulla rete?",
+      "Quale comportamento da attaccante è stato osservato, in termini MITRE ATT&CK?"
+     ]
+    },
+    {
+     "title": "Domande per i responsabili OT",
+     "items": [
+      "Chi ha inviato comandi ai controllori?",
+      "Chi parla con ciascun controllore?",
+      "Che cosa è cambiato rispetto al periodo precedente?",
+      "I controllori comunicano senza errori?",
+      "Quali protocolli industriali ci sono sulla rete?",
+      "Che cosa si sa di ciascun dispositivo dell'impianto?",
+      "Quali pratiche deboli o obsolete sono in uso?",
+      "Quali software e quali versioni sono stati visti?"
+     ]
+    }
+   ],
+   "shot": "controllers"
+  },
+  {
+   "id": "ai",
+   "label": "Agenti IA sulla rete",
+   "title": "Guardate quali macchine si comportano come un programma e non come una persona.",
+   "text": "Gli agenti IA stanno arrivando sulle reti d'ufficio e d'impianto, approvati o no. Historian raccoglie ogni macchina che mostra un indicatore di attività IA, che cosa ha fatto sulla rete e se è nel vostro elenco degli approvati.",
+   "shot": "ai",
+   "points": [
+    "Un catalogo di indicatori, e quali ha mostrato ciascuna macchina",
+    "Le macchine che hanno anche agito sulla rete sono segnalate come preoccupanti",
+    "Gruppi di macchine che lavorano all'unisono"
+   ]
+  },
+  {
+   "id": "conclusions",
+   "label": "Conclusioni",
+   "title": "Il rapporto termina con tre elenchi su cui qualcuno può agire.",
+   "text": "I rischi vanno in un registro, gli incidenti a un SOC, le attività in una coda. Ogni valutazione porta la regola che l'ha prodotta, perché sono prime letture di un solo periodo di traffico, e la pagina lo dice.",
+   "shot": "conclusions",
+   "boxes": [
+    {
+     "k": "Rischi",
+     "t": "Per il registro dei rischi",
+     "d": "Una debolezza persistente, valutata come probabilità per conseguenza, ciascuna da 1 a 5, e assegnata a un responsabile."
+    },
+    {
+     "k": "Incidenti",
+     "t": "Per il SOC",
+     "d": "Qualcosa che è accaduto e richiede una risposta adesso."
+    },
+    {
+     "k": "Attività",
+     "t": "Per una coda",
+     "d": "Un lavoro preciso con una coda, una scadenza e un modo per capire quando è finito."
+    }
+   ],
+   "points": [
+    "Inviate i tre elenchi a un registro SpaceRisk con un pulsante. Nulla viene inviato finché non viene premuto",
+    "Inviare di nuovo aggiorna quanto inviato prima e non crea mai una seconda copia",
+    "Esportazioni per un SIEM (OCSF) e per Jira, ServiceNow o una casella di posta, oltre a Excel e PowerPoint"
+   ]
+  },
+  {
+   "id": "plants",
+   "label": "Tutti gli impianti insieme",
+   "title": "Ordinate i vostri impianti per ciò che va deciso.",
+   "text": "Con più di un impianto li vedete fianco a fianco: quale richiede attenzione per primo, che cosa vale per diversi impianti e che cosa per uno solo, e quali non è stato possibile monitorare del tutto.",
+   "shot": "organization",
+   "points": [
+    "Ogni riga apre il rapporto di quell'impianto",
+    "I rilievi condivisi da più impianti sono mostrati insieme",
+    "Ciò che non è sorvegliato non viene mai mostrato come tranquillo"
+   ]
+  }
+ ],
+ "contact": {
+  "title": "Guardate Historian leggere la vostra rete.",
+  "text": "Raccontateci dei vostri impianti e vi mostreremo il rapporto prima su dati simulati e poi sui vostri.",
+  "cta": "Parliamone",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Historian"
+ },
+ "footer": {
+  "tagline": "Visibilità profonda delle reti OT e IT.",
+  "spacerisk": "SpaceRisk, il registro dei rischi a cui invia",
+  "note": "Niente cookie, niente tracciamento. Le schermate mostrano dati simulati."
+ }
+}

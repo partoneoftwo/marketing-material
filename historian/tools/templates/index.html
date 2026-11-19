@@ -20,7 +20,7 @@
   <div class="page top-in">
     <a class="brand" href="./" aria-label="{{ c.nav.home }}"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Historian</span></a>
     <nav class="links" aria-label="Main">{% for l in c.nav.links %}<a href="{{ l.href }}">{{ l.text }}</a>{% endfor %}</nav>
-    {% if langs|length > 1 %}<nav class="langs" aria-label="Language">{% for l in langs %}<a href="../{{ l.lang }}/" hreflang="{{ l.html_lang }}" lang="{{ l.html_lang }}"{% if l.lang == c.lang %} aria-current="true"{% endif %}>{{ l.lang|upper }}</a>{% endfor %}</nav>{% endif %}
+    {% if langs|length > 1 %}<details class="langs"><summary aria-label="Language">{{ 'PT' if c.lang == 'pt-br' else c.lang|upper }}</summary><ul>{% for l in langs %}<li><a href="../{{ l.lang }}/" hreflang="{{ l.html_lang }}" lang="{{ l.html_lang }}"{% if l.lang == c.lang %} aria-current="true"{% endif %}>{{ l.lang_name }}</a></li>{% endfor %}</ul></details>{% endif %}
     <a class="btn btn-sm" href="{{ mailto }}">{{ c.nav.contact }}</a>
   </div>
 </header>
