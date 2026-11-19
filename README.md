@@ -2,6 +2,14 @@
 
 Public marketing assets, one folder per product.
 
+## Products (top-level website)
+
+One dark navy page for the whole portfolio: Many Worlds Historian, Many Worlds Cloud and Many Worlds Identity send risk
+signals into the SpaceRisk bowtie, and each box links to its product site. Seven languages, same set as SpaceRisk:
+https://partoneoftwo.github.io/marketing-material/products-top-level-website/ . Texts in
+`products-top-level-website/content/<lang>.json`, rebuild with `python products-top-level-website/tools/build_site.py`
+(standard library only). Self-contained folder, no third-party requests (the Inter font is self-hosted, SIL OFL).
+
 ## Historian
 
 Many Worlds Historian: OT and IT deep network visibility. Website in seven languages:
