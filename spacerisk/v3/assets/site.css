@@ -71,6 +71,7 @@ p { margin: 0; }
 .hero { padding: clamp(64px, 10vw, 128px) 0 0; background: radial-gradient(60% 50% at 50% 0%, #f1f4ff 0%, rgba(255, 255, 255, 0) 70%); }
 .hero h1 { max-width: 15ch; margin: 0 auto; }
 .hero-sm { padding-bottom: 8px; }
+.hero-claim { margin-top: 32px; color: var(--ink); font-weight: 700; font-size: clamp(24px, 3.2vw, 36px); letter-spacing: -0.03em; line-height: 1.1; }
 .hero-shot { margin-top: clamp(48px, 7vw, 88px); }
 
 /* framed screenshots */
