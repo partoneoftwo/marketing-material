@@ -25,5 +25,6 @@
   "p_spacerisk": "Unternehmensweites Risikomanagement nach ISO 31000. Risiken werden aus Teams und Systemen in einem Bowtie zusammengeführt – Bedrohungen, Barrieren und Auswirkungen –, damit die Geschäftsleitung sieht, worauf es ankommt.",
   "p_historian": "Erkenntnisse aus der Tiefenanalyse Ihrer OT- und IT-Netzwerke. Passives Monitoring, das seine Befunde als Risikosignale an SpaceRisk meldet.",
   "p_cloud": "Erkenntnisse aus der Tiefenanalyse Ihrer Cloud-Infrastruktur, als Risikosignale an SpaceRisk gemeldet.",
-  "p_identity": "Erkenntnisse aus der Tiefenanalyse Ihres Zugriffssystems – wer eintritt, wechselt und ausscheidet –, als Risikosignale an SpaceRisk gemeldet."
+  "p_identity": "Erkenntnisse aus der Tiefenanalyse Ihres Zugriffssystems – wer eintritt, wechselt und ausscheidet –, als Risikosignale an SpaceRisk gemeldet.",
+  "src_teams": "Die Teams in Ihrem Unternehmen"
 }

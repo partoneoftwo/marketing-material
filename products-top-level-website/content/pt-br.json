@@ -25,5 +25,6 @@
   "p_spacerisk": "Gestão de riscos corporativos baseada na ISO 31000. Os riscos sobem das equipes e dos sistemas para um único bowtie — ameaças, barreiras e consequências — para que a liderança veja o que importa.",
   "p_historian": "Insights da análise profunda das suas redes de OT e de TI. Monitoramento passivo que reporta o que encontra como sinais de risco ao SpaceRisk.",
   "p_cloud": "Insights da análise profunda da sua infraestrutura em nuvem, reportados como sinais de risco ao SpaceRisk.",
-  "p_identity": "Insights da análise profunda do seu sistema de acessos — quem entra, quem muda de função e quem sai — reportados como sinais de risco ao SpaceRisk."
+  "p_identity": "Insights da análise profunda do seu sistema de acessos — quem entra, quem muda de função e quem sai — reportados como sinais de risco ao SpaceRisk.",
+  "src_teams": "As equipes da sua organização"
 }

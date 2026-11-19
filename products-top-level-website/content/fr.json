@@ -25,5 +25,6 @@
   "p_spacerisk": "La gestion des risques d'entreprise fondée sur ISO 31000. Les risques remontent des équipes et des systèmes vers un seul nœud papillon — menaces, barrières et conséquences — pour que la direction voie l'essentiel.",
   "p_historian": "Des enseignements tirés de l'analyse approfondie de vos réseaux OT et IT. Une surveillance passive qui remonte ses constats à SpaceRisk sous forme de signaux de risque.",
   "p_cloud": "Des enseignements tirés de l'analyse approfondie de votre infrastructure cloud, remontés à SpaceRisk sous forme de signaux de risque.",
-  "p_identity": "Des enseignements tirés de l'analyse approfondie de votre système d'accès — qui arrive, qui change de poste, qui part — remontés à SpaceRisk sous forme de signaux de risque."
+  "p_identity": "Des enseignements tirés de l'analyse approfondie de votre système d'accès — qui arrive, qui change de poste, qui part — remontés à SpaceRisk sous forme de signaux de risque.",
+  "src_teams": "Les équipes de votre organisation"
 }

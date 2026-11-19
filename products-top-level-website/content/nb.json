@@ -25,5 +25,6 @@
   "p_spacerisk": "Virksomhetsstyring av risiko bygget på ISO 31000. Risikoer rulles opp fra team og systemer til én bowtie – trusler, barrierer og konsekvenser – slik at ledelsen ser det som betyr noe.",
   "p_historian": "Innsikt fra dybdeanalyse av OT- og IT-nettverkene deres. Passiv overvåking som rapporterer funnene som risikosignaler til SpaceRisk.",
   "p_cloud": "Innsikt fra dybdeanalyse av skyinfrastrukturen deres, rapportert som risikosignaler til SpaceRisk.",
-  "p_identity": "Innsikt fra dybdeanalyse av tilgangssystemet deres – hvem som begynner, bytter rolle og slutter – rapportert som risikosignaler til SpaceRisk."
+  "p_identity": "Innsikt fra dybdeanalyse av tilgangssystemet deres – hvem som begynner, bytter rolle og slutter – rapportert som risikosignaler til SpaceRisk.",
+  "src_teams": "Teamene i virksomheten deres"
 }

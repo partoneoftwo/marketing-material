@@ -25,5 +25,6 @@
   "p_spacerisk": "Gestione del rischio d'impresa basata su ISO 31000. I rischi risalgono dai team e dai sistemi in un unico bowtie — minacce, barriere e conseguenze — perché il vertice veda ciò che conta.",
   "p_historian": "Informazioni dall'analisi approfondita delle vostre reti OT e IT. Un monitoraggio passivo che segnala a SpaceRisk ciò che rileva come segnali di rischio.",
   "p_cloud": "Informazioni dall'analisi approfondita della vostra infrastruttura cloud, segnalate a SpaceRisk come segnali di rischio.",
-  "p_identity": "Informazioni dall'analisi approfondita del vostro sistema di accessi — chi entra, chi cambia ruolo e chi esce — segnalate a SpaceRisk come segnali di rischio."
+  "p_identity": "Informazioni dall'analisi approfondita del vostro sistema di accessi — chi entra, chi cambia ruolo e chi esce — segnalate a SpaceRisk come segnali di rischio.",
+  "src_teams": "I team della vostra organizzazione"
 }
