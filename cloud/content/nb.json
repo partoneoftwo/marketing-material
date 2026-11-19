@@ -4,17 +4,17 @@
  "lang_name": "Norsk (bokmål)",
  "meta": {
   "title": "Many Worlds Cloud: dyp innsikt i skyinfrastrukturen",
-  "description": "Cloud leser hva en sikkerhetsskanning har funnet i AWS-, Azure- og Google Cloud-kontoene deres, og gjør det om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver."
+  "description": "Cloud analyserer hva en sikkerhetsskanning har funnet i AWS-, Azure- og Google Cloud-kontoene deres, og gjør det om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver."
  },
  "nav": {"skip": "Hopp til innholdet", "home": "Many Worlds Cloud, forsiden", "contact": "Snakk med oss",
   "links": [{"href": "#reads", "text": "Slik virker det"}, {"href": "#report", "text": "Rapporten"}, {"href": "#compliance", "text": "Etterlevelse"}, {"href": "#conclusions", "text": "Konklusjoner"}, {"href": "#accounts", "text": "Alle kontoer"}]},
  "hero": {
   "eyebrow": "Dyp innsikt i skyinfrastrukturen",
   "title": "Vit hva som er eksponert i skyen, og hva som bør gjøres med det.",
-  "text": "Cloud leser hva en sikkerhetsskanning har funnet i skykontoene deres, og gjør det om til en rapport og en liste over ting å handle på.",
+  "text": "Cloud analyserer hva en sikkerhetsskanning har funnet i skykontoene deres, og gjør det om til en rapport og en liste over ting å handle på.",
   "cta_primary": "Snakk med oss",
   "cta_secondary": "Se hva den finner",
-  "meta": [{"k": "Skanning", "v": "med lesetilgang"}, {"k": "Leser", "v": "AWS, Azure, Google Cloud"}, {"k": "Endrer", "v": "ingenting i skyen"}, {"k": "Skanner", "v": "Prowler, åpen kildekode"}]
+  "meta": [{"k": "Skanning", "v": "med lesetilgang"}, {"k": "Analyserer", "v": "AWS, Azure, Google Cloud"}, {"k": "Endrer", "v": "ingenting i skyen"}, {"k": "Skanner", "v": "Prowler, åpen kildekode"}]
  },
  "tally": [
   {"n": "3", "label": "visninger av samme rapport: ledelsen, skyeiere og de som gjør jobben"},
@@ -25,7 +25,7 @@
  "table_note": "Illustrasjon av rapporten. Produktet er under utvikling, og alle tall er oppdiktet.",
  "sections": [
   {
-   "id": "reads", "label": "Den bare leser",
+   "id": "reads", "label": "Den bare analyserer",
    "title": "Ingenting installeres i skyen, og ingenting i den endres.",
    "text": "En skanner ser på hvordan skykontoene er satt opp, med en rolle som kan lese og ikke noe mer. Cloud tar det skanneren fant, og gjør det lesbart. Den oppretter, endrer eller sletter aldri en ressurs, og den retter ingenting på egen hånd.",
    "flow": ["Skykontoer", "Rolle med lesetilgang", "Skanner", "Many Worlds Cloud", "Risikoer, hendelser, oppgaver"],
@@ -74,7 +74,7 @@
   },
   {
    "id": "compliance", "label": "Etterlevelse",
-   "title": "De samme funnene, lest mot rammeverkene dere må svare for.",
+   "title": "De samme funnene, analysert mot rammeverkene dere må svare for.",
    "text": "Én skanning svarer mange revisorer. Cloud viser hvilke krav i hvert rammeverk som er oppfylt, hvilke som feiler, og hvilke som ikke kunne vurderes, med funnene bak hvert av dem.",
    "table": {
     "title": "Rammeverk",
@@ -91,7 +91,7 @@
   {
    "id": "conclusions", "label": "Konklusjoner",
    "title": "Rapporten ender i tre lister som noen kan handle på.",
-   "text": "Risikoer går til et register, hendelser til en SOC og oppgaver til en kø. Hver vurdering har med regelen som ga den, fordi dette er første lesninger av én skanning, og siden sier det.",
+   "text": "Risikoer går til et register, hendelser til en SOC og oppgaver til en kø. Hver vurdering har med regelen som ga den, fordi dette er første analyser av én skanning, og siden sier det.",
    "boxes": [
     {"k": "Risikoer", "t": "Til risikoregisteret", "d": "En vedvarende svakhet, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt til en eier."},
     {"k": "Hendelser", "t": "Til SOC", "d": "Noe som er eksponert akkurat nå og må håndteres."},
@@ -117,7 +117,7 @@
   }
  ],
  "contact": {
-  "title": "Se Cloud lese deres egne kontoer.",
+  "title": "Se Cloud analysere deres egne kontoer.",
   "text": "Fortell oss om skyen deres, så viser vi rapporten først på simulerte data og deretter på deres egne.",
   "cta": "Snakk med oss",
   "email": "thomas.frivold@frivolddigital.com",
