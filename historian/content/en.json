@@ -1,0 +1,105 @@
+{
+ "lang": "en",
+ "html_lang": "en",
+ "lang_name": "English",
+ "meta": {
+  "title": "Many Worlds Historian: OT and IT deep network visibility",
+  "description": "Historian reads the network history a sensor has collected at your plant and turns it into a report and a list of things to act on: risks, incidents and tasks."
+ },
+ "nav": {"skip": "Skip to content", "home": "Many Worlds Historian, home", "contact": "Talk to us",
+  "links": [{"href": "#listens", "text": "How it works"}, {"href": "#report", "text": "The report"}, {"href": "#ai", "text": "AI agents"}, {"href": "#conclusions", "text": "Conclusions"}, {"href": "#plants", "text": "Every plant"}]},
+ "hero": {
+  "eyebrow": "OT and IT deep network visibility",
+  "title": "Know what happened on your plant network, and what to do about it.",
+  "text": "Historian reads the network history a sensor has collected at your plant and turns it into a report and a list of things to act on.",
+  "cta_primary": "Talk to us",
+  "cta_secondary": "See what it finds",
+  "meta": [{"k": "Listens", "v": "passively"}, {"k": "Reads", "v": "OT and IT"}, {"k": "Writes", "v": "nothing to your network"}, {"k": "Sensors", "v": "one per plant"}]
+ },
+ "tally": [
+  {"n": "3", "label": "views of one report: leadership, OT owners, the people doing the work"},
+  {"n": "22", "label": "indicators of AI agent activity in the catalogue"},
+  {"n": "3", "label": "lists to act on: risks, incidents and tasks"},
+  {"n": "0", "label": "writes to your plant network"}
+ ],
+ "shot_note": "Screen from the product. Simulated data: every figure is invented for demonstration.",
+ "shots": {
+  "conclusions": "The conclusions of one plant: 13 risks, 4 incidents and 16 tasks, with the risks placed on a five by five matrix of likelihood against consequence.",
+  "trust": "The first section of the report: whether the numbers can be trusted, with a chart of what the sensors recorded and the gaps in the record.",
+  "findings": "Findings ranked by severity. Each one says what was observed, why it matters, the recommended action and the evidence.",
+  "controllers": "Commands that change a controller, by sender, over Modbus and DNP3. An unknown device and a sender with an unexpected role come first.",
+  "ai": "AI Agents Watch: every host with an indicator of AI activity, its assessment, score and whether it is approved.",
+  "organization": "Six plants side by side, ranked by what needs deciding, with the findings at each and which could not be monitored completely."
+ },
+ "sections": [
+  {
+   "id": "listens", "label": "It only listens",
+   "title": "Nothing is installed on your controllers, and nothing is sent to them.",
+   "text": "A capture point at the plant records a copy of the traffic and delivers it to the plant's network sensor. Historian asks the sensor questions with a read-only account. It never writes to the sensor or the network, and it never asks for the passwords it sees crossing the wire, only how many there were.",
+   "flow": ["Plant network", "Capture point", "Network sensor", "Historian", "Risks, incidents, tasks"],
+   "points": ["One network sensor per plant, each holding that plant's own history", "The sensor is Malcolm, the open-source network traffic analysis suite, and stays a separate system", "No port has to be opened to the internet: sensors and Historian meet on a private network", "Runs on your own server"]
+  },
+  {
+   "id": "report", "label": "Can these numbers be trusted?",
+   "title": "The report starts by saying how completely the plant could be observed.",
+   "text": "A plant that is quiet because its sensor was down must never read as a plant where nothing happened. So every report opens with what the sensors recorded, where the gaps are, and whether the figures below are complete or lower bounds.",
+   "shot": "trust",
+   "points": ["Capture points delivering, and when each last did", "Gaps in the record, listed to the minute", "If the sensor refuses a question, the report still builds and says what is missing"]
+  },
+  {
+   "id": "findings", "label": "Findings, ranked by severity",
+   "title": "Each finding comes with why it matters, what to do and the evidence.",
+   "text": "A finding is something observed in the window that needs a decision. The worst come first, and each one can be traced to the records behind it.",
+   "shot": "findings",
+   "points": ["Passwords sent in cleartext, contact with known-malicious addresses, devices that are not in the inventory", "Trends against the period before, so you can see whether risk is going up or down", "PDF, Excel and PowerPoint from every page"]
+  },
+  {
+   "id": "questions", "label": "One report, three readers",
+   "title": "Leadership and OT owners ask different questions. Each gets its own view.",
+   "text": "The executive summary answers in a page. The OT owner view goes down to the controller. The full report carries the evidence for whoever does the work.",
+   "columns": [
+    {"title": "Questions for leadership", "items": ["Is risk going up or down?", "Do we know what is on our network?", "Are the network zones separated?", "Do plant devices talk to the internet?", "Who has remote access into the plant?", "Were known attackers seen?", "Was malware moved over the network?", "What attacker behaviour was observed, in MITRE ATT&CK terms?"]},
+    {"title": "Questions for OT owners", "items": ["Who sent commands to controllers?", "Who talks to each controller?", "What changed since the period before?", "Are the controllers communicating cleanly?", "Which industrial protocols are on the network?", "What is known about each plant device?", "Which weak or legacy practices are in use?", "Which software and versions were seen?"]}
+   ],
+   "shot": "controllers"
+  },
+  {
+   "id": "ai", "label": "AI agents on the network",
+   "title": "See which machines behave like a program and not like a person.",
+   "text": "AI agents are arriving on office and plant networks, approved or not. Historian compiles every host that shows an indicator of AI activity, what each one did on the network, and whether it is on your approved list.",
+   "shot": "ai",
+   "points": ["A catalogue of indicators, and which of them each host showed", "Hosts that also acted on the network are marked as concerning", "Groups of hosts working in step"]
+  },
+  {
+   "id": "conclusions", "label": "Conclusions",
+   "title": "The report ends in three lists somebody can act on.",
+   "text": "Risks go to a register, incidents to a SOC, tasks to a queue. Every rating carries the rule that produced it, because these are first readings from one window of traffic and the page says so.",
+   "shot": "conclusions",
+   "boxes": [
+    {"k": "Risks", "t": "For the risk register", "d": "A standing weakness, rated likelihood times consequence, each from 1 to 5, and given to an owner."},
+    {"k": "Incidents", "t": "For the SOC", "d": "Something that has happened and needs responding to now."},
+    {"k": "Tasks", "t": "For a queue", "d": "One piece of work with a queue, a due date and a way to tell when it is finished."}
+   ],
+   "points": ["Send the three lists to a SpaceRisk register with one button. Nothing is sent until it is pressed", "Sending again updates what was sent before and never makes a second copy", "Exports for a SIEM (OCSF) and for Jira, ServiceNow or a mailbox, plus Excel and PowerPoint"]
+  },
+  {
+   "id": "plants", "label": "Every plant at once",
+   "title": "Rank your plants by what needs deciding.",
+   "text": "With more than one plant you get them side by side: which needs attention first, what is true at several of them against what is true at one, and which could not be monitored completely.",
+   "shot": "organization",
+   "points": ["Each row opens that plant's own report", "Findings shared by several plants are shown together", "Unwatched is never shown as quiet"]
+  }
+ ],
+ "contact": {
+  "title": "See Historian read your own network.",
+  "text": "Tell us about your plants and we will show you the report on simulated data first, then on yours.",
+  "cta": "Talk to us",
+  "email": "thomas.frivold@frivolddigital.com",
+  "subject": "Historian"
+ },
+ "footer": {
+  "tagline": "OT and IT deep network visibility.",
+  "spacerisk": "SpaceRisk, the risk register it sends to",
+  "note": "No cookies, no tracking. The screens show simulated data."
+ }
+}

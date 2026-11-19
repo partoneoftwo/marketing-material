@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#fbfcfd">
+<title>Many Worlds Historian: OT and IT deep network visibility</title>
+<meta name="description" content="Historian reads the network history a sensor has collected at your plant and turns it into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:title" content="Many Worlds Historian: OT and IT deep network visibility">
+<meta property="og:description" content="Historian reads the network history a sensor has collected at your plant and turns it into a report and a list of things to act on: risks, incidents and tasks.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261119">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Many Worlds Historian, home"><img src="../assets/logo.svg" width="28" height="28" alt=""><span><small>Many Worlds</small>Historian</span></a>
+    <nav class="links" aria-label="Main"><a href="#listens">How it works</a><a href="#report">The report</a><a href="#ai">AI agents</a><a href="#conclusions">Conclusions</a><a href="#plants">Every plant</a></nav>
+    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Talk to us</a>
+  </div>
+</header>
+<main id="main">
+<section class="page hero">
+  <p class="eyebrow">OT and IT deep network visibility</p>
+  <h1>Know what happened on your plant network, and what to do about it.</h1>
+  <p class="lede">Historian reads the network history a sensor has collected at your plant and turns it into a report and a list of things to act on.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Talk to us</a><a class="btn btn-line" href="#report">See what it finds ↓</a></div>
+  <dl class="meta"><div><dt>Listens</dt><dd>passively</dd></div><div><dt>Reads</dt><dd>OT and IT</dd></div><div><dt>Writes</dt><dd>nothing to your network</dd></div><div><dt>Sensors</dt><dd>one per plant</dd></div></dl>
+</section>
+
+<div class="page"><dl class="tally"><div><dt class="n">3</dt><dd class="lbl">views of one report: leadership, OT owners, the people doing the work</dd></div><div><dt class="n">22</dt><dd class="lbl">indicators of AI agent activity in the catalogue</dd></div><div><dt class="n">3</dt><dd class="lbl">lists to act on: risks, incidents and tasks</dd></div><div><dt class="n">0</dt><dd class="lbl">writes to your plant network</dd></div></dl></div>
+
+<section class="page part" id="listens">
+  <p class="part-h"><b>01</b> It only listens</p>
+  <div class="part-top">
+    <div><h2>Nothing is installed on your controllers, and nothing is sent to them.</h2><p class="lede">A capture point at the plant records a copy of the traffic and delivers it to the plant&#39;s network sensor. Historian asks the sensor questions with a read-only account. It never writes to the sensor or the network, and it never asks for the passwords it sees crossing the wire, only how many there were.</p></div>
+<ul class="points"><li>One network sensor per plant, each holding that plant&#39;s own history</li><li>The sensor is Malcolm, the open-source network traffic analysis suite, and stays a separate system</li><li>No port has to be opened to the internet: sensors and Historian meet on a private network</li><li>Runs on your own server</li></ul>  </div>
+<ol class="flow" aria-label="It only listens"><li>Plant network</li><li>Capture point</li><li>Network sensor</li><li class="own">Historian</li><li>Risks, incidents, tasks</li></ol></section>
+<section class="page part" id="report">
+  <p class="part-h"><b>02</b> Can these numbers be trusted?</p>
+  <div class="part-top">
+    <div><h2>The report starts by saying how completely the plant could be observed.</h2><p class="lede">A plant that is quiet because its sensor was down must never read as a plant where nothing happened. So every report opens with what the sensors recorded, where the gaps are, and whether the figures below are complete or lower bounds.</p></div>
+<ul class="points"><li>Capture points delivering, and when each last did</li><li>Gaps in the record, listed to the minute</li><li>If the sensor refuses a question, the report still builds and says what is missing</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/trust.webp" width="924" height="760" alt="The first section of the report: whether the numbers can be trusted, with a chart of what the sensors recorded and the gaps in the record." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+<section class="page part" id="findings">
+  <p class="part-h"><b>03</b> Findings, ranked by severity</p>
+  <div class="part-top">
+    <div><h2>Each finding comes with why it matters, what to do and the evidence.</h2><p class="lede">A finding is something observed in the window that needs a decision. The worst come first, and each one can be traced to the records behind it.</p></div>
+<ul class="points"><li>Passwords sent in cleartext, contact with known-malicious addresses, devices that are not in the inventory</li><li>Trends against the period before, so you can see whether risk is going up or down</li><li>PDF, Excel and PowerPoint from every page</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/findings.webp" width="924" height="800" alt="Findings ranked by severity. Each one says what was observed, why it matters, the recommended action and the evidence." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+<section class="page part" id="questions">
+  <p class="part-h"><b>04</b> One report, three readers</p>
+  <div class="part-top">
+    <div><h2>Leadership and OT owners ask different questions. Each gets its own view.</h2><p class="lede">The executive summary answers in a page. The OT owner view goes down to the controller. The full report carries the evidence for whoever does the work.</p></div>
+  </div>
+<div class="cols"><div><h3>Questions for leadership</h3><ul><li>Is risk going up or down?</li><li>Do we know what is on our network?</li><li>Are the network zones separated?</li><li>Do plant devices talk to the internet?</li><li>Who has remote access into the plant?</li><li>Were known attackers seen?</li><li>Was malware moved over the network?</li><li>What attacker behaviour was observed, in MITRE ATT&amp;CK terms?</li></ul></div><div><h3>Questions for OT owners</h3><ul><li>Who sent commands to controllers?</li><li>Who talks to each controller?</li><li>What changed since the period before?</li><li>Are the controllers communicating cleanly?</li><li>Which industrial protocols are on the network?</li><li>What is known about each plant device?</li><li>Which weak or legacy practices are in use?</li><li>Which software and versions were seen?</li></ul></div></div><figure class="shot"><img src="../assets/shots/en/controllers.webp" width="924" height="800" alt="Commands that change a controller, by sender, over Modbus and DNP3. An unknown device and a sender with an unexpected role come first." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+<section class="page part" id="ai">
+  <p class="part-h"><b>05</b> AI agents on the network</p>
+  <div class="part-top">
+    <div><h2>See which machines behave like a program and not like a person.</h2><p class="lede">AI agents are arriving on office and plant networks, approved or not. Historian compiles every host that shows an indicator of AI activity, what each one did on the network, and whether it is on your approved list.</p></div>
+<ul class="points"><li>A catalogue of indicators, and which of them each host showed</li><li>Hosts that also acted on the network are marked as concerning</li><li>Groups of hosts working in step</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/ai.webp" width="924" height="800" alt="AI Agents Watch: every host with an indicator of AI activity, its assessment, score and whether it is approved." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+<section class="page part" id="conclusions">
+  <p class="part-h"><b>06</b> Conclusions</p>
+  <div class="part-top">
+    <div><h2>The report ends in three lists somebody can act on.</h2><p class="lede">Risks go to a register, incidents to a SOC, tasks to a queue. Every rating carries the rule that produced it, because these are first readings from one window of traffic and the page says so.</p></div>
+<ul class="points"><li>Send the three lists to a SpaceRisk register with one button. Nothing is sent until it is pressed</li><li>Sending again updates what was sent before and never makes a second copy</li><li>Exports for a SIEM (OCSF) and for Jira, ServiceNow or a mailbox, plus Excel and PowerPoint</li></ul>  </div>
+<div class="boxes"><div><p class="lbl">For the risk register</p><p class="k">Risks</p><p>A standing weakness, rated likelihood times consequence, each from 1 to 5, and given to an owner.</p></div><div><p class="lbl">For the SOC</p><p class="k">Incidents</p><p>Something that has happened and needs responding to now.</p></div><div><p class="lbl">For a queue</p><p class="k">Tasks</p><p>One piece of work with a queue, a due date and a way to tell when it is finished.</p></div></div><figure class="shot"><img src="../assets/shots/en/conclusions.webp" width="924" height="830" alt="The conclusions of one plant: 13 risks, 4 incidents and 16 tasks, with the risks placed on a five by five matrix of likelihood against consequence." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+<section class="page part" id="plants">
+  <p class="part-h"><b>07</b> Every plant at once</p>
+  <div class="part-top">
+    <div><h2>Rank your plants by what needs deciding.</h2><p class="lede">With more than one plant you get them side by side: which needs attention first, what is true at several of them against what is true at one, and which could not be monitored completely.</p></div>
+<ul class="points"><li>Each row opens that plant&#39;s own report</li><li>Findings shared by several plants are shown together</li><li>Unwatched is never shown as quiet</li></ul>  </div>
+<figure class="shot"><img src="../assets/shots/en/organization.webp" width="924" height="1180" alt="Six plants side by side, ranked by what needs deciding, with the findings at each and which could not be monitored completely." loading="lazy" decoding="async"><figcaption>Screen from the product. Simulated data: every figure is invented for demonstration.</figcaption></figure></section>
+
+<section class="page cta" id="contact">
+  <h2>See Historian read your own network.</h2>
+  <p class="lede">Tell us about your plants and we will show you the report on simulated data first, then on yours.</p>
+  <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">Talk to us</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Historian">thomas.frivold@frivolddigital.com</a></div>
+</section>
+</main>
+<footer class="page foot">
+  <p><b>Many Worlds Historian</b> · OT and IT deep network visibility.</p>
+  <p><a href="https://partoneoftwo.github.io/marketing-material/spacerisk/v3/">SpaceRisk, the risk register it sends to</a></p>
+  <p class="fine">© 2026 Frivold Digital AS · No cookies, no tracking. The screens show simulated data.</p>
+</footer>
+</body>
+</html>
