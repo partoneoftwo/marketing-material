@@ -2,6 +2,10 @@
 
 Public marketing assets, one folder per product.
 
+## Historian
+
+Folder structure in place, material still to be added: see [`historian/`](historian).
+
 ## SpaceRisk
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
