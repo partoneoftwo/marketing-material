@@ -1,0 +1,83 @@
+{
+ "lang": "en", "html_lang": "en", "lang_name": "English",
+ "product": "Many Worlds Cloud",
+ "eyebrow": "Cloud infrastructure deep visibility",
+ "headline": "Know what is exposed in your cloud, and what to do about it.",
+ "sub": "Many Worlds Cloud reads what the open-source scanner Prowler finds in your cloud accounts and turns it into a report and a list of things to act on: risks, incidents and tasks.",
+ "meta": [{"k": "Reads", "v": "read-only"}, {"k": "Covers", "v": "AWS, Azure, Google Cloud, Kubernetes, Microsoft 365"}, {"k": "Changes", "v": "nothing in your cloud"}, {"k": "Scanner", "v": "Prowler, open source"}],
+ "flow_title": "How it works",
+ "flow": ["Cloud accounts", "Prowler scan", "Many Worlds Cloud", "Risks, incidents, tasks", "SpaceRisk"],
+ "problem": {
+  "label": "The problem",
+  "title": "A scanner gives you thousands of rows. Nobody can decide from that.",
+  "bullets": ["One scan of one cloud account returns hundreds or thousands of failed checks", "Leadership asks whether risk is going up or down, and a spreadsheet of checks cannot answer", "An account that was never scanned looks the same as an account with nothing wrong", "Findings stay in the security team's tool and never reach the risk register"]
+ },
+ "sections": [
+  {"id": "reads", "label": "It only reads", "title": "Nothing is installed in your cloud, and nothing is changed.",
+   "text": "Prowler scans each cloud account with a read-only role. Many Worlds Cloud reads the results. It never writes to your accounts, and it never asks for the secrets it finds, only where they are.",
+   "points": ["Prowler is the open-source cloud security scanner, under the Apache 2.0 licence, and stays a separate system", "Hundreds of checks across AWS, Azure, Google Cloud, Kubernetes and Microsoft 365", "Runs on your own server, so the results stay with you"]},
+  {"id": "trust", "label": "Can these results be trusted?", "title": "The report starts by saying how completely your cloud could be scanned.",
+   "text": "An account that is quiet because the scan failed must never read as an account with nothing wrong. So every report opens with which accounts were scanned, when, and which checks could not run.",
+   "points": ["Accounts scanned, and when each scan last finished", "Checks that could not run, and why", "Unscanned is never shown as clean"]},
+  {"id": "findings", "label": "Findings, ranked by severity", "title": "Each finding comes with why it matters, what to do and the evidence.",
+   "text": "A finding is something the scan observed that needs a decision. The worst come first, and each one can be traced to the resource and the check behind it.",
+   "points": ["Storage open to the internet, sign-in without multi-factor authentication, unencrypted data, logging switched off", "Trends against the scan before, so you can see whether risk is going up or down", "PDF, Excel and PowerPoint from every page"]},
+  {"id": "compliance", "label": "Compliance", "title": "See which requirements you meet, and which you miss.",
+   "text": "Prowler maps its checks to the frameworks auditors ask about. The report shows each framework requirement by requirement, with the findings behind every miss.",
+   "points": ["Frameworks such as CIS, ISO 27001, NIS2, GDPR, SOC 2, PCI DSS and ENS", "Every missed requirement links to the resources that caused it", "Not assessed is never shown as met"]},
+  {"id": "conclusions", "label": "Conclusions", "title": "The report ends in three lists somebody can act on.",
+   "text": "Risks go to a register, incidents to a SOC, tasks to a queue. Every rating carries the rule that produced it.",
+   "points": ["Send the three lists to a SpaceRisk register with one button. Nothing is sent until it is pressed", "Sending again updates what was sent before and never makes a second copy", "Exports for a SIEM (OCSF) and for Jira, ServiceNow or a mailbox, plus Excel and PowerPoint"]},
+  {"id": "accounts", "label": "Every account at once", "title": "Rank your cloud accounts by what needs deciding.",
+   "text": "With more than one account, subscription or project you get them side by side: which needs attention first, what is true at several of them against what is true at one, and which could not be scanned completely.",
+   "points": ["Each row opens that account's own report", "Findings shared by several accounts are shown together", "AWS, Azure and Google Cloud in the same ranking"]}
+ ],
+ "questions": {
+  "label": "One report, three readers",
+  "title": "Leadership and cloud owners ask different questions. Each gets its own view.",
+  "text": "The executive summary answers in a page. The cloud owner view goes down to the resource. The full report carries the evidence for whoever does the work.",
+  "columns": [
+   {"title": "Questions for leadership", "items": ["Is risk going up or down?", "Do we know which accounts and resources we have?", "What is open to the internet?", "Who can sign in without multi-factor authentication?", "Who has administrator rights?", "Is our data encrypted and backed up?", "Is logging on, so we would notice an attack?", "Which requirements do we meet?"]},
+   {"title": "Questions for cloud owners", "items": ["Which storage is public?", "Which firewall rules are open to everyone?", "Which keys and accounts have not been used for months?", "Which databases and disks are unencrypted?", "Where is logging or monitoring switched off?", "What changed since the scan before?", "Which services and regions have the most findings?", "Which resource is behind each finding?"]}
+  ]
+ },
+ "boxes": [
+  {"k": "Risks", "t": "For the risk register", "d": "A standing weakness, rated likelihood times consequence, each from 1 to 5, and given to an owner."},
+  {"k": "Incidents", "t": "For the SOC", "d": "Something that is exposed right now and needs responding to."},
+  {"k": "Tasks", "t": "For a queue", "d": "One piece of work with a queue, a due date and a way to tell when it is finished."}
+ ],
+ "sample": {
+  "title": "What a finding looks like",
+  "note": "Illustration. The product is in development and every figure is invented.",
+  "cols": ["Severity", "Finding", "Where", "Recommended action"],
+  "rows": [
+   ["Critical", "Storage bucket readable by anyone on the internet", "AWS, production", "Block public access"],
+   ["High", "Administrator signs in without multi-factor authentication", "Azure, 3 users", "Require MFA"],
+   ["High", "Database open to every address", "Google Cloud, billing", "Limit to known networks"],
+   ["Medium", "Access keys unused for 180 days", "AWS, 12 keys", "Remove the keys"]
+  ],
+  "matrix": "Risks on a five by five matrix of likelihood against consequence",
+  "likelihood": "Likelihood", "consequence": "Consequence"
+ },
+ "portfolio": {
+  "label": "One risk picture",
+  "title": "Your networks, your cloud and your access system meet in one bowtie.",
+  "text": "Many Worlds Cloud is one of three products that send risk signals to SpaceRisk, the ISO 31000 risk register where your whole organisation can act on them.",
+  "items": [
+   {"k": "Many Worlds Historian", "d": "Deep analysis of your OT and IT networks."},
+   {"k": "Many Worlds Cloud", "d": "Deep analysis of your cloud infrastructure."},
+   {"k": "Many Worlds Identity", "d": "Deep analysis of your access system."},
+   {"k": "SpaceRisk", "d": "The risk register they all send to."}
+  ]
+ },
+ "cta": {"label": "Next step", "title": "See Many Worlds Cloud read your own cloud.", "text": "Tell us about your cloud accounts and we will show you the report on simulated data first, then on yours.", "button": "Talk to us", "email": "thomas.frivold@frivolddigital.com"},
+ "footer": "Cloud infrastructure deep visibility.",
+ "texts": {
+  "taglines": ["Know what is exposed in your cloud, and what to do about it.", "From thousands of failed checks to three lists you can act on.", "Unscanned is never shown as clean."],
+  "short": "Many Worlds Cloud reads what the open-source scanner Prowler finds in your cloud accounts and turns it into a report and a list of things to act on: risks, incidents and tasks.",
+  "medium": "Many Worlds Cloud turns cloud security scans into decisions. Prowler, the open-source scanner, checks your AWS, Azure, Google Cloud, Kubernetes and Microsoft 365 accounts with a read-only role. Many Worlds Cloud reads the results and writes a report that starts with how completely your cloud could be scanned, ranks the findings by severity, and ends in three lists: risks for the register, incidents for the SOC and tasks for a queue. One button sends them to SpaceRisk.",
+  "long": "A cloud security scanner returns thousands of rows, and nobody can decide from that. Many Worlds Cloud reads what Prowler, the open-source scanner, finds in your cloud accounts and turns it into a report three kinds of reader can use. Leadership gets an executive summary that answers in a page: is risk going up or down, what is open to the internet, who has administrator rights. Cloud owners get a view that goes down to the resource. The people doing the work get the full report with the evidence. Every report opens with which accounts were scanned and which checks could not run, so an unscanned account is never shown as clean. Findings are ranked by severity, each with why it matters, what to do and the evidence, and are mapped to frameworks such as CIS, ISO 27001, NIS2 and ENS. The report ends in three lists: risks, incidents and tasks. One button sends them to a SpaceRisk register, and there are exports for a SIEM, Jira, ServiceNow, Excel and PowerPoint. Many Worlds Cloud only reads. It runs on your own server and changes nothing in your cloud.",
+  "boilerplate": "About Many Worlds Cloud: Many Worlds Cloud is a reporting application for cloud security. It reads the results of Prowler, the open-source cloud security scanner, and turns them into a report with three views and three lists to act on: risks, incidents and tasks. It runs on your own server, only reads, and can send its conclusions to a SpaceRisk risk register. Many Worlds Cloud is part of the Many Worlds family from Frivold Digital, with Many Worlds Historian and Many Worlds Identity."
+ },
+ "h": {"taglines": "Taglines", "short": "Short description", "medium": "Medium description", "long": "Long description", "blurbs": "Feature blurbs", "boilerplate": "Boilerplate", "leaders": "Leadership", "owners": "Cloud owners", "workers": "The people doing the work"}
+}

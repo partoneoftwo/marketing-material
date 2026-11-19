@@ -1,0 +1,83 @@
+{
+ "lang": "es", "html_lang": "es", "lang_name": "Español",
+ "product": "Many Worlds Cloud",
+ "eyebrow": "Visibilidad profunda de su infraestructura en la nube",
+ "headline": "Sepa qué está expuesto en su nube y qué hacer al respecto.",
+ "sub": "Many Worlds Cloud lee lo que Prowler, el escáner de código abierto, encuentra en sus cuentas en la nube y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.",
+ "meta": [{"k": "Lee", "v": "en solo lectura"}, {"k": "Cubre", "v": "AWS, Azure, Google Cloud, Kubernetes, Microsoft 365"}, {"k": "Cambia", "v": "nada en su nube"}, {"k": "Escáner", "v": "Prowler, código abierto"}],
+ "flow_title": "Cómo funciona",
+ "flow": ["Cuentas en la nube", "Análisis de Prowler", "Many Worlds Cloud", "Riesgos, incidentes, tareas", "SpaceRisk"],
+ "problem": {
+  "label": "El problema",
+  "title": "Un escáner le da miles de filas. Con eso nadie puede decidir.",
+  "bullets": ["Un solo análisis de una sola cuenta en la nube devuelve cientos o miles de comprobaciones fallidas", "La dirección pregunta si el riesgo sube o baja, y una hoja de cálculo de comprobaciones no puede responder", "Una cuenta que nunca se analizó se ve igual que una cuenta sin problemas", "Los hallazgos se quedan en la herramienta del equipo de seguridad y nunca llegan al registro de riesgos"]
+ },
+ "sections": [
+  {"id": "reads", "label": "Solo lee", "title": "No se instala nada en su nube ni se cambia nada en ella.",
+   "text": "Prowler analiza cada cuenta en la nube con un rol de solo lectura. Many Worlds Cloud lee los resultados. Nunca escribe en sus cuentas y nunca pide los secretos que encuentra, solo dónde están.",
+   "points": ["Prowler es el escáner de seguridad en la nube de código abierto, con licencia Apache 2.0, y sigue siendo un sistema independiente", "Cientos de comprobaciones en AWS, Azure, Google Cloud, Kubernetes y Microsoft 365", "Funciona en su propio servidor, así que los resultados se quedan con usted"]},
+  {"id": "trust", "label": "¿Se puede confiar en estos resultados?", "title": "El informe empieza diciendo hasta qué punto pudo analizarse su nube.",
+   "text": "Una cuenta que está en silencio porque el análisis falló nunca debe leerse como una cuenta sin problemas. Por eso cada informe empieza con qué cuentas se analizaron, cuándo, y qué comprobaciones no pudieron ejecutarse.",
+   "points": ["Cuentas analizadas, y cuándo terminó el último análisis de cada una", "Comprobaciones que no pudieron ejecutarse, y por qué", "Lo no analizado nunca se muestra como limpio"]},
+  {"id": "findings", "label": "Hallazgos, ordenados por gravedad", "title": "Cada hallazgo incluye por qué importa, qué hacer y las pruebas.",
+   "text": "Un hallazgo es algo que el análisis observó y que requiere una decisión. Los peores aparecen primero, y cada uno puede rastrearse hasta el recurso y la comprobación que hay detrás.",
+   "points": ["Almacenamiento abierto a internet, acceso sin autenticación multifactor, datos sin cifrar, registros desactivados", "Tendencias frente al análisis anterior, para ver si el riesgo sube o baja", "PDF, Excel y PowerPoint desde cada página"]},
+  {"id": "compliance", "label": "Cumplimiento", "title": "Vea qué requisitos cumple y cuáles no.",
+   "text": "Prowler relaciona sus comprobaciones con los marcos por los que preguntan los auditores. El informe muestra cada marco requisito por requisito, con los hallazgos que hay detrás de cada incumplimiento.",
+   "points": ["Marcos como CIS, ISO 27001, NIS2, RGPD, SOC 2, PCI DSS y ENS", "Un requisito que falla abre los recursos que lo causaron", "Lo no evaluado nunca se muestra como cumplido"]},
+  {"id": "conclusions", "label": "Conclusiones", "title": "El informe termina en tres listas sobre las que alguien puede actuar.",
+   "text": "Los riesgos van a un registro, los incidentes a un SOC y las tareas a una cola. Cada valoración lleva la regla que la produjo.",
+   "points": ["Envíe las tres listas a un registro de SpaceRisk con un botón. No se envía nada hasta que se pulsa", "Volver a enviar actualiza lo enviado antes y nunca crea una segunda copia", "Exportaciones para un SIEM (OCSF) y para Jira, ServiceNow o un buzón, además de Excel y PowerPoint"]},
+  {"id": "accounts", "label": "Todas las cuentas a la vez", "title": "Ordene sus cuentas en la nube por lo que hay que decidir.",
+   "text": "Con más de una cuenta, suscripción o proyecto las tiene una junto a otra: cuál necesita atención primero, qué ocurre en varias frente a lo que ocurre en una sola, y cuáles no pudieron analizarse por completo.",
+   "points": ["Cada fila abre el informe de esa cuenta", "Los hallazgos que comparten varias cuentas se muestran juntos", "AWS, Azure y Google Cloud en la misma clasificación"]}
+ ],
+ "questions": {
+  "label": "Un informe, tres lectores",
+  "title": "La dirección y los responsables de la nube hacen preguntas distintas. Cada uno tiene su vista.",
+  "text": "El resumen ejecutivo responde en una página. La vista del responsable de la nube baja hasta el recurso concreto. El informe completo lleva las pruebas para quien hace el trabajo.",
+  "columns": [
+   {"title": "Preguntas de la dirección", "items": ["¿El riesgo sube o baja?", "¿Sabemos qué cuentas y recursos tenemos?", "¿Qué está abierto a internet?", "¿Quién puede entrar sin autenticación multifactor?", "¿Quién tiene acceso de administrador?", "¿Están nuestros datos cifrados y con copia de seguridad?", "¿Están activos los registros, para que detectemos un ataque?", "¿Qué requisitos cumplimos?"]},
+   {"title": "Preguntas de los responsables de la nube", "items": ["¿Qué almacenamiento es público?", "¿Qué reglas de cortafuegos están abiertas a todo el mundo?", "¿Qué claves y cuentas llevan meses sin usarse?", "¿Qué bases de datos y discos están sin cifrar?", "¿Dónde están desactivados los registros o la supervisión?", "¿Qué ha cambiado desde el análisis anterior?", "¿Qué servicios y regiones tienen más hallazgos?", "¿Qué recurso hay detrás de cada hallazgo?"]}
+  ]
+ },
+ "boxes": [
+  {"k": "Riesgos", "t": "Para el registro de riesgos", "d": "Una debilidad persistente, valorada como probabilidad por consecuencia, cada una de 1 a 5, y asignada a un responsable."},
+  {"k": "Incidentes", "t": "Para el SOC", "d": "Algo que está expuesto ahora mismo y requiere respuesta."},
+  {"k": "Tareas", "t": "Para una cola", "d": "Un trabajo concreto con una cola, una fecha límite y una forma de saber cuándo está terminado."}
+ ],
+ "sample": {
+  "title": "Cómo es un hallazgo",
+  "note": "Ilustración. El producto está en desarrollo y todas las cifras son inventadas.",
+  "cols": ["Gravedad", "Hallazgo", "Dónde", "Acción recomendada"],
+  "rows": [
+   ["Crítica", "Almacenamiento que cualquiera puede leer desde internet", "AWS, producción", "Bloquear el acceso público"],
+   ["Alta", "Un administrador entra sin autenticación multifactor", "Azure, 3 usuarios", "Exigir MFA"],
+   ["Alta", "Base de datos abierta a cualquier dirección", "Google Cloud, facturación", "Limitar a redes conocidas"],
+   ["Media", "Claves de acceso sin usar desde hace 180 días", "AWS, 12 claves", "Eliminar las claves"]
+  ],
+  "matrix": "Riesgos en una matriz de cinco por cinco de probabilidad frente a consecuencia",
+  "likelihood": "Probabilidad", "consequence": "Consecuencia"
+ },
+ "portfolio": {
+  "label": "Una sola imagen del riesgo",
+  "title": "Sus redes, su nube y su sistema de accesos se encuentran en un solo bowtie.",
+  "text": "Many Worlds Cloud es uno de los tres productos que envían señales de riesgo a SpaceRisk, el registro de riesgos basado en ISO 31000 donde toda su organización puede actuar sobre ellas.",
+  "items": [
+   {"k": "Many Worlds Historian", "d": "Análisis profundo de sus redes OT e IT."},
+   {"k": "Many Worlds Cloud", "d": "Análisis profundo de su infraestructura en la nube."},
+   {"k": "Many Worlds Identity", "d": "Análisis profundo de su sistema de accesos."},
+   {"k": "SpaceRisk", "d": "El registro de riesgos al que todos envían."}
+  ]
+ },
+ "cta": {"label": "Siguiente paso", "title": "Vea a Many Worlds Cloud leer su propia nube.", "text": "Háblenos de sus cuentas en la nube y le mostraremos el informe primero con datos simulados y después con los suyos.", "button": "Hable con nosotros", "email": "thomas.frivold@frivolddigital.com"},
+ "footer": "Visibilidad profunda de su infraestructura en la nube.",
+ "texts": {
+  "taglines": ["Sepa qué está expuesto en su nube y qué hacer al respecto.", "De miles de comprobaciones fallidas a tres listas sobre las que actuar.", "Lo no analizado nunca se muestra como limpio."],
+  "short": "Many Worlds Cloud lee lo que Prowler, el escáner de código abierto, encuentra en sus cuentas en la nube y lo convierte en un informe y en una lista de cosas sobre las que actuar: riesgos, incidentes y tareas.",
+  "medium": "Many Worlds Cloud convierte los análisis de seguridad en la nube en decisiones. Prowler, el escáner de código abierto, comprueba sus cuentas de AWS, Azure, Google Cloud, Kubernetes y Microsoft 365 con un rol de solo lectura. Many Worlds Cloud lee los resultados y redacta un informe que empieza diciendo hasta qué punto pudo analizarse su nube, ordena los hallazgos por gravedad y termina en tres listas: riesgos para el registro, incidentes para el SOC y tareas para una cola. Un botón las envía a SpaceRisk.",
+  "long": "Un escáner de seguridad en la nube devuelve miles de filas, y con eso nadie puede decidir. Many Worlds Cloud lee lo que Prowler, el escáner de código abierto, encuentra en sus cuentas en la nube y lo convierte en un informe que tres tipos de lector pueden usar. La dirección recibe un resumen ejecutivo que responde en una página: si el riesgo sube o baja, qué está abierto a internet, quién tiene acceso de administrador. Los responsables de la nube reciben una vista que baja hasta el recurso concreto. Quienes hacen el trabajo reciben el informe completo con las pruebas. Cada informe empieza con qué cuentas se analizaron y qué comprobaciones no pudieron ejecutarse, de modo que una cuenta sin analizar nunca se muestra como limpia. Los hallazgos se ordenan por gravedad, cada uno con por qué importa, qué hacer y las pruebas, y se relacionan con marcos como CIS, ISO 27001, NIS2 y ENS. El informe termina en tres listas: riesgos, incidentes y tareas. Un botón las envía a un registro de SpaceRisk, y hay exportaciones para un SIEM, Jira, ServiceNow, Excel y PowerPoint. Many Worlds Cloud solo lee. Funciona en su propio servidor y no cambia nada en su nube.",
+  "boilerplate": "Acerca de Many Worlds Cloud: Many Worlds Cloud es una aplicación de informes para la seguridad en la nube. Lee los resultados de Prowler, el escáner de seguridad en la nube de código abierto, y los convierte en un informe con tres vistas y tres listas sobre las que actuar: riesgos, incidentes y tareas. Funciona en su propio servidor, solo lee, y puede enviar sus conclusiones a un registro de riesgos de SpaceRisk. Many Worlds Cloud forma parte de la familia Many Worlds de Frivold Digital, junto con Many Worlds Historian y Many Worlds Identity."
+ },
+ "h": {"taglines": "Eslóganes", "short": "Descripción breve", "medium": "Descripción media", "long": "Descripción larga", "blurbs": "Funciones", "boilerplate": "Texto estándar", "leaders": "Dirección", "owners": "Responsables de la nube", "workers": "Quienes hacen el trabajo"}
+}

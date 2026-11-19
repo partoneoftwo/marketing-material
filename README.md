@@ -19,6 +19,7 @@ https://partoneoftwo.github.io/marketing-material/historian/website/ . Sales mat
 
 Many Worlds Cloud: cloud infrastructure deep visibility, a front end to the open-source scanner Prowler. Website in
 English, Norwegian and Spanish: https://partoneoftwo.github.io/marketing-material/cloud/website/ . See [`cloud/`](cloud).
+Sales material in the same three languages (product sheet, sales deck, texts) in [`cloud/materials/`](cloud/materials).
 
 ## SpaceRisk
 

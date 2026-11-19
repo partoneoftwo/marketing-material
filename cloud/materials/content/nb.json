@@ -1,0 +1,83 @@
+{
+ "lang": "nb", "html_lang": "nb", "lang_name": "Norsk (bokmål)",
+ "product": "Many Worlds Cloud",
+ "eyebrow": "Dyp innsikt i skyinfrastrukturen",
+ "headline": "Vit hva som er eksponert i skyen, og hva som bør gjøres med det.",
+ "sub": "Many Worlds Cloud analyserer det Prowler, skanneren med åpen kildekode, finner i skykontoene deres, og gjør det om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver.",
+ "meta": [{"k": "Analyserer", "v": "kun med lesetilgang"}, {"k": "Dekker", "v": "AWS, Azure, Google Cloud, Kubernetes, Microsoft 365"}, {"k": "Endrer", "v": "ingenting i skyen"}, {"k": "Skanner", "v": "Prowler, åpen kildekode"}],
+ "flow_title": "Slik virker det",
+ "flow": ["Skykontoer", "Prowler-skanning", "Many Worlds Cloud", "Risikoer, hendelser, oppgaver", "SpaceRisk"],
+ "problem": {
+  "label": "Problemet",
+  "title": "En skanner gir dere tusenvis av rader. Det kan ingen ta beslutninger ut fra.",
+  "bullets": ["Én skanning av én skykonto gir hundrevis eller tusenvis av kontroller som feiler", "Ledelsen spør om risikoen går opp eller ned, og et regneark med kontroller kan ikke svare", "En konto som aldri ble skannet, ser ut som en konto uten feil", "Funnene blir liggende i sikkerhetsteamets verktøy og når aldri risikoregisteret"]
+ },
+ "sections": [
+  {"id": "reads", "label": "Den bare analyserer", "title": "Ingenting installeres i skyen, og ingenting i den endres.",
+   "text": "Prowler skanner hver skykonto med en rolle som bare kan lese. Many Worlds Cloud analyserer resultatene. Den skriver aldri til kontoene deres, og den ber aldri om hemmelighetene den finner, bare om hvor de ligger.",
+   "points": ["Prowler er den åpne programvaren for sikkerhetsskanning av sky, under Apache 2.0-lisensen, og forblir et eget system", "Hundrevis av kontroller på tvers av AWS, Azure, Google Cloud, Kubernetes og Microsoft 365", "Kjører på egen server, så resultatene blir hos dere"]},
+  {"id": "trust", "label": "Kan man stole på resultatene?", "title": "Rapporten begynner med å si hvor fullstendig skyen kunne skannes.",
+   "text": "En konto som er stille fordi skanningen feilet, må aldri leses som en konto uten feil. Derfor åpner hver rapport med hvilke kontoer som ble skannet, når, og hvilke kontroller som ikke kunne kjøres.",
+   "points": ["Kontoer som er skannet, og når hver skanning sist ble ferdig", "Kontroller som ikke kunne kjøres, og hvorfor", "Uskannet vises aldri som rent"]},
+  {"id": "findings", "label": "Funn, rangert etter alvorlighet", "title": "Hvert funn kommer med hvorfor det betyr noe, hva som bør gjøres, og bevisene.",
+   "text": "Et funn er noe skanningen observerte som krever en beslutning. De verste kommer først, og hvert funn kan spores til ressursen og kontrollen bak det.",
+   "points": ["Lagring som er åpen mot internett, pålogging uten flerfaktorautentisering, ukrypterte data, logging som er slått av", "Trender mot forrige skanning, så dere ser om risikoen går opp eller ned", "PDF, Excel og PowerPoint fra hver side"]},
+  {"id": "compliance", "label": "Etterlevelse", "title": "Se hvilke krav dere oppfyller, og hvilke dere ikke oppfyller.",
+   "text": "Prowler knytter kontrollene sine til rammeverkene revisorer spør om. Rapporten viser hvert rammeverk krav for krav, med funnene bak hvert krav som feiler.",
+   "points": ["Rammeverk som CIS, ISO 27001, NIS2, GDPR, SOC 2, PCI DSS og ENS", "Et krav som feiler, åpner ressursene som forårsaket det", "Ikke vurdert vises aldri som oppfylt"]},
+  {"id": "conclusions", "label": "Konklusjoner", "title": "Rapporten ender i tre lister som noen kan handle på.",
+   "text": "Risikoer går til et register, hendelser til en SOC og oppgaver til en kø. Hver vurdering har med regelen som ga den.",
+   "points": ["Send de tre listene til et SpaceRisk-register med én knapp. Ingenting sendes før den trykkes", "Å sende på nytt oppdaterer det som ble sendt før, og lager aldri en kopi til", "Eksport til SIEM (OCSF) og til Jira, ServiceNow eller en postkasse, i tillegg til Excel og PowerPoint"]},
+  {"id": "accounts", "label": "Alle kontoer samtidig", "title": "Ranger skykontoene etter hva som må avgjøres.",
+   "text": "Med mer enn én konto, ett abonnement eller ett prosjekt vises de side om side: hvilken som trenger oppmerksomhet først, hva som gjelder flere av dem mot hva som gjelder én, og hvilke som ikke kunne skannes fullstendig.",
+   "points": ["Hver rad åpner kontoens egen rapport", "Funn som deles av flere kontoer, vises samlet", "AWS, Azure og Google Cloud i samme rangering"]}
+ ],
+ "questions": {
+  "label": "Én rapport, tre lesere",
+  "title": "Ledelsen og skyeiere stiller ulike spørsmål. Hver får sin egen visning.",
+  "text": "Ledersammendraget svarer på én side. Visningen for skyeiere går ned til den enkelte ressursen. Den fullstendige rapporten har bevisene for den som skal gjøre jobben.",
+  "columns": [
+   {"title": "Spørsmål for ledelsen", "items": ["Går risikoen opp eller ned?", "Vet vi hvilke kontoer og ressurser vi har?", "Hva er åpent mot internett?", "Hvem kan logge inn uten flerfaktorautentisering?", "Hvem har administratortilgang?", "Er dataene våre kryptert og sikkerhetskopiert?", "Er logging slått på, så vi ville oppdaget et angrep?", "Hvilke krav oppfyller vi?"]},
+   {"title": "Spørsmål for skyeiere", "items": ["Hvilken lagring er offentlig?", "Hvilke brannmurregler er åpne for alle?", "Hvilke nøkler og kontoer har ikke vært brukt på flere måneder?", "Hvilke databaser og disker er ukryptert?", "Hvor er logging eller overvåking slått av?", "Hva har endret seg siden forrige skanning?", "Hvilke tjenester og regioner har flest funn?", "Hvilken ressurs står bak hvert funn?"]}
+  ]
+ },
+ "boxes": [
+  {"k": "Risikoer", "t": "Til risikoregisteret", "d": "En vedvarende svakhet, vurdert som sannsynlighet ganger konsekvens, hver fra 1 til 5, og gitt til en eier."},
+  {"k": "Hendelser", "t": "Til SOC", "d": "Noe som er eksponert akkurat nå og må håndteres."},
+  {"k": "Oppgaver", "t": "Til en kø", "d": "Ett stykke arbeid med en kø, en frist og en måte å se når det er ferdig på."}
+ ],
+ "sample": {
+  "title": "Slik ser et funn ut",
+  "note": "Illustrasjon. Produktet er under utvikling, og alle tall er oppdiktet.",
+  "cols": ["Alvorlighet", "Funn", "Hvor", "Anbefalt tiltak"],
+  "rows": [
+   ["Kritisk", "Lagring som kan leses av hvem som helst på internett", "AWS, produksjon", "Blokker offentlig tilgang"],
+   ["Høy", "Administrator logger inn uten flerfaktorautentisering", "Azure, 3 brukere", "Krev MFA"],
+   ["Høy", "Database som er åpen for alle adresser", "Google Cloud, fakturering", "Begrens til kjente nettverk"],
+   ["Middels", "Tilgangsnøkler som ikke er brukt på 180 dager", "AWS, 12 nøkler", "Fjern nøklene"]
+  ],
+  "matrix": "Risikoer i en fem ganger fem-matrise med sannsynlighet mot konsekvens",
+  "likelihood": "Sannsynlighet", "consequence": "Konsekvens"
+ },
+ "portfolio": {
+  "label": "Ett risikobilde",
+  "title": "Nettverkene, skyen og tilgangssystemet møtes i én bowtie.",
+  "text": "Many Worlds Cloud er ett av tre produkter som sender risikosignaler til SpaceRisk, risikoregisteret bygget på ISO 31000, der hele organisasjonen kan handle på dem.",
+  "items": [
+   {"k": "Many Worlds Historian", "d": "Dyp analyse av OT- og IT-nettverkene."},
+   {"k": "Many Worlds Cloud", "d": "Dyp analyse av skyinfrastrukturen."},
+   {"k": "Many Worlds Identity", "d": "Dyp analyse av tilgangssystemet."},
+   {"k": "SpaceRisk", "d": "Risikoregisteret alle sender til."}
+  ]
+ },
+ "cta": {"label": "Neste steg", "title": "Se Many Worlds Cloud analysere deres egen sky.", "text": "Fortell oss om skykontoene deres, så viser vi rapporten først på simulerte data og deretter på deres egne.", "button": "Snakk med oss", "email": "thomas.frivold@frivolddigital.com"},
+ "footer": "Dyp innsikt i skyinfrastrukturen.",
+ "texts": {
+  "taglines": ["Vit hva som er eksponert i skyen, og hva som bør gjøres med det.", "Fra tusenvis av kontroller som feiler, til tre lister dere kan handle på.", "Uskannet vises aldri som rent."],
+  "short": "Many Worlds Cloud analyserer det Prowler, skanneren med åpen kildekode, finner i skykontoene deres, og gjør det om til en rapport og en liste over ting å handle på: risikoer, hendelser og oppgaver.",
+  "medium": "Many Worlds Cloud gjør sikkerhetsskanninger av sky om til beslutninger. Prowler, skanneren med åpen kildekode, kontrollerer kontoene deres i AWS, Azure, Google Cloud, Kubernetes og Microsoft 365 med en rolle som bare kan lese. Many Worlds Cloud analyserer resultatene og skriver en rapport som begynner med hvor fullstendig skyen kunne skannes, rangerer funnene etter alvorlighet og ender i tre lister: risikoer til registeret, hendelser til SOC og oppgaver til en kø. Én knapp sender dem til SpaceRisk.",
+  "long": "En sikkerhetsskanner for sky gir tusenvis av rader, og det kan ingen ta beslutninger ut fra. Many Worlds Cloud analyserer det Prowler, skanneren med åpen kildekode, finner i skykontoene deres, og gjør det om til en rapport som tre slags lesere kan bruke. Ledelsen får et ledersammendrag som svarer på én side: går risikoen opp eller ned, hva er åpent mot internett, hvem har administratortilgang. Skyeiere får en visning som går ned til den enkelte ressursen. De som gjør jobben, får den fullstendige rapporten med bevisene. Hver rapport åpner med hvilke kontoer som ble skannet, og hvilke kontroller som ikke kunne kjøres, så en uskannet konto aldri vises som ren. Funnene rangeres etter alvorlighet, hvert med hvorfor det betyr noe, hva som bør gjøres, og bevisene, og knyttes til rammeverk som CIS, ISO 27001, NIS2 og ENS. Rapporten ender i tre lister: risikoer, hendelser og oppgaver. Én knapp sender dem til et SpaceRisk-register, og det finnes eksport til SIEM, Jira, ServiceNow, Excel og PowerPoint. Many Worlds Cloud bare analyserer. Den kjører på egen server og endrer ingenting i skyen.",
+  "boilerplate": "Om Many Worlds Cloud: Many Worlds Cloud er et rapporteringsverktøy for skysikkerhet. Det analyserer resultatene fra Prowler, skanneren med åpen kildekode for skysikkerhet, og gjør dem om til en rapport med tre visninger og tre lister å handle på: risikoer, hendelser og oppgaver. Det kjører på egen server, bare analyserer, og kan sende konklusjonene til et SpaceRisk-risikoregister. Many Worlds Cloud er en del av Many Worlds-familien fra Frivold Digital, sammen med Many Worlds Historian og Many Worlds Identity."
+ },
+ "h": {"taglines": "Slagord", "short": "Kort beskrivelse", "medium": "Middels beskrivelse", "long": "Lang beskrivelse", "blurbs": "Funksjoner", "boilerplate": "Standardtekst", "leaders": "Ledelsen", "owners": "Skyeiere", "workers": "De som gjør jobben"}
+}
