@@ -27,17 +27,15 @@ img { max-width: 100%; height: auto; display: block; }
 .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 17px; letter-spacing: -.015em; line-height: 1.05; }
 .brand small { display: block; white-space: nowrap; font: 500 9.5px/1.3 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .links { display: flex; gap: 16px; margin-left: auto; }
-.links a, .langs summary { white-space: nowrap; }
-.links a, .langs summary { font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: var(--muted); }
-.links a:hover, .langs summary:hover, .langs[open] summary { color: var(--ink); }
-.langs { position: relative; }
-.langs summary { list-style: none; cursor: pointer; padding: 8px 4px; }
-.langs summary::-webkit-details-marker { display: none; }
-.langs summary::after { content: " ▾"; }
-.langs ul { position: absolute; right: 0; top: calc(100% + 4px); min-width: 190px; background: #fff; border: 2px solid var(--ink); padding: 4px 0; }
-.langs li a { display: block; padding: 8px 14px; text-decoration: none; font-size: 14.5px; }
-.langs li a:hover { background: var(--soft); }
-.langs li a[aria-current] { font-weight: 700; }
+.links a { white-space: nowrap; }
+.links a { font: 500 11px var(--mono); letter-spacing: .1em; text-transform: uppercase; text-decoration: none; color: var(--muted); }
+.links a:hover { color: var(--ink); }
+.langs { display: flex; gap: 2px; }
+.langs a { font: 600 11px var(--mono); letter-spacing: .1em; text-decoration: none; color: var(--muted); padding: 7px 8px; border: 2px solid transparent; border-radius: 3px; }
+.langs a:hover { color: var(--ink); background: var(--soft); }
+.langs a[aria-current] { color: var(--ink); border-color: var(--ink); }
+.foot-langs { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 6px; }
+.foot-langs a[aria-current] { font-weight: 700; text-decoration: none; }
 .btn { display: inline-flex; align-items: center; justify-content: center; height: 46px; padding: 0 22px; background: var(--ink); color: #fff; border: 2px solid var(--ink);
   font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 3px; white-space: nowrap; }
 .btn:hover { background: #000; }

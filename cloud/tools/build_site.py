@@ -33,8 +33,8 @@ def main():
         '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Many Worlds Cloud</title>\n'
         f'<script>var have={codes},want=(navigator.languages||[navigator.language||"en"]).map(function(x){{x=x.toLowerCase();'
         'return x.indexOf("pt")===0?"pt-br":/^(nb|nn|no)\\b/.test(x)?"nb":x.slice(0,2)}),pick="en";'
-        'for(var i=0;i<want.length;i++){if(have.indexOf(want[i])>=0){pick=want[i];break}}location.replace(pick+"/");</script>\n'
-        '<meta http-equiv="refresh" content="1; url=en/"></head><body style="background:#fbfcfd"><a href="en/">Many Worlds Cloud</a></body></html>\n')
+        'for(var i=0;i<want.length;i++){if(have.indexOf(want[i])>=0){pick=want[i];break}}location.replace(pick+"/index.html");</script>\n'
+        '<meta http-equiv="refresh" content="1; url=en/index.html"></head><body style="background:#fbfcfd"><a href="en/index.html">Many Worlds Cloud</a></body></html>\n')
 
 
 if __name__ == "__main__":
