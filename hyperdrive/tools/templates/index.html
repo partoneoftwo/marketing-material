@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{ c.html_lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#0f172a">
+<title>{{ c.meta.title }}</title>
+<meta name="description" content="{{ c.meta.description }}">
+<meta property="og:title" content="{{ c.meta.title }}">
+<meta property="og:description" content="{{ c.meta.description }}">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v={{ version }}">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">{{ c.nav.skip }}</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="{{ c.nav.home }}"><img src="../assets/logo.svg" width="28" height="28" alt="">Hyperdrive</a>
+    <nav class="links" aria-label="Main">{% for l in c.nav.links %}<a href="{{ l.href }}">{{ l.text }}</a>{% endfor %}</nav>
+    {% if langs|length > 1 %}<details class="langs"><summary aria-label="Language">{{ c.lang|upper }}</summary><ul>{% for l in langs %}<li><a href="../{{ l.lang }}/" hreflang="{{ l.html_lang }}" lang="{{ l.html_lang }}"{% if l.lang == c.lang %} aria-current="true"{% endif %}>{{ l.lang_name }}</a></li>{% endfor %}</ul></details>{% endif %}
+    <a class="btn btn-sm" href="{{ mailto }}">{{ c.nav.contact }}</a>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="page">
+    <p class="eyebrow">{{ c.hero.eyebrow }}</p>
+    <h1>{{ c.hero.title }}</h1>
+    <p class="lede">{{ c.hero.text }}</p>
+    <div class="cta-row"><a class="btn" href="{{ mailto }}">{{ c.hero.cta_primary }}</a><a class="btn btn-line" href="#pipeline">{{ c.hero.cta_secondary }} ↓</a></div>
+    <dl class="meta">{% for m in c.hero.meta %}<div><dt>{{ m.k }}</dt><dd>{{ m.v }}</dd></div>{% endfor %}</dl>
+  </div>
+</section>
+<div class="page hero-shot">
+  {{ shot(c.hero.shot, c.hero.shot_caption, eager=true) }}
+</div>
+
+<section class="page part" id="pipeline">
+  <div class="part-top">
+    <div><p class="tag">{{ c.pipeline.label }}</p><h2>{{ c.pipeline.title }}</h2></div>
+    <p class="lede">{{ c.pipeline.text }}</p>
+  </div>
+  <ol class="stages">{% for s in c.pipeline.stages %}<li class="s{{ loop.index }}"><p class="k">{{ s.k }}</p><p class="t">{{ s.t }}</p><p class="d">{{ s.d }}</p></li>{% endfor %}</ol>
+</section>
+
+{% for s in c.sections %}
+<section class="page part" id="{{ s.id }}">
+  <div class="part-top">
+    <div><p class="tag {{ s.stage }}">{{ s.label }}</p><h2>{{ s.title }}</h2><p class="lede">{{ s.text }}</p></div>
+    <ul class="points">{% for p in s.points %}<li>{{ p }}</li>{% endfor %}</ul>
+  </div>
+  {{ shot(s.shot, c.shot_note) }}
+</section>
+{% endfor %}
+
+<section class="page part" id="fit">
+  <div class="part-top">
+    <div><p class="tag">{{ c.fit.label }}</p><h2>{{ c.fit.title }}</h2></div>
+    <p class="lede">{{ c.fit.text }}</p>
+  </div>
+  <div class="measured">
+    <p class="k">{{ c.fit.measured_label }}</p>
+    <dl>{% for m in c.fit.measured %}<div><dt>{{ m.n }}</dt><dd>{{ m.label }}</dd></div>{% endfor %}</dl>
+  </div>
+  <div class="cols">{% for col in c.fit.columns %}<div class="{{ 'yes' if loop.first else 'no' }}"><h3>{{ col.title }}</h3><ul>{% for q in col["items"] %}<li>{{ q }}</li>{% endfor %}</ul></div>{% endfor %}</div>
+</section>
+
+<section class="page part" id="run">
+  <div class="part-top">
+    <div><p class="tag">{{ c.run.label }}</p><h2>{{ c.run.title }}</h2></div>
+    <p class="lede">{{ c.run.text }}</p>
+  </div>
+  <div class="boxes">{% for b in c.run.boxes %}<div><p class="k">{{ b.t }}</p><p class="n">{{ b.k }}</p><p>{{ b.d }}</p></div>{% endfor %}</div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="page">
+    <h2>{{ c.contact.title }}</h2>
+    <p class="lede">{{ c.contact.text }}</p>
+    <div class="cta-row"><a class="btn" href="{{ mailto }}">{{ c.contact.cta }}</a><a class="mail" href="{{ mailto }}">{{ c.contact.email }}</a></div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="page">
+    <p><b>Hyperdrive</b> · {{ c.footer.tagline }}</p>
+    <p class="fine">© {{ year }} Frivold Digital AS · {{ c.footer.note }}</p>
+  </div>
+</footer>
+</body>
+</html>

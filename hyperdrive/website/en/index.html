@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="theme-color" content="#0f172a">
+<title>Hyperdrive: the self-hosted data platform on SQLite</title>
+<meta name="description" content="Hyperdrive does the everyday extract, load and transform work that usually ends up in AWS Glue or Microsoft Fabric. It runs on your own server, on SQLite, and is set up in the browser.">
+<meta property="og:title" content="Hyperdrive: the self-hosted data platform on SQLite">
+<meta property="og:description" content="Hyperdrive does the everyday extract, load and transform work that usually ends up in AWS Glue or Microsoft Fabric. It runs on your own server, on SQLite, and is set up in the browser.">
+<meta property="og:type" content="website">
+<link rel="preload" href="../assets/fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=20261126">
+<link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="page top-in">
+    <a class="brand" href="./" aria-label="Hyperdrive home"><img src="../assets/logo.svg" width="28" height="28" alt="">Hyperdrive</a>
+    <nav class="links" aria-label="Main"><a href="#pipeline">Pipeline</a><a href="#in">In</a><a href="#normalise">Normalise</a><a href="#out">Out</a><a href="#fit">Fit</a><a href="#run">Run it</a></nav>
+    <a class="btn btn-sm" href="mailto:thomas.frivold@frivolddigital.com?subject=Hyperdrive">Ask for a demo</a>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="page">
+    <p class="eyebrow">Self-hosted data platform</p>
+    <h1>Your everyday data pipelines, on one small server.</h1>
+    <p class="lede">Hyperdrive does the extract, load and transform work that usually ends up in AWS Glue or Microsoft Fabric. It runs on your own machine, keeps everything in SQLite, and is set up entirely in the browser.</p>
+    <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Hyperdrive">Ask for a demo</a><a class="btn btn-line" href="#pipeline">See how it works ↓</a></div>
+    <dl class="meta"><div><dt>Runs on</dt><dd>Docker Compose or Cloudron</dd></div><div><dt>Stores in</dt><dd>SQLite</dd></div><div><dt>Explore with</dt><dd>Datasette</dd></div></dl>
+  </div>
+</section>
+<div class="page hero-shot">
+  <figure class="shot"><a href="../assets/shots/en/overview.webp"><img src="../assets/shots/en/overview.webp" width="1100" height="492" alt="Hyperdrive overview: counts for landing, raw, normalised and outputs, a list of recent runs that all succeeded, and the next scheduled run." fetchpriority="high"></a><figcaption>The overview: what has landed, what is normalised, and what ran.</figcaption></figure>
+</div>
+
+<section class="page part" id="pipeline">
+  <div class="part-top">
+    <div><p class="tag">The pipeline</p><h2>Five steps, and you can look inside every one.</h2></div>
+    <p class="lede">Data moves through the same stages every time. Nothing is thrown away on the way in, so a rule can change tomorrow and the tables are rebuilt from what actually arrived.</p>
+  </div>
+  <ol class="stages"><li class="s1"><p class="k">Landing</p><p class="t">Kept as received</p><p class="d">Every file and API response is stored exactly as it arrived.</p></li><li class="s2"><p class="k">Raw</p><p class="t">Loaded as text</p><p class="d">One table per source, original column names, every value as text.</p></li><li class="s3"><p class="k">Normalised</p><p class="t">Typed and clean</p><p class="d">Clean names, real types, ISO dates, one row per key.</p></li><li class="s4"><p class="k">Models</p><p class="t">Shaped with SQL</p><p class="d">SELECT statements kept as tables, for joins and aggregates.</p></li><li class="s5"><p class="k">Out</p><p class="t">Delivered</p><p class="d">REST, CSV files and pushes to other systems.</p></li></ol>
+</section>
+
+<section class="page part" id="in">
+  <div class="part-top">
+    <div><p class="tag landing">In</p><h2>Files and APIs in, without writing a connector.</h2><p class="lede">Upload a CSV, point Hyperdrive at a REST API, or let another system push to it. The form makes a test call and shows the first records before anything is saved.</p></div>
+    <ul class="points"><li>CSV with comma or semicolon. The delimiter and the encoding are detected.</li><li>REST APIs pulled on a schedule, with paging by page number, offset, next link or cursor.</li><li>JSON or CSV pushed in over REST with an API key.</li><li>Sign-in for the APIs you call: bearer token, basic, API key or OAuth 2.0 client credentials.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/rest-source.webp"><img src="../assets/shots/en/rest-source.webp" width="1100" height="1149" alt="New source form: a REST pull source with a bearer token, page number paging and a test call that returned 100 records." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="normalise">
+  <div class="part-top">
+    <div><p class="tag normalised">Normalise</p><h2>Messy columns become typed tables, and you watch it happen.</h2><p class="lede">Types are detected from the data, and every column can be overridden. A before and after preview shows what the rules do to real rows.</p></div>
+    <ul class="points"><li>“Kunde Nr” becomes kunde_nr. Names are made safe to query.</li><li>1.234,56 becomes 1234.56. Decimal commas are understood per column.</li><li>05.01.2024 becomes 2024-01-05. One date format is chosen per column.</li><li>0150 stays text. A leading zero means an identifier.</li><li>A value that does not fit becomes null and is counted. A bad row never stops a load.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/normalisation.webp"><img src="../assets/shots/en/normalisation.webp" width="1100" height="1045" alt="Normalisation for a customer file: detected column types with a raw table beside the normalised result." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="models">
+  <div class="part-top">
+    <div><p class="tag raw">Models</p><h2>Joins and aggregates are plain SQL.</h2><p class="lede">Try a query in the workbench, then save it as a model. Hyperdrive keeps the result as a table and rebuilds it after every source run.</p></div>
+    <ul class="points"><li>A read-only workbench over the raw and the normalised tables.</li><li>Models are rebuilt after every source run, so they follow the data.</li><li>No new language to learn. If you can write SELECT, you can model.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/sql-workbench.webp"><img src="../assets/shots/en/sql-workbench.webp" width="1100" height="633" alt="SQL workbench: a join of customers and orders with revenue per city, and the list of raw and normalised tables." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="out">
+  <div class="part-top">
+    <div><p class="tag outputs">Out</p><h2>Hand clean data to whatever needs it next.</h2><p class="lede">Every table is available over REST the moment it exists. Files and pushes go out on a schedule, or right after the source they depend on has run.</p></div>
+    <ul class="points"><li>Any table as JSON or CSV over REST, with filters, sorting and search.</li><li>CSV with comma, semicolon or tab, and decimal point or comma, so it opens correctly in Excel.</li><li>Scheduled CSV files, and REST pushes to other systems.</li><li>API keys that may push, read or both, and can be limited to one table.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/api-access.webp"><img src="../assets/shots/en/api-access.webp" width="1100" height="642" alt="API access: two API keys with their permissions, and ready-made curl calls for pushing data in." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="runs">
+  <div class="part-top">
+    <div><p class="tag raw">Runs</p><h2>See every run, and every step inside it.</h2><p class="lede">Sources and outputs run on cron schedules or when you press the button. The run log shows who started each job, how many rows it moved and how long it took.</p></div>
+    <ul class="points"><li>Cron schedules for sources and outputs, in your time zone.</li><li>Outputs that fire when the source they depend on has finished.</li><li>Each run opens to its steps, with row counts and warnings.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/runs.webp"><img src="../assets/shots/en/runs.webp" width="1100" height="515" alt="Run log: source, model and output runs with status, rows and duration. One run is open and shows its step." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="explore">
+  <div class="part-top">
+    <div><p class="tag normalised">Explore</p><h2>Datasette comes with it, on the same data.</h2><p class="lede">Datasette, the open-source data explorer, is included and reads the same SQLite files. Filter, facet and export a table without asking anyone for a report.</p></div>
+    <ul class="points"><li>Behind the same login as the rest of Hyperdrive.</li><li>Raw and normalised tables side by side.</li><li>The data is ordinary SQLite, so any SQLite tool can open it too.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/datasette.webp"><img src="../assets/shots/en/datasette.webp" width="1100" height="900" alt="Datasette showing the customer_revenue table with 180 rows." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+<section class="page part" id="backups">
+  <div class="part-top">
+    <div><p class="tag landing">Backups</p><h2>One file holds the whole instance.</h2><p class="lede">A backup contains the data, the landing files, every source, rule, model, output and schedule, and the stored credentials. Restore it from the interface, on the same server or a new one.</p></div>
+    <ul class="points"><li>Made on demand or on a schedule, while Hyperdrive keeps running.</li><li>A restore checks every file against its checksum first.</li><li>The current state is backed up before a restore, so it can be undone.</li><li>To rebuild from nothing: start a fresh Hyperdrive, upload the file, restore.</li></ul>
+  </div>
+  <figure class="shot"><a href="../assets/shots/en/backups.webp"><img src="../assets/shots/en/backups.webp" width="1100" height="280" alt="Backups: two backups listed with their contents and size, with buttons to download and restore." loading="lazy" decoding="async"></a><figcaption>Screen from the product, with demo data.</figcaption></figure>
+</section>
+
+<section class="page part" id="fit">
+  <div class="part-top">
+    <div><p class="tag">Fit</p><h2>Built for millions of rows, not billions.</h2></div>
+    <p class="lede">Hyperdrive covers the regular cases: exports, APIs, a few joins, and clean tables for the systems and people that need them. This is where it stops.</p>
+  </div>
+  <div class="measured">
+    <p class="k">Measured on one CSV file of 524 MB</p>
+    <dl><div><dt>5.3 M</dt><dd>rows in the file</dd></div><div><dt>22 s</dt><dd>to load it into raw</dd></div><div><dt>103 s</dt><dd>to normalise it</dd></div><div><dt>42 MB</dt><dd>of memory, flat</dd></div></dl>
+  </div>
+  <div class="cols"><div class="yes"><h3>A good fit when</h3><ul><li>Your data arrives as CSV exports and REST APIs.</li><li>Tables hold up to some millions of rows.</li><li>One team owns the pipelines.</li><li>You want the data on a server you control.</li></ul></div><div class="no"><h3>Look elsewhere when</h3><ul><li>You have billions of rows, or need streaming.</li><li>Many runs must execute at the same moment. Hyperdrive runs one at a time.</li><li>People need different roles. The interface has a single login.</li><li>Loads must be incremental. Normalised tables are rebuilt in full on each run.</li></ul></div></div>
+</section>
+
+<section class="page part" id="run">
+  <div class="part-top">
+    <div><p class="tag">Run it</p><h2>On your own server, with one command.</h2></div>
+    <p class="lede">There is no cluster to size and no cloud account to open. Hyperdrive starts with docker compose up, and is a small set of containers and a folder of SQLite files.</p>
+  </div>
+  <div class="boxes"><div><p class="k">Docker Compose</p><p class="n">3 containers</p><p>Interface, API and Datasette. Only the interface is published, and it sits behind your own reverse proxy.</p></div><div><p class="k">Cloudron</p><p class="n">1 app</p><p>A Cloudron package runs the same parts in a single container. Cloudron&#39;s own backup covers all of the data.</p></div><div><p class="k">Storage</p><p class="n">3 SQLite files</p><p>Configuration, raw data and normalised data. Plain files that you own and can open with any SQLite tool.</p></div></div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="page">
+    <h2>See Hyperdrive with your own flow.</h2>
+    <p class="lede">Tell us what you move between systems today, and we will show you the same flow running in Hyperdrive.</p>
+    <div class="cta-row"><a class="btn" href="mailto:thomas.frivold@frivolddigital.com?subject=Hyperdrive">Ask for a demo</a><a class="mail" href="mailto:thomas.frivold@frivolddigital.com?subject=Hyperdrive">thomas.frivold@frivolddigital.com</a></div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="page">
+    <p><b>Hyperdrive</b> · The self-hosted data platform on SQLite and Datasette.</p>
+    <p class="fine">© 2026 Frivold Digital AS · No cookies, no tracking. The screens show demo data. AWS Glue and Microsoft Fabric are trademarks of their owners.</p>
+  </div>
+</footer>
+</body>
+</html>

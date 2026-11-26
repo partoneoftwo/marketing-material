@@ -1,0 +1,190 @@
+{
+  "lang": "en",
+  "html_lang": "en",
+  "lang_name": "English",
+  "meta": {
+    "title": "Hyperdrive: the self-hosted data platform on SQLite",
+    "description": "Hyperdrive does the everyday extract, load and transform work that usually ends up in AWS Glue or Microsoft Fabric. It runs on your own server, on SQLite, and is set up in the browser."
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "home": "Hyperdrive home",
+    "links": [
+      {"href": "#pipeline", "text": "Pipeline"},
+      {"href": "#in", "text": "In"},
+      {"href": "#normalise", "text": "Normalise"},
+      {"href": "#out", "text": "Out"},
+      {"href": "#fit", "text": "Fit"},
+      {"href": "#run", "text": "Run it"}
+    ],
+    "contact": "Ask for a demo"
+  },
+  "hero": {
+    "eyebrow": "Self-hosted data platform",
+    "title": "Your everyday data pipelines, on one small server.",
+    "text": "Hyperdrive does the extract, load and transform work that usually ends up in AWS Glue or Microsoft Fabric. It runs on your own machine, keeps everything in SQLite, and is set up entirely in the browser.",
+    "cta_primary": "Ask for a demo",
+    "cta_secondary": "See how it works",
+    "meta": [
+      {"k": "Runs on", "v": "Docker Compose or Cloudron"},
+      {"k": "Stores in", "v": "SQLite"},
+      {"k": "Explore with", "v": "Datasette"}
+    ],
+    "shot": "overview",
+    "shot_caption": "The overview: what has landed, what is normalised, and what ran."
+  },
+  "pipeline": {
+    "label": "The pipeline",
+    "title": "Five steps, and you can look inside every one.",
+    "text": "Data moves through the same stages every time. Nothing is thrown away on the way in, so a rule can change tomorrow and the tables are rebuilt from what actually arrived.",
+    "stages": [
+      {"k": "Landing", "t": "Kept as received", "d": "Every file and API response is stored exactly as it arrived."},
+      {"k": "Raw", "t": "Loaded as text", "d": "One table per source, original column names, every value as text."},
+      {"k": "Normalised", "t": "Typed and clean", "d": "Clean names, real types, ISO dates, one row per key."},
+      {"k": "Models", "t": "Shaped with SQL", "d": "SELECT statements kept as tables, for joins and aggregates."},
+      {"k": "Out", "t": "Delivered", "d": "REST, CSV files and pushes to other systems."}
+    ]
+  },
+  "sections": [
+    {
+      "id": "in", "stage": "landing", "label": "In",
+      "title": "Files and APIs in, without writing a connector.",
+      "text": "Upload a CSV, point Hyperdrive at a REST API, or let another system push to it. The form makes a test call and shows the first records before anything is saved.",
+      "points": [
+        "CSV with comma or semicolon. The delimiter and the encoding are detected.",
+        "REST APIs pulled on a schedule, with paging by page number, offset, next link or cursor.",
+        "JSON or CSV pushed in over REST with an API key.",
+        "Sign-in for the APIs you call: bearer token, basic, API key or OAuth 2.0 client credentials."
+      ],
+      "shot": "rest-source"
+    },
+    {
+      "id": "normalise", "stage": "normalised", "label": "Normalise",
+      "title": "Messy columns become typed tables, and you watch it happen.",
+      "text": "Types are detected from the data, and every column can be overridden. A before and after preview shows what the rules do to real rows.",
+      "points": [
+        "“Kunde Nr” becomes kunde_nr. Names are made safe to query.",
+        "1.234,56 becomes 1234.56. Decimal commas are understood per column.",
+        "05.01.2024 becomes 2024-01-05. One date format is chosen per column.",
+        "0150 stays text. A leading zero means an identifier.",
+        "A value that does not fit becomes null and is counted. A bad row never stops a load."
+      ],
+      "shot": "normalisation"
+    },
+    {
+      "id": "models", "stage": "raw", "label": "Models",
+      "title": "Joins and aggregates are plain SQL.",
+      "text": "Try a query in the workbench, then save it as a model. Hyperdrive keeps the result as a table and rebuilds it after every source run.",
+      "points": [
+        "A read-only workbench over the raw and the normalised tables.",
+        "Models are rebuilt after every source run, so they follow the data.",
+        "No new language to learn. If you can write SELECT, you can model."
+      ],
+      "shot": "sql-workbench"
+    },
+    {
+      "id": "out", "stage": "outputs", "label": "Out",
+      "title": "Hand clean data to whatever needs it next.",
+      "text": "Every table is available over REST the moment it exists. Files and pushes go out on a schedule, or right after the source they depend on has run.",
+      "points": [
+        "Any table as JSON or CSV over REST, with filters, sorting and search.",
+        "CSV with comma, semicolon or tab, and decimal point or comma, so it opens correctly in Excel.",
+        "Scheduled CSV files, and REST pushes to other systems.",
+        "API keys that may push, read or both, and can be limited to one table."
+      ],
+      "shot": "api-access"
+    },
+    {
+      "id": "runs", "stage": "raw", "label": "Runs",
+      "title": "See every run, and every step inside it.",
+      "text": "Sources and outputs run on cron schedules or when you press the button. The run log shows who started each job, how many rows it moved and how long it took.",
+      "points": [
+        "Cron schedules for sources and outputs, in your time zone.",
+        "Outputs that fire when the source they depend on has finished.",
+        "Each run opens to its steps, with row counts and warnings."
+      ],
+      "shot": "runs"
+    },
+    {
+      "id": "explore", "stage": "normalised", "label": "Explore",
+      "title": "Datasette comes with it, on the same data.",
+      "text": "Datasette, the open-source data explorer, is included and reads the same SQLite files. Filter, facet and export a table without asking anyone for a report.",
+      "points": [
+        "Behind the same login as the rest of Hyperdrive.",
+        "Raw and normalised tables side by side.",
+        "The data is ordinary SQLite, so any SQLite tool can open it too."
+      ],
+      "shot": "datasette"
+    },
+    {
+      "id": "backups", "stage": "landing", "label": "Backups",
+      "title": "One file holds the whole instance.",
+      "text": "A backup contains the data, the landing files, every source, rule, model, output and schedule, and the stored credentials. Restore it from the interface, on the same server or a new one.",
+      "points": [
+        "Made on demand or on a schedule, while Hyperdrive keeps running.",
+        "A restore checks every file against its checksum first.",
+        "The current state is backed up before a restore, so it can be undone.",
+        "To rebuild from nothing: start a fresh Hyperdrive, upload the file, restore."
+      ],
+      "shot": "backups"
+    }
+  ],
+  "fit": {
+    "label": "Fit",
+    "title": "Built for millions of rows, not billions.",
+    "text": "Hyperdrive covers the regular cases: exports, APIs, a few joins, and clean tables for the systems and people that need them. This is where it stops.",
+    "measured_label": "Measured on one CSV file of 524 MB",
+    "measured": [
+      {"n": "5.3 M", "label": "rows in the file"},
+      {"n": "22 s", "label": "to load it into raw"},
+      {"n": "103 s", "label": "to normalise it"},
+      {"n": "42 MB", "label": "of memory, flat"}
+    ],
+    "columns": [
+      {"title": "A good fit when", "items": [
+        "Your data arrives as CSV exports and REST APIs.",
+        "Tables hold up to some millions of rows.",
+        "One team owns the pipelines.",
+        "You want the data on a server you control."
+      ]},
+      {"title": "Look elsewhere when", "items": [
+        "You have billions of rows, or need streaming.",
+        "Many runs must execute at the same moment. Hyperdrive runs one at a time.",
+        "People need different roles. The interface has a single login.",
+        "Loads must be incremental. Normalised tables are rebuilt in full on each run."
+      ]}
+    ]
+  },
+  "run": {
+    "label": "Run it",
+    "title": "On your own server, with one command.",
+    "text": "There is no cluster to size and no cloud account to open. Hyperdrive starts with docker compose up, and is a small set of containers and a folder of SQLite files.",
+    "boxes": [
+      {"t": "Docker Compose", "k": "3 containers", "d": "Interface, API and Datasette. Only the interface is published, and it sits behind your own reverse proxy."},
+      {"t": "Cloudron", "k": "1 app", "d": "A Cloudron package runs the same parts in a single container. Cloudron's own backup covers all of the data."},
+      {"t": "Storage", "k": "3 SQLite files", "d": "Configuration, raw data and normalised data. Plain files that you own and can open with any SQLite tool."}
+    ]
+  },
+  "shots": {
+    "overview": "Hyperdrive overview: counts for landing, raw, normalised and outputs, a list of recent runs that all succeeded, and the next scheduled run.",
+    "rest-source": "New source form: a REST pull source with a bearer token, page number paging and a test call that returned 100 records.",
+    "normalisation": "Normalisation for a customer file: detected column types with a raw table beside the normalised result.",
+    "sql-workbench": "SQL workbench: a join of customers and orders with revenue per city, and the list of raw and normalised tables.",
+    "api-access": "API access: two API keys with their permissions, and ready-made curl calls for pushing data in.",
+    "runs": "Run log: source, model and output runs with status, rows and duration. One run is open and shows its step.",
+    "datasette": "Datasette showing the customer_revenue table with 180 rows.",
+    "backups": "Backups: two backups listed with their contents and size, with buttons to download and restore."
+  },
+  "shot_note": "Screen from the product, with demo data.",
+  "contact": {
+    "title": "See Hyperdrive with your own flow.",
+    "text": "Tell us what you move between systems today, and we will show you the same flow running in Hyperdrive.",
+    "cta": "Ask for a demo",
+    "email": "thomas.frivold@frivolddigital.com",
+    "subject": "Hyperdrive"
+  },
+  "footer": {
+    "tagline": "The self-hosted data platform on SQLite and Datasette.",
+    "note": "No cookies, no tracking. The screens show demo data. AWS Glue and Microsoft Fabric are trademarks of their owners."
+  }
+}
