@@ -28,6 +28,13 @@ with birthright roles, and risk signals are read from midPoint's audit trail, po
 and certification. Website in English, Norwegian and Spanish:
 https://partoneoftwo.github.io/marketing-material/identity/website/ . See [`identity/`](identity).
 
+## Hyperdrive
+
+Hyperdrive: a self-hosted data platform on SQLite and Datasette, for the everyday extract, load and transform work.
+CSV files and REST APIs in, typed tables and SQL models in the middle, REST and CSV out. Website in English with real
+product screens: https://partoneoftwo.github.io/marketing-material/hyperdrive/website/ . Sales deck and texts in
+[`hyperdrive/materials/en/`](hyperdrive/materials/en). See [`hyperdrive/`](hyperdrive).
+
 ## SpaceRisk
 
 Friendly ISO 31000 risk management with bowties, barriers, monthly team reviews, project overviews and a financial view
